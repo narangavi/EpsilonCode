@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="FullWidth Feature"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <displayCurveTop
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displaycurvetop"
+                                text="Display Curve Top"
+                                value="{Boolean}true"/>
+                            <displaycurvetop-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displaycurvetop@Delete"
+                                value="{Boolean}true"/>
+                            <displayCurveBottom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displaycurvebottom"
+                                text="Display Curve Bottom"
+                                value="{Boolean}true"/>
+                            <displaycurvebottom-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displaycurvebottom@Delete"
+                                value="{Boolean}true"/>
+                            <displaySecondaryTextArea
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displaysecondary"
+                                text="Display Secondary Text Area"
+                                value="{Boolean}true"/>
+                            <displaysecondarytextarea-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displaysecondary@Delete"
+                                value="{Boolean}true"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <primary
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Primary Text Area"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <headline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Headline"
+                                name="./headline"
+                                isRequired="true"
+                                required="true"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                fieldDescription="Drop image from the Asset Browser"
+                                sling:resourceType="calix/foundation/form/imagedropfield"
+                                fieldLabel="Image"
+                                name="./image"
+                                rootPath="/content/dam"/>
+                            <buttontype
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Image Position"
+                                name="./imageposition"
+                                value="left">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left"
+                                        value="left"/>
+                                    <right
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right"
+                                        value="right"/>
+                                </items>
+                            </buttontype>
+                            <displayBackground
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displaybackground1"
+                                text="Display Background Color"
+                                value="{Boolean}true"/>
+                            <displaybackground-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displaybackground1@Delete"
+                                value="{Boolean}true"/>
+                            <firstCTA
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="The First CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="The First CTA">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <titleCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title CTA"
+                                        name="./titleCTA1"/>
+                                    <linkCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Link CTA"
+                                        name="./linkCTA1"
+                                        rootPath="/content/calix"/>
+                                    <buttontype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Button Type"
+                                        name="./buttontype1"
+                                        value="green">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <green
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Green"
+                                                value="green"/>
+                                            <white
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary White"
+                                                value="white"/>
+                                            <outline
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Outline"
+                                                value="outline"/>
+                                            <textlink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text Link"
+                                                value="text"/>
+                                        </items>
+                                    </buttontype>
+                                </items>
+                            </firstCTA>
+                            <secondCTA
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="The second CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="The second CTA">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <titleCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title CTA"
+                                        name="./titleCTA2"/>
+                                    <linkCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Link CTA"
+                                        name="./linkCTA2"
+                                        rootPath="/content/calix"/>
+                                    <buttontype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Button Type:"
+                                        name="./buttontype2"
+                                        value="green">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <green
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Green"
+                                                value="green"/>
+                                            <white
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary White"
+                                                value="white"/>
+                                            <outline
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Outline"
+                                                value="outline"/>
+                                            <textlink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text Link"
+                                                value="text"/>
+                                        </items>
+                                    </buttontype>
+                                </items>
+                            </secondCTA>
+                            <body/>
+                        </items>
+                    </columns>
+                </items>
+            </primary>
+            <secondary
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Secondary Text Area"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <headline
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Headline"
+                                name="./primaryheadline"
+                                isRequired="true"
+                                required="true"/>
+                            <displayBackground
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displaybackground2"
+                                text="Display Background Color"
+                                value="{Boolean}true"/>
+                            <displaybackground-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displaybackground2@Delete"
+                                value="{Boolean}true"/>
+                            <firstCTA
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="The First CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="The First CTA">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <titleCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title CTA"
+                                        name="./titleCTA3"/>
+                                    <linkCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Link CTA"
+                                        name="./linkCTA3"
+                                        rootPath="/content/calix"/>
+                                    <buttontype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Button Type"
+                                        name="./buttontype3"
+                                        value="green">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <green
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Green"
+                                                value="green"/>
+                                            <white
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary White"
+                                                value="white"/>
+                                            <outline
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Outline"
+                                                value="outline"/>
+                                            <textlink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text Link"
+                                                value="text"/>
+                                        </items>
+                                    </buttontype>
+                                </items>
+                            </firstCTA>
+                            <secondCTA
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="The second CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="The second CTA">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <titleCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title CTA"
+                                        name="./titleCTA4"/>
+                                    <linkCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Link CTA"
+                                        name="./linkCTA4"
+                                        rootPath="/content/calix"/>
+                                    <buttontype
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Button Type"
+                                        name="./buttontype4"
+                                        value="green">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <green
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Green"
+                                                value="green"/>
+                                            <white
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary White"
+                                                value="white"/>
+                                            <outline
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Outline"
+                                                value="outline"/>
+                                            <textlink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text link"
+                                                value="text"/>
+                                        </items>
+                                    </buttontype>
+                                </items>
+                            </secondCTA>
+                            <body/>
+                        </items>
+                    </columns>
+                </items>
+            </secondary>
+        </items>
+    </content>
+</jcr:root>

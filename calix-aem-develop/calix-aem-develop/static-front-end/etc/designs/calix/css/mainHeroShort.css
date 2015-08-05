@@ -1,0 +1,104 @@
+/****************************************
+  full width hero short - 420h
+****************************************/
+
+.fullContainer {
+  width: 100%;
+}
+.heroFullShortContainer {
+  position: relative;
+  max-width: 1440px;
+  min-width: 1024px;
+  height: 420px;
+  margin: 0 auto;
+  background: url(../../../../images/mainHero/mainHero.png) no-repeat;
+  background-position: top center;
+}
+.heroFullShortContainer .heroContent {
+  width: 1024px;
+  height: 100%;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 130px;
+}
+.heroFullShortContainer .heroContent h4,
+.heroFullShortContainer .heroContent h3,
+.heroFullShortContainer .heroContent h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+.heroFullShortContainer .heroContent h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+.heroFullShortContainer .heroContent h2 {
+  font-size: 36px;
+  margin: 0 0 15px 0;
+}
+@media all and (max-width: 1360px) {
+
+}
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 768px) {
+  .heroFullShortContainer,
+  .heroContent {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .heroFullShortContainer {
+    height: auto;
+    padding-bottom: 45px;
+    border-bottom-left-radius: 50% 14px;
+    border-bottom-right-radius: 50% 14px;
+    background-size: 770px 230px;
+    background-position: 0px top;
+    border-bottom: 1px solid #48366b;
+    -webkit-box-shadow: 1px 1px 1px 1px #aeaeae;
+    -moz-box-shadow: 1px 3px 1px 1px #aeaeae;
+    box-shadow: 1px 1px 1px 1px #aeaeae;
+  }
+  .heroFullShortContainer .heroContent {
+    padding-top: 250px;
+  }
+  .heroFullShortContainer .heroContent h3,
+  .heroFullShortContainer .heroContent h2 {
+    padding: 0 15px;
+  }
+  .heroFullShortContainer .heroContent h3 {
+    font-size: 18px;
+    color: #9d9c9c;
+    margin-bottom: 5px;
+  }
+  .heroFullShortContainer .heroContent h2 {
+    font-size: 25px;
+    color: #333;
+  }
+  .heroFullShortContainer .myCalix {
+    top: 38px;
+  }
+  .grnBtn {
+    margin-top: 10px;
+  }
+}
+/*
+@media all and (max-width: 375px) {
+  .heroFullShortContainer {
+    background-size: 590px 200px;
+    background-position: -30px top;
+  }
+  .heroFullShortContainer .heroContent {
+    padding-top: 230px;
+  }
+  .heroFullShortContainer .myCalix {
+    top: 30px;
+  }
+  .grnBtn {
+    margin-top: 10px;
+    width: 60%;
+  }
+}
+*/

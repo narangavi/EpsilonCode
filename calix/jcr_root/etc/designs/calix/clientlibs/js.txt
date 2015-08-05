@@ -1,0 +1,13 @@
+#base=js
+
+jquery.min.js
+bootstrap.min.js
+jquery.gridder.js
+slick.min.js
+custom.js
+masonry.pkgd.min.js
+imagesloaded.pkgd.min.js
+wsutils.js
+jquery.validate.js
+blockUI.js
+captcha.js

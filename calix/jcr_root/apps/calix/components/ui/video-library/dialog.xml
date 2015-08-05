@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Video Library Dialog"
+    height="500"
+    title="Video Library Dialog"
+    width="1000"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Video(s)">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <caption
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Caption"
+                        name="./caption"
+                        xtype="textarea"/>
+                    <videoLibrary
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        limit="50"
+                        name="./groups"
+                        title="Group"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            limit="100"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <group
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="{Boolean}false"
+                                    dName="group"
+                                    fieldLabel="Group Name"
+                                    width="465"
+                                    xtype="textfield"/>
+                                <cellValues
+                                    jcr:primaryType="cq:Widget"
+                                    dName="videos"
+                                    hideLabel="false"
+                                    limit="50"
+                                    title="Videos"
+                                    xtype="multifield">
+                                    <fieldConfig
+                                        jcr:primaryType="cq:Widget"
+                                        border="true"
+                                        hideLabel="true"
+                                        layout="form"
+                                        limit="50"
+                                        padding="10px"
+                                        width="1000"
+                                        xtype="multi-field-panel">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <cellValue
+                                                jcr:primaryType="cq:Widget"
+                                                dName="path"
+                                                fieldLabel="Path"
+                                                rootPath="/content/calix"
+                                                width="350"
+                                                xtype="pathfield"/>
+                                        </items>
+                                    </fieldConfig>
+                                </cellValues>
+                            </items>
+                        </fieldConfig>
+                    </videoLibrary>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

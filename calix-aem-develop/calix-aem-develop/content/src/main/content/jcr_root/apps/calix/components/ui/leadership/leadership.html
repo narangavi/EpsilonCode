@@ -1,0 +1,55 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+	[Edit the leadership component here]
+</div>
+
+<div class="leadershipPage" data-sly-use.leadership="com.calix.components.Leadership">
+	<div class="container" data-sly-test="${leadership.leadershipTabs}">
+		<div class="subNav">
+			<ul class="categories">
+				<div data-sly-list.leadershipTab="${leadership.leadershipTabs}" data-sly-unwrap>
+					<li><a class='${leadershipTabList.first ? "active" : ""} ${leadershipTab.name}DesktopNav' href="javascript:void(0)">${leadershipTab.label}</a></li>
+				</div>
+			</ul>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div data-sly-list.leadershipTab="${leadership.leadershipTabs}" data-sly-unwrap>
+					<h2 class="${leadershipTab.name}Desc">${leadershipTab.description}</h2>
+				</div>
+				<div data-sly-list.leadershipTab="${leadership.leadershipTabs}" data-sly-unwrap>
+					<div class="${leadershipTab.name}Header">
+						<div>
+							${leadershipTab.label}<i class="glyphicon glyphicon-menu-up"></i>
+						</div>
+					</div>
+					<ul class='gridder ${leadershipTab.name == "executive" ? "executiveTeam": leadershipTab.name}'>
+						<div data-sly-list.profile="${leadershipTab.profiles}" data-sly-unwrap>
+							<li class="gridder-list" data-griddercontent="#gridder-content-${leadershipTab.name}-${profileList.count}">
+								<div class="employees col-xs-12 col-sm-12 col-md-12">
+									<img src="${profile.image}" width="190" height="189"
+										alt="bio" />
+									<h3>${profile.firstName} ${profile.lastName}</h3>
+									<p>
+										${profile.job}<br />
+										${profile.department}
+									</p>
+								</div>
+							</li>
+						</div>
+					</ul>
+		
+					<div data-sly-list.profile="${leadershipTab.profiles}" data-sly-unwrap>
+						<div id="gridder-content-${leadershipTab.name}-${profileList.count}" class="gridder-content">
+							<div class="expandArrow"></div>
+							<div>
+								<h2>${profile.firstName} ${profile.lastName}</h2>
+								<p>${profile.description}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

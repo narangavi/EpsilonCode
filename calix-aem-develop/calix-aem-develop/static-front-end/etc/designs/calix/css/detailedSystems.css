@@ -1,0 +1,140 @@
+/****************************************
+  detailed systems
+****************************************/
+.detailedSystemsWrap {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.detailedSystemsWrap h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.detailedSystemsWrap .detailedMediaContainer {
+  float: left;
+  display: inline;
+  width: 50%;
+}
+.detailedSystemsWrap .detailedListContainer {
+  float: left;
+  display: inline;
+  width: 50%;
+}
+.detailedSystemsWrap .detailedDescription {
+  padding: 15px 0px 15px 0;
+  max-width: 828px;
+  margin-right: -320px;
+}
+.detailedSystemsWrap .detailedDescription p {
+  font-size: 16px;
+  padding: 15px 0;
+}
+.detailedSystemsWrap .grnBtn {
+  margin: 15px 28px 5px 0;
+}
+.detailedSystemsWrap a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.detailedSystemsWrap a.grnLink:hover {
+  color: #167858;
+}
+.detailedSystemsWrap .detailedMediaContainer img {
+  max-width: 476px;
+}
+.detailedSystemsWrap .detailedListContainer h3,
+.detailedSystemsWrap .detailedListContainer h4,
+.detailedSystemsWrap .detailedListContainer h5 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+.detailedSystemsWrap .detailedListContainer ul {
+  padding-left: 0px;
+  float: left;
+  margin-bottom: 0px;
+  display: inline;
+}
+.detailedSystemsWrap .detailedListContainer ul li {
+  display: block;
+  height: auto;
+  list-style-type: none;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.detailedSystemsWrap .detailedListContainer ul:nth-child(even) {
+  margin-right: 20px;
+}
+.detailedSystemsWrap .detailedListContainer ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #1d9e74;
+}
+.detailedSystemsWrap .detailedListContainer ul li a:hover,
+.detailedSystemsWrap .detailedListContainer ul li a:focus,
+.detailedSystemsWrap .detailedListContainer ul li a:active {
+  text-decoration: none;
+  outline: 0px;
+  color: #167858;
+}
+.detailedSystemsWrap .detailedListContainer ul li.grid-item {
+  width: 235px;
+}
+
+.chartCaption {
+  max-width: 750px;
+  padding: 0 0 0 10px;
+  color: #333;
+}
+.mobileChartCaption {
+  margin: 15px 0;
+  display: none;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .detailedSystemsWrap {
+    padding: 15px;
+  }
+  .detailedSystemsWrap .detailedMediaContainer {
+    float: none;
+    position: static;
+  }
+  .detailedSystemsWrap h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .detailedSystemsWrap .detailedListContainer h3,
+  .detailedSystemsWrap .detailedListContainer h4,
+  .detailedSystemsWrap .detailedListContainer h5 {
+    font-size: 21px;
+    margin-top: 15px;
+  }
+  .detailedSystemsWrap .detailedDescription {
+    padding: 15px 15px 15px 0;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+  .detailedSystemsWrap .detailedListContainer {
+    float: none;
+    margin-top: 25px;
+  }
+  .detailedSystemsWrap .detailedListContainer ul li {
+    width: 100%;
+  }
+  .detailedSystemsWrap .detailedListContainer ul li.grid-item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Press News Hub"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Press News Hub"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <viewAll
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display All tab"
+                    name="./viewAll"
+                    type="checkbox"
+                    xtype="selection"/>
+                <viewPress
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Press Release tab"
+                    name="./viewPress"
+                    type="checkbox"
+                    xtype="selection"/>
+                <viewNews
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display In the News tab"
+                    name="./viewNews"
+                    type="checkbox"
+                    xtype="selection"/>
+                <limitItems
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Long}20"
+                    fieldDescription="Maximum number of items displayed"
+                    fieldLabel="Limit Items"
+                    name="./limitItems"
+                    xtype="numberfield"/>
+                <limitCharHead
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Long}50"
+                    fieldDescription="Maximum number of character displayed in headline"
+                    fieldLabel="Limit Character for Headline"
+                    name="./limitCharHead"
+                    xtype="numberfield"/>
+                <limitCharSub
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Long}150"
+                    fieldDescription="Maximum number of character displayed in subhead"
+                    fieldLabel="Limit Character for Subhead"
+                    name="./limitCharSub"
+                    xtype="numberfield"/>
+                <pressPath
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}false"
+                    collapsible="{Boolean}false"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Press path"
+                            name="./pressPath"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <pressTagName
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Press tab name"
+                            name="./pressTagName"
+                            xtype="textfield"/>
+                    </items>
+                </pressPath>
+                <newsPath
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}false"
+                    collapsible="{Boolean}false"
+                    title="In the News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="News path"
+                            name="./newsPath"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <newsTagName
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="News tab name"
+                            name="./newsTagName"
+                            xtype="textfield"/>
+                    </items>
+                </newsPath>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

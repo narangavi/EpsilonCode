@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-17T18:25:57.492-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-24T18:18:41.210-04:00"
+        cq:lastReplicatedBy="scott.r.nelson"
+        cq:lastReplicationAction="Deactivate"
+        cq:template="/apps/calix/templates/fullwidth"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Mobile Backhaul"
+        sling:resourceType="calix/components/page/fullwidth"/>
+</jcr:root>

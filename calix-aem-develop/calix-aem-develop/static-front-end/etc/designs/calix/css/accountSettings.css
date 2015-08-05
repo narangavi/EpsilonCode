@@ -1,0 +1,530 @@
+/****************************************
+    account settings
+****************************************/
+
+.accountSettings {
+  position: relative;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 40px 0 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* BEGIN CHECKBOX IMAGES */
+
+.accountSettings input[type=checkbox] {
+  display:none;
+}
+ 
+.accountSettings input[type=checkbox] + label
+{
+  background: url('../img/checkboxIcon.png') no-repeat;
+  height: 20px;
+  width: 20px;
+  display:inline-block;
+  padding: 0;
+  vertical-align: top;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.accountSettings input[type=checkbox]:checked + label
+{
+  background: url('../img/checkboxCheckedIcon.png') no-repeat;
+  height: 20px;
+  width: 21px;
+  display:inline-block;
+  padding: 0;
+}
+
+.accountSettings h3.accntHdr .envelopeIcon {
+  background: url('../img/envelopeIcon.png') no-repeat;
+  height: 24px;
+  width: 26px;
+}
+
+.accountSettings h3.accntHdr .flagIcon {
+  background: url('../img/flagIcon.png') no-repeat;
+  height: 24px;
+  width: 26px;
+}
+
+/* END CHECKBOX IMAGES */
+
+
+.accountSettings h3.accntHdr {
+  position: relative;
+  margin-top: 40px;
+  font-size: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #999;
+}
+
+.accountSettings h3.accntHdr {
+  position: relative;
+  margin-top: 40px;
+  font-size: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #999;
+}
+
+.accountSettings h3.accntHdr i {
+  position: absolute;
+  right: 0;
+  color: #49a0db;
+}
+
+.accountSettings .accntResults {
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.accountSettings .accntResults:last-child {
+  border-bottom: none;
+}
+.accountSettings .accntResults .accntDescription {
+  float: left;
+}
+.accountSettings .accntResults .accntDescription span {
+  display: block;
+}
+.accountSettings .accntResults .accntDescription span.accntText {
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #333;
+  width: 100%;
+  max-width: 960px;
+}
+.accountSettings .accntResults .accntIconLinks {
+  float: right;
+}
+.accountSettings .accntResults .accntIconLinks a,
+.accountSettings .accntResults .accntIconLinks span {
+  float: right;
+  margin-left: 14px;
+  line-height: 2.5;
+}
+.accountSettings .accntResults .accntIconLinks input {
+  font-size: 30px;
+  color: #49a0db;
+  background-color: #49a0db;
+}
+.accountSettings .accntResults .accntIconLinks i.grn,
+.accountSettings .userInfo a {
+  color: #1d9e74;
+}
+.accountSettings .accntResults .accntIconLinks i.blu {
+  color: #49a0db;
+}
+.accountSettings .accntResults .accntIconLinks a {
+  color: #1d9e74;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.accountSettings .accntResults .accntIconLinks a:hover,
+.accountSettings .accntResults .accntIconLinks a:active,
+.accountSettings .accntResults .accntIconLinks a:focus {
+  color: #167858;
+}
+.accountSettings .accntResults .saved {
+  position: absolute;
+  right: 35px;
+  background: #fff;
+  margin: 0;
+  padding: 0 0 0 15px;
+  color: #49a0db;
+  font-size: 16px;
+  font-weight: 400;
+  display: none;
+}
+.accountSettings .accountInformation {
+  position: relative;
+  padding: 24px 0 0 0;
+}
+.accountSettings .accountInformationEdit {
+  position: relative;
+  padding: 24px 0 50px 0;
+  clear: all;
+  display: none;
+}
+.accountSettings .accountInformationEdit label,
+.accountSettings .accountInformationEdit input {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+}
+.accountSettings .editAccountInfo {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+}
+
+.accountSettings .changePassword {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+}
+
+.accountSettings .grnBtn {
+  font-size: 13px;
+  font-weight: 300;
+  width: 148px;
+  padding: 0;
+  text-align: center;
+}
+
+.accountSettings .userInfo {
+  position: relative;
+}
+
+.accountSettings img.accountSettingsLogo {
+  margin: 30px 0 0 0;
+  width: 311px;
+  height: 100%;
+}
+.accountSettings .linkContent {
+  margin: 0;
+  padding: 0;
+}
+.accountSettings .jumpToPage {
+  position: absolute;
+  right: 2px;
+  top: 20px;
+}
+.accountSettings .jumpToPage button {
+  width: 195px;
+  text-align: left;
+}
+.accountSettings .jumpToPage .caret {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.accountSettings h2 {
+  font-size: 56px;
+  font-weight: 300;
+}
+.accountSettings p {
+  font-size: 21px;
+}
+.accountSettings p.username {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 25px 0 0 0;
+  margin: 0;
+}
+.accountSettings p.email {
+  font-size: 21px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.accountSettings p.info {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.accountSettings .outlineBtn {
+  width: 148px;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+.accountSettings .grnBtn {
+  width: 148px;
+  text-align: center;
+  margin: 15px 15px 0 0;
+}
+
+.accountSettings .required {
+  color: #ea8626;
+  clear: both;
+}
+.accountSettings span.required {
+  padding:0 0 0 1px;
+}
+.accountSettings p.required {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.accountSettings .accountInformationEdit .editName,
+.accountSettings .accountInformationEdit .editAddress,
+.accountSettings .accountInformationEdit .editCityStateZip {
+  width: 100%;
+  clear: all;
+}
+
+.accountSettings .accountInformationEdit .editName div,
+.accountSettings .accountInformationEdit .editAddress div {
+  float: left;
+  width: 50%;
+  clear: all;
+  padding: 0 10px 20px 0;
+}
+
+.accountSettings .accountInformationEdit .editCityStateZip div {
+  float: left;
+  width: 100%;
+  padding: 0 10px 20px 0;
+}
+
+
+.accountSettings .accountInformationEdit .editCityStateZip .dropdown {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.accountSettings table {
+  border: 0px;
+}
+
+.accountSettings td {
+  border: 0px;
+  padding: 10px 10px 10px 0;
+}
+
+.accountSettings .accountInformationEdit div.city {
+  float: left;
+  width: 48.5%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.state {
+  float: left;
+  width: 24%;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit .editCityStateZip .btn {
+  padding: 6px 47px 6px 15px;
+  text-align: left;
+}
+
+.accountSettings .accountInformationEdit div.zip {
+  float: left;
+  width: 20.5%;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.phone {
+  float: left;
+  width: 37.5%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.ext {
+  float: left;
+  width: 9%;
+  margin: 0 10px 20px 10px;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.country {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.fax {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .component {
+    position: relative;
+    clear: both;
+    padding: 0 0 40px 0;
+  }
+
+@media all and (max-width: 768px) {
+
+.accountSettings .accntResults .saved {
+  top: 18px;
+}
+
+.accountSettings .accountInformationEdit .editName div,
+.accountSettings .accountInformationEdit .editAddress div,
+.accountSettings .accountInformationEdit .editCityStateZip div {
+  float: none;
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.accountSettings .accountInformationEdit .editCityStateZip {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.accountSettings .accountInformationEdit div.city {
+  float: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.accountSettings .accountInformationEdit div.state {
+  float: left;
+  width: 55%;
+  margin: 0 10px 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit .editCityStateZip .btn {
+  width: 100%;
+  padding: 6px 0 6px 15px;
+  text-align: left;
+}
+
+.accountSettings .accountInformationEdit div.zip {
+  float: left;
+  width: 42%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.phone {
+  float: left;
+  width: 69.5%;
+  margin: 0 10px 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.ext {
+  float: left;
+  width: 24%;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.country {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit div.fax {
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.accountSettings .accountInformationEdit {
+  padding: 0 0 15px 0;
+}
+
+
+  .accountSettings .editAccountInfo {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+  }
+
+  .accountSettings .changePassword {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+  }
+
+  .accountSettings .editAccountInfo .grnBtn,
+  .accountSettings .changePassword .grnBtn {
+    font-size: 13px;
+    font-weight: 300;
+    width: 253px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .accountSettings input[type=checkbox] + label
+  {
+    top: 20px;
+  }
+
+  .accountSettings .jumpToPage {
+    display: none;
+  }
+
+  .accountSettings .accntResults .accntDescription span.accntText {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .accountSettings .changePassword,
+  .accountSettings .editAccountInfo {
+    position: relative;
+    text-align: center;
+    margin: -25px auto 40px auto;
+  }
+  .accountSettings .saveCancel {
+    position: relative;
+    text-align: center;
+    margin: 35px auto 50px auto;
+  }
+  .accountSettings .component {
+    position: relative;
+    clear: both;
+    padding: 0 0 50px 0;
+  }
+  .accountSettings .outlineBtn {
+    width: 50%;
+    min-width: 253px;
+    margin: 15px 0 0 0;
+  }
+  .accountSettings .grnBtn {
+    width: 50%;
+    min-width: 253px;
+    margin: 15px 0 0 0;
+  }
+  .accountSettings .userInfo {
+    padding: 0 0 10px 0;
+    margin: 0;
+  }
+  .accountSettings .userInfo .email {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .accountSettings {
+    margin: 0px;
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .accountSettings p {
+    margin: 0px;
+    padding: 0 15px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .accountSettings h2 {
+    font-size: 46px;
+    font-weight: 300;
+  }
+
+  .accountSettings h3 {
+    font-size: 13px;
+  }
+  .accountSettings .accountInformation {
+    padding: 0 0 15px 0;
+  }
+}

@@ -1,0 +1,143 @@
+<template data-sly-template.videolightbox="${@ modalId, videoGroups}">
+<!-- Modal -->
+<div class="videoModal modal fade vidGall" id="${modalId}Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="closeMoWin">Close</span><span aria-hidden="true">&times;</span></button>
+			<div class="modal-body">
+
+                <!-- http://wistia.com/doc/construct-an-embed-code -->
+
+                <div class="videoGalleryWrap clearfix">
+
+					<div class="contentArea">
+                    <!-- main slider carousel -->
+						<div id="vidGallery" class="featureImage">
+							<div id="slider">
+								<div id="carousel-bounding-box">
+									<div class=" myCarousel carousel">
+										<!-- main slider carousel items -->
+										<div class="carousel-inner">
+											<div data-sly-list.group="${videoGroups}" data-sly-unwrap>
+												<h4 class="mobile">${group.title}</h4>
+												<div data-sly-list.video="${group.videos}" data-sly-unwrap>
+													<div class="${groupList.first && videoList.first ? 'active item' : ' item'}" data-slide-number="${video.id}">
+														<div id="wistia_${modalId}_${video.wistiaId}_${video.id}">
+															This video requires javascript to be enabled.
+														</div>
+														<div class="videoDescription">
+															<h4>${video.title}</h4>
+															<p>${video.description}</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- thumb navigation carousel -->
+						<div data-sly-test="${videoGroups}" class="cq-dd-images" data-sly-unwrap>
+							<div data-sly-list.group="${videoGroups}" data-sly-unwrap>
+								<div class="videoThumbs" id="slider-thumbs">
+									<h4>${group.title}</h4>
+									<!-- thumb navigation carousel items -->
+									<ul class="list-thumb clearfix">
+										<div data-sly-list.video="${group.videos}" data-sly-unwrap>
+											<li class="clearfix">
+												<a id="carousel-selector-${video.id}" class="${groupList.first && videoList.first ? ' selected playThumb' : ' playThumb'}">
+													<img src="${video.imageLink}?image_crop_resized=1280x720&image_play_button=true&image_play_button_color=1d9e74" class="img-responsive">
+												</a>
+												<h5>${video.title}</h5>
+												<p>${video.description}</p>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end content -->
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="mobileVideoDisplay"></div>
+	<script>
+    
+		$(document).ready(function() {
+		  
+		  $('#${modalId @ context="scriptString"}Modal').on('hidden.bs.modal', function () {
+			$('.myCarousel').carousel(0);
+		  });
+
+		});
+
+	</script>
+	<script>
+		wistiaEmbeds.onFind(function(video) {
+		  video.videoFoam(true);
+		});
+	</script>
+	<div data-sly-list.group="${videoGroups}" data-sly-unwrap>
+		<div data-sly-list.video="${group.videos}" data-sly-unwrap>
+			<script>
+				$(document).ready(function() {
+					//set embeds via api
+					wistiaEmbed = Wistia.embed("${video.wistiaId @ context='scriptString'}", {
+							playerColor: "1000000",
+							fullscreenButton: false,
+							container: "wistia_${modalId @ context='scriptString'}_${video.wistiaId @ context='scriptString'}_${video.id @ context='scriptString'}"
+						});
+				});
+			</script>
+		 </div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			// grabs all other embeds on the page and pauses them
+			var i;
+			function pauseAllOthers(thisId) {
+			  for (i = 0; i < wistiaEmbeds.length; i++) {
+				if (wistiaEmbeds[i].hashedId() != thisId) {
+				  wistiaEmbeds[i].pause();
+				}
+			  }
+			}
+
+			// binds pauseAllOthers() to the play() event for every embed
+			wistiaEmbeds.onFind(function(video) {
+			  video.bind('play', function() {
+				pauseAllOthers(this.hashedId());
+			  });
+			});
+
+			// script to handle scroll functionality
+			$.fn.scrollTo = function( target, options, callback ){
+			  if(typeof options == 'function' && arguments.length == 2){ callback = options; options = target; }
+			  var settings = $.extend({
+				scrollTarget  : target,
+				offsetTop     : 50,
+				duration      : 500,
+				easing        : 'swing'
+			  }, options);
+			  return this.each(function(){
+				var scrollPane = $(this);
+				var scrollTarget = (typeof settings.scrollTarget == "number") ? settings.scrollTarget : $(settings.scrollTarget);
+				var scrollY = (typeof scrollTarget == "number") ? scrollTarget : scrollTarget.offset().top + scrollPane.scrollTop() - parseInt(settings.offsetTop);
+				scrollPane.animate({scrollTop : scrollY }, parseInt(settings.duration), settings.easing, function(){
+				  if (typeof callback == 'function') { callback.call(this); }
+				});
+			  });
+			}
+
+			//scroll if multiple rows of thumbnails
+			$('.playThumb').click(function() {
+				$(".videoGalleryWrap").scrollTo(0);
+			});
+
+		  });
+	</script>
+</div>
+</template>

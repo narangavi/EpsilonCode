@@ -1,0 +1,70 @@
+.newsAndSocialSpotlight .slick-slide img {
+    height: 100% !important;
+}
+.newsAndSocialSpotlight .videoPreview img
+ {
+    height: 100% !important;
+ }
+.placeholder
+ {
+    color: #c9c9c9;
+ }
+.navbar-search
+{
+    top: 30%;
+}
+ .navbar-brand {
+    top:-2%;
+ }
+
+ .navbar-subBrand, .navbar-login, .navbar-subBrand.contact {
+    top:40%;
+ }
+
+.navbar-search i {
+    bottom: 0px !important;
+    position: relative !important;
+}
+
+ .col-md-8 .largePar .imageWithTextBelowThreeItems .container .row div {
+    width: 300px !important;
+ }
+
+.col-md-8 .largePar .tabBlock .imageWithTextBelowThreeItems .container .row .col-xs-12 {
+width: 280px !important;
+}
+
+ .heroPar .col-md-8 .largePar .imageWithTextBelowThreeItems .container .row div:last-child {
+    clear: both;
+ }
+
+.col-md-8 .largePar .imageWithTextBelowThreeItems .container .row div {
+    width: 300px !important;
+    margin: 0px;
+ }
+
+.col-md-8 .largePar .imageWithTextBelowThreeItems .container .row .col-md-4:last-child {
+    clear: both;
+ }
+
+.imageWithTextBelowTwoItems .container .row img.img-items-column {
+    height: 100% !important;
+}
+
+.imageWithTextBelowThreeItems .container .row img.img-items-column {
+    height: 100% !important;
+}
+
+
+.heroPar .parbase .imageWithTextBelowThreeItems .container .row .col-xs-12 {
+	width: 330px;
+}
+
+@media all and (max-width: 768px) {
+  .imageWithTextBelowThreeItems .container .row div {
+       width: 100% !important;
+  }
+  .navbar-brand {
+      top:12% !important;
+  }
+}

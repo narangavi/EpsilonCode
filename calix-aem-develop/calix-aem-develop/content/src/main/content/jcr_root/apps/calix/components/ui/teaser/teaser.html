@@ -1,0 +1,45 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit Teaser component here]</div>
+
+<div data-sly-use.teaser="com.calix.components.Teaser" data-sly-unwrap>
+
+    <div class="fullWidthTeaser ${teaser.teaserItem.cssClass}">
+        <div class="container">
+            <div data-sly-test="${teaser.teaserItem.teaserTitle}" data-sly-unwrap>
+                <h1>${teaser.teaserItem.teaserTitle}</h1>
+            </div>
+
+            <div class="row">
+
+                <div data-sly-test="${teaser.teaserItem.primaryTextArea}" data-sly-unwrap>
+                    <div class="col-md-3 col-sm-3 col-xs-3 hidden-mobile">
+                        <img class="featured-image img-responsive" src="${teaser.teaserItem.primaryTextArea.imagePath}" />
+                    </div>
+                    <div class="col-md-3 col-sm-10 col-xs-12">
+                        <h3>${teaser.teaserItem.primaryTextArea.headLine}</h3>
+                        <p>${teaser.teaserItem.primaryTextArea.bodyText @ context='html'}</p>
+
+                        <div data-sly-test="${teaser.teaserItem.primaryTextArea.primaryCta.title}" data-sly-unwrap>
+                            <a class="grnLink" target="${teaser.teaserItem.primaryTextArea.primaryCta.target}" href="${teaser.teaserItem.primaryTextArea.primaryCta.link}"><span>${teaser.teaserItem.primaryTextArea.primaryCta.title}</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-sly-test="${teaser.teaserItem.secondaryTextArea}" data-sly-unwrap>
+                    <div class="col-md-3 col-sm-3 col-xs-3 hidden-mobile">
+                        <img class="featured-image img-responsive" src="${teaser.teaserItem.secondaryTextArea.imagePath}" />
+                    </div>
+                    <div class="col-md-3 col-sm-10 col-xs-12">
+                        <h3>${teaser.teaserItem.secondaryTextArea.headLine}</h3>
+                        <p>${teaser.teaserItem.secondaryTextArea.bodyText @ context='html'}</p>
+                        <div data-sly-test="${teaser.teaserItem.secondaryTextArea.primaryCta.title}" data-sly-unwrap>
+                            <a class="grnLink" target="${teaser.teaserItem.secondaryTextArea.primaryCta.target}" href="${teaser.teaserItem.secondaryTextArea.primaryCta.link}"><span>${teaser.teaserItem.secondaryTextArea.primaryCta.title}</span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

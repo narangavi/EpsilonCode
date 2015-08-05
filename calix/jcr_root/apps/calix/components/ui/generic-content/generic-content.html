@@ -1,0 +1,26 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+    [Edit the generic component layout here]
+</div>
+
+<!-- All content goes here -->
+<div data-sly-use.generic="com.calix.components.GenericContent" data-sly-unwrap>
+    <div class="genericContent ${generic.curveStyle}">
+        <div class="container ${generic.containerStyle}">
+            <h2>${generic.compTitle}</h2>
+            <div class="row">
+                <div data-sly-test.display="${generic.displayOneColumn}" class="cq-dd-images" data-sly-unwrap>
+                    <div data-sly-use.library="text-only.html" data-sly-call="${library.textonly  @genericItem=generic.item1}" data-sly-unwrap></div>
+                </div>
+                <div data-sly-test="${!display}" class="cq-dd-images" data-sly-unwrap>                       
+                    <div data-sly-use.library="image-text.html" data-sly-call="${library.content  @generic=generic.item1, index=1}" data-sly-unwrap></div>
+                    <div data-sly-use.library="image-text.html" data-sly-call="${library.content  @generic=generic.item2, index=2}" data-sly-unwrap></div>
+                </div>
+            </div><!-- End Row -->
+        </div><!-- End Container -->
+    </div><!-- End genericContent -->
+</div>
+
+
+          
+  
+

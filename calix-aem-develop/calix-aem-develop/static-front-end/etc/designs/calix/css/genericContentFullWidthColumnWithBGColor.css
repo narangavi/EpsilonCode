@@ -1,0 +1,133 @@
+/****************************************
+  generic content full width with background color components
+****************************************/
+
+.genericContentFullWidthColumnWithBGColor {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: auto;
+}
+.genericContentFullWidthColumnWithBGColor h3,
+.genericContentFullWidthColumnWithBGColor h2 {
+  margin: 10px 0;
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.genericContentFullWidthColumnWithBGColor p {
+  font-size: 16px;
+  color: #333;
+}
+.genericContentFullWidthColumnWithBGColor ul {
+  padding: 20px 20px 0 20px;
+  text-align: left;
+}
+.genericContentFullWidthColumnWithBGColor .grnBtn {
+  margin: 15px 0 5px 0;
+}
+.genericContentFullWidthColumnWithBGColor .grnLink {
+  margin: 25px 0 5px 0;
+}
+.genericContentFullWidthColumnWithBGColor a.grnLink:hover,
+.genericContentFullWidthColumnWithBGColor a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.genericContentFullWidthColumnWithBGColor .heroFullCurvedContainer {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 75px 0;
+  background: #efefef;
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+}
+
+@media all and (min-width: 320px) {
+  .genericContentFullWidthColumnWithBGColor .container {
+    width: 100%;
+    padding: 75px 15px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .genericContentFullWidthColumnWithBGColor h3 {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor p {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor ul {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthColumnWithBGColor .grnLink, .genericContentFullWidthColumnWithBGColor .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 15px 20px 5px 0;
+  }
+  .genericContentFullWidthColumnWithBGColor .grnLink {
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .genericContentFullWidthColumnWithBGColor .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor div {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor p {
+    width: 0 15px;
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor a {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthColumnWithBGColor .grnLink, .genericContentFullWidthColumnWithBGColor .grnBtn {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithBGColor .fullContainer {
+    width: 100%;
+  }
+  .genericContentFullWidthColumnWithBGColor .heroFullCurvedContainer {
+    position: relative;
+    max-width: 1440px;
+    min-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 75px 0;
+    background: #efefef;
+    background-position: center;
+    border-top-left-radius: 50% 76px;
+    border-top-right-radius: 50% 76px;
+    border-bottom-left-radius: 50% 76px;
+    border-bottom-right-radius: 50% 76px;
+  }
+  .genericContentFullWidthColumnWithBGColor .heroFullCurvedContainer .row {
+    width: 1024px;
+    text-align: center;
+    margin: 0px auto;
+  }
+}

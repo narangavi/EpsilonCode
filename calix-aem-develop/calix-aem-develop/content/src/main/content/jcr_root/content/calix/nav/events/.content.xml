@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-18T22:57:50.773-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-17T10:18:39.145-04:00"
+        cq:lastReplicatedBy="vijay.kesavan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/navigation"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="News and Events"
+        jcr:uuid="989c0800-2bad-4c35-b27d-76227f2cd22a"
+        sling:resourceType="calix/components/page/navigation">
+        <flyout-nav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"
+            description="News and events details goes here.. "
+            headerImage="/content/dam/geometrixx-gov/resources.jpg"
+            heading="News and Events">
+            <col-par1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:54:58.092-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:54:58.092-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="News and Events Overview"
+                    listItems="[{&quot;listItem&quot;:&quot;News and Media Hub&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/news-and-events&quot;},{&quot;listItem&quot;:&quot;Events Hub&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/events&quot;},{&quot;listItem&quot;:&quot;Calix Blog&quot;\,&quot;listItemLink&quot;:&quot;http://community.calix.com/t5/Calix-Community-Blog/bg-p/CalixBlog&quot;}]"/>
+            </col-par1>
+            <col-par2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:54:59.846-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:54:59.846-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par2>
+            <col-par3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:55:01.799-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:55:01.799-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par3>
+            <col-par4
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:55:03.908-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:55:03.908-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Signature Events"
+                    listItems="[{&quot;listItem&quot;:&quot;User Group Conference&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/events&quot;},{&quot;listItem&quot;:&quot;Partner Summit&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/events&quot;},{&quot;listItem&quot;:&quot;Roadshow&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/events&quot;}]"/>
+            </col-par4>
+        </flyout-nav>
+        <image
+            jcr:lastModified="{Date}2015-06-18T22:54:04.977-04:00"
+            jcr:lastModifiedBy="vijay.kesavan"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

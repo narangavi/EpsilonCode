@@ -1,0 +1,3 @@
+#base=js
+stacktable.js
+charttable.js

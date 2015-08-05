@@ -1,0 +1,112 @@
+/****************************************
+  generic content full width component
+****************************************/
+
+.genericContentFullWidthTextOnly {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: auto;
+}
+
+.genericContentFullWidthTextOnly h1 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+  padding: 25px 0 5px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #999;
+}
+.genericContentFullWidthTextOnly h3,
+.genericContentFullWidthTextOnly h2 {
+  margin: 10px 0;
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.genericContentFullWidthTextOnly ul {
+    text-align: left;
+    padding: 15px 0 0 15px;
+  }
+.genericContentFullWidthTextOnly p {
+  font-size: 16px;
+  color: #333;
+  width: 820px;
+}
+.genericContentFullWidthTextOnly .grnBtn {
+  margin: 15px 0 5px 0;
+}
+.genericContentFullWidthTextOnly .grnLink {
+  margin: 25px 0 5px 0;
+}
+.genericContentFullWidthTextOnly a.grnLink:hover,
+.genericContentFullWidthTextOnly a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 320px) {
+  .genericContentFullWidthTextOnly .container {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .genericContentFullWidthTextOnly h3 {
+    text-align: left;
+  }
+  .genericContentFullWidthTextOnly p {
+    text-align: left;
+    width: 100%;
+  }
+  .genericContentFullWidthTextOnly a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthTextOnly .grnLink, .genericContentFullWidthTextOnly .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 15px 20px 5px 0;
+  }
+  .genericContentFullWidthTextOnly .grnLink {
+    margin: 20px auto 0 auto;
+  }
+
+}
+
+@media all and (min-width: 769px) {
+  .genericContentFullWidthTextOnly .container {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+  }
+  .genericContentFullWidthTextOnly div {
+    text-align: left;
+  }
+  .genericContentFullWidthTextOnly p {
+    width: 0 15px;
+    text-align: left;
+    width: 820px;
+  }
+  .genericContentFullWidthTextOnly a {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthTextOnly .grnLink, .genericContentFullWidthTextOnly .grnBtn {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+  }
+}

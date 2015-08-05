@@ -1,0 +1,210 @@
+/****************************************
+  news carousel
+****************************************/
+
+/* Slick Slider Carousel 
+http://kenwheeler.github.io/slick/
+*/
+
+.newsCarouselTwoVids .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.newsCarouselTwoVids .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.newsCarouselTwoVids .slick-list:focus {
+  outline: none;
+}
+
+.newsCarouselTwoVids .slick-loading .slick-list {
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+.newsCarouselTwoVids .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.newsCarouselTwoVids .slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.newsCarouselTwoVids .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.newsCarouselTwoVids .slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.newsCarouselTwoVids .slick-track:after {
+  clear: both;
+}
+
+.newsCarouselTwoVids .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.newsCarouselTwoVids .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .newsCarouselTwoVids .slick-slide {
+  float: right;
+}
+
+.newsCarouselTwoVids .slick-slide img {
+  display: block;
+}
+
+.newsCarouselTwoVids .slick-slide.slick-loading img {
+  display: none;
+}
+
+.newsCarouselTwoVids .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.newsCarouselTwoVids .slick-initialized .slick-slide {
+  display: block;
+}
+
+.newsCarouselTwoVids .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.newsCarouselTwoVids .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Arrows */
+.newsCarouselTwoVids .slick-prev,
+.newsCarouselTwoVids .slick-next {
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 60px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Dots */
+
+.newsCarouselTwoVids ul.slick-dots {
+  display: none;
+}
+
+.newsCarouselTwoVids .slick-slider {
+  margin-bottom: 15px;
+}
+
+.newsCarouselTwoVids .slider-news-loop {
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.newsCarouselTwoVids .slider-news-loop .event {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.newsCarouselTwoVids .slick-next {
+  background: url('../img/carouselNextArw.png') no-repeat 100% 0;
+  right: 0;
+  width: 45px;
+  height: 50px;
+}
+
+.newsCarouselTwoVids .slick-prev {
+  left: 0;
+  background: url('../img/carouselPrevArw.png') no-repeat 0 0;
+  width: 45px;
+  height: 50px;
+}
+
+.newsCarouselTwoVids {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.newsCarouselTwoVids h3,
+.newsCarouselTwoVids h2 {
+  font-size: 20.84px;
+  color: #333;
+  font-weight: 400;
+}
+.newsCarouselTwoVids p {
+  font-size: 15.88px;
+  letter-spacing: 0;
+  color: #333;
+  padding: 0 80px;
+}
+
+@media all and (min-width: 320px) {
+  .newsCarouselTwoVids p {
+    padding: 0 60px;
+  }
+
+  .newsCarouselTwoVids .slider-news-loop .event {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .newsCarouselTwoVids p {
+    font-size: 15.88px;
+    padding: 0 40px;
+  }
+  .newsCarouselTwoVids .slider-news-loop .event {
+    padding: 0 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+    .newsCarouselTwoVids .slider-news-loop .event {
+      width: 33.33%;
+      padding: 0 80px;
+    }
+}

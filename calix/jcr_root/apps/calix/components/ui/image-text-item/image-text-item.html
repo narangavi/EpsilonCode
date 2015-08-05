@@ -1,0 +1,56 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit Image&Text item (both inline editing and dialog enabled)]
+</div>
+<div data-sly-include="/apps/calix/global.jsp" data-sly-unwrap></div>
+<div data-sly-use.ImageWithTextItem="${'com.calix.components.ImageWithTextItem'}" data-sly-unwrap>
+</div>
+<div data-sly-test="${ImageWithTextItem.itemType == 'video'}" class="cq-dd-images" data-sly-unwrap>
+	<div class="videoPreview main-around-popup-video">
+		<div class="videoThumbnail">
+			<a href="#" data-toggle="modal" data-target="#${ImageWithTextItem.modalId}Modal">
+				<div class="videoPlayIcon"></div>
+				<img src="${ImageWithTextItem.video.mainVideo.imageLink}" width="100%"/>
+				<div class="description">
+					<p>${ImageWithTextItem.video.mainVideo.description}</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div data-sly-test="${ImageWithTextItem.itemType == 'library'}" class="cq-dd-images" data-sly-unwrap>
+	<div class="videoPreview main-around-popup-video">
+		<div data-sly-resource="${'videoLibrary' @ resourceType='/apps/calix/components/ui/video-library'}" data-sly-unwrap></div>
+	</div>
+</div>
+<div data-sly-test="${ImageWithTextItem.itemType != 'video' && ImageWithTextItem.itemType != 'library'}" class="cq-dd-images" data-sly-unwrap>
+	<div data-sly-test="${ImageWithTextItem.image.fileNodePath != '' || ImageWithTextItem.image.fileReference != ''}" class="cq-dd-images" data-sly-unwrap>
+		<img width="100%" class="cq-dd-image img-items-column" src="${ImageWithTextItem.image.href}">
+	</div>
+</div>
+<div data-sly-test="${ImageWithTextItem.isTitleLink}" class="cq-dd-images" data-sly-unwrap>
+	<a class="headlineLink" href="${ImageWithTextItem.headlineLink}"><h3 class="headlineLink heading-below-video-3items">${ImageWithTextItem.title}</h3></a>
+</div>
+<div data-sly-test="${!ImageWithTextItem.isTitleLink}" class="cq-dd-images" data-sly-unwrap>
+	<h3 class="heading-below-video-3items">${ImageWithTextItem.title}</h3>
+</div>
+
+${ImageWithTextItem.description @ context='html'}
+
+<div data-sly-test="${ImageWithTextItem.cta1.display}" class="cq-dd-images" data-sly-unwrap>
+	<a class="${ImageWithTextItem.cta1.style} mr30" target="${ImageWithTextItem.cta1.target}" href="${ImageWithTextItem.cta1.link}"><span>${ImageWithTextItem.cta1.title}</span></a>
+</div>
+<div data-sly-test="${ImageWithTextItem.cta2.display}" class="cq-dd-images" data-sly-unwrap>
+	<a class="${ImageWithTextItem.cta2.style}" target="${ImageWithTextItem.cta2.target}" href="${ImageWithTextItem.cta2.link}"><span>${ImageWithTextItem.cta2.title}</span></a>
+</div>
+
+<div data-sly-test="${ImageWithTextItem.itemType == 'video'}" class="cq-dd-images" data-sly-unwrap>
+	<div data-sly-use.video="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${video.videolightbox @modalId=ImageWithTextItem.modalId, videoGroups=ImageWithTextItem.video.videoGroups}" data-sly-unwrap></div>
+	<script>
+		$(document).ready(function() {
+			$("#${ImageWithTextItem.modalId @ context='scriptString'}Modal").detach().appendTo('#contentWrapper');
+		});
+	</script>
+</div>
+
+
+

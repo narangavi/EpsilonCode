@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Slides Dialog"
+    width="700"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <curvedTop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Top Curves"
+                        name="./displayTopCurves"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <curvedBottom
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Bottom Curves"
+                        name="./displayBottomCurves"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <shortContainer
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Short Container"
+                        name="./shortContainer"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <slides
+                jcr:primaryType="cq:Panel"
+                title="Hero Slides">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <slides
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new slide"
+                        fieldLabel="Slides"
+                        labelStyle="font-weight:bold;"
+                        name="./listItems"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            limit="20"
+                            xtype="slidewidget"/>
+                    </slides>
+                </items>
+            </slides>
+        </items>
+    </items>
+</jcr:root>

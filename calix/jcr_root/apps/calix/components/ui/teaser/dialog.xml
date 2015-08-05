@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    cancelText="Cancel"
+    okText="Save"
+    title="Teaser Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <teaser
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                border="false"
+                height=""
+                title="Teaser"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <teasertitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldLabel="Section Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <displayCurveTop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Top Curve"
+                        name="./displaycurvetop"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <displayCurveBottom
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Bottom Curve"
+                        name="./displaycurvebottom"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <primaryTeaser
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Teaser 1"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image"
+                                name="./image1"
+                                rootPath="/content/dam"
+                                xtype="pathfield"/>
+                            <teaserTitle
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Teaser Title"
+                                name="./teaserTitle1"
+                                xtype="textfield"/>
+                            <teaserCopy
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Teaser Copy"
+                                name="./teaserCopy1"
+                                xtype="textarea"/>
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Teaser CTA label"
+                                name="./titleCTA1"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Teaser CTA url"
+                                name="./linkCTA1"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </items>
+                    </primaryTeaser>
+                    <secondTeaser
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="Teaser 2"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <image
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Image"
+                                name="./image2"
+                                rootPath="/content/dam"
+                                xtype="pathfield"/>
+                            <teaserTitle
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Teaser Title"
+                                name="./teaserTitle2"
+                                xtype="textfield"/>
+                            <teaserCopy
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="{Boolean}false"
+                                fieldLabel="Teaser Copy"
+                                name="./teaserCopy2"
+                                xtype="textarea"/>
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Teaser CTA label"
+                                name="./titleCTA2"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Teaser CTA url"
+                                name="./linkCTA2"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </items>
+                    </secondTeaser>
+                </items>
+            </teaser>
+        </items>
+    </items>
+</jcr:root>

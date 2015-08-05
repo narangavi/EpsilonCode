@@ -1,0 +1,18 @@
+<template data-sly-template.textonly="${@ genericItem}">
+    <!-- Begin Generic Content Full Width Text Only -->
+    <div data-sly-use.generic="com.calix.components.GenericContent" data-sly-unwrap>
+        <div class="col-xs-12 col-sm-12">
+          <h3>${genericItem.title}</h3>
+          <div data-sly-test="${genericItem.type == 'text'}" class="cq-dd-images" data-sly-unwrap>
+           	<div data-sly-resource="${'generic-content-item_1' @ resourceType='/apps/calix/components/ui/generic-content-item'}" data-sly-unwrap></div>
+          </div>
+          <div data-sly-test="${genericItem.cta1.display}" class="cq-dd-images" data-sly-unwrap>
+                <a class="${genericItem.cta1.style}" style="margin-right: 30px;" href="${genericItem.cta1.link}" target="${genericItem.cta1.target}"><span>${genericItem.cta1.title}</span></a>
+              </div>
+              <div data-sly-test="${genericItem.cta2.display}" class="cq-dd-images" data-sly-unwrap>
+                  <a class="${genericItem.cta2.style}" href="${genericItem.cta2.link}" target="${genericItem.cta2.target}"><span>${genericItem.cta2.title}</span></a>
+              </div> 
+         </div>   
+    </div>
+    <!-- End Generic Content Full Width Text Only -->
+</template>

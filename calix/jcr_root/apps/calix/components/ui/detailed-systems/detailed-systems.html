@@ -1,0 +1,30 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+    [Edit the Detailed Systems component here]
+</div>
+
+<div data-sly-use.generic="com.calix.components.GenericContent" data-sly-unwrap>
+    <div data-sly-use.detailedSystems="com.calix.components.DetailedSystems" data-sly-unwrap>
+        <div class="detailedSystemsWrap clearfix">
+            <h3>${detailedSystems.dsTitle}</h3>
+            <div class="detailedMediaContainer">
+                <div data-sly-test="${!display}" class="cq-dd-images" data-sly-unwrap>
+                    <div data-sly-use.library="video-image.html" data-sly-call="${library.content  @generic=generic.item1, index=1}" data-sly-unwrap></div>
+                    <div data-sly-use.library="video-image.html" data-sly-call="${library.content  @generic=generic.item2, index=2}" data-sly-unwrap></div>
+                </div>
+                <div class="detailedDescription">
+                    <div data-sly-resource="${'detailed-systems-richtext' @ resourceType='/apps/calix/components/ui/detailed-systems-richtext'}" style="align:left;"></div>
+                    <div data-sly-include="ctaButton.jsp"></div>
+                </div>
+            </div>
+            <div class="detailedListContainer clearfix">
+                <h4>${properties.linksHeading}</h4>
+                <ul class="gridView grid">
+                    <div data-sly-include="productLinks.jsp" data-sly-unwrap></div>
+                </ul>
+                <ul class="gridView grid">
+                    <div data-sly-include="productLinks2.jsp" data-sly-unwrap></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

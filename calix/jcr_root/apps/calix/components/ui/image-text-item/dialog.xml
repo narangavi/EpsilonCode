@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    manageTabs="function(tab,noSwitch){var tabs=['info','description','type','image','video','library'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=3;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <info
+            jcr:primaryType="cq:Widget"
+            title="Info"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldLabel="Headline"
+                    name="./title"
+                    xtype="textfield"/>
+                <headlineLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Headline Link"
+                    name="./headlineLink"
+                    rootPath="/content/calix"
+                    xtype="pathfield"/>
+                <ctaLink1
+                    jcr:primaryType="cq:Widget"
+                    autoWidth="{Boolean}true"
+                    collapsed="{Boolean}false"
+                    collapsible="{Boolean}false"
+                    title="CTA Link"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <titleCTA1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA1"
+                            name="./titleCTA1"
+                            xtype="textfield"/>
+                        <linkCTA1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA1"
+                            name="./linkCTA1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType1
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type1"
+                            name="./buttonType1"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType1>
+                    </items>
+                </ctaLink1>
+                <ctaLink2
+                    jcr:primaryType="cq:Widget"
+                    autoWidth="{Boolean}true"
+                    collapsed="{Boolean}false"
+                    collapsible="{Boolean}false"
+                    title="CTA Link2"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <titleCTA2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA2"
+                            name="./titleCTA2"
+                            xtype="textfield"/>
+                        <linkCTA2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA2"
+                            name="./linkCTA2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType2
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type2"
+                            name="./buttonType2"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType2>
+                    </items>
+                </ctaLink2>
+            </items>
+        </info>
+        <description
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <text
+                    jcr:primaryType="cq:Widget"
+                    hideLabel="{Boolean}true"
+                    name="./text"
+                    xtype="richtext">
+                    <rtePlugins jcr:primaryType="nt:unstructured">
+                        <links jcr:primaryType="nt:unstructured">
+                            <linkDialogConfig
+                                jcr:primaryType="nt:unstructured"
+                                height="{Long}316">
+                                <linkAttributes jcr:primaryType="cq:WidgetCollection">
+                                    <linkAdvanced
+                                        jcr:primaryType="cq:Widget"
+                                        collapsed="{Boolean}true"
+                                        collapsible="{Boolean}true"
+                                        inputValue="advanced"
+                                        name="./linkdialog/cq:adhocLinkTrackingTab"
+                                        title="Link tracking"
+                                        xtype="dialogfieldset">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <enable
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="enabletracking"
+                                                fieldDescription="override analytics framework settings"
+                                                fieldLabel="Custom link tracking"
+                                                name="./linkdialog/cq:adhocLinkTrackingEnableTracking"
+                                                xtype="checkbox">
+                                                <listeners
+                                                    jcr:primaryType="nt:unstructured"
+                                                    check="function(component){var dlg=component.findParentByType('rtelinkdialog');dlg.enableSCFields(component.checked);}"/>
+                                            </enable>
+                                            <events
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevents"
+                                                fieldDescription="e.g.: event2, event7"
+                                                fieldLabel="Include SiteCatalyst events"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvents"
+                                                xtype="textfield"/>
+                                            <evars
+                                                jcr:primaryType="nt:unstructured"
+                                                attribute="adhocevars"
+                                                fieldDescription="e.g.: eVar1: pagedata.url, prop4: 'const'"
+                                                fieldLabel="Include SiteCatalyst variables"
+                                                name="./linkdialog/cq:adhocLinkTrackingEvars"
+                                                xtype="textfield"/>
+                                        </items>
+                                    </linkAdvanced>
+                                </linkAttributes>
+                            </linkDialogConfig>
+                        </links>
+                    </rtePlugins>
+                </text>
+                <isRichTextFlag
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./textIsRich"
+                    value="true"
+                    xtype="hidden"/>
+            </items>
+        </description>
+        <type
+            jcr:primaryType="cq:Widget"
+            title="Item"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="image"
+                    fieldLabel="Type"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            text="Image"
+                            value="image"/>
+                        <video
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video"/>
+                        <videos
+                            jcr:primaryType="nt:unstructured"
+                            text="Video Library"
+                            value="library"/>
+                    </options>
+                </type>
+            </items>
+        </type>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            xtype="html5smartimage">
+            <resType
+                jcr:primaryType="cq:Widget"
+                ignoreData="{Boolean}true"
+                name="./image/sling:resourceType"
+                value="foundation/components/image"
+                xtype="hidden"/>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(3); }"/>
+        </image>
+        <video
+            jcr:primaryType="cq:Widget"
+            title="Video"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <path
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Path"
+                    name="./videoPath"
+                    rootPath="/content/calix"
+                    xtype="pathfield"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(4); }"/>
+        </video>
+        <library
+            jcr:primaryType="cq:Widget"
+            title="Video Library"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    text="Please add video(s) in video libary component"
+                    xtype="label"/>
+            </items>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(5); }"/>
+        </library>
+    </items>
+</jcr:root>

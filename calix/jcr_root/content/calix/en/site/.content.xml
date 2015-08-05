@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-27T12:25:34.747-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-27T12:25:34.945-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/fullwidth"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Site"
+        jcr:uuid="5dcc520d-32a2-459e-9cbb-6e8daa7551fc"
+        sling:resourceType="calix/components/page/fullwidth">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/logo"/>
+        <tagline
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/tagline"
+            tagline="ACCESS INNOVATION"/>
+        <contact
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/contact"/>
+        <search
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/search"/>
+        <register
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/login-register"/>
+        <flyout-nav-1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"/>
+        <breadcrumbs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/breadcrumbs"/>
+        <footer-links-1-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Software"
+            listItems="[{&quot;listItem&quot;:&quot;Software Overview&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/software&quot;},{&quot;listItem&quot;:&quot;Compass&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/software/compass&quot;\,&quot;subListItems&quot;:[{&quot;subListItem&quot;:&quot;Command Center&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/software/compass/command-center&quot;}\,{&quot;subListItem&quot;:&quot;Consumer Connect&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/software/compass/consumer-connect&quot;}\,{&quot;subListItem&quot;:&quot;Flow Analyze&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/software/compass/flow-analyze&quot;}\,{&quot;subListItem&quot;:&quot;Service Verify&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/software/compass/service-verify&quot;}\,{&quot;subListItem&quot;:&quot;Open Cable LInk&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/software/compass/open-link-cable&quot;}]},{&quot;listItem&quot;:&quot;Calix Management Systems&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/software/calix-management-systems&quot;}]"/>
+        <footer-links-2-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Systems"
+            listItems="[{&quot;listItem&quot;:&quot;Systems Overview&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems&quot;},{&quot;listItem&quot;:&quot;E-Services Advanced Services Ethernet&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/e-series&quot;\,&quot;subListItems&quot;:[{&quot;subListItem&quot;:&quot;Fiber&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/systems/e-series&quot;}\,{&quot;subListItem&quot;:&quot;Copper&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/systems/e-series&quot;}\,{&quot;subListItem&quot;:&quot;MEF/Business&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/systems/e-series&quot;}]},{&quot;listItem&quot;:&quot;B-Series Multiservice/Ethernet&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/b-series&quot;},{&quot;listItem&quot;:&quot;C-Series Multiservice / Ethernet&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/c-series&quot;},{&quot;listItem&quot;:&quot;BLM 1500&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/blm-1500&quot;}]"/>
+        <footer-links-3-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Premises"
+            listItems="\{&quot;listItem&quot;:&quot;Premises Overview&quot;,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/&quot;}"/>
+        <footer-links-4-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Solutions"
+            listItems="[{&quot;listItem&quot;:&quot;Solutions Overview&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions&quot;},{&quot;listItem&quot;:&quot;Service Providers&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions&quot;},{&quot;listItem&quot;:&quot;Wireless Communications&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/wireless-communications&quot;},{&quot;listItem&quot;:&quot;Wirelines Communications&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/wireline-communications&quot;},{&quot;listItem&quot;:&quot;Cable&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/cable&quot;},{&quot;listItem&quot;:&quot;Municipalities&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/municipalities&quot;},{&quot;listItem&quot;:&quot;Utilities&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/utilities&quot;},{&quot;listItem&quot;:&quot;Network Applications&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions&quot;},{&quot;listItem&quot;:&quot;Residential Broadband&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/residential-broadband&quot;},{&quot;listItem&quot;:&quot;Business Services&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/business-services&quot;},{&quot;listItem&quot;:&quot;Mobile Backhaul&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/mobile-backhaul&quot;},{&quot;listItem&quot;:&quot;Transport and Aggregation&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/transport-and-aggregation&quot;}]"/>
+        <footer-links-5-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Services"
+            listItems="[{&quot;listItem&quot;:&quot;Services Overview&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/services/services-overview&quot;},{&quot;listItem&quot;:&quot;Training&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/services/training&quot;},{&quot;listItem&quot;:&quot;Certification&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/services/professional-services&quot;},{&quot;listItem&quot;:&quot;Professional Services&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/services/professional-services&quot;},{&quot;listItem&quot;:&quot;Consulting&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/services/consulting-services&quot;}]"/>
+        <footer-links-6-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"
+            linksHeading="Support"
+            listItems="[{&quot;listItem&quot;:&quot;Calix Resource Center&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/support/calix-resource-center&quot;\,&quot;subListItems&quot;:[{&quot;subListItem&quot;:&quot;Service Station&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/support/calix-resource-center/resource-station&quot;}\,{&quot;subListItem&quot;:&quot;Software Center&quot;\,&quot;sublistLink&quot;:&quot;/content/calix/en/site/home/support/calix-resource-center&quot;}]},{&quot;listItem&quot;:&quot;The Calix Advantage&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/support&quot;}]"/>
+        <footer-links-7-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-8-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-9-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-10-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-11-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-12-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-legal-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal"
+            linkedInLink="https://www.linkedin.com/company/calix"
+            privacyPolicy="Privacy Policy"
+            privacyPolicyLink="/content/calix/en/site/home/about-calix/success-stories"
+            rightsReserved="@ Calix | All Rights Reserved"
+            termsOfUse="Terms of Use"
+            termsOfUseLink="/content/calix/en/site/home/about-calix"
+            twitterLink="https://twitter.com/thecalixnetwork"
+            youtubeLink="https://www.youtube.com/user/CalixNews"/>
+        <megamenu
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/megamenu"
+            listItems="[{&quot;listItem&quot;:&quot;Software&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/software&quot;},{&quot;listItem&quot;:&quot;Systems&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/systems&quot;},{&quot;listItem&quot;:&quot;Solutions&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/solutions&quot;},{&quot;listItem&quot;:&quot;&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/services&quot;},{&quot;listItem&quot;:&quot;&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/communities&quot;},{&quot;listItem&quot;:&quot;&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/events&quot;},{&quot;listItem&quot;:&quot;&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/nav/about-calix&quot;}]"
+            rootPath="/content/calix/nav"/>
+        <my-calix
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/my-calix"/>
+        <heroPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+        <footer-legal-social-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal-social"/>
+    </jcr:content>
+    <home/>
+    <_x0034_04/>
+    <_x002e_DS_Store/>
+    <demo/>
+    <video/>
+    <leader/>
+    <qa-epsilon/>
+    <qa-calix/>
+</jcr:root>

@@ -1,0 +1,140 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit the events and speakers landing page here]</div>
+
+<div class="eventsAndSpeakers">
+    <span class="iconLoadingTab" style="display: none;"></span>
+	<div class="container" data-sly-use.eventspeaker="com.calix.components.EventSpeaker">
+
+		<!-- begin sub navigation -->
+		
+		<div class="subNav">
+			<ul class="categories">
+				<div data-sly-test="${eventspeaker.tabs}" data-sly-unwrap>
+					<div data-sly-list.tab="${eventspeaker.tabs}" data-sly-unwrap>
+						<li id="tab${tab.tabId}" content-id="tabContent_${tab.tabId}" type-id="${tab.tabId}">
+							<div data-sly-test="${tab.activated}" data-sly-unwrap>
+								<a class="active" href="javascript:void(0)">${tab.tabName}</a>
+							</div>
+							<div data-sly-test="${!tab.activated}" data-sly-unwrap>
+								<a href="javascript:void(0)">${tab.tabName}</a>
+							</div>
+						</li>
+					</div>
+				</div>
+			</ul>
+		</div>
+
+		<!-- end sub navigation -->
+
+
+        <div class="filters">
+
+			<div data-sly-test="${eventspeaker.tabs}" data-sly-unwrap>
+				<ul class="displayFilters">
+					<li class="grid active"><a href="javascript:void(0)"><span>View Grid</span></a></li>
+					<li class="list"><a href="javascript:void(0)"><span>View List</span></a></li>
+				</ul>
+
+				<!-- Mobile Filter -->
+
+				<div class="subNavMobile dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        All Events &amp; Speakers
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <div data-sly-list.tab="${eventspeaker.tabs}" data-sly-unwrap>
+                            <li id="tab${tab.tabId}" content-id="tabContent_${tab.tabId}" role="presentation"><a role="menuitem" tabindex="${tab.tabId}" href="javascript:void(0)">${tab.tabName == "All" ? "All Events & Speakers" : tab.tabName}</a></li>
+                        </div>
+                    </ul>
+                </div>
+			</div>
+		</div>	
+		
+ 		<!-- Content here  -->
+ 		<div class="tab-content">
+	 		<div data-sly-test="${eventspeaker.tabs}" data-sly-unwrap>
+				<div data-sly-list.tab="${eventspeaker.tabs}" data-sly-unwrap>
+					
+					<div data-sly-test="${tabList.first}" class="cq-dd-images" data-sly-unwrap>
+						<div class="row gridView grid" id="all_tab" style="display: block" id="tabContent_${tab.tabId}">
+							<div data-sly-list.article="${tab.contents}" data-sly-unwrap>
+								<div class="col-sm-6 col-xs-12 ${article.cssClass} grid-item">
+									<div class="eventTab" tab-id="tab${article.tabId}" content-id="tabContent_${article.tabId}" style="cursor:pointer;">
+										<span>${article.type}</span>
+									</div>
+									<a href="${article.linkAction}">
+										<div data-sly-test="${article.image}" data-sly-unwrap>
+											<img src="${article.image}" width="100%" height="100%" alt="" />
+										</div>
+										<div data-sly-test="${!article.image}" data-sly-unwrap>
+                                            <img src="/etc/designs/calix/clientlibs/img/null-image.jpg" width="100%" height="100%" alt="" />
+                                        </div>
+										<div class="description">
+											<div data-sly-test="${article.headshot}" data-sly-unwrap>
+												<img class="bio" src="${article.headshot}" />
+											</div>
+											<h3>${article.date}<div data-sly-test="${article.speakerName}" data-sly-unwrap> | ${article.speakerName}</div></h3>
+											<h2>${article.headline}</h2>
+											<p>${article.subhead}</p>
+											<p class="location">${article.eventLocation}</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+							
+					<div data-sly-test="${!tabList.first}" class="cq-dd-images" data-sly-unwrap>
+						<div class="row gridView grid" id="all_tab" style="display: none" id="tabContent_${tab.tabId}">
+							<div data-sly-list.article="${tab.contents}" data-sly-unwrap>
+								<div class="col-sm-6 col-xs-12 ${article.cssClass} grid-item">
+									<div class="eventTab" content-id="tabContent_${article.tabId}" tab-id="tab${article.tabId}" style="cursor:pointer;">
+										<span>${article.type}</span>
+									</div>
+									<a href="${article.linkAction}">
+										<div data-sly-test="${article.image}" data-sly-unwrap>
+											<img src="${article.image}" width="100%" height="100%" alt="" />
+										</div>
+										<div data-sly-test="${!article.image}" data-sly-unwrap>
+                                            <img src="/etc/designs/calix/clientlibs/img/null-image.jpg" width="100%" height="100%" alt="" />
+                                        </div>
+										<div class="description">
+											<div data-sly-test="${article.headshot}" data-sly-unwrap>
+												<img class="bio" src="${article.headshot}" />
+											</div>
+											<h3>${article.date}<div data-sly-test="${article.speakerName}" data-sly-unwrap> | ${article.speakerName}</div></h3>
+											<h2>${article.headline}</h2>
+											<p>${article.subhead}</p>
+											<p class="location">${article.eventLocation}</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="grnBtn outlineBtn" id="loadmore" href="javascript:void(0)"><span>${eventspeaker.loadmoreLabel}</span></a>
+
+		<div class="noDataText" id="noDataText"><h2 style="color: #1d9e74;">No articles found</h2></div>
+
+		<script>
+			var limitItems = "${eventspeaker.limitItems @ context="scriptString"}";
+			if (typeof eventsPath == 'undefined') {
+				var eventsPath = "${eventspeaker.eventsPath @ context="scriptString"}";
+			}
+			if (typeof speakersPath == 'undefined') {
+				var speakersPath = "${eventspeaker.speakersPath @ context="scriptString"}";
+			}
+			var calixEvent = "${eventspeaker.calixEvent @ context="scriptString"}";
+			var calixSpeaker = "${eventspeaker.calixSpeaker @ context="scriptString"}";
+		</script>
+	</div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.myCalix').css('top','20px');
+})
+</script>

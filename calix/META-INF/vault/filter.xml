@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/calix"/>
+    <filter root="/content/calix"/>
+    <filter root="/etc/designs/calix"/>
+</workspaceFilter>

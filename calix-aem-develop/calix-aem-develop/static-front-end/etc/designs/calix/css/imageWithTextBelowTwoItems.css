@@ -1,0 +1,145 @@
+/****************************************
+  image with text below
+****************************************/
+
+.imageWithTextBelowTwoItems {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    height: auto;
+}
+.imageWithTextBelowTwoItems.topCurves{
+    border-top-left-radius: 100% 76px;
+    border-top-right-radius: 100% 76px;
+    border-top: 2px solid #b5b2c2;
+    padding-top: 50px;
+}
+.imageWithTextBelowTwoItems.bottomCurves{
+    border-bottom-left-radius: 100% 76px;
+    border-bottom-right-radius: 100% 76px;
+    border-bottom: 2px solid #b5b2c2;
+}
+.imageWithTextBelowTwoItems h3,
+.imageWithTextBelowTwoItems h2 {
+    font-size: 21px;
+    color: #45367d;
+    font-weight: 600;
+}
+.imageWithTextBelowTwoItems p {
+    font-size: 16px;
+    color: #333;
+}
+.imageWithTextBelowTwoItems ul {
+    padding-left: 20px;
+}
+.imageWithTextBelowTwoItems .grnBtn {
+    margin: 15px 0 5px 0;
+}
+.imageWithTextBelowTwoItems .grnLink {
+    margin: 25px 0 5px 0;
+}
+.imageWithTextBelowTwoItems a.grnLink:hover,
+.imageWithTextBelowTwoItems a.grnLink {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1d9e74;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 320px) {
+
+    .imageWithTextBelowTwoItems .container .row div {
+        width: 100%;
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .imageWithTextBelowTwoItems .container .row h3 {
+        text-align: left;
+    }
+
+    .imageWithTextBelowTwoItems .container .row p {
+        text-align: left;
+    }
+
+    .imageWithTextBelowTwoItems a {
+        width: 249px;
+        height: 42px;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    /*.imageWithTextBelowTwoItems .grnLink, .grnBtn {
+      width: 249px;
+      height: 42px;
+      text-align: center;
+      margin: 10px auto;
+    }*/
+
+    .imageWithTextBelowTwoItems .grnLink {
+        padding: 25px auto 20px auto;
+    }
+
+    @media all and (min-width: 769px) {
+
+        .imageWithTextBelowTwoItems .container {
+            width: 1000px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .imageWithTextBelowTwoItems .container .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imageWithTextBelowTwoItems .container .row > div:nth-child(odd) {
+            text-align: left;
+            width: 500px;
+            min-height: 485px;
+            height: auto;
+            padding: 0 10px 15px 0;
+        }
+
+        .imageWithTextBelowTwoItems .container .row > div:nth-child(even) {
+            text-align: left;
+            width: 500px;
+            min-height: 485px;
+            height: auto;
+            padding: 0 0 15px 10px;
+        }
+
+        .imageWithTextBelowTwoItems .container .row div:nth-child(odd) {
+            text-align: left;
+            width: 500px;
+            height: auto;
+            padding: 0 10px 15px 0;
+        }
+
+        .imageWithTextBelowTwoItems .container .row div:nth-child(even) {
+            text-align: left;
+            width: 500px;
+            height: auto;
+            padding: 0 0 15px 10px;
+        }
+
+        .imageWithTextBelowTwoItems p {
+            width: 100%;
+            text-align: left;
+        }
+
+        .imageWithTextBelowTwoItems a {
+            width: 120px;
+            height: 42px;
+            text-align: left;
+            margin: 10px auto 0 auto;
+        }
+
+        .imageWithTextBelowTwoItems .grnLink, .imageWithTextBelowTwoItems .grnBtn {
+            width: 120px;
+            height: 42px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Jump Pages">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Jump page label"
+                        name="./label"
+                        xtype="textfield"/>
+                    <slides
+                        jcr:primaryType="cq:Panel"
+                        title="Jump Pages">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <pages
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Click the '+' to add a new jump page"
+                                fieldLabel="Pages"
+                                labelStyle="font-weight:bold;"
+                                name="./menus"
+                                xtype="multifield">
+                                <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    limit="50"
+                                    xtype="jumppagewidget"/>
+                            </pages>
+                        </items>
+                    </slides>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,44 @@
+/****************************************
+  split column template
+****************************************/
+
+.wideContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.narrowContainer {
+    width: 1024px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.myCalixWrap .narrowContainer {
+    position: relative;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+.narrowContainer .left-col{
+    overflow: hidden;
+}
+.narrowContainer .right-col{
+    overflow: hidden;
+}
+.narrowContainer .col-md-8 {
+    width: 65.5%;
+    margin-right: 10px;
+}
+
+.narrowContainer .col-md-4 {
+    width: 32.5%;
+    margin-left: 10px;
+}
+
+@media all and (max-width: 768px) {
+ .narrowContainer {
+    width: 100%;
+  }
+}

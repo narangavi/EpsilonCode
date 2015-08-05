@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Leadership Dialog"
+    width="700"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Executive">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <labelExe
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label"
+                        name="./labelExe"
+                        xtype="textfield"/>
+                    <descriptionExe
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        name="./descriptionExe"
+                        xtype="textarea"/>
+                    <profilesExe
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new profile"
+                        fieldLabel="Profiles"
+                        name="./profilesExe"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Profile"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </profilesExe>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Directors">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <labelDir
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Label"
+                        name="./labelDir"
+                        xtype="textfield"/>
+                    <descriptionDir
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Description"
+                        name="./descriptionDir"
+                        xtype="textarea"/>
+                    <profilesDir
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' to add a new profile"
+                        fieldLabel="Profiles"
+                        name="./profilesDir"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Profile"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </profilesDir>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

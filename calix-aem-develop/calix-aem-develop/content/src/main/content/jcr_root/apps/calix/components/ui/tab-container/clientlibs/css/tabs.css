@@ -1,0 +1,174 @@
+/****************************************
+  tabs styles
+****************************************/
+.fullTabWrap {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.myTabContent {
+  padding: 34px 0 16px 0;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+}
+.nav-tabs > li > a {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0px;
+  font-size: 16px;
+  color: #666;
+}
+.nav-tabs > li > a:hover {
+  border-color: #fff;
+  border-radius: 0px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 5px solid #1d9e74;
+  color: #333;
+}
+.tabBlock {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-right: 16px;
+  min-height: 155px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.displayBackground {
+  background-color: #f7f7f7;
+}
+.tabBlock.last {
+  margin-right: 0px;
+}
+
+.panel-title > a,
+.panel-title > a:hover {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.tab-content > .active.tab-pane {
+  display: block;
+  left: 0px;
+  position: relative;
+}
+
+.tab-content > .tab-pane {
+  display: block;
+  left: -9999px;
+  position: absolute;
+}
+.left-col .fullTabWrap.container {
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 95%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .tabBlock .imageWithTextBelowThreeItems .container {
+        width: 100% !important;
+    }
+}
+
+@media all and (min-width: 769px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media all and (min-width: 992px) {
+  .container {
+    width: 1024px;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .fullTabWrap.container {
+    padding: 0px;
+    position: relative;
+  }
+  .myTabContent {
+    padding: 0px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .tabBlock {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-right: 0px;
+    min-height: 155px;
+    margin-bottom: 16px;
+  }
+  .tabBlock.last {
+    margin-bottom: 0px;
+  }
+  .panel-group .panel-heading + .panel-collapse > .panel-body,
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: none;
+  }
+  .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: none;
+  }
+  .panel-group .panel-heading {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .panel {
+    border: none;
+  }
+  .panel-group {
+    margin-bottom: 0px;
+  }
+  .panel-group .panel {
+    border-radius: 0px;
+  }
+  .panel-body {
+    padding: 0px;
+  }
+  .panel-title a i {
+    float: right;
+  }
+
+  a.js-tabcollapse-panel-heading {
+    font-size: 21px;
+    color: #333;
+    background: url('/etc/designs/calix/clientlibs/img/tabArrow.png') right 2px no-repeat;
+  }
+  a.js-tabcollapse-panel-heading.collapsed {
+    font-size: 21px;
+    color: #666;
+    background: url('/etc/designs/calix/clientlibs/img/tabArrow.png') right -48px no-repeat;
+  }
+
+
+}
+/*
+@media all and (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+
+}
+*/

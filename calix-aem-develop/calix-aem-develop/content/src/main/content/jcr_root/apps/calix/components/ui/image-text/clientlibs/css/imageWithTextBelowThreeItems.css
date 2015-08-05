@@ -1,0 +1,584 @@
+/****************************************
+  image with text below
+****************************************/
+
+.imageWithTextBelowThreeItems {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    height: auto;
+}
+.imageWithTextBelowThreeItems.topCurves{
+    border-top-left-radius: 50% 76px;
+    border-top-right-radius: 50% 76px;
+    border-top: 2px solid #b5b2c2;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0px -40px;
+}
+.imageWithTextBelowThreeItems.bottomCurves{
+    border-bottom-left-radius: 50% 76px;
+    border-bottom-right-radius: 50% 76px;
+    border-bottom: 2px solid #b5b2c2;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0px -40px;
+}
+.imageWithTextBelowThreeItems h3,
+.imageWithTextBelowThreeItems h2 {
+    font-size: 21px;
+    color: #45367d;
+    font-weight: 600;
+}
+.imageWithTextBelowThreeItems h3.headlineLink {
+	color: #1d9e74;
+	text-transform: none;
+}
+.imageWithTextBelowThreeItems h3.headlineLink:hover {
+	color: #1d9e74;
+	color: #167858;
+	text-decoration: none;
+}
+.imageWithTextBelowThreeItems a.headlineLink {
+	margin: 0px;
+	width: auto;
+	text-align: left;
+}
+.imageWithTextBelowThreeItems p {
+    font-size: 16px;
+    color: #333;
+}
+.imageWithTextBelowThreeItems ul {
+    padding-left: 20px;
+}
+.imageWithTextBelowThreeItems .grnBtn {
+    margin: 15px 0 5px 0;
+}
+.imageWithTextBelowThreeItems .grnLink {
+    margin: 25px 0 5px 0;
+}
+.imageWithTextBelowThreeItems a.grnLink:hover,
+.imageWithTextBelowThreeItems a.grnLink {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1d9e74;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.imageWithTextBelowThreeItems h1 {
+	text-align: center;
+	font-size: 40px;
+	color: #333;
+	font-weight: 300;
+	margin-bottom: 12px;
+    font-family: sans-serif;
+}
+@media all and (min-width: 320px) {
+	.left-col .fullTabWrap .imageWithTextBelowThreeItems .container .row .col-xs-12{
+		margin-left: 0;
+	}
+	.imageWithTextBelowThreeItems .main-around-popup-video .relatedVideos p {
+		padding: 0px 10px 0px 10px !important;
+	}
+	.imageWithTextBelowThreeItems  .main-around-popup-video .relatedVideos {
+		margin: 0px 0px -10px 10px;
+	}
+	.imageWithTextBelowThreeItems .main-around-popup-video  {
+		padding: 0px !important;
+		margin-bottom: 20px !important;
+	}
+	.imageWithTextBelowThreeItems .heading-below-video-3items {
+		margin-top: 0px;
+	}
+	.imageWithTextBelowThreeItems .container .row .main-around-popup-video .description p {
+		height: 40px;
+		padding : 10px;
+	}
+    .imageWithTextBelowThreeItems .container .row div {
+        width: 100%;
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+    }
+	.imageWithTextBelowThreeItems .container .row .vidGall, .imageWithTextBelowThreeItems .container .row .vidGall div  {
+        width: auto;
+        padding: 2px 1px 2px 1px;
+    }
+    .imageWithTextBelowThreeItems .container .row h3 {
+        text-align: left;
+    }
+    .imageWithTextBelowThreeItems .container .row p {
+        text-align: left;
+    }
+    .imageWithTextBelowThreeItems a {
+        /*width: 249px;*/
+        height: 42px;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    /*.imageWithTextBelowThreeItems .grnLink, .grnBtn {
+        width: 249px;
+        height: 42px;
+        text-align: center;
+        margin: 10px auto;
+    }*/
+
+    .imageWithTextBelowThreeItems .grnLink {
+        padding: 25px auto 20px auto;
+    }
+
+    @media all and (min-width: 769px) {
+		.imageWithTextBelowThreeItems  .container .row .img-items-column {
+			margin-bottom: 20px;
+		}
+		.imageWithTextBelowThreeItems .main-around-popup-video .videoThumbnail {
+			padding-bottom: 0px !important;
+		}
+
+		.imageWithTextBelowThreeItems .main-around-popup-video .videoThumbnail .relatedVideos{
+			padding: 0px !important;
+		}
+		.imageWithTextBelowThreeItems .main-around-popup-video .videoThumbnail .relatedVideos p{
+			padding: 5px 10px 5px 10px !important;
+		}
+        .imageWithTextBelowThreeItems .container {
+            width: 1000px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row > div {
+            text-align: left;
+            width: 340px;
+            min-height: 500px;
+            height: auto;
+            padding: 0 20px 20px 0;
+            margin: 0px;
+        }
+
+        .imageWithTextBelowThreeItems .container .row > div:nth-child(3n) {
+            text-align: left;
+            width: 320px;
+            min-height: 500px;
+            height: auto;
+            padding: 0 0 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row div {
+            text-align: left;
+            width: 340px;
+            height: auto;
+            padding: 0 20px 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row div:nth-child(3n) {
+            text-align: left;
+            width: 320px;
+            height: auto;
+            padding: 0 0 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems p {
+            width: 100%;
+            text-align: left;
+        }
+
+        .imageWithTextBelowThreeItems a {
+            /*width: 120px;*/
+            height: 42px;
+            text-align: left;
+            margin: 10px auto 0 auto;
+        }
+
+        .imageWithTextBelowThreeItems .grnLink, .imageWithTextBelowThreeItems .grnBtn {
+            width: 120px;
+            height: 42px;
+            text-align: center;
+            margin-left:10px;
+        }
+        .imageWithTextBelowThreeItems .grnLink, .imageWithTextBelowThreeItems .grnBtnLg {
+            height: 42px;
+            text-align: center;
+            margin-left:10px;
+        }
+		.left-col .imageWithTextBelowThreeItems .container {
+            width: 100%;
+			margin: 0;
+		}
+
+		.left-col .imageWithTextBelowThreeItems .row .col-xs-12 {
+                width: 50% !important;
+		}
+
+		.left-col .imageWithTextBelowThreeItems .image-text-item {
+                width: 100% !important;
+		}
+
+		.left-col .imageWithTextBelowThreeItems .image-text-item img {
+                width: 100%;
+		}
+		.left-col .imageWithTextBelowThreeItems .container .row div {
+            text-align: left;
+            width: 100%;
+            height: auto;
+            padding: 0 20px 20px 0;
+        }
+		.left-col .imageWithTextBelowThreeItems .container .row .videoThumbnail{
+            padding: 0;
+        }
+		.right-col .imageWithTextBelowThreeItems .container {
+                width: 100%;
+				margin: 0;
+		}
+		.right-col .imageWithTextBelowThreeItems .container .row div {
+            width: 100%;
+			margin: 0;
+        }
+		.right-col .imageWithTextBelowThreeItems .container .row .videoThumbnail {
+            padding: 0;
+        }
+		.imageWithTextBelowThreeItems .container .row div.modal {
+		  width: auto;
+		  height: auto;
+		  padding: 20px;
+		}
+		.imageWithTextBelowThreeItems .container .row div.modal div {
+		  width: auto;
+		  height: auto;
+		  padding: 20px;
+		}
+		.imageWithTextBelowThreeItems .container .row .videoModal .modal-dialog {
+			width: 1000px;
+			padding: 0px;
+		}
+		.imageWithTextBelowThreeItems .container .row .videoModal .modal-dialog div{
+			padding: 0px;
+		}
+		.imageWithTextBelowThreeItems .container .row .videoModal .modal-dialog .videoGalleryWrap{
+			width: 996px;
+			padding: 35px 0 13px 44px;
+		}
+		.fullTabWrap .imageWithTextBelowThreeItems .container {
+            width: 100%;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+        }
+		.fullTabWrap .imageWithTextBelowThreeItems .container .row div {
+            width: 100%;
+			padding: 0;
+        }
+        .fullTabWrap .imageWithTextBelowThreeItems .container .row div.description {
+            padding-bottom: 20px;
+        }
+        .fullTabWrap .imageWithTextBelowThreeItems .container .row > div {
+            text-align: left;
+            width: 34%;
+            min-height: 500px;
+            height: auto;
+            padding: 0 20px 20px 0;
+            margin: 0px;
+        }
+
+        .fullTabWrap .imageWithTextBelowThreeItems .container .row > div:nth-child(3n) {
+            text-align: left;
+            width: 32%;
+            min-height: 500px;
+            height: auto;
+            padding: 0 0 20px 0;
+        }
+		.imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+		.imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img  {
+			height: 190px;
+		}
+		.left-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+		.left-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img,
+		.right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+		.right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img  {
+			height: 180px;
+		}
+		.right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 {
+			padding: 0;
+		}
+		.left-col .imageWithTextBelowThreeItems .container .row > div:nth-child(odd) {
+	      padding: 0 10px 15px 0;
+	    }
+		.left-col .imageWithTextBelowThreeItems .container .row > div:nth-child(even) {
+	      padding: 0 0 15px 10px;
+	    }
+	    .fullTabWrap .imageWithTextBelowThreeItems.bottomCurves{
+		    padding-bottom: 20px;
+		}
+    }
+}
+
+@media all and (max-width: 768px) {
+.imageWithTextBelowThreeItems .container .row .heading-below-video-3items {
+	margin-top: 20px;
+	text-align: left !important;
+}
+.imageWithTextBelowThreeItems .container .row .main-around-popup-video div {
+	padding-bottom: 0px !important;
+}
+.imageWithTextBelowThreeItems .main-around-popup-video div{
+	padding: 0px !important;
+}
+.tabBlock .parbase  .imageWithTextBelowTwoItems .container .row .col-md-6 .image-text-item .cq-dd-image {
+    width: 100% !important;
+}
+.tabBlock .parbase .imageWithTextBelowThreeItems .container .row .col-xs-12 .cq-dd-image  {
+    width: 340px;
+}
+.narrowContainer .imageWithTextBelowThreeItems  .container .row .col-xs-12 {
+	margin-left: 0px;
+}
+
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 768px) {
+    .imageWithTextBelowThreeItems .container .row div {
+      width: 100% !important;
+     }
+
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .imageWithTextBelowThreeItems .container .row div {
+       width: 340px;
+     }
+     .imageWithTextBelowThreeItems .container .row div {
+         text-align: left;
+         height: auto;
+         padding: 0 20px 20px 0;
+     }
+     .imageWithTextBelowThreeItems .container .row div:nth-child(3n) {
+         text-align: left;
+         width: 320px;
+         height: auto;
+         padding: 0 0 20px 0;
+     }
+     .imageWithTextBelowThreeItems .container .row > div {
+         margin: 0px;
+         min-height: 500px;
+     }
+	 .imageWithTextBelowThreeItems .main-around-popup-video .videoThumbnail .relatedVideos{
+		 padding: 0px !important;
+	 }
+	 .imageWithTextBelowThreeItems  .container .row .img-items-column {
+	 	 margin-bottom: 20px;
+	 }
+	 .imageWithTextBelowThreeItems .main-around-popup-video .videoThumbnail {
+		 padding-bottom: 0px !important;
+	 }
+	 .left-col .imageWithTextBelowThreeItems .row .col-xs-12 {
+         width: 50% !important;
+	 }
+	 .left-col .imageWithTextBelowThreeItems .container {
+         width: 100%;
+		 margin: 0;
+	 }
+	 .fullTabWrap .imageWithTextBelowThreeItems .container .row div {
+         width: 100%;
+		 padding: 0;
+     }
+     .fullTabWrap .imageWithTextBelowThreeItems .container .row > div {
+         text-align: left;
+         width: 34%;
+         min-height: 500px;
+         height: auto;
+         padding: 0 20px 20px 0;
+         margin: 0px;
+     }
+
+     .fullTabWrap .imageWithTextBelowThreeItems .container .row > div:nth-child(3n) {
+         text-align: left;
+         width: 32%;
+         min-height: 500px;
+         height: auto;
+         padding: 0 0 20px 0;
+     }
+	 .imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+	 .imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img  {
+		 height: 190px;
+	 }
+	 .left-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+	 .left-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img,
+	 .right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 > img, 
+	 .right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 .videoThumbnail > a > img  {
+	 	 height: 180px;
+	 }
+	 .right-col .imageWithTextBelowThreeItems  .container .row .col-xs-12 {
+		padding: 0;
+	 }
+	 .left-col .imageWithTextBelowThreeItems .container .row > div:nth-child(odd) {
+	     padding: 0 10px 15px 0;
+	 }
+	 .left-col .imageWithTextBelowThreeItems .container .row > div:nth-child(even) {
+	     padding: 0 0 15px 10px;
+	 }
+	 .left-col .imageWithTextBelowThreeItems .container .row div {
+         text-align: left;
+         width: 100%;
+         height: auto;
+         padding: 0 20px 20px 0;
+     }
+	 .left-col .imageWithTextBelowThreeItems .container .row .videoThumbnail{
+         padding: 0;
+     }
+	 .right-col .imageWithTextBelowThreeItems .container {
+        width: 100%;
+		margin: 0;
+	 }
+	 .right-col .imageWithTextBelowThreeItems .container .row div {
+        width: 100%;
+		margin: 0;
+     }
+
+ .placeholder
+  {
+    color: #c9c9c9;
+ }
+
+}
+
+.tabBlock .parbase .imageWithTextBelowThreeItems .container .row .col-xs-12 .cq-dd-image  {
+   width: 90%;
+}
+.imageWithTextBelowThreeItems .videoPreview {
+  width: 495px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.imageWithTextBelowThreeItems .videoPreview .videoThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+.imageWithTextBelowThreeItems .videoPreview img {
+  width: 100%;
+}
+.imageWithTextBelowThreeItems .videoPlayIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+.imageWithTextBelowThreeItems .videoPreview .relatedVideos {
+  position: absolute;
+  text-align: left;
+  width: 490px;
+  height: 100px;
+  margin: 0;
+  bottom: -75px;
+  transition: all 0.5s ease;
+}
+.imageWithTextBelowThreeItems .videoPreview:hover .relatedVideos {
+  bottom: 0px;
+}
+.imageWithTextBelowThreeItems .relatedVideos h3 {
+  display: inline;
+  float: right;
+  margin: 0px;
+  padding: 2px 8px;
+  height: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.imageWithTextBelowThreeItems .relatedVideos p {
+  clear: right;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 10px 0 15px;
+  line-height: 1.2;
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.imageWithTextBelowThreeItems .videoPreview .description {
+  position: absolute;
+  text-align: left;
+  width: 490px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.imageWithTextBelowThreeItems .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.imageWithTextBelowThreeItems .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+.imageWithTextBelowThreeItems .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+.imageWithTextBelowThreeItems .grnBtn, .imageWithTextBelowThreeItems .grnBtnLg, .imageWithTextBelowThreeItems .link {
+  margin: 15px 28px 5px 4px;
+}
+.imageWithTextBelowThreeItems a.link {
+	width: auto;
+}
+.imageWithTextBelowThreeItems a.grnLink:hover,
+.imageWithTextBelowThreeItems a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 320px) {
+    .imageWithTextBelowThreeItems .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imageWithTextBelowThreeItems .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+}
+@media all and (min-width: 769px) {
+    .imageWithTextBelowThreeItems .videoPreview {
+    width: 495px;
+    padding: 0 0 0 5px;
+    margin: 0;
+  }
+  .imageWithTextBelowThreeItems .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 490px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-27T00:06:20.302-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-30T10:49:33.704-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/fullwidth"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="CAMA Conference 2015"
+        jcr:uuid="b2cbb987-395b-4e85-b87f-63a3c37a9d1e"
+        sling:resourceType="calix/components/page/fullwidth"
+        image="/content/dam/calix/images/newsAndSocialSpotlight/image2.png"/>
+</jcr:root>

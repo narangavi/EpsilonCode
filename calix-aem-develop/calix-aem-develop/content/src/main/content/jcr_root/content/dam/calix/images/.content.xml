@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:lastReplicated="{Date}2015-06-15T19:42:55.769-04:00"
+        cq:lastReplicatedBy="calix-qa"
+        cq:lastReplicationAction="Activate"
+        jcr:mixinTypes="[cq:ReplicationStatus]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="images">
+        <folderThumbnail/>
+    </jcr:content>
+    <image3.png/>
+    <image2.png/>
+    <image1.png/>
+    <videoPreview.png/>
+    <global/>
+    <newsAndSocialSpotlight/>
+    <Main_x0020_Hero/>
+    <Image_x0020_Text_x0020_Below/>
+    <Related_x0020_Products/>
+</jcr:root>

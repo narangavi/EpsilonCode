@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <details
+            jcr:primaryType="cq:Widget"
+            title="Profile"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <firstname
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="First Name"
+                    name="./firstName"
+                    xtype="textfield"/>
+                <lastname
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Last Name"
+                    name="./lastName"
+                    xtype="textfield"/>
+                <job
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Job"
+                    name="./job"
+                    xtype="textfield"/>
+                <department
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Deparment"
+                    name="./department"
+                    xtype="textfield"/>
+                <type
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Tag type"
+                    name="./type"
+                    xtype="tags"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Desciption"
+                    name="./description"
+                    xtype="textarea"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image"
+                    name="./image"
+                    rootPath="/content/dam"
+                    xtype="pathfield"/>
+            </items>
+        </details>
+    </items>
+</jcr:root>

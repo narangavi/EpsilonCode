@@ -1,0 +1,147 @@
+/****************************************
+  image gallery content
+****************************************/
+
+.imageGalleryWrap {
+  width: 1000px;
+  padding: 0 0 15px 44px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.imageGalleryWrap #carousel-bounding-box {
+  width: auto;
+}
+.imageGalleryWrap ul.list-thumb {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.imageGalleryWrap ul.list-thumb li {
+  float: left;
+  display: block;
+  width: 140px;
+  height: 85px;
+  margin: 14px 14px 0 0;
+}
+.imageGalleryWrap ul.list-thumb li a {
+  cursor: pointer;
+}
+.imageGalleryWrap ul.list-thumb li a:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 3px rgba(73, 160, 219, .4);
+}
+.imageGalleryWrap .selected img {
+  box-shadow: 0px 0px 3px 3px rgba(73, 160, 219, .4);
+}
+.imageGalleryWrap .carousel-control {
+  position: absolute;
+  top: 40%;
+  bottom: auto;
+  left: auto;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  opacity: .8;
+}
+.imageGalleryWrap .carousel-control.left {
+  background-image: none;
+  left: -30px;
+}
+.imageGalleryWrap .carousel-control.right {
+  background-image: none;
+  right: -30px;
+}
+.imageGalleryWrap .carousel-control i {
+  font-weight: 100;
+  font-size: 56px;
+  color: #338e9a;
+}
+.imageGalleryWrap .featureImage {
+  width: 910px;
+}
+.imageGalleryWrap .imageDescription {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 55px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.85);
+}
+.imageGalleryWrap h3 {
+  margin-top: 10px;
+}
+.imageGalleryWrap .imageDescription p {
+  top: 35%;
+  left: 2%;
+  position: relative;
+  width: 90%;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.imageGalleryWrap .imageDescription span.date {
+  color: #45367d;
+  padding-right: .5em;
+}
+.imgGall .modal-dialog {
+  width: 1000px;
+}
+.imgGall .modal-body {
+  padding: 0px;
+}
+.imgGall button.close {
+  position: absolute;
+  z-index: 99999999;
+  right: 10px;
+  font-size: 34px;
+  opacity: .5;
+}
+
+.modal-content .imageGalleryWrap .featureImage .carousel-inner .img-responsive {
+	width: 912px;
+}
+.photoSlider .slider-photos-loop .img-responsive2 {
+  width: 100%;
+}
+@media all and (min-width: 769px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+  .photoSlider .slider-photos-loop .img-responsive2 {
+    width: 100%;
+    height: 290px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+  a.viewAll {
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Slides Dialog"
+    width="700"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <displayTopCurve
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Top Curve"
+                        name="./displayTopCurve"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <displayBottomCurve
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Bottom Curve"
+                        name="./displayBottomCurve"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <displayBG
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Short Container"
+                        name="./displayBG"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Add Products Tab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <leadership
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./products"
+                        title="Products"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="false"
+                            layout="form"
+                            limit="19"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <productTitle
+                                    jcr:primaryType="cq:Widget"
+                                    dName="productTitle"
+                                    fieldLabel="Title"
+                                    name="./productTitle"
+                                    xtype="textfield"/>
+                                <productDescription
+                                    jcr:primaryType="cq:Widget"
+                                    dName="productDescription"
+                                    fieldLabel="Description"
+                                    name="./productDescription"
+                                    xtype="textarea"/>
+                                <productPath
+                                    jcr:primaryType="cq:Widget"
+                                    dName="productPath"
+                                    fieldLabel="Path"
+                                    name="./productPath"
+                                    rootPath="/content/calix"
+                                    xtype="pathfield"/>
+                                <productImage
+                                    jcr:primaryType="cq:Widget"
+                                    dName="productImage"
+                                    fieldLabel="Image"
+                                    name="./productImage"
+                                    rootPath="/content/dam"
+                                    xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </leadership>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

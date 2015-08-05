@@ -1,0 +1,207 @@
+/****************************************
+  image with text below
+****************************************/
+
+.imageWithTextBelowThreeItems {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    height: auto;
+}
+.imageWithTextBelowThreeItems.topCurves{
+    border-top-left-radius: 100% 76px;
+    border-top-right-radius: 100% 76px;
+    border-top: 2px solid #b5b2c2;
+    padding-top: 50px;
+}
+.imageWithTextBelowThreeItems.bottomCurves{
+    border-bottom-left-radius: 100% 76px;
+    border-bottom-right-radius: 100% 76px;
+    border-bottom: 2px solid #b5b2c2;
+}
+.imageWithTextBelowThreeItems h3,
+.imageWithTextBelowThreeItems h2 {
+    font-size: 21px;
+    color: #45367d;
+    font-weight: 600;
+}
+.imageWithTextBelowThreeItems p {
+    font-size: 16px;
+    color: #333;
+}
+.imageWithTextBelowThreeItems ul {
+    padding-left: 20px;
+}
+.imageWithTextBelowThreeItems .grnBtn {
+    margin: 15px 0 5px 0;
+}
+.imageWithTextBelowThreeItems .grnLink {
+    margin: 25px 0 5px 0;
+}
+.imageWithTextBelowThreeItems a.grnLink:hover,
+.imageWithTextBelowThreeItems a.grnLink {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1d9e74;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+@media all and (min-width: 320px) {
+
+    .imageWithTextBelowThreeItems .container .row div {
+        width: 100%;
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .imageWithTextBelowThreeItems .container .row h3 {
+        text-align: left;
+    }
+
+    .imageWithTextBelowThreeItems .container .row p {
+        text-align: left;
+    }
+
+    .imageWithTextBelowThreeItems a {
+        width: 249px;
+        height: 42px;
+        text-align: center;
+        margin: 10px auto 0 auto;
+    }
+
+    /*.imageWithTextBelowThreeItems .grnLink, .grnBtn {
+        width: 249px;
+        height: 42px;
+        text-align: center;
+        margin: 10px auto;
+    }*/
+
+    .imageWithTextBelowThreeItems .grnLink {
+        padding: 25px auto 20px auto;
+    }
+
+    @media all and (min-width: 769px) {
+
+        .imageWithTextBelowThreeItems .container {
+            width: 1000px;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row > div {
+            text-align: left;
+            width: 340px;
+            min-height: 500px;
+            height: auto;
+            padding: 0 20px 20px 0;
+            margin: 0px;
+        }
+
+        .imageWithTextBelowThreeItems .container .row > div:nth-child(3n) {
+            text-align: left;
+            width: 320px;
+            min-height: 500px;
+            height: auto;
+            padding: 0 0 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row div {
+            text-align: left;
+            width: 340px;
+            height: auto;
+            padding: 0 20px 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems .container .row div:nth-child(3n) {
+            text-align: left;
+            width: 320px;
+            height: auto;
+            padding: 0 0 20px 0;
+        }
+
+        .imageWithTextBelowThreeItems p {
+            width: 100%;
+            text-align: left;
+        }
+
+        .imageWithTextBelowThreeItems a {
+            width: 120px;
+            height: 42px;
+            text-align: left;
+            margin: 10px auto 0 10px;
+        }
+
+        .imageWithTextBelowThreeItems .grnLink, .imageWithTextBelowThreeItems .grnBtn {
+            width: 120px;
+            height: 42px;
+            text-align: center;
+            margin-left:10px;
+        }
+
+        .largePar .imageWithTextBelowThreeItems .container {
+            width: 100%;
+            margin: 0;
+        }
+
+        .largePar .imageWithTextBelowThreeItems .row .col-xs-12 {
+            width: 50% !important;
+        }
+
+        .largePar .imageWithTextBelowThreeItems .image-text-item {
+            width: 100% !important;
+        }
+
+        .largePar .imageWithTextBelowThreeItems .image-text-item img {
+            width: 100%;
+        }
+
+        .smallPar .imageWithTextBelowThreeItems .container {
+            width: 100%;
+            margin: 0;
+        }
+
+    }
+}
+
+@media all and (max-width: 768px) {
+    .tabBlock .parbase  .imageWithTextBelowTwoItems .container .row .col-md-6 .image-text-item .cq-dd-image {
+        width: 100% !important;
+    }
+    .tabBlock .parbase .imageWithTextBelowThreeItems .container .row .col-xs-12 .cq-dd-image  {
+        width: 340px;
+    }
+
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 768px) {
+    .imageWithTextBelowThreeItems .container .row div {
+        width: 100% !important;
+    }
+
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .imageWithTextBelowThreeItems .container .row div {
+        width: 340px;
+    }
+
+    .placeholder
+    {
+        color: #c9c9c9;
+    }
+
+}
+
+.tabBlock .parbase .imageWithTextBelowThreeItems .container .row .col-xs-12 .cq-dd-image  {
+    width: 90%;
+}

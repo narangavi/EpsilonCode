@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html"
+    title="News and social spotlight"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <displayTopCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Top Curve"
+                    name="./displayTopCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+                <displayBottomCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Bottom Curve"
+                    name="./displayBottomCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+                <limitCharacter
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Long}150"
+                    fieldDescription="Maximum number of character displayed in title's spotlight"
+                    fieldLabel="Limit Character"
+                    name="./limitCharacter"
+                    xtype="numberfield"/>
+                <limitImage
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Long}5"
+                    fieldDescription="Maximum number of images displayed in carousel"
+                    fieldLabel="Limit Image"
+                    name="./limitImage"
+                    xtype="numberfield"/>
+                <photoLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Photo Label"
+                    name="./photoLabel"
+                    xtype="textfield"/>
+                <featuredVideoLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Featured Video Label"
+                    name="./featuredVideoLabel"
+                    xtype="textfield"/>
+                <viewAll
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="View All Label"
+                    name="./viewAllLabel"
+                    xtype="textfield"/>
+                <eventLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Event Label"
+                    name="./eventLabel"
+                    xtype="textfield"/>
+                <newsLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="News Label"
+                    name="./newsLabel"
+                    xtype="textfield"/>
+                <pRealseLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Press Realse Label"
+                    name="./pRealseLabel"
+                    xtype="textfield"/>
+                <speakerLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Speaker Label"
+                    name="./speakerLabel"
+                    xtype="textfield"/>
+                <twitterLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Twitter Label"
+                    name="./twitterLabel"
+                    xtype="textfield"/>
+            </items>
+        </general>
+        <feature1
+            jcr:primaryType="cq:Panel"
+            title="Feature 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="image1"
+                    fieldLabel="Type"
+                    name="./featureType1"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <images1
+                            jcr:primaryType="nt:unstructured"
+                            text="Photos"
+                            value="image1"/>
+                        <video1
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video1"/>
+                        <videolibrary1
+                            jcr:primaryType="nt:unstructured"
+                            text="Video Library"
+                            value="videolibrary1"/>
+                        <events1
+                            jcr:primaryType="nt:unstructured"
+                            text="Events"
+                            value="event1"/>
+                        <news1
+                            jcr:primaryType="nt:unstructured"
+                            text="News"
+                            value="news1"/>
+                        <pReleases1
+                            jcr:primaryType="nt:unstructured"
+                            text="Press Release"
+                            value="pRelease1"/>
+                        <speakers1
+                            jcr:primaryType="nt:unstructured"
+                            text="Speakers"
+                            value="speaker1"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                </listFrom>
+                <image1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="image1"
+                    title="Photos"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <images
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./images1"
+                            title="Images"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/dam"
+                                xtype="pathfield"/>
+                        </images>
+                    </items>
+                </image1>
+                <event1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="event1"
+                    title="Events"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./events1"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </event1>
+                <video1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="video1"
+                    title="Videos"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Path"
+                                name="./video1"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </items>
+                    </items>
+                </video1>
+                <news1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="news1"
+                    title="News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./news1"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </news1>
+                <pRelease1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="pRelease1"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./pReleases1"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </pRelease1>
+                <speaker1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="speaker1"
+                    title="Speakers"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./speakers1"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </speaker1>
+                <videolibrary1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="videolibrary1"
+                    title="Please add video(s) in video libary component"
+                    xtype="dialogfieldset"/>
+            </items>
+        </feature1>
+        <feature2
+            jcr:primaryType="cq:Panel"
+            title="Feature 2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="image2"
+                    fieldLabel="Type"
+                    name="./featureType2"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <images2
+                            jcr:primaryType="nt:unstructured"
+                            text="Photos"
+                            value="image2"/>
+                        <video2
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video2"/>
+                        <videolibrary2
+                            jcr:primaryType="nt:unstructured"
+                            text="Video Library"
+                            value="videolibrary2"/>
+                        <events2
+                            jcr:primaryType="nt:unstructured"
+                            text="Events"
+                            value="event2"/>
+                        <news2
+                            jcr:primaryType="nt:unstructured"
+                            text="News"
+                            value="news2"/>
+                        <pReleases2
+                            jcr:primaryType="nt:unstructured"
+                            text="Press Release"
+                            value="pRelease2"/>
+                        <speakers2
+                            jcr:primaryType="nt:unstructured"
+                            text="Speakers"
+                            value="speaker2"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                </listFrom>
+                <image2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="image2"
+                    title="Photos"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <images
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./images2"
+                            title="Images"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/dam"
+                                xtype="pathfield"/>
+                        </images>
+                    </items>
+                </image2>
+                <event2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="event2"
+                    title="Events"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./events2"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </event2>
+                <video2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="video2"
+                    title="Video"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Path"
+                                name="./video2"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </items>
+                    </items>
+                </video2>
+                <videolibrary2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="videolibrary2"
+                    title="Please add video(s) in video libary component"
+                    xtype="dialogfieldset"/>
+                <news2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="news2"
+                    title="News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./news2"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </news2>
+                <pRelease2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="pRelease2"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./speaker2"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </pRelease2>
+                <speaker2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="speaker2"
+                    title="Speakers"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <listPath
+                            jcr:primaryType="cq:Widget"
+                            hideLabel="false"
+                            name="./pReleases2"
+                            title="Paths"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                layout="form"
+                                limit="50"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                        </listPath>
+                    </items>
+                </speaker2>
+            </items>
+        </feature2>
+        <spotlight1
+            jcr:primaryType="cq:Panel"
+            title="Spotlight 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="eventS1"
+                    fieldLabel="Type"
+                    name="./spotlight1"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <eventS1
+                            jcr:primaryType="nt:unstructured"
+                            text="Events"
+                            value="eventS1"/>
+                        <newsS1
+                            jcr:primaryType="nt:unstructured"
+                            text="News"
+                            value="newsS1"/>
+                        <pReleaseS1
+                            jcr:primaryType="nt:unstructured"
+                            text="Press Release"
+                            value="pReleaseS1"/>
+                        <speakerS1
+                            jcr:primaryType="nt:unstructured"
+                            text="Speakers"
+                            value="speakerS1"/>
+                        <twitterS1
+                            jcr:primaryType="nt:unstructured"
+                            text="Twitter"
+                            value="twitterS1"/>
+                    </options>
+                </listFrom>
+                <eventS1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="eventS1"
+                    title="Events"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./eventS1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </eventS1>
+                <newsS1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="newsS1"
+                    title="News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./newsS1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </newsS1>
+                <pReleaseS1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="pReleaseS1"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./pReleaseS1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </pReleaseS1>
+                <speakerS1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="speakerS1"
+                    title="Speakers"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./speakerS1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </speakerS1>
+                <twitterS1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="twitterS1"
+                    title="Twitter"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <userIDS1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="UserID"
+                            name="./userIDS1"
+                            xtype="textfield"/>
+                    </items>
+                </twitterS1>
+            </items>
+        </spotlight1>
+        <spotlight2
+            jcr:primaryType="cq:Panel"
+            title="Spotlight 2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="eventS2"
+                    fieldLabel="Type"
+                    name="./spotlight2"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <eventS2
+                            jcr:primaryType="nt:unstructured"
+                            text="Events"
+                            value="eventS2"/>
+                        <newsS2
+                            jcr:primaryType="nt:unstructured"
+                            text="News"
+                            value="newsS2"/>
+                        <pReleaseS2
+                            jcr:primaryType="nt:unstructured"
+                            text="Press Release"
+                            value="pReleaseS2"/>
+                        <speakerS2
+                            jcr:primaryType="nt:unstructured"
+                            text="Speakers"
+                            value="speakerS2"/>
+                        <twitterS2
+                            jcr:primaryType="nt:unstructured"
+                            text="Twitter"
+                            value="twitterS2"/>
+                    </options>
+                </listFrom>
+                <eventS2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="eventS2"
+                    title="Events"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./eventS2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </eventS2>
+                <newsS2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="newsS2"
+                    title="News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./newsS2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </newsS2>
+                <pReleaseS2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="pReleaseS2"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./pReleaseS2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </pReleaseS2>
+                <speakerS2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="speakerS2"
+                    title="Speakers"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./speakerS2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </speakerS2>
+                <twitterS2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="twitterS2"
+                    title="Twitter"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <userIDS1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="UserID"
+                            name="./userIDS2"
+                            xtype="textfield"/>
+                    </items>
+                </twitterS2>
+            </items>
+        </spotlight2>
+        <spotlight3
+            jcr:primaryType="cq:Panel"
+            title="Spotlight 3">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="eventS3"
+                    fieldLabel="Type"
+                    name="./spotlight3"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <eventS3
+                            jcr:primaryType="nt:unstructured"
+                            text="Events"
+                            value="eventS3"/>
+                        <newsS3
+                            jcr:primaryType="nt:unstructured"
+                            text="News"
+                            value="newsS3"/>
+                        <pReleaseS3
+                            jcr:primaryType="nt:unstructured"
+                            text="Press Release"
+                            value="pReleaseS3"/>
+                        <speakerS3
+                            jcr:primaryType="nt:unstructured"
+                            text="Speakers"
+                            value="speakerS3"/>
+                        <twitterS3
+                            jcr:primaryType="nt:unstructured"
+                            text="Twitter"
+                            value="twitterS3"/>
+                    </options>
+                </listFrom>
+                <eventS3
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="eventS3"
+                    title="Events"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./eventS3"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </eventS3>
+                <newsS3
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="newsS3"
+                    title="News"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./newsS3"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </newsS3>
+                <pReleaseS3
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="pReleaseS3"
+                    title="Press Release"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./pReleaseS3"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </pReleaseS3>
+                <speakerS3
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="speakerS3"
+                    title="Speakers"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Root Path"
+                            name="./speakerS3"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </speakerS3>
+                <twitterS3
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="twitterS3"
+                    title="Twitter"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <userIDS3
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="UserID"
+                            name="./userIDS3"
+                            xtype="textfield"/>
+                    </items>
+                </twitterS3>
+            </items>
+        </spotlight3>
+    </items>
+</jcr:root>

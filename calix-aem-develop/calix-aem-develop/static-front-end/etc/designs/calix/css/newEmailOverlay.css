@@ -1,0 +1,436 @@
+/****************************************
+    my calix
+****************************************/
+
+.newEmailOverlay {
+  margin: 0px auto;
+  width: 658px;
+  height: 426px;
+  max-width: 658px;
+  padding: 40px 0 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+
+.newEmailOverlay #newMailModal .modal-content {
+  border-radius: 0;
+}
+
+.newEmailOverlay .modal-header,
+.newEmailOverlay .modal-footer {
+  border: none;
+  text-align: left;
+}
+
+.newEmailOverlay .modal-header {
+  padding: 30px 40px 0 40px;
+}
+
+.newEmailOverlay .modal-footer {
+  padding: 0 40px 40px 40px;
+}
+
+.newEmailOverlay .modal-body {
+  padding: 30px 40px 0 40px;
+}
+
+.newEmailOverlay h3 {
+  position: relative;
+  color: #333;
+  font-size: 24px;
+  padding-bottom: 26px;
+}
+
+.newEmailOverlay h3 i {
+  position: absolute;
+  right: 0;
+  color: #49a0db;
+}
+
+.newEmailOverlay .accountInformationEdit {
+  position: relative;
+  clear: all;
+  display: block;
+  border-radius: none;
+}
+.newEmailOverlay .accountInformationEdit label,
+.newEmailOverlay .accountInformationEdit input {
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+}
+.newEmailOverlay .editAccountInfo {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+}
+
+.newEmailOverlay .changePassword {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+}
+
+.newEmailOverlay .grnBtn {
+  font-size: 13px;
+  font-weight: 300;
+  width: 148px;
+  padding: 0;
+  text-align: center;
+}
+
+.newEmailOverlay .userInfo {
+  position: relative;
+}
+
+.newEmailOverlay img.newEmailOverlayLogo {
+  margin: 30px 0 0 0;
+  width: 311px;
+  height: 100%;
+}
+.newEmailOverlay .linkContent {
+  margin: 0;
+  padding: 0;
+}
+
+.newEmailOverlay h2 {
+  font-size: 56px;
+  font-weight: 300;
+}
+.newEmailOverlay p {
+  font-size: 21px;
+}
+.newEmailOverlay p.username {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 25px 0 0 0;
+  margin: 0;
+}
+.newEmailOverlay p.email {
+  font-size: 21px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+.newEmailOverlay p.info {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.newEmailOverlay .outlineBtn {
+  width: 148px;
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+.newEmailOverlay .grnBtn {
+  width: 148px;
+  text-align: center;
+  margin: 15px 15px 0 0;
+}
+
+.newEmailOverlay .required {
+  color: #ea8626;
+  clear: both;
+}
+.newEmailOverlay span.required {
+  padding:0 0 0 1px;
+}
+.newEmailOverlay p.required {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.newEmailOverlay .accountInformationEdit .editForm,
+.newEmailOverlay .accountInformationEdit .editAddress,
+.newEmailOverlay .accountInformationEdit .editCityStateZip {
+  width: 100%;
+  clear: all;
+}
+
+.newEmailOverlay .accountInformationEdit .editForm div,
+.newEmailOverlay .accountInformationEdit .editAddress div {
+  float: left;
+  width: 48%;
+  clear: all;
+  padding: 0 10px 20px 0;
+}
+
+.newEmailOverlay .accountInformationEdit .editCityStateZip div {
+  float: left;
+  width: 100%;
+  padding: 0 10px 20px 0;
+}
+
+
+.newEmailOverlay .accountInformationEdit .editCityStateZip .dropdown {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.newEmailOverlay table {
+  border: 0px;
+}
+
+.newEmailOverlay td {
+  border: 0px;
+  padding: 10px 10px 10px 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.city {
+  float: left;
+  width: 48.5%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.state {
+  float: left;
+  width: 24%;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit .editCityStateZip .btn {
+  padding: 6px 47px 6px 15px;
+  text-align: left;
+}
+
+.newEmailOverlay .accountInformationEdit div.zip {
+  float: left;
+  width: 20.5%;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.phone {
+  float: left;
+  width: 37.5%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.ext {
+  float: left;
+  width: 9%;
+  margin: 0 10px 20px 10px;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.country {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.newEmailOverlay .accountInformationEdit div.fax {
+  float: left;
+  width: 48%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.newEmailOverlay .component {
+    position: relative;
+    clear: both;
+    padding: 0 0 40px 0;
+  }
+
+@media all and (max-width: 768px) {
+
+  .newEmailOverlay .accntResults .saved {
+    top: 18px;
+  }
+
+  .newEmailOverlay .accountInformationEdit .editForm div,
+  .newEmailOverlay .accountInformationEdit .editAddress div,
+  .newEmailOverlay .accountInformationEdit .editCityStateZip div {
+    float: none;
+    width: 100%;
+    padding: 0 0 5px 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit .editCityStateZip {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.city {
+    float: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.state {
+    float: left;
+    width: 55%;
+    margin: 0 10px 20px 0;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit .editCityStateZip .btn {
+    width: 100%;
+    padding: 6px 0 6px 15px;
+    text-align: left;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.zip {
+    float: left;
+    width: 42%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.phone {
+    float: left;
+    width: 69.5%;
+    margin: 0 10px 20px 0;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.ext {
+    float: left;
+    width: 24%;
+    margin: 0 0 20px 10px;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.country {
+    float: left;
+    width: 48%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit div.fax {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .newEmailOverlay .accountInformationEdit {
+    padding: 15px;
+  }
+
+  .newEmailOverlay .modal-title {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  .newEmailOverlay .modal-footer {
+    padding: 0 15px 30px 15px;
+    text-align: center;
+  }
+
+  .newEmailOverlay .modal-header {
+    font-size: 24px;
+    text-align: left;
+    padding: 30px 15px 0 15px;
+  }
+
+  .newEmailOverlay .editAccountInfo {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+  }
+
+  .newEmailOverlay .changePassword {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+  }
+
+  .newEmailOverlay .editAccountInfo .grnBtn,
+  .newEmailOverlay .changePassword .grnBtn {
+    font-size: 13px;
+    font-weight: 300;
+    width: 253px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .newEmailOverlay input[type=checkbox] + label
+  {
+    top: 20px;
+  }
+
+  .newEmailOverlay .jumpToPage {
+    display: none;
+  }
+
+  .newEmailOverlay .accntResults .accntDescription span.accntText {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .newEmailOverlay .changePassword,
+  .newEmailOverlay .editAccountInfo {
+    position: relative;
+    text-align: center;
+    margin: -25px auto 40px auto;
+  }
+  .newEmailOverlay .saveCancel {
+    position: relative;
+    text-align: center;
+    margin: 25px auto 50px auto;
+  }
+  .newEmailOverlay .component {
+    position: relative;
+    clear: both;
+    padding: 0 0 50px 0;
+  }
+  .newEmailOverlay .outlineBtn {
+    width: 50%;
+    min-width: 253px;
+    margin: 15px 0 0 0;
+  }
+  .newEmailOverlay .grnBtn {
+    width: 50%;
+    min-width: 253px;
+    margin: 15px 0 0 0;
+  }
+  .newEmailOverlay .userInfo {
+    padding: 0 0 10px 0;
+    margin: 0;
+  }
+  .newEmailOverlay .userInfo .email {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .newEmailOverlay {
+    margin: 0px;
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .newEmailOverlay p {
+    margin: 0px;
+    padding: 0 15px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .newEmailOverlay h2 {
+    font-size: 46px;
+    font-weight: 300;
+  }
+
+  .newEmailOverlay h3 {
+    font-size: 13px;
+  }
+  .newEmailOverlay .accountInformation {
+    padding: 0 0 15px 0;
+  }
+}

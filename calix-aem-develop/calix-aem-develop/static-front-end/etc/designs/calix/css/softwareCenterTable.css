@@ -1,0 +1,1214 @@
+/****************************************
+    software center
+****************************************/
+
+.softwareCenter {
+  position: relative;
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 20px 0 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.softwareCenter .legend {
+  top: 0;
+  left: 0;
+  position: relative;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  color: #333;
+  padding: 20px 15px;
+  margin: 40px 0 20px 0;
+  height: auto;
+  width: 100%;
+  z-index: 10;
+}
+
+.softwareCenter .legendCollapsed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #f5f5f5;
+  font-size: 13px;
+  color: #333;
+  padding: 20px 15px;
+  margin: 40px 0 20px 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+}
+
+.softwareCenter .legend ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 120px;
+}
+
+.softwareCenter .legend h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.softwareCenter .legend li h3 {
+  font-size: 14px;
+  text-transform: none;
+  margin: 5px 0;
+}
+
+.softwareCenter .legend li p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.softwareCenter .legend ul li {
+  float: left;
+  font-size: 13px;
+  width: 25%;
+  padding: 0 25px;
+}
+
+.softwareCenter .legend ul li.purpleIcon {
+  background-image: url('../img/triangleLegendPurpleIcon.png');
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+.softwareCenter .legend ul li.grayIcon {
+  background-image: url('../img/triangleLegendGrayIcon.png');
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+.softwareCenter .legend ul li.orangeIcon {
+  background-image: url('../img/triangleLegendOrangeIcon.png');
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}
+
+.softwareCenter .legend ul li.notesIcon {
+  background-image: url('../img/notesIcon.png');
+  background-size: 21px 21px;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  width: 25%;
+  height: 30px;
+  padding: 0 25px 0 30px;
+}
+
+.softwareCenter hr {
+  background-color: #666;
+  width: 100%;
+  height: 1px;
+  padding: 0;
+  border-top: none;
+  margin-bottom: 6px;
+}
+
+.softwareCenter .introSearch p {
+  width: 800px;
+  padding: 0 0 20px 0
+}
+
+.softwareCenter .introSearch .searchInput {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.softwareCenter .introSearch .searchBtn {
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: -20px auto 0 auto;
+  padding: 0;
+}
+
+.softwareCenter .introSearch .searchInput input {
+  float: left;
+  width: 520px;
+  padding: 10px;
+}
+
+.softwareCenter .introSearch .grnBtn {
+  float: left;
+  font-size: 13px;
+  font-weight: 300;
+  width: 148px;
+  text-align: center;
+  margin: -5px 0 0 20px;
+}
+.softwareCenter h2 {
+  font-size: 56px;
+  font-weight: 300;
+}
+.softwareCenter p {
+  font-size: 21px;
+}
+.softwareCenter .panel {
+  border: none;
+}
+
+.softwareCenter .thirdLevel .panel-collapse {
+  background-color: #aaa;
+  padding-bottom: 8px;
+  margin-top: -2px;
+}
+
+.softwareCenter .secondLevel.panel-default .panel-collapse {
+  margin: 0px 5px 0px 5px;
+  padding-bottom: 5px;
+}
+
+
+.softwareCenter .panel-default.thirdLevel {
+  border-radius: 2px;
+  border: 2px solid #fff;
+  background-color: #aaa;
+}
+
+.softwareCenter .panel-default {
+  background-color: #ccc;
+  border-color: #fff;
+}
+
+.softwareCenter .panel-group .panel + .panel {
+  margin-top: 0px;
+}
+.softwareCenter .panel-group .panel-heading + .panel-collapse > .panel-body,
+.softwareCenter .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: none;
+}
+.softwareCenter .panel-heading.topLevel h4 a.collapsed {
+  border-bottom: 1px solid #2974a6;
+}
+.softwareCenter .panel-default .secondLevel {
+  background-color: #ccc;
+}
+
+
+.softwareCenter .secondLevel .panel-group {
+  margin-bottom: 5px;
+}
+
+.softwareCenter .secondLevel .panel-heading {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 3px 0;
+  padding: 0;
+}
+
+.softwareCenter .thirdLevel .panel-heading {
+  background-color: #aaa;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.softwareCenter .panel-heading {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.softwareCenter .panel-heading.topLevel {
+  border-radius: 0px;
+  margin-right: -1px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.softwareCenter .panel-heading.topLevel.last {
+  border-bottom: none;
+}
+
+.softwareCenter .panel-heading a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 35px 20px 35px 15px;
+  border: none;
+  margin: 0;
+}
+
+.softwareCenter .panel-heading a h3 {
+  font-size: 21px;
+  font-weight: 300;
+  padding: 0 0 0 75px;
+  margin: 0;
+}
+
+.softwareCenter .panel-heading a img {
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.softwareCenter .panel-title a {
+  font-size: 21px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.softwareCenter .panel-title {
+  margin: 0;
+}
+.softwareCenter .secondLevel .panel-title {
+  background-color: #ccc;
+}
+.softwareCenter .thirdLevel .panel-title {
+  background-color: #aaa;
+}
+.softwareCenter .panel-body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  border-top-color: transparent;
+}
+
+.softwareCenter .panel {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  border-top-color: transparent;
+  -webkit-box-shadow: none;
+}
+.softwareCenter .panel.secondLevel {
+  margin-bottom: 3px;
+}
+.softwareCenter .panel.secondLevel .panel-group {
+  background-color: #fff;
+}
+
+.softwareCenter .panel-group {
+  border: none;
+  padding-bottom: 0px;
+  margin: 0;
+  background-color: #fff;
+}
+.softwareCenter .panel-group .panel-heading a:after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  background-image: url('../img/minusSoftwareCenterWhiteIcon.png');
+  background-repeat: no-repeat;
+  top:20px;
+  width: 51px;
+  height: 51px;
+}
+.softwareCenter .panel-group .panel-heading a.collapsed:after {
+  content: '';
+  background-image: url('../img/plusSoftwareCenterWhiteIcon.png');
+  background-repeat: no-repeat;
+  top:20px;
+  width: 51px;
+  height: 51px;
+}
+.softwareCenter .thirdLevel .panel-heading a:after {
+  left: 15px;
+}
+
+
+
+.softwareCenter .panel-group .topLevel a:after {
+  /*content: '-';*/
+  content: '';
+  position: absolute;
+  left: 20px;
+  background-image: url('../img/minusSoftwareCenterIcon.png');
+  background-repeat: no-repeat;
+  top:20px;
+  width: 51px;
+  height: 51px;
+}
+.softwareCenter .panel-group .topLevel a.collapsed:after {
+  content: '';
+  background-image: url('../img/plusSoftwareCenterIcon.png');
+  background-repeat: no-repeat;
+  top:20px;
+  width: 51px;
+  height: 51px;
+}
+
+@media all and (max-width: 768px) {
+
+  .softwareCenter .legend {
+    padding: 15px;
+  }
+  .softwareCenter .legend ul {
+    display: block;
+    height: 100%;
+  }
+  .softwareCenter .legend ul li {
+    float: none;
+    font-size: 13px;
+    width: 100%;
+    padding: 0 25px 15px 25px;
+  }
+  .softwareCenter .legend ul li h3 {
+    font-size: 14px;
+    width: 100%;
+  }
+  .softwareCenter .legend ul li {
+    font-size: 12px;
+    width: 100%;
+    padding: 0 0 10px 25px;
+  }
+  .softwareCenter .introSearch p {
+    width: 100%;
+    padding: 0 0 20px 0
+  }
+  .softwareCenter .introSearch .searchInput input {
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .softwareCenter .introSearch .grnBtn {
+    float: none;
+    font-size: 13px;
+    font-weight: 300;
+    width: 253px;
+    text-align: center;
+    margin: 0 0 0 20px;
+  }
+  .softwareCenter {
+    margin: 0px;
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .softwareCenter p {
+    margin: 0px;
+    padding: 0 15px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .softwareCenter h2 {
+    font-size: 46px;
+    font-weight: 300;
+  }
+
+  .softwareCenter h3 {
+    font-size: 13px;
+  }
+}
+
+/* tablesaw CSS */
+
+/*! Tablesaw - v1.0.4 - 2015-02-19
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2015 Filament Group; Licensed MIT */
+
+table.tablesaw {
+  empty-cells: show;
+  max-width: 100%;
+  width: 100%;
+}
+
+.tablesaw {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Structure */
+
+.tablesaw {
+  border: 0;
+  padding: 0;
+}
+
+.tablesaw th,
+.tablesaw td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em .7em;
+}
+
+.tablesaw thead tr:first-child th {
+  padding-top: .9em;
+  padding-bottom: .7em;
+}
+
+.tablesaw-enhanced .tablesaw-bar a.btn {
+  color: #1c95d4;
+}
+
+.tablesaw-enhanced .tablesaw-bar .btn:hover {
+  text-decoration: none;
+}
+
+
+
+
+.tablesaw-enhanced .tablesaw-bar .btn:hover,
+.tablesaw-enhanced .tablesaw-bar .btn:focus {
+
+  outline: none;
+}
+
+.tablesaw-bar .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+.tablesaw-bar .btn-select:after {
+  background: none;
+  background-repeat: no-repeat;
+  background-position: .25em .45em;
+  content: "\25bc";
+  font-size: .55em;
+  padding-top: 1.2em;
+  padding-left: 1em;
+  left: auto;
+  right: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  width: 1.8em;
+}
+
+
+/* Column navigation buttons for swipe and columntoggle tables */
+
+.tablesaw-advance .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 #fff;
+  border-radius: .25em;
+}
+
+.tablesaw-advance .btn.btn-micro {
+  font-size: .8125em;
+  padding: .3em .7em .25em .7em;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+  display: inline-block;
+  overflow: hidden;
+  width: 1.8em;
+  height: 1.8em;
+  background-position: 50% 50%;
+  margin-left: .5em;
+  position: relative;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.down:before {
+  left: .5em;
+  top: .65em;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #808080;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.up:before {
+  left: .5em;
+  top: .65em;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #808080;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before,
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  top: .45em;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before {
+  left: .6em;
+  border-right: 5px solid #808080;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  left: .7em;
+  border-left: 5px solid #808080;
+}
+
+.tablesaw-advance a.tablesaw-nav-btn.disabled {
+  opacity: .25;
+  filter: alpha(opacity=25);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Table Toolbar */
+
+.tablesaw-bar {
+  clear: both;
+  font-family: sans-serif;
+}
+
+.tablesaw-toolbar {
+  font-size: .875em;
+  float: left;
+}
+
+.tablesaw-toolbar label {
+  padding: .5em 0;
+  clear: both;
+  display: block;
+  color: #888;
+  margin-right: .5em;
+  text-transform: uppercase;
+}
+
+.tablesaw-bar .btn,
+.tablesaw-enhanced .tablesaw-bar .btn {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.tablesaw-bar .btn-select,
+.tablesaw-enhanced .tablesaw-bar .btn-select {
+  margin-bottom: 0;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn {
+  margin-left: .4em;
+  margin-top: 0;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  font-family: sans-serif;
+  font-size: 1em;
+  padding-left: .3em;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn-select {
+  min-width: 0;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn-select:after {
+  padding-top: .9em;
+}
+
+.tablesaw-toolbar ~ table {
+  clear: both;
+}
+
+
+
+
+table.tablesaw tbody th {
+  font-weight: bold;
+}
+
+table.tablesaw thead th,
+table.tablesaw thead td {
+  color: #444;
+  font-size: .9em;
+}
+
+.tablesaw th,
+.tablesaw td {
+  line-height: 1em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tablesaw td,
+.tablesaw tbody th {
+  vertical-align: middle;
+  /* font-size: 1.17em; */
+  /* 19px */
+}
+
+.tablesaw td .btn,
+.tablesaw tbody th .btn {
+  margin: 0;
+}
+
+.tablesaw thead {
+  border: 1px solid #e5e5e4;
+  background: #e2dfdc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2dfdc));
+  background-image: -webkit-linear-gradient(top, #fff, #e2dfdc);
+  background-image: linear-gradient(to bottom, #fff, #e2dfdc);
+}
+
+.tablesaw thead th {
+  font-weight: 100;
+  color: #777;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #fff;
+  text-align: left;
+}
+
+.tablesaw thead tr:first-child th {
+  font-weight: normal;
+  border-right: 1px solid #e4e1de;
+}
+
+/* Table rows have a gray bottom stroke by default */
+
+.tablesaw tbody tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+
+
+
+
+/* Stack */
+
+
+
+@media (min-width: 40em) {
+  .tablesaw td {
+    line-height: 2em;
+  }
+}
+
+@media only all {
+  .tablesaw-swipe .tablesaw-cell-persist {
+    border-right: 1px solid #e4e1de;
+  }
+
+  .tablesaw-swipe .tablesaw-cell-persist {
+    -webkit-box-shadow: 3px 0 4px -1px #e4e1de;
+    box-shadow: 3px 0 4px -1px #e4e1de;
+  }
+}
+
+/* Table rows have a gray bottom stroke by default */
+
+.tablesaw-stack tbody tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.tablesaw-stack td .tablesaw-cell-label,
+.tablesaw-stack th .tablesaw-cell-label {
+  display: none;
+}
+
+.tablesaw-fix-persist {
+  table-layout: fixed;
+}
+@media only all {
+  .tablesaw-swipe th.tablesaw-cell-hidden,
+  .tablesaw-swipe td.tablesaw-cell-hidden {
+    display: none;
+  }
+}
+.tablesaw-advance {
+  float: right;
+}
+
+.scOuter {
+    width: 975px;
+    padding: 5px 15px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  .scOuter .scTableWrap {
+    width: 940px;
+    position: relative;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .scOuter .tablesaw-advance-dots {
+    display: none;
+  }
+  .scOuter table.tablesaw {
+    max-width: 940px;
+  }
+  .scOuter .tablesaw thead tr:first-child th,
+  .scOuter .tablesaw-swipe th.tablesaw-cell-persist:nth-child(1) {
+    width: 143px !important;
+    min-width: 143px !important;
+    max-width: 143px !important;
+    padding: 0px;
+    background-color: #469ad2;
+    height: 60px;
+    color: #fff;
+    text-shadow: none;
+    line-height: 1.5;
+    vertical-align: top;
+    padding: 15px 10px;
+  }
+  .scOuter .tablesaw-swipe .tablesaw-cell-persist:nth-child(1) {
+    background-color: transparent;
+  }
+  .scOuter .tablesaw tr:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+  .scOuter .tablesaw tr:nth-child(even) {
+    background-color: #fff;
+  }
+  .scOuter .tablesaw tr:nth-child(1) {
+    background-color: #fff;
+  }
+  .scOuter .tablesaw-columntoggle td.title a, .tablesaw-swipe td.title a {
+    display: block;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+  }
+  .scOuter .tablesaw-swipe .tablesaw-cell-persist th,
+  .scOuter .tablesaw-swipe td,
+  .scOuter .tablesaw-swipe .tablesaw-cell-persist {
+    border-right: 1px solid #fff;
+  }
+  .scOuter .tablesaw tbody tr {
+    border-bottom: none;
+  }
+  .scOuter .tablesaw tr td,
+  .scOuter .tablesaw tr th,
+  .scOuter table.tablesaw thead th,
+  .scOuter table.tablesaw thead td {
+    color: #333;
+    font-size: 14px;
+    text-transform: none;
+    height: 60px;
+    vertical-align: top;
+  }
+  .scOuter .tablesaw tr td a {
+    color: #1d9e74;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .scOuter .tablesaw tr td a:hover,
+  .scOuter .tablesaw tr td a:active,
+  .scOuter .tablesaw tr td a:focus {
+    color: #167858;
+  }
+  .scOuter .tablesaw tbody tr.relProducts td,
+  .scOuter .tablesaw-swipe tr.relProducts td.tablesaw-cell-persist {
+    border: none;
+    box-shadow: none;
+    height: 30px;
+    padding: 0px !important;
+  }
+  .scOuter .tablesaw thead {
+    border: none;
+  }
+  .scOuter .tablesaw tr.relProducts {
+    background-color: #999;
+    height: 30px;
+  }
+  .scOuter .tablesaw tr.relatedProducts td.relP {
+    border-right: 0px;
+    position: relative;
+    vertical-align: top;
+    padding: 0px !important;
+    background-color: #999;
+  }
+  .scOuter .tablesaw tr td span.relTitle {
+    position: absolute;
+    width: 230px;
+    margin-left: 215%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .scOuter .tablesaw-advance {
+    margin-top: -50px;
+    padding-right: 3px;
+    min-width: 73px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .scOuter .tablesaw-bar {
+    clear: none;
+  }
+  .scOuter .count {
+    display: block;
+    padding-top: 12px;
+    margin-right: 90px;
+    height: 50px;
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+  }
+  .scOuter .tablesaw-swipe .tablesaw-cell-persist {
+    box-shadow: none;
+    font-weight: 400;
+  }
+  .scOuter .count span,
+  .scOuter .prodFamily p,
+  .scOuter .reqSoftware p {
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .scOuter .reqSoftware {
+    padding-top: 15px;
+  }
+  .scOuter .reqSoftware a {
+    color: #1d9e74;
+    text-decoration: none;
+  }
+  .scOuter .reqSoftware a:hover,
+  .scOuter .reqSoftware a:active,
+  .scOuter .reqSoftware a:focus {
+    color: #167858;
+  }
+  .scOuter table.tablesaw th a.minorRelease {
+    display: block;
+    height: 26px;
+    width: 26px;
+    float: right;
+    background: url(../img/btnMinorRelease.png) top left no-repeat;
+  }
+  .scOuter table.tablesaw th a.minorRelease:focus {
+    outline: none;
+  }
+  .scOuter table.tablesaw th a.minorRelease:hover {
+    background: url(../img/btnMinorRelease.png) left -26px no-repeat;
+  }
+  .scOuter .popover .popover-title {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 15px 8px 5px 15px;
+    color: #666;
+    min-width: 150px;
+    font-weight: 400;
+  }
+  .scOuter .popover .popover-title button.close {
+    margin-top: -12px;
+    padding-left: 15px;
+    font-size: 26px;
+    opacity: 1;
+    color: #ccc;
+    font-weight: 300;
+  }
+  .scOuter .popover .popover-title button.close:hover,
+  .scOuter .popover .popover-title button.close:active,
+  .scOuter .popover .popover-title button.close:focus {
+    color: #999;
+    outline: none;
+  }
+
+  .scOuter .popover .popover-content {
+    padding: 5px 15px 15px 15px;
+  }
+  .scOuter .popover .popover-content a {
+    color: #1d9e74;
+    display: block;
+  }
+  .scOuter .popover .popover-content a:hover {
+    color: #167858;
+  }
+  .scOuter .tooltip.top .tooltip-inner {
+      background-color: #fff;
+      border-radius: 0px;
+      border-top: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      padding: 10px 15px;
+      color: #666;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      opacity: 1;
+      -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow:    1px 2px 10px rgba(0, 0, 0, 0.2);
+      box-shadow:         1px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .scOuter .tooltip.top .tooltip-arrow {
+        border-top-color: #fff;
+  }
+  .scOuter .tooltip.in {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .scOuter .tablesaw tr td {
+    position: relative;
+  }
+  .scOuter .tablesaw a.currentVersion,
+  .scOuter .tablesaw a.outdatedVersion,
+  .scOuter .tablesaw a.cntrlAvail {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 16px;
+    width: 16px;
+  }
+  .scOuter .tablesaw a.currentVersion:focus,
+  .scOuter .tablesaw a.outdatedVersion:focus,
+  .scOuter .tablesaw a.cntrlAvail:focus {
+    outline: none;
+  }
+  .scOuter .tablesaw a.currentVersion {
+    background: url('../img/triangleLegendPurpleIcon.png') left 1px no-repeat;
+  }
+  .scOuter .tablesaw a.outdatedVersion {
+    background: url('../img/triangleLegendGrayIcon.png') left 1px no-repeat;
+  }
+  .scOuter .tablesaw a.cntrlAvail {
+    background: url('../img/triangleLegendOrangeIcon.png') left 1px no-repeat;
+  }
+  .scOuter .tablesaw tr td.width-fixed .tooltip {
+    min-width: 180px;
+    top: -47px !important;
+  }
+
+  .scOuter .tablesaw a.noteLink {
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-left: 7px;
+    height: 21px;
+    width: 21px;
+    background: url('../img/notesIcon.png') left top no-repeat;
+  }
+
+
+
+
+
+
+
+
+
+/*! Tablesaw - v1.0.4 - 2015-02-19
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2015 Filament Group; Licensed MIT */
+
+table.tablesaw {
+  empty-cells: show;
+  max-width: 100%;
+  width: 100%;
+}
+.tablesaw {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* Structure */
+.tablesaw {
+  border: 0;
+  padding: 0;
+}
+.tablesaw th,
+.tablesaw td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em .7em;
+}
+.tablesaw thead tr:first-child th {
+  padding-top: .9em;
+  padding-bottom: .7em;
+}
+.tablesaw-enhanced .tablesaw-bar a.btn {
+  color: #1c95d4;
+}
+.tablesaw-enhanced .tablesaw-bar .btn:hover {
+  text-decoration: none;
+}
+.tablesaw-enhanced .tablesaw-bar .btn:hover,
+.tablesaw-enhanced .tablesaw-bar .btn:focus {
+  color: #208de3;
+  background-color: #fff;
+  outline: none;
+}
+.tablesaw-advance .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tablesaw-advance .btn.btn-micro {
+  font-size: .8125em;
+  padding: .3em .7em .25em .7em;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+  display: inline-block;
+  overflow: hidden;
+  width: 1.8em;
+  height: 1.8em;
+  background-position: 50% 50%;
+  margin-left: .5em;
+  position: relative;
+}
+
+.tablesaw-advance a.tablesaw-nav-btn.disabled {
+  opacity: .25;
+  filter: alpha(opacity=25);
+  cursor: default;
+  pointer-events: none;
+}
+.tablesaw-bar {
+  clear: both;
+  font-family: sans-serif;
+}
+
+.tablesaw-toolbar {
+  font-size: .875em;
+  float: left;
+}
+
+.tablesaw-toolbar label {
+  padding: .5em 0;
+  clear: both;
+  display: block;
+  color: #888;
+  margin-right: .5em;
+  text-transform: uppercase;
+}
+
+.tablesaw-bar .btn,
+.tablesaw-enhanced .tablesaw-bar .btn {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.tablesaw-bar .btn-select,
+.tablesaw-enhanced .tablesaw-bar .btn-select {
+  margin-bottom: 0;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn {
+  margin-left: .4em;
+  margin-top: 0;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  font-family: sans-serif;
+  font-size: 1em;
+  padding-left: .3em;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn-select {
+  min-width: 0;
+}
+
+.tablesaw-bar .tablesaw-toolbar .btn-select:after {
+  padding-top: .9em;
+}
+
+.tablesaw-bar .tablesaw-toolbar select {
+  color: #888;
+  text-transform: none;
+  background: transparent;
+}
+
+.tablesaw-toolbar ~ table {
+  clear: both;
+}
+
+.tablesaw-toolbar .a11y-sm {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+table.tablesaw thead th,
+table.tablesaw thead td {
+  color: #444;
+  font-size: .9em;
+}
+
+.tablesaw th,
+.tablesaw td {
+  line-height: 1em;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tablesaw td,
+.tablesaw tbody th {
+  vertical-align: middle;
+  font-size: 1.17em;
+  /* 19px */
+}
+
+.tablesaw td .btn,
+.tablesaw tbody th .btn {
+  margin: 0;
+}
+
+.tablesaw thead {
+  border: 1px solid #e5e5e4;
+  background: #e2dfdc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2dfdc));
+  background-image: -webkit-linear-gradient(top, #fff, #e2dfdc);
+  background-image: linear-gradient(to bottom, #fff, #e2dfdc);
+}
+
+.tablesaw thead th {
+  font-weight: 100;
+  color: #777;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 #fff;
+  text-align: left;
+}
+
+.tablesaw tbody tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+@media (min-width: 40em) {
+  .tablesaw td {
+    line-height: 2em;
+  }
+}
+
+.tablesaw-fix-persist {
+  table-layout: fixed;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+  border: none !important;
+  outline: none !important;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: url(../img/scAdvance.png) left -30px no-repeat;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left {
+  display: inline-block;
+  height: 30px;
+  width: 31px;
+  background: url(../img/scPrevious.png) left -30px no-repeat;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:hover {
+  background: url(../img/scAdvance.png) left -60px no-repeat;
+}
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:hover {
+  background: url(../img/scPrevious.png) left -60px no-repeat;
+}
+.tablesaw-advance a.tablesaw-nav-btn.right.disabled {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    cursor: default;
+    pointer-events: none;
+    background: url(../img/scAdvance.png) left 0px no-repeat;
+}
+.tablesaw-advance a.tablesaw-nav-btn.left.disabled {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    cursor: default;
+    pointer-events: none;
+    background: url(../img/scPrevious.png) left 0px no-repeat;
+}

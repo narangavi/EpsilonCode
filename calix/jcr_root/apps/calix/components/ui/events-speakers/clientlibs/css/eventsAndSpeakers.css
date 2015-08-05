@@ -1,0 +1,1058 @@
+/****************************************
+  events & speakers
+****************************************/
+.starting-month-dl, .starting-year-dl {
+  width: 75px;
+    height: 30px;
+}
+
+.starting-year-dl {
+  padding-left:5px;
+}
+
+.iconLoadingTab {
+    background: url("/etc/designs/calix/clientlibs/img/ajax-loader-icon.gif");
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+    z-index: 1000;
+}
+
+.eventsAndSpeakers .grid-item {
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+.eventsAndSpeakers li .datePickerView {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers li .datePickerView h3 {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers .myCalix {
+  top: 38px;
+} 
+
+.eventsAndSpeakers {
+  margin: 0px;
+  padding: 15px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.eventsAndSpeakers .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.eventsAndSpeakers h1 {
+  text-align: left;
+  font-size: 56px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.eventsAndSpeakers h2 {
+  padding: 0 15px;
+  font-size: 31px;
+  color: #333;
+  font-weight: 300;
+}
+.eventsAndSpeakers h3 {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  text-align: left;
+  margin: 70px 0 0 0;
+  padding: 0 15px;
+}
+
+.eventsAndSpeakers p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 18px;
+  padding: 0 15px 0 0;
+}
+
+.eventsAndSpeakers img {
+  padding: 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers .container ul.displayFilters li span {
+  display: none
+}
+
+.eventsAndSpeakers .container ul.displayFilters li.grid {
+  border-right: 1px solid #bdbdbd;
+  background: url('/etc/designs/calix/clientlibs/img/gridIcon.png') 0 no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.eventsAndSpeakers .container ul.displayFilters li.list {
+  background: url('/etc/designs/calix/clientlibs/img/listIcon.png') 100% no-repeat;
+  margin: 0 0 0 -5px;
+  padding: 0;
+}
+
+.eventsAndSpeakers ul.displayFilters li.grid.active {
+  border-right: 1px solid #bdbdbd;
+  background: url('/etc/designs/calix/clientlibs/img/gridIconActive.png') 0 no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.eventsAndSpeakers ul.displayFilters li.list.active {
+  background: url('/etc/designs/calix/clientlibs/img/listIconActive.png') 100% no-repeat;
+  margin: 0 0 0 -5px;
+  padding: 0;
+}
+
+.eventsAndSpeakers .container ul.displayFilters li a {
+  display: block;
+  width: 40px;
+  height: 25px;
+}
+
+.eventsAndSpeakers .container .subNavMobile {
+  display: none;
+}
+
+.eventsAndSpeakers .subNav {
+  width: 1000px;
+}
+
+.eventsAndSpeakers .subNav ul {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.eventsAndSpeakers .subNav ul.categories {
+  display: inline;
+}
+
+.eventsAndSpeakers .subNav ul.categories li {
+
+  display: inline-block;
+}
+
+.eventsAndSpeakers .subNav ul.categories li a {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  background: #efefef;
+  color: #666;
+}
+
+.eventsAndSpeakers .subNav ul.categories li a.active {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  background: #1d9e74;
+  color: #fff;
+}
+
+.eventsAndSpeakers .subNav form {
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.eventsAndSpeakers .description h3 {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+.eventsAndSpeakers .description p {
+  color: #333;
+  font-size: 21px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers .row {
+  padding: 0;
+  margin: 0;
+}
+
+/* Grid View Layout */
+
+.eventsAndSpeakers .gridView .location {
+  display: none;
+}
+
+.eventsAndSpeakers .gridView .description h2 {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.eventsAndSpeakers .gridView .videoModule img {
+  width: 100%;
+}
+
+.eventsAndSpeakers .gridView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+  background-color: #e7e7e7;
+}
+.eventsAndSpeakers .gridView a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .gridView .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 35% no-repeat;
+} 
+
+.eventsAndSpeakers .gridView .eventModule {
+  background: #e7e7e7;
+}
+
+.eventsAndSpeakers .gridView .eventModule p {
+  padding: 0 15px 0 15px;
+}
+
+.eventsAndSpeakers .gridView .eventTab {
+  letter-spacing: 1px;
+  position: absolute;
+  z-index:5;
+  top: 20px;
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  padding: 5px 5px 5px 13px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.eventsAndSpeakers .gridView .speakerModule {
+  position: relative;
+}
+
+.eventsAndSpeakers .gridView .speakerModule .description {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  background-color: #e7e7e7;;
+}
+
+.eventsAndSpeakers .gridView .speakerModule .description img.bio {
+  position: absolute;
+  left: 15px;
+  bottom: 35%;
+  width: 99px;
+  height: 132px;
+}
+
+.eventsAndSpeakers .gridView .col-sm-6:nth-child(even) {
+  float: left;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 480px;
+}
+
+.eventsAndSpeakers .gridView .col-sm-6:nth-child(odd) {
+  float: left;
+  padding: 0;
+  margin: 0 10px 20px 0;
+  clear: both;
+  width: 480px;
+}
+
+.eventsAndSpeakers .gridView .col-sm-6:nth-child(even), 
+.eventsAndSpeakers .gridView .col-sm-6:nth-child(odd) { 
+  margin: 0 0 20px 0 
+} 
+
+/* List View Layout */
+
+.eventsAndSpeakers .listView .location {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.eventsAndSpeakers .listView .eventTab {
+  position: relative;
+  margin: 0;
+  padding: 5px 30px 0 0;
+  height: 80px;
+  z-index:5;
+  vertical-align: middle;
+  float: left;
+}
+
+.eventsAndSpeakers .listView .eventTab span {
+  letter-spacing: 1px;
+  position: relative; 
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.eventsAndSpeakers .listView h2 {
+  color: #1d9e74;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers .listView .videoModule img {
+  width: 100%;
+}
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  text-align: left;
+
+}
+.eventsAndSpeakers .listView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  margin: 0;
+  background-color: transparent;
+
+}
+.eventsAndSpeakers .listView .eventModule .description {
+  text-align: left;
+
+}
+.eventsAndSpeakers .listView .videoModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .speakerModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .eventModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .videoPlayIcon {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView .videoModule img {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView .speakerModule img {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView a {
+  display: block;
+}
+
+.eventsAndSpeakers .listView .videoModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.eventsAndSpeakers .listView .eventModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.eventsAndSpeakers .listView .videoModule .description p {
+}
+
+.eventsAndSpeakers .listView .speakerModule .description p {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule {
+  background-color: transparent;
+}
+
+.eventsAndSpeakers .listView .eventModule p:nth-child(odd) {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule {
+  position: relative;
+}
+
+.eventsAndSpeakers .listView .speakerModule {
+  position: relative;
+}
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  float: none;
+}
+
+.eventsAndSpeakers .listView .speakerModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .videoModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .col-sm-6:nth-child(even) {
+  float: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.eventsAndSpeakers .listView .col-sm-6:nth-child(odd) {
+  float: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.popover-content {
+  padding: 15px;
+}
+.popover-content .form-control {
+  border-radius: 0px;
+}
+
+.popover-content .form-group {
+  width: 160px;
+}
+.popover-content .form-group input[type="text"] {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #666;
+  padding: 5px 0 3px 15px;
+  border: none;
+  width: 100%;
+  background-color: #ececec;
+  transition: none;
+  margin-bottom: 18px;
+}
+.popover-content .form-group .grnBtn {
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 26px auto 18px auto;
+}
+.popover-content .form-group .autoLog {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  padding-left: 6px;
+}
+.popover-content .form-group a.grnBtn span {
+  text-align: center;
+}
+.popover-content .forgotPass {
+  text-align: center;
+}
+.popover-content .forgotPass a,
+.popover-content .forgotPass a:hover {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1d9e74;
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .tab-content {
+    margin-bottom: 15px;
+    clear: both;
+}
+
+.eventsAndSpeakers .container .subNavMobile .glyphicon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #999;
+}
+
+@media all and (min-width: 320px) {
+
+  .eventsAndSpeakers .gridView img.bio {  
+    bottom: 135px; 
+  } 
+
+  .eventsAndSpeakers .myCalix {
+    display: none;
+  } 
+
+  .eventsAndSpeakers p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 18px;
+  }
+
+  .eventsAndSpeakers h1 {
+    text-align: left;
+    font-size: 46px;
+    color: #333;
+    font-weight: 300;
+    margin: 12px 0;
+  }
+
+  .eventsAndSpeakers .container {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .eventsAndSpeakers .subNav {
+    width: 100%;
+  }
+
+  .eventsAndSpeakers .container .subNavMobile {
+    position: relative;
+    display: block;
+    padding: 0 0 20px 0;
+  }
+
+  .eventsAndSpeakers .container .showingMostRecentNav {
+   /* position: relative;
+    right: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    */
+  }
+
+  .eventsAndSpeakers .container .showingMostRecentNav .monthPicker,
+  .eventsAndSpeakers .container .showingMostRecentNav .dayPicker
+  {
+    display: inline-block;
+  }
+
+  .eventsAndSpeakers .container ul.displayFilters {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 10px 10px 0;
+
+  }
+
+  .eventsAndSpeakers ul.displayFilters li {
+    display: inline-block;
+    list-style: none;
+    background: #ded;
+  }
+
+  .eventsAndSpeakers  .gridView .speakerModule .description img.bio {
+    position: absolute;
+    left: 15px;
+    bottom: 93%;
+    width: 74px;
+    height: 99px;
+  }
+
+  .eventsAndSpeakers .gridView .videoPlayIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 30% no-repeat;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(even) {
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(odd) {
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 100%;
+  } 
+
+  .eventsAndSpeakers .gridView .description {
+    position: relative;
+    color: #333;
+    text-align: left;
+    bottom: 0;
+    padding: 20px;
+    margin: 0;
+    background-color: #e7e7e7;
+  }
+
+  .eventsAndSpeakers .gridView .eventModule p {
+    padding: 10px 0 0 0;
+  }
+
+  .eventsAndSpeakers .gridView h2 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .eventsAndSpeakers .gridView p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .eventsAndSpeakers .gridView .location {
+    padding: 10px 0 0 0;
+  }
+
+  .eventsAndSpeakers .subNav {
+    display: none;
+  }
+
+  .eventsAndSpeakers .listView .eventTab {
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 5px 30px 0 0;
+    z-index:5;
+    vertical-align: middle;
+    float: none;
+    height: 45px;
+    text-align: left;
+  }
+
+  .eventsAndSpeakers .listView .eventTab span {
+    letter-spacing: 1px;
+    position: relative; 
+    background-color: #49a0db;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .eventsAndSpeakers .listView h2 {
+    font-size: 18px;
+  }
+
+  .eventsAndSpeakers .listView .col-sm-6:first-child {
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .eventsAndSpeakers .listView .col-sm-6:nth-child(even) {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .eventsAndSpeakers .listView .col-sm-6:nth-child(odd) {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .showingMostRecentNav a, 
+  .showingMostRecentNav a:hover {
+    color: #333;
+  }
+
+  .container .filters {
+    text-align: left;
+	margin-right:0px;
+  }
+
+}
+
+@media all and (max-width: 769px) {
+    .eventsAndSpeakers  .gridView .speakerModule .description img.bio {
+        bottom: 110%;
+    }
+
+    .eventsAndSpeakers .showingMostRecentNav {
+        float: left;
+    }
+
+    .eventsAndSpeakers .dropdown-menu {
+      top: 60%;
+      border-top: 1px solid #ccc;
+      width:100%;
+    }
+
+    .eventsAndSpeakers .container .subNavMobile .btn-default {
+      width:100%;
+        border-radius: 0px;
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .eventsAndSpeakers  .gridView .speakerModule .description img.bio {
+        bottom: 93%;
+    }
+
+    .container .filters {
+        text-align: left;
+        margin-right:20px;
+    }
+
+  .eventsAndSpeakers .gridView img.bio {  
+    bottom: 120px; 
+  } 
+
+  .eventsAndSpeakers .myCalix {
+    display: block;
+  } 
+
+  .eventsAndSpeakers p {
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 769px;
+  }
+
+  .eventsAndSpeakers h1 {
+    text-align: left;
+    font-size: 56px;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  .eventsAndSpeakers .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+  }
+
+  .eventsAndSpeakers .subNav {
+    width: 70%;
+    display: block;
+  }
+
+  .eventsAndSpeakers .subNav a {
+    text-decoration: none;
+  }
+
+  .eventsAndSpeakers .subNav ul.categories li a:hover {
+      background: #1d9e74;
+      color: #fff;
+  }
+
+  .eventsAndSpeakers .container ul.displayFilters {
+    display: inline-block;
+    list-style: none;
+    right: 0;
+    padding: 10px 0 10px 10px;
+    text-align: right;
+    float: right;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(even):hover {
+    outline: 2px solid #b4deef;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(odd):hover {
+    outline: 2px solid #b4deef;
+  }
+
+  .eventsAndSpeakers .container ul.displayFilters li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .eventsAndSpeakers .gridView .speakerModule .description img.bio {
+    position: absolute;
+    left: 15px;
+    bottom: 120px;
+    width: 99px;
+    height: 132px;
+  }
+
+  .eventsAndSpeakers .gridView .videoPlayIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 35% no-repeat;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(even) {
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 480px;
+  }
+
+  .eventsAndSpeakers .gridView .col-sm-6:nth-child(odd) {
+    float: left;
+    padding: 0;
+    margin: 0 0 20px 0;
+    clear: both;
+    width: 480px;
+  }
+
+  .eventsAndSpeakers .gridView .description {
+    position: relative;
+    color: #333;
+    text-align: left;
+    bottom: 0;
+    padding: 20px;
+    margin: 0;
+    background-color: #e7e7e7;
+  }
+
+  .eventsAndSpeakers .gridView .eventModule p {
+    padding: 10px 0 0 0;
+  }
+
+  /* List View Layout */
+
+.eventsAndSpeakers .listView .location {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  display: block;
+}
+
+.eventsAndSpeakers .listView .eventTab {
+  position: relative;
+  margin: 0;
+  padding: 5px 30px 0 0;
+  height: 80px;
+  z-index:5;
+  vertical-align: middle;
+  float: left;
+}
+
+.eventsAndSpeakers .listView .eventTab span {
+  letter-spacing: 1px;
+  position: relative; 
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.eventsAndSpeakers .listView h2 {
+  color: #1d9e74;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.eventsAndSpeakers .listView .videoModule img {
+  width: 100%;
+}
+
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  text-align: left;
+
+}
+.eventsAndSpeakers .listView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  margin: 0;
+  background-color: transparent;
+
+}
+.eventsAndSpeakers .listView .eventModule .description {
+  text-align: left;
+
+}
+.eventsAndSpeakers .listView .videoModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .speakerModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .eventModule a:hover {
+  text-decoration: none;
+}
+
+.eventsAndSpeakers .listView .videoPlayIcon {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView .videoModule img {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView .speakerModule img {
+  display: none;
+} 
+
+.eventsAndSpeakers .listView a {
+  display: block;
+}
+
+.eventsAndSpeakers .listView .videoModule .description {
+  background: transparent;
+  
+}
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  background: transparent;
+
+}
+
+.eventsAndSpeakers .listView .eventModule .description {
+  background: transparent;
+}
+
+.eventsAndSpeakers .listView .videoModule .description .location {
+  display: block;
+}
+
+.eventsAndSpeakers .listView .speakerModule .description p {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule {
+  background-color: transparent;
+}
+
+.eventsAndSpeakers .listView p:nth-child(odd) {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule {
+  position: relative;
+}
+
+.eventsAndSpeakers .listView .speakerModule {
+  position: relative;
+}
+
+.eventsAndSpeakers .listView .speakerModule .description {
+  float: none;
+}
+
+.eventsAndSpeakers .listView .speakerModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .eventModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .videoModule img {
+  display: none;
+}
+
+.eventsAndSpeakers .listView .col-sm-6:nth-child(even) {
+  float: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.eventsAndSpeakers .listView .col-sm-6:nth-child(odd) {
+  float: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+  .eventsAndSpeakers .listView .col-sm-6:first-child {
+    border-top: none;
+  }
+
+  .eventsAndSpeakers .listView .col-sm-6:last-child {
+    border-top: none;
+  }
+
+  .eventsAndSpeakers .listView .eventTab {
+    position: relative;
+    margin: 0;
+    padding: 5px 15 0 0;
+    width: 180px;
+    height: 80px;
+    z-index:5;
+    vertical-align: middle;
+    float: left;
+  }
+
+  .eventsAndSpeakers .listView .eventTab span {
+    letter-spacing: 1px;
+    position: relative; 
+    background-color: #49a0db;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .eventsAndSpeakers .listView h2 {
+    padding: 0;
+    font-size: 21px;
+  }
+
+  .eventsAndSpeakers .container .subNavMobile {
+    /*
+    position: absolute;
+    right: 115px;
+    display: inline-block;
+    padding: 5px 0 20px 0;
+    */
+    display: none;
+  }
+
+  .eventsAndSpeakers .container .showingMostRecentNav {
+    /*position: absolute;
+    right: 115px;
+    padding: 12px 0 0 0;
+    display: inline-block;
+    */
+    margin: 25px 10px 0px 0px;
+  }
+.showingMostRecentNav a {
+  color : #333;
+}
+
+}
+
+

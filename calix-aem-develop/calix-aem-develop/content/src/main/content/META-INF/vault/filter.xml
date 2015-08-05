@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/calix" mode="replace"/>
+    <filter root="/apps/sling"/>
+    <filter root="/apps/cq"/>
+    <filter root="/apps/dam"/>
+    <filter root="/etc/designs/calix" />
+    <filter root="/etc/designs/calix">
+        <exclude pattern="/etc/designs/calix/jcr:content.*"/>
+    </filter>
+</workspaceFilter>

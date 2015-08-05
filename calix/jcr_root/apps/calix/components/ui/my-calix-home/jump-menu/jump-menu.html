@@ -1,0 +1,12 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit the jump menu component here]</div>
+<div class="jumpToPage dropdown" data-sly-use.models="com.calix.components.JumpMenu" >
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        ${models.label}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <div data-sly-list.menu="${models.menus}" data-sly-unwrap>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="${menu.path}">${menu.title}</a></li>
+        </div>
+    </ul>
+</div>

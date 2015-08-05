@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Blank Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}3">
+    <jcr:content
+        cq:lastModified="{Date}2015-04-15T09:47:58.951-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/calix/templates/blank"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="calix/components/page/blank"/>
+</jcr:root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-27T12:47:34.193-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-27T12:48:08.341-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/fullwidth"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="QA Work area - Epsilon"
+        jcr:uuid="30238f01-bbcf-4904-acfd-65aa36561359"
+        sling:resourceType="calix/components/page/fullwidth"/>
+    <epsilon-qa-fullwidth/>
+    <epsilon-qa-splitcolumn/>
+</jcr:root>

@@ -1,0 +1,149 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit the Press and News Hub component]<br />
+</div>
+
+<div class="pressAndNews">
+    <span class="iconLoadingTab" style="display: none;"></span>
+    <div class="container" data-sly-use.pressnewshub="com.calix.components.PressNewsHub">
+        <div class="subNav">
+            <ul class="categories">
+                <div data-sly-list.tab="${pressnewshub.tabs}" data-sly-unwrap>
+                    <li id="tab${tab.tabId}" content-id="tabContent_${tab.tabId}" type-id="${tab.tabId}">
+                        <div data-sly-test="${tab.activated}" data-sly-unwrap>
+                            <a class="active" href="javascript:void(0)">${tab.tabName}</a>
+                        </div>
+                        <div data-sly-test="${!tab.activated}" data-sly-unwrap>
+                            <a href="javascript:void(0)">${tab.tabName}</a>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div><!-- end sub navigation -->
+
+        <div class="filters">
+            <div data-sly-test="${pressnewshub.tabs}" data-sly-unwrap>
+                <ul class="displayFilters">
+                    <li class="grid active"><a href="javascript:void(0)"><span>View Grid</span></a></li>
+                    <li class="list"><a href="javascript:void(0)"><span>View List</span></a></li>
+                </ul>
+
+                <div class="subNavMobile dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        All Press &amp; News
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <div data-sly-list.tab="${pressnewshub.tabs}" data-sly-unwrap>
+                            <li id="tab${tab.tabId}" content-id="tabContent_${tab.tabId}" role="presentation"><a role="menuitem" tabindex="${tab.tabId}" href="javascript:;">${tab.tabName == "All" ? "All Press & News" : tab.tabName}</a></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <span class="navbar-login showingMostRecentNav"><a data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="javascript:;" id="login">Showing Most Recent<div class="arrow-down"></div></a></span>
+
+
+                <div id="popover-content" class="hide">
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label>Starting From:</label>
+                            <select class="starting-month-dl">
+                                <div data-sly-list.monthItem="${pressnewshub.months}" data-sly-unwrap>
+                                    <option selected='${pressnewshub.month == monthItem ? "selected" : ""}' value="${monthItem}">${monthItem}</option>
+                                </div>
+                            </select>
+                            <select class="starting-year-dl">
+                                <div data-sly-list.yearItem="${pressnewshub.years}" data-sly-unwrap>
+                                    <option selected='${pressnewshub.year == yearItem ? "selected" : ""}' value="${yearItem}">${yearItem}</option>
+                                </div>
+                            </select>
+                            <a class="grnBtn center-block dateFilter" href="javascript:void(0)" data-toggle="popover" tabindex="0" data-trigger="focus"><span>Update</span></a>
+                            <div class="forgotPass"><a class="mostRecent" href="javascript:void(0)">Most Recent</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content">
+            <div data-sly-test="${pressnewshub.tabs}" data-sly-unwrap>
+                <div data-sly-list.tab="${pressnewshub.tabs}" data-sly-unwrap>
+                    <div data-sly-test="${tabList.first}" class="cq-dd-images" data-sly-unwrap>
+                        <div class="row gridView grid" style="display: block" id="tabContent_${tab.tabId}">
+                            <div data-sly-list.article="${tab.contents}" data-sly-unwrap>
+                                <div class="col-sm-6 col-xs-12 ${article.cssClass} grid-item">
+                                    <div class="eventTab" tab-id="tab${article.tabId}" content-id="tabContent_${article.tabId}" style="cursor:pointer;">
+                                        <span>${article.type}</span>
+                                    </div>
+                                    <a href="${article.linkAction}">
+                                        <div data-sly-test="${article.image}" data-sly-unwrap>
+                                            <img src="${article.image}" width="100%" height="100%" alt="" />
+                                        </div>
+                                        <div data-sly-test="${!article.image}" data-sly-unwrap>
+                                            <img src="/etc/designs/calix/clientlibs/img/null-image.jpg" width="100%" height="100%" alt="" />
+                                        </div>
+                                        <div class="description">
+                                            <h3>${article.date}<div data-sly-test="${article.source}" data-sly-unwrap> | ${article.source}</div></h3>
+                                            <h2>${article.headline}</h2>
+                                            <p>${article.subhead}</p>
+                                            <p class="location">${article.eventLocation}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-sly-test="${!tabList.first}" class="cq-dd-images" data-sly-unwrap>
+                        <div class="row gridView grid" style="display: none" id="tabContent_${tab.tabId}">
+                            <div data-sly-list.article="${tab.contents}" data-sly-unwrap>
+                                <div class="col-sm-6 col-xs-12 ${article.cssClass} grid-item">
+                                    <div class="eventTab" tab-id="tab${article.tabId}" content-id="tabContent_${article.tabId}" style="cursor:pointer;">
+                                        <span>${article.type}</span>
+                                    </div>
+                                    <a href="${article.linkAction}">
+                                        <div data-sly-test="${article.image}" data-sly-unwrap>
+                                            <img src="${article.image}" width="100%" height="100%" alt="" />
+                                        </div>
+                                        <div data-sly-test="${!article.image}" data-sly-unwrap>
+                                            <img src="/etc/designs/calix/clientlibs/img/null-image.jpg" width="100%" height="100%" alt="" />
+                                        </div>
+                                        <div class="description">
+                                            <h3>${article.date}<div data-sly-test="${article.source}" data-sly-unwrap> | ${article.source}</div></h3>
+                                            <h2>${article.headline}</h2>
+                                            <p>${article.subhead}</p>
+                                            <p class="location">${article.eventLocation}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="grnBtn outlineBtn" id="loadmore" href="javascript:void(0)"><span>${pressnewshub.loadmoreLabel}</span></a>
+		
+		<div class="noDataText" id="noDataText"><h2 style="color: #1d9e74;">No articles found</h2></div>
+		
+        <script>
+            var limitItems = "${pressnewshub.limitItems @ context="scriptString"}";
+            if (typeof pressPath == 'undefined') {
+				var pressPath = "${pressnewshub.pressPath @ context="scriptString"}";
+			}
+			if (typeof newsPath == 'undefined') {
+            	var newsPath = "${pressnewshub.newsPath @ context="scriptString"}";
+			}
+            var pressTagName = "${pressnewshub.pressTagName @ context="scriptString"}";
+            var newsTagName = "${pressnewshub.newsTagName @ context="scriptString"}";
+            var currentMonth = "${pressnewshub.month @ context="scriptString"}";
+            var currentYear = "${pressnewshub.year @ context="scriptString"}";
+        </script>
+    </div><!-- end container -->
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.myCalix').css('top','20px');
+})
+</script>

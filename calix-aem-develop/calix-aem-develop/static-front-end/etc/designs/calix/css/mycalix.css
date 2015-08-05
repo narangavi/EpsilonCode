@@ -1,0 +1,342 @@
+/****************************************
+    my calix
+****************************************/
+
+.myCalixWrap {
+  margin: 0px auto;
+  max-width: 1024px;
+  padding: 0 0 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.myCalixWrap img.myCalixLogo {
+  margin: 30px 0 0 0;
+  width:311px;
+  height:100%;
+}
+.myCalixWrap .linkContent {
+  margin: 0;
+  padding: 0;
+}
+.myCalixWrap .jumpToPage {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+}
+.myCalixWrap .jumpToPage button {
+  width: 195px;
+  text-align: left;
+}
+.myCalixWrap .jumpToPage .caret {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.myCalixWrap h3 {
+  font-size: 24px;
+}
+.myCalixWrap p {
+  font-size: 16px;
+}
+.myCalixWrap .welcome {
+  padding: 0;
+  margin: 0;
+}
+.myCalixWrap .welcome h3 {
+  font-size: 21px;
+  color: #333;
+  font-weight: 400;
+}
+.myCalixWrap .welcome p {
+  font-size: 21px;
+  color: #333;
+  font-weight: 300;
+  width: 80%;
+}
+.myCalixMain {
+  padding-left: 0px;
+}
+.myCalixWrap .linkContent .linkItem {
+  width: 235px;
+  min-height: 100px;
+  float: left;
+  display: block;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #1d9e74;
+}
+.myCalixWrap .team .linkItem {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  min-height: 100px;
+  float: left;
+  display: block;
+  margin: 0 18px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1d9e74;
+  padding: 20px 0 0 0;
+}
+
+.myCalixWrap .team .linkItem:last-child {
+  border: none;
+}
+.myCalixWrap .team .linkItem ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.myCalixWrap .team .linkItem li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.myCalixWrap .team .linkItem li a {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0 10px 0;
+  margin: 0;
+  color: #1d9e74;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.myCalixWrap .team p.moreLink {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-weight: 400;
+}
+
+.myCalixWrap .team .linkItem li a.externalIcon:after {
+    content: "";
+    display: inline-block;
+    background: url("../img/externalLinkIcon.png") no-repeat bottom right;
+    margin:0 0 0 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.myCalixWrap .team .linkItem .bold {
+  font-weight: 600;
+}
+.myCalixWrap .linkContent a.linkItem:hover,
+.myCalixWrap .linkContent a.linkItem:focus,
+.myCalixWrap .linkContent a.linkItem:active {
+  text-decoration: none;
+  outline: none;
+}
+.myCalixWrap .linkContent a.linkItem:hover span.linkDescription,
+.myCalixWrap .linkContent a.linkItem:focus span.linkDescription,
+.myCalixWrap .linkContent a.linkItem:active span.linkDescription {
+  color: #136c4f;
+}
+.myCalixWrap .linkContent a.linkItem:nth-child(3n) {
+  margin-right: 0px;
+}
+.myCalixWrap .linkContent  a span.linkThumb img {
+  vertical-align: middle;
+}
+.myCalixWrap .linkContent a span.linkDescription {
+  display: block;
+  font-weight: 400;
+  padding: 10px 12px 0 0px;
+}
+.myCalixWrap .team a {
+  color: #1d9e74;
+}
+.myCalixWrap .linkContent p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.myCalixWrap .linkContent .linkItem {
+  width: 235px;
+  float: left;
+  display: block;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1d9e74;
+}
+
+.myCalixWrap .team .linkItem {
+  width: 210px;
+  float: left;
+  display: block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1d9e74;
+}
+
+.myCalixWrap .linkContent  a span.linkThumb img {
+  width: 235px;
+}
+.myCalixWrap .linkContent a.linkItem:nth-child(3n) {
+  margin-right: 0px;
+}
+.myCalixWrap .linkContent a.linkItem:nth-child(4n) {
+  margin-right: 18px;
+}
+
+.myCalixWrap p.notifications {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  width: 96%;
+  background:url('../img/notificationFlagIconOrange.png') 5px center #e87b00 no-repeat;
+}
+.myCalixWrap p.notifications a {
+  display: none;
+  color: #fff;
+  line-height: 24px;
+  margin: 40px 0 0 0;
+  padding: 5px 0 8px 40px;
+}
+.myCalixWrap .accountTeam {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+}
+.myCalixWrap .accountTeam span.fname {
+  font-weight: 700;
+}
+.myCalixWrap .accountTeam h3,
+.myCalixWrap .team h3 {
+  font-size: 18px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+.myCalixWrap .maxlist-more a {
+  font-weight: 400;
+}
+.myCalixWrap .maxlist-more a,
+.myCalixWrap .accountTeam a {
+  color: #1d9e74;
+}
+.myCalixWrap .team .linkItem li a:hover,
+.myCalixWrap .team .linkItem li a:active,
+.myCalixWrap .team .linkItem li a:focus,
+.myCalixWrap .maxlist-more a:hover,
+.myCalixWrap .accountTeam a:hover,
+.myCalixWrap .accountTeam a:active,
+.myCalixWrap .accountTeam a:focus {
+  color: #167858;
+}
+
+.myCalixWrap .rightCol ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.myCalixWrap .rightCol .accountTeam ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.myCalixWrap .accountTeam ul li span.email {
+  display: block;
+}
+
+.myCalixWrap .team {
+  margin-top: 75px;
+}
+.myCalixWrap .team .linkItem ul {
+  margin-top: 20px;
+}
+
+@media all and (max-width: 768px) {
+
+  .myCalixWrap p.notifications a {
+    display: block;
+  }
+
+  .myCalixWrap img.myCalixLogo {
+    margin: 27px 0 0 0;
+    width:265px;
+    height:100%;
+  }
+
+  .myCalixWrap .jumpToPage {
+    display: none;
+  }
+
+  .myCalixWrap {
+    margin: 0px;
+    padding: 0 0 0 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+
+  .myCalixWrap p {
+    margin: 0px;
+    padding: 0 15px 0 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .myCalixWrap .welcome p {
+    width: 100%;
+  }
+  .left-col .myCalixWrap {
+    margin: 0px;
+    padding: 20px 20px 45px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .right-col .myCalixWrap {
+    margin: -15px 0 0 -15px;
+    padding: 0 0 45px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  .myCalixWrap h3 {
+    font-size: 24px;
+  }
+  .myCalixWrap p {
+    font-size: 16px;
+  }
+  .myCalixWrap .linkContent {
+    width: 100%;
+  }
+  .myCalixWrap .linkContent a.linkItem,
+  .twoThirds .myCalixWrap .linkContent .linkItem {
+    width: 100%;
+    float: none;
+    min-height: 0px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 12px 0px;
+  }
+  .myCalixWrap .linkContent a span.linkDescription {
+    float: none;
+    display: inline;
+    padding: 0px;
+    width: 100%;
+  }
+  .myCalixWrap .linkContent a span.linkThumb {
+    display: none;
+  }
+  .myCalixWrap .linkContent a.linkItem:hover {
+    box-shadow: none;
+    text-decoration: none;
+    color: #136c4f;
+  }
+  .myCalixWrap .col-xs-12 {
+    padding-left: 0px;
+  }
+  .myCalixWrap .team .linkItem ul {
+    margin-bottom: 30px;
+  }
+}

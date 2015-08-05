@@ -1,0 +1,316 @@
+/****************************************
+  news carousel
+****************************************/
+
+/* Slick Slider Carousel
+http://kenwheeler.github.io/slick/
+*/
+
+.newsCarousel .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.newsCarousel .slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.newsCarousel .slick-list:focus {
+    outline: none;
+}
+
+.newsCarousel .slick-loading .slick-list {
+    background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+.newsCarousel .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.newsCarousel .slick-slider .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.newsCarousel .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.newsCarousel .slick-track:before, .slick-track:after {
+    content: "";
+    display: table;
+}
+
+.newsCarousel .slick-track:after {
+    clear: both;
+}
+
+.newsCarousel .slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.newsCarousel .slick-slide {
+    float: left;
+    /* height: 100%;*/
+    min-height: 1px;
+    display: none;
+}
+
+[dir="rtl"] .newsCarousel .slick-slide {
+    float: right;
+}
+
+.newsCarousel .slick-slide img {
+    display: block;
+}
+
+.newsCarousel .slick-slide.slick-loading img {
+    display: none;
+}
+
+.newsCarousel .slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.newsCarousel .slick-initialized .slick-slide {
+    display: block;
+}
+
+.newsCarousel .slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.newsCarousel .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/* Arrows */
+.newsCarousel .slick-prev,
+.newsCarousel .slick-next {
+    position: absolute;
+    display: block;
+    height: 22px;
+    width: 40px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 25%;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/* Dots */
+
+.newsCarousel ul.slick-dots {
+  display: none;
+}
+
+.newsCarousel .slick-slider {
+    margin-bottom: 15px;
+}
+
+.newsCarousel .slider-news-loop {
+    z-index: 1;
+    width: 100%;
+    left: 0;
+}
+
+.newsCarousel .slider-news-loop .event {
+    float: left;
+    width: 33.33%;
+    padding: 0 80px;
+    text-align: center;
+}
+
+.newsCarousel .slick-next {
+    background: url('../img/carouselNextArw.png') no-repeat;
+    left: 96.5%;
+    z-index: 2;
+    width: 40px;
+    height: 50px;
+}
+
+.newsCarousel .slick-prev {
+    left: 1.8%;
+    background: url('../img/carouselPrevArw.png') no-repeat;
+    z-index: 3;
+    width: 40px;
+    height: 45px;
+}
+
+.newsCarousel {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.newsCarousel h3,
+.newsCarousel h2 {
+    font-size: 18.50px;
+    color: #333;
+    font-weight: 400;
+}
+.newsCarousel p {
+    font-size: 14.90px;
+    letter-spacing: 0;
+    color: #333;
+    padding: 0 0px;
+}
+
+@media all and (min-width: 320px) {
+    /*
+    #contentWrapper .innerWrap {
+      min-width: 320px;
+      border: none;
+      padding: 0;
+    }
+    */
+    .newsCarousel p {
+        padding: 0 60px;
+    }
+    .newsCarousel .slick-next {
+        left: 93%;
+        width: 22px;
+        height: 40px;
+    }
+    .newsCarousel .slider-news-loop .event {
+        width: 50%;
+        padding: 0 40px;
+    }
+}
+
+/*
+@media all and (min-width: 618px) {
+  #contentWrapper .innerWrap {
+    min-width: 100%;
+    border: none;
+    padding: 0;
+  }
+  .newsCarousel p {
+    padding: 0;
+  }
+  .newsCarousel .slick-next {
+    left: 95%;
+    width: 22px;
+    height: 40px;
+  }
+  .newsCarousel .slider-news-loop .event {
+    width: 50%;
+    padding: 0 40px;
+  }
+}
+*/
+
+@media all and (min-width: 769px) {
+    /*#contentWrapper .innerWrap {
+      min-width: 100%;
+      border: none;
+      padding: 0 0px;
+    }*/
+    .newsCarousel p {
+        font-size: 14.90px;
+        padding: 0 0px;
+    }
+    .newsCarousel .slick-next {
+        left: 96%;
+        width: 22px;
+        height: 40px;
+    }
+    .newsCarousel .slider-news-loop .event {
+        width: 50%;
+        padding: 0 40px;
+    }
+    /*
+    .innerWrap {
+      min-width: none;
+    }
+    */
+}
+
+/*
+@media all and (min-width: 850px) {
+  .newsCarousel .slick-dots {
+    display: none;
+  }
+  #contentWrapper .innerWrap {
+    min-width: 100%;
+    border: none;
+    padding: 0 0px;
+  }
+  .newsCarousel p {
+    font-size: 15.88px;
+    padding: 0 20px;
+  }
+  .newsCarousel .slick-next {
+    left: 96%;
+    width: 22px;
+    height: 40px;
+  }
+  .slider-news-loop .event {
+    width: 33.33%;
+    padding: 0 50px;
+  }
+    .innerWrap {
+    min-width: none;
+  }
+}
+
+
+@media all and (min-width: 992px) {
+  .innerWrap {
+    min-width: 100%;
+  }
+  .newsCarousel p {
+    font-size: 15.88px;
+    padding: 0 30px;
+  }
+  .newsCarousel .slick-next {
+    left: 96.5%;
+    width: 22px;
+    height: 40px;
+  }
+  .newsCarousel .slider-news-loop .event {
+    width: 33.33%;
+    padding: 0 10px;
+  }
+}
+*/
+
+@media all and (min-width: 1024px) {
+    .newsCarousel .slick-next {
+        left: 97%;
+        width: 22px;
+        height: 40px;
+    }
+    .newsCarousel .slider-news-loop .event {
+        width: 33.33%;
+        padding: 0 80px;
+    }
+}

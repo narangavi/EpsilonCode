@@ -1,0 +1,133 @@
+/****************************************
+  video gallery content
+****************************************/
+
+.videoWrap {
+  width: 996px;
+  padding: 52px 44px 18px 44px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.videoWrap .featureImage {
+  width: 900px;
+}
+.videoWrap .singleVideo {
+  width: 100%;
+}
+
+.videoWrap .imageDescription {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 55px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.85);
+}
+.videoWrap h3 {
+  margin-top: 10px;
+}
+.videoWrap .imageDescription p {
+  top: 35%;
+  left: 2%;
+  position: relative;
+  width: 90%;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.videoWrap .imageDescription span.date {
+  color: #45367d;
+  padding-right: .5em;
+}
+.imgGall .modal-dialog {
+  width: 1000px;
+}
+.imgGall .modal-body {
+  padding: 0px;
+}
+.imgGall button.close {
+  position: absolute;
+  z-index: 99999999;
+  right: 18px;
+  font-size: 34px;
+  opacity: .5;
+  display: block;
+}
+.videoWrap .videoDescription {
+  padding-right: 25px;
+  font-weight: 300;
+  color: #333;
+}
+.videoWrap .videoDescription h4 {
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+.videoWrap .videoDescription p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#vidGallery {
+  width: 900px;
+  min-height: 500px;
+}
+.closeMoWin {
+  display: none;
+}
+.newsAndSocialSpotlight .videoPlayIcon {
+  background: url('../img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+@media all and (min-width: 769px) {
+
+}
+@media all and (min-width: 1200px) {
+
+}
+
+@media all and (max-width: 992px) {
+
+}
+@media all and (max-width: 768px) {
+  #vidGallery {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .imgGall .modal-dialog {
+    width: 96%;
+  }
+  .videoWrap .container {
+    width: 100% !important;
+  }
+  .videoThumbs {
+    display: none;
+  }
+  .videoWrap {
+    width: 100%;
+    padding: 35px 10px 20px 10px;
+  }
+  .videoWrap .item {
+    display: block;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+  a.viewAll {
+    display: none;
+  }
+  .closeMoWin {
+    position: absolute;
+    right: 20px;
+    top: -8px;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.5;
+    padding-right: 10px;
+  }
+}
+@media all and (max-width: 375px) {
+
+}

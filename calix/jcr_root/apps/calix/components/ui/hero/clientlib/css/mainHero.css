@@ -1,0 +1,517 @@
+/****************************************
+  Slider Hero
+****************************************/
+
+
+.slick-loading .slick-list
+{
+    background: #fff url('/etc/designs/calix/clientlibs/img/ajax-loader.gif') center center no-repeat;
+}
+
+
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('/etc/designs/calix/clientlibs/fonts/slick.eot');
+    src: url('/etc/designs/calix/clientlibs/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/etc/designs/calix/clientlibs/fonts/slick.woff') format('woff'), url('/etc/designs/calix/clientlibs/fonts/slick.ttf') format('truetype'), url('/etc/designs/calix/clientlibs/fonts/slick.svg#slick') format('svg');
+}
+
+
+/* Slick Slider Carousel
+http://kenwheeler.github.io/slick/
+*/
+
+.main-hero.photoSlider .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main-hero.photoSlider .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.main-hero.photoSlider .slick-list:focus {
+  outline: none;
+}
+
+.main-hero.photoSlider .slick-loading .slick-list {
+  background: #fff url("/etc/designs/calix/clientlibs/img/ajax-loader.gif") center center no-repeat;
+}
+
+.main-hero.photoSlider .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.main-hero.photoSlider .slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.main-hero.photoSlider .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.main-hero.photoSlider .slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.main-hero.photoSlider .slick-track:after {
+  clear: both;
+}
+
+.main-hero.photoSlider .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.main-hero.photoSlider .slick-slide {
+  float: left;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .main-hero.photoSlider .slick-slide {
+  float: right;
+}
+
+.main-hero.photoSlider .slick-slide img {
+  display: block;
+}
+
+.main-hero.photoSlider .slick-slide.slick-loading img {
+  display: none;
+}
+
+.main-hero.photoSlider .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.main-hero.photoSlider .slick-initialized .slick-slide {
+  display: block;
+}
+
+.main-hero.photoSlider .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.main-hero.photoSlider .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Arrows */
+.main-hero.photoSlider .slick-prev,
+.main-hero.photoSlider .slick-next {
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Dots */
+
+.main-hero.photoSlider ul.slick-dots {
+  padding: 0;
+  margin: 0;
+}
+
+.main-hero.photoSlider .slick-slider {
+  margin-bottom: 15px;
+}
+
+.main-hero.photoSlider .slider-photos-loop {
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.main-hero.photoSlider .slider-photos-loop .event {
+  float: left;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.main-hero.photoSlider .slick-next {
+  background: url('/etc/designs/calix/clientlibs/img/carouselWhiteNextArw.png') 80% no-repeat;
+  top: 40%;
+  right: 1%;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+}
+
+.main-hero.photoSlider .slick-prev {
+  top: 40%;
+  left: 1%;
+  background: url('/etc/designs/calix/clientlibs/img/carouselWhitePrevArw.png') 20% no-repeat;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+}
+
+.main-hero.photoSlider .slick-dots
+{
+    position: absolute;
+    bottom: 10px;
+
+    display: inline;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.main-hero.photoSlider .slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.main-hero.photoSlider .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: inline;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.main-hero.photoSlider .slick-dots li button:hover,
+.main-hero.photoSlider .slick-dots li button:focus
+{
+    outline: none;
+}
+.main-hero.photoSlider .slick-dots li button:hover:before,
+.main-hero.photoSlider .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.main-hero.photoSlider .slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 3px solid #7c62c5;
+    border-radius: 10px;
+    background-color: #fff;
+
+    content: ' ';
+    text-align: center;
+
+    opacity: 1.0;
+    color: #fc0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.main-hero.photoSlider .slick-dots li.slick-active button:before
+{
+    opacity: 1.0;
+    color: #fc0;
+
+    border: 3px solid #e77400;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.main-hero.photoSlider {
+  margin: 0px;
+  padding: 5px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  
+}
+
+.main-hero.photoSlider .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.main-hero.photoSlider h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.main-hero.photoSlider h2 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.main-hero.photoSlider h3 {
+  font-size: 20px;
+  font-weight: 300;
+
+}
+.main-hero.photoSlider p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.main-hero.photoSlider .slider-photos-loop ul {
+  text-decoration: none;
+  display: inline;
+}
+.main-hero.photoSlider .slider-photos-loop ul li {
+  text-decoration: none;
+  display: inline;
+}
+.main-hero.photoSlider img {
+  padding: 0;
+  margin: 0;
+}
+
+.main-hero.photoSlider .row {
+  padding: 0;
+  margin: 0;
+}
+.main-hero.photoSlider .main-hero.photoSlider {
+  width: 495px;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+
+.main-hero.photoSlider .videoPreview {
+  width: 495px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.main-hero.photoSlider .videoPreview img {
+  width: 100%;
+}
+.main-hero.photoSlider .videoPreview .description {
+  position: absolute;
+  text-align: left;
+  width: 490px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.main-hero.photoSlider .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.main-hero.photoSlider .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+.main-hero.photoSlider .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+.main-hero.photoSlider .grnBtn {
+  margin: 15px 28px 5px 0;
+}
+.main-hero.photoSlider a.grnLink:hover,
+.main-hero.photoSlider a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-hero.photoSlider .featuredStories {
+  width: 100%;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.main-hero.photoSlider .featuredStories h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.main-hero.photoSlider .featuredStories .events {
+  float: left;
+  width: 333.33px;
+}
+
+.main-hero.photoSlider h3.fieldPhotos {
+  float: left;
+}
+.main-hero.photoSlider a.viewAll {
+  float: right;
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-transform: uppercase;
+}
+.main-hero.photoSlider a.viewAll:hover,
+.main-hero.photoSlider a.viewAll:focus {
+  outline: 0px;
+  text-decoration: none;
+}
+.main-hero.photoSlider a:focus {
+  outline: none;
+}
+@media all and (max-width: 768px) {
+
+  .main-hero.photoSlider .slick-next,
+  .main-hero.photoSlider .slick-prev {
+    top: 25%;
+  }
+
+  .main-hero.photoSlider .slick-dots
+  {
+    bottom: -35px;
+
+    display: inline;
+
+    width: 100%;
+    padding: 0 0 10px 0;
+
+    list-style: none;
+
+    text-align: center;
+  }
+
+  .main-hero.photoSlider .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .main-hero.photoSlider .container {
+    width: 100%;
+  }
+
+  .main-hero.photoSlider .main-hero.photoSlider {
+    width: 100%;
+    padding: 0 0 30px 0;
+    margin: 0;
+  }
+
+  .main-hero.photoSlider .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-hero.photoSlider .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+
+  .main-hero.photoSlider button {
+    display: none;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .main-hero.photoSlider .slick-dots
+    {
+      position: absolute;
+      bottom: 10px;
+
+      display: inline;
+
+      width: 100%;
+      padding: 0;
+
+      list-style: none;
+
+      text-align: center;
+  }
+  .main-hero.photoSlider .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .main-hero.photoSlider .main-hero.photoSlider {
+    width: 495px;
+    padding: 0 5px 0 0;
+    margin: 0;
+  }
+
+  .main-hero.photoSlider .videoPreview {
+    width: 495px;
+    padding: 0 0 0 5px;
+    margin: 0;
+  }
+  .main-hero.photoSlider .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 490px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+}

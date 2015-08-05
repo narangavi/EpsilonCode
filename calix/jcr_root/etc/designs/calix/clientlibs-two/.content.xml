@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.calix.two]"
+    embed="[apps.calix.hero,apps.calix.image-text,apps.calix.video-library,apps.calix.spotlight,apps.calix.carousel,apps.calix.text-only,apps.calix.video,apps.calix.leadership,apps.calix.leadership-carousel,apps.calix.overview,apps.calix.press-and-news,apps.calix.press-news-release,apps.calix.teaser,apps.calix.tab-container,apps.calix.uneven-columns,apps.calix.related-product,apps.calix.detailed-systems,apps.calix.event-or-speaker-detail,apps.calix.events-speakers,apps.calix.fullwidth-feature,apps.calix.generic-content,apps.calix.chart]"/>

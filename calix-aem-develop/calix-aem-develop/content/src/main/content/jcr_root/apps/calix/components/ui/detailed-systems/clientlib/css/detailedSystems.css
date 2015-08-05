@@ -1,0 +1,341 @@
+/****************************************
+  detailed systems
+****************************************/
+.detailedSystemsWrap {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.detailedSystemsWrap h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.detailedSystemsWrap .detailedMediaContainer {
+  float: left;
+  display: inline;
+  width: 50%;
+}
+.detailedSystemsWrap .detailedListContainer {
+  float: left;
+  display: inline;
+  width: 50%;
+}
+.detailedSystemsWrap .detailedDescription {
+  padding: 15px 0px 15px 0;
+  max-width: 828px;
+  margin-right: -320px;
+}
+.detailedSystemsWrap .detailedDescription p {
+  font-size: 16px;
+  padding: 15px 0;
+}
+.detailedSystemsWrap a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.detailedSystemsWrap .grnBtn {
+  margin: 15px 28px 5px 0;
+  width: 120px;
+}
+.detailedSystemsWrap .grnLink {
+  margin: 25px 0 5px 0;
+}
+.detailedSystemsWrap .grnBtnLg {
+  margin: 15px 28px 5px 0;
+  height: 42px;
+  text-align: center;
+}
+.detailedSystemsWrap a.grnLink:hover,
+.detailedSystemsWrap a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.detailedSystemsWrap a.grnLink:hover {
+  color: #167858;
+}
+.detailedSystemsWrap .detailedMediaContainer img {
+  max-width: 476px;
+}
+.detailedSystemsWrap .detailedListContainer h3,
+.detailedSystemsWrap .detailedListContainer h4,
+.detailedSystemsWrap .detailedListContainer h5 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0px;
+}
+.detailedSystemsWrap .detailedListContainer ul {
+  padding-left: 0px;
+  float: left;
+  margin-bottom: 0px;
+  display: inline;
+}
+.detailedSystemsWrap .detailedListContainer ul li {
+  display: block;
+  height: auto;
+  list-style-type: none;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.detailedSystemsWrap .detailedListContainer ul:nth-child(even) {
+  margin-right: 20px;
+}
+.detailedSystemsWrap .detailedListContainer ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #1d9e74;
+}
+.detailedSystemsWrap .detailedListContainer ul li a:hover,
+.detailedSystemsWrap .detailedListContainer ul li a:focus,
+.detailedSystemsWrap .detailedListContainer ul li a:active {
+  text-decoration: none;
+  outline: 0px;
+  color: #167858;
+}
+.detailedSystemsWrap .detailedListContainer ul li.grid-item {
+  width: 235px;
+}
+
+.chartCaption {
+  max-width: 750px;
+  padding: 0 0 0 10px;
+  color: #333;
+}
+.mobileChartCaption {
+  margin: 15px 0;
+  display: none;
+  color: #333;
+}
+
+.detailedSystemsWrap .videoPreview {
+  width: 495px;
+  padding: 0 5px 0 5px;
+  margin: 0;
+}
+.detailedSystemsWrap .videoPreview .videoThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+.detailedSystemsWrap .videoPreview img {
+  width: 100%;
+}
+.detailedSystemsWrap .videoPlayIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+.detailedSystemsWrap .videoPreview .relatedVideos {
+  position: absolute;
+  text-align: left;
+  width: 98%;
+  height: 100px;
+  margin: 0;
+  bottom: -75px;
+  transition: all 0.5s ease;
+}
+.detailedSystemsWrap .videoPreview:hover .relatedVideos {
+  bottom: 0px;
+}
+.detailedSystemsWrap .relatedVideos h3 {
+  display: inline;
+  float: right;
+  margin: 0px;
+  padding: 2px 8px;
+  height: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.detailedSystemsWrap .relatedVideos p {
+  clear: right;
+  color: #fff;
+  font-size: 13px;
+  padding:  10px 30px 0 15px;
+  line-height: 1.2;
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.detailedSystemsWrap .videoPreview .description {
+  position: absolute;
+  text-align: left;
+  width: 476px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.detailedSystemsWrap .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.detailedSystemsWrap .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+.detailedSystemsWrap .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  .detailedSystemsWrap {
+    padding: 15px;
+  }
+  .detailedSystemsWrap .detailedMediaContainer {
+    float: none;
+    position: static;
+  }
+  .detailedSystemsWrap h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .detailedSystemsWrap .detailedListContainer h3,
+  .detailedSystemsWrap .detailedListContainer h4,
+  .detailedSystemsWrap .detailedListContainer h5 {
+    font-size: 21px;
+    margin-top: 15px;
+  }
+  .detailedSystemsWrap .detailedDescription {
+    padding: 15px 15px 15px 0;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+  .detailedSystemsWrap .detailedListContainer {
+    float: none;
+    margin-top: 25px;
+  }
+  .detailedSystemsWrap .detailedListContainer ul li {
+    width: 100%;
+  }
+  .detailedSystemsWrap .detailedListContainer ul li.grid-item {
+    width: 100%;
+  }
+  .detailedSystemsWrap .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .detailedSystemsWrap .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    max-width: 476px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+
+  .detailedSystemsWrap button {
+    display: none;
+  }
+  .detailedSystemsWrap .videoPlayIcon {
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 40% no-repeat;
+  }
+  .detailedSystemsWrap .videoPreview .relatedVideos {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    bottom: auto;
+    transition: none;
+  }
+  .detailedSystemsWrap .relatedVideos h3 {
+    display: block;
+    float: none;
+    margin: 10px 0px 0 0;
+    padding: 2px 0px;
+    height: auto;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  .detailedSystemsWrap .relatedVideos p {
+    clear: none;
+    color: #000;
+    font-size: 13px;
+    padding:  10px 30px 0 0px;
+    line-height: 1.4;
+    min-height: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .detailedSystemsWrap .videoPlayIcon {
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 30% no-repeat;
+  }
+}
+
+@media all and (min-width: 320px) {
+  
+  .detailedSystemsWrap .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .detailedSystemsWrap .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+  
+}
+
+@media all and (min-width: 769px) {
+
+  .detailedSystemsWrap .videoPreview {
+    width: 495px;
+    padding: 0 5px 0 5px;
+    margin: 0;
+  }
+  .detailedSystemsWrap .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 476px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+  .detailedSystemsWrap a {
+    height: 42px;
+    text-align: center;
+  }
+}

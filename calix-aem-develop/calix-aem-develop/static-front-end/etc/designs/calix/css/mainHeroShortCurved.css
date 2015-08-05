@@ -1,0 +1,117 @@
+/****************************************
+  full width hero short - 420h with curved border visuals
+****************************************/
+
+.fullContainer {
+  width: 100%;
+}
+.heroFullShortCurvedContainer {
+  position: relative;
+  max-width: 1440px;
+  min-width: 1024px;
+  height: 420px;
+  margin: 13px auto;
+  background: url(../../../../images/mainHero/mainHero.png) no-repeat;
+  background-position: center;
+}
+.heroFullShortCurvedContainer .heroContent {
+  width: 1024px;
+  height: 100%;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 100px;
+}
+.heroFullShortCurvedContainer .heroContent h4,
+.heroFullShortCurvedContainer .heroContent h3,
+.heroFullShortCurvedContainer .heroContent h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+.heroFullShortCurvedContainer .heroContent h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+.heroFullShortCurvedContainer .heroContent h2 {
+  font-size: 36px;
+  margin: 0 0 15px 0;
+}
+.heroFullShortCurvedContainer .heroContent h4 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 25px 0;
+}
+@media all and (max-width: 1360px) {
+
+}
+@media all and (max-width: 1024px) {
+
+}
+@media all and (max-width: 768px) {
+  .heroFullShortCurvedContainer,
+  .heroContent {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .heroFullShortCurvedContainer {
+    height: auto;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 50% 14px;
+    border-bottom-right-radius: 50% 14px;
+    background-size: 770px 230px;
+    background-position: 0px top;
+    border-top-left-radius: 50% 16px;
+    border-top-right-radius: 50% 16px;
+    border-bottom: 1px solid #48366b;
+    -webkit-box-shadow: 1px 1px 1px 1px #aeaeae;
+    -moz-box-shadow: 1px 3px 1px 1px #aeaeae;
+    box-shadow: 1px 1px 1px 1px #aeaeae;
+  }
+  .heroFullShortCurvedContainer .heroContent {
+    padding-top: 275px;
+  }
+  .heroFullShortCurvedContainer .heroContent h4,
+  .heroFullShortCurvedContainer .heroContent h3,
+  .heroFullShortCurvedContainer .heroContent h2 {
+    padding: 0 15px;
+  }
+  .heroFullShortCurvedContainer .heroContent h3 {
+    font-size: 18px;
+    color: #9d9c9c;
+    margin-bottom: 5px;
+  }
+  .heroFullShortCurvedContainer .heroContent h2 {
+    font-size: 25px;
+    color: #333;
+  }
+  .heroFullShortCurvedContainer .heroContent h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .heroFullShortCurvedContainer .myCalix {
+    top: 38px;
+  }
+  .heroFullShortCurvedContainer .grnBtn {
+    margin: 10px 0 25px 0;
+  }
+}
+/*
+@media all and (max-width: 375px) {
+  .heroFullShortCurvedContainer {
+    background-size: 590px 200px;
+    background-position: -30px top;
+  }
+  .heroFullShortCurvedContainer .heroContent {
+    padding-top: 230px;
+  }
+  .heroFullShortCurvedContainer .myCalix {
+    top: 30px;
+  }
+  .heroFullShortCurvedContainer .grnBtn {
+    margin: 10px 0 25px 0;
+    width: 60%;
+  }
+}
+*/

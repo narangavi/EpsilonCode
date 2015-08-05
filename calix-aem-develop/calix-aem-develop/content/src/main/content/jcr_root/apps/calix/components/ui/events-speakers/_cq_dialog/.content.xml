@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Events and Speakers Hub"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <viewAll
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewAll"
+                                text="Display All tab"
+                                value="{Boolean}true"/>
+                            <viewall-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewAll@Delete"
+                                value="{Boolean}true"/>
+                            <viewEvents
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewevents"
+                                text="Display Events tab"
+                                value="{Boolean}true"/>
+                            <viewevents-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewevents@Delete"
+                                value="{Boolean}true"/>
+                            <viewSpeakers
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewspeakers"
+                                text="Display Speakers tab"
+                                value="{Boolean}true"/>
+                            <viewspeakers-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewspeakers@Delete"
+                                value="{Boolean}true"/>
+                            <viewFeatured
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewfeatured"
+                                text="Display Featured tab"
+                                value="{Boolean}true"/>
+                            <viewfeatured-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewfeatured@Delete"
+                                value="{Boolean}true"/>
+                            <limitItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                defaultValue="{Long}20"
+                                fieldDescription="Maximum number of items displayed"
+                                fieldLabel="Items for page"
+                                name="./limitItems"/>
+                            <loadmoreLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Load more button label"
+                                fieldLabel="Load more label"
+                                name="./loadmoreLabel"/>
+                            <pressPath
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldDescription="Please choose root path of events"
+                                        fieldLabel="Root path"
+                                        name="./eventspath"
+                                        rootPath="/content/calix"/>
+                                    <pressTagName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Filter label"
+                                        name="./eventstab"/>
+                                </items>
+                            </pressPath>
+                            <newsPath
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldDescription="Please choose root path of speakers"
+                                        fieldLabel="Root path"
+                                        name="./speakerspath"
+                                        rootPath="/content/calix"/>
+                                    <newsTagName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Filter label"
+                                        name="./speakerstab"/>
+                                </items>
+                            </newsPath>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Featured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <featuredPages
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                fieldDescription="Click '+' to add a path"
+                                fieldLabel="Specific Paths">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                    name="./featuredPaths"
+                                    rootPath="/content/calix"/>
+                            </featuredPages>
+                        </items>
+                    </columns>
+                </items>
+            </tab2>
+        </items>
+    </content>
+</jcr:root>

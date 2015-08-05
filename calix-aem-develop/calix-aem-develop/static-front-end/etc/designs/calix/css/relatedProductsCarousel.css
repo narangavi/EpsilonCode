@@ -1,0 +1,308 @@
+/****************************************
+  related products carousel
+****************************************/
+
+/* Slick Slider Carousel
+http://kenwheeler.github.io/slick/
+*/
+
+.relatedProductsWrap {
+  margin: 0px;
+  padding: 65px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+  border-top: 2px solid #b5b2c2;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.relatedProductsWrap.greyBackground {
+  background-color: #efefef;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+.relatedProductsWrap h2 {
+  margin: 0px 0 42px 0;
+  font-weight: 300;
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+}
+.relatedProductsWrap a,
+.relatedProductsWrap a:hover,
+.relatedProductsWrap a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.relatedProduct span.productName {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  color: #1d9e74;
+}
+.relatedProduct span.productDescription {
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+}
+.relatedProduct img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.relatedProductsWrap .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.relatedProductsWrap .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0 0 42px 0;
+}
+.relatedProductsWrap .slick-list:focus {
+  outline: none;
+}
+.relatedProductsWrap .slick-loading .slick-list {
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+.relatedProductsWrap .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.relatedProductsWrap .slick-slider .slick-track {
+  padding-bottom: 25px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.relatedProductsWrap .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.relatedProductsWrap .slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.relatedProductsWrap .slick-track:after {
+  clear: both;
+}
+.relatedProductsWrap .slick-loading .slick-track {
+  visibility: hidden;
+}
+.relatedProductsWrap .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .relatedProductsWrap .slick-slide {
+  float: right;
+}
+.relatedProductsWrap .slick-slide img {
+  display: block;
+}
+.relatedProductsWrap .slick-slide.slick-loading img {
+  display: none;
+}
+.relatedProductsWrap .slick-slide.dragging img {
+  pointer-events: none;
+}
+.relatedProductsWrap .slick-initialized .slick-slide {
+  display: block;
+}
+.relatedProductsWrap .slick-loading .slick-slide {
+  visibility: hidden;
+}
+.relatedProductsWrap .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Arrows */
+.relatedProductsWrap .slick-prev,
+.relatedProductsWrap .slick-next {
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Dots */
+
+.relatedProductsWrap ul.slick-dots {
+  display: none;
+}
+.relatedProductsWrap .slick-slider {
+}
+.relatedProductsWrap .relatedProductsList {
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+.relatedProductsWrap .relatedProductsList .event {
+  float: left;
+  width: 33.33%;
+  padding: 0 80px;
+  text-align: center;
+}
+.relatedProductsWrap .slick-next {
+  background: url('../img/carouselNextArw.png') no-repeat 100% 0;
+  right: 0;
+  width: 45px;
+  height: 50px;
+}
+.relatedProductsWrap .slick-prev {
+  left: 0;
+  background: url('../img/carouselPrevArw.png') no-repeat 0 0;
+  width: 45px;
+  height: 50px;
+}
+.relatedProductsWrap {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.relatedProductsWrap p {
+  font-size: 15.88px;
+  letter-spacing: 0;
+  color: #333;
+  padding: 0 60px;
+}
+.relatedProductsWrap ul.slick-dots {
+  padding: 0;
+  margin: 0;
+}
+.relatedProductsWrap .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: inline;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.relatedProductsWrap .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.relatedProductsWrap .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: inline;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.relatedProductsWrap .slick-dots li button:hover,
+.relatedProductsWrap .slick-dots li button:focus
+{
+    outline: none;
+}
+.relatedProductsWrap .slick-dots li button:hover:before,
+.relatedProductsWrap .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.relatedProductsWrap .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #7c62c5;
+    border-radius: 10px;
+    background-color: #fff;
+    content: ' ';
+    text-align: center;
+    opacity: 1.0;
+    color: #fc0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.relatedProductsWrap .slick-dots li.slick-active button:before {
+    opacity: 1.0;
+    color: #fc0;
+    border: 3px solid #e77400;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+@media all and (min-width: 320px) {
+  .relatedProductsWrap h2 {
+    margin: 0px 0 22px 0;
+    font-size: 24px;
+  }
+  .relatedProductsWrap .slick-slider .slick-track {
+    padding-bottom: 10px;
+  }
+}
+@media all and (min-width: 769px) {
+}
+
+@media all and (max-width: 768px) {
+  .relatedProductsWrap {
+    border-bottom-left-radius: 50% 38px;
+    border-bottom-right-radius: 50% 38px;
+    border-top-left-radius: 50% 38px;
+    border-top-right-radius: 50% 38px;
+  }
+  .relatedProductsWrap ul.slick-dots {
+    display: none !important;
+  }
+  .relatedProductsWrap .slick-list {
+    padding: 0px;
+  }
+}
+@media all and (min-width: 1024px) {
+    .relatedProductsWrap .relatedProductsList .relatedProduct {
+      width: 33.33%;
+      padding: 0 30px;
+    }
+}

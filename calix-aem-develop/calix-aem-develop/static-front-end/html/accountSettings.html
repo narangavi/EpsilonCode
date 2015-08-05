@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Account Settings Markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- styles -->
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../etc/designs/calix/css/font-awesome.min.css">
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/bootstrap.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/global.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/mainNav.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/accountSettings.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/footer.css" rel="stylesheet">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome/fontello-ie7.css">
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="mainHdrContainer">
+    <div class="container">
+      <div class="navbar yamm">
+        <div class="navbar-header clearfix">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <a href="#" class="navbar-brand"></a>
+          <span class="navbar-subBrand mobileHide">Access Innovation</span>
+          <span class="navbar-subBrand contact mobileHide"><i class="fa fa-phone"></i> <a href="#">Contact</a></span>
+          <span class="navbar-search mobileHide"><form><input type="text" placeholder="Search Calix" /> <a class="navbar-searchSubmit" type="submit" href="#"><i class="fa fa-search"></i></a></form></span>
+          <div class="row mobileSearch">
+              <div class="col-xs-10">
+                  <div class="input-group">
+                      <input type="text" class="form-control mobileSearchInput" placeholder="Search"/>
+                      <span class="input-group-addon">
+                          <i class="fa fa-search"></i>
+                      </span>
+                  </div>
+              </div>
+              <div class="col-xs-2"><a class="closeMobileSearch" href="#"><i class="fa fa-times"></i></a></div>
+          </div>
+            <a class="closeMobileMenu-main" href="#" style="display:none"><i class="fa fa-times"></i></a>
+          <a class="mobileDisplay showSearch" href="#"><i class="fa fa-search"></i></a>
+
+          <!-- <span class="navbar-login mobileHide"><a href="#">Login</a> | <a href="#">Register</a></span> -->
+
+          <span class="navbar-account mobileHide"><a data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#" id="login">John<i class="glyphicon glyphicon-triangle-bottom"></i></a> <a href="#"><span class="notification"><span class="messageCount"><span>99</span></span></span></a></span>
+
+          <div id="popover-content" class="hide">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <div class="forgotPass"><a href="#">Account Settings</a></div>
+                <a class="grnBtn center-block" href="#"><span>LOG OUT</span></a>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+        <div id="navbar-collapse-grid" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!-- Grid 12 Menu -->
+            <li class=""><a href="#">Home</a></Li>
+            <li class="dropdown yamm-fw"><a id="dlDropDown" href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Software</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="bleh">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview mobileHide" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Software Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Systems</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Systems Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Solutions</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Solutions Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Services</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Services Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Support</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Support Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Communities</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Communities Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">Events</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>Events Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle pushIt">About Calix</a>
+              <ul class="dropdown-menu">
+                <li class="mobileBackMain mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                <li class="mobileGrid">
+                  <div class="mobileHide">
+                    <div class="navFeature col-sm-12">
+                      <img class="navFeatureOverview" src="../images/headerNav/featureOverviewThumb.png" />
+                      <div class="navFeatureDescription">
+                        <h4>About Overview</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Compass</h3>
+                        <ul class="menuSub">
+                          <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                          <li><a href="#">Command Center</a></li>
+                          <li><a href="#">Consumer Connect</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                          <li><a href="#">Open Link Cable</a></li>
+                          <li><a href="#">Flow Analyze</a></li>
+                          <li><a href="#">Service Verify</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Calix Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol">
+                      <h3 class="subHdr">Other Systems</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 mobileCol navColAlt">
+                      <h3 class="subHdr">Alternate Grouping</h3>
+                      <ul class="menuSub">
+                        <li class="mobileBack mobileDisplay"><a href="#"><i class="fa fa-chevron-left"></i> Back</a> <span><a class="closeMobileMenu" href="#"><i class="fa fa-times"></i></a></span></li>
+                        <li><a href="#">Command Center</a></li>
+                        <li><a href="#">Consumer Connect</a></li>
+                        <li><a href="#">Flow Analyze</a></li>
+                        <li><a href="#">Service Verify</a></li>
+                        <li><a href="#">Open Link Cable</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <div class="socialIcons mobileHide">
+            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-share-alt"></i></a>
+          </div>
+
+          <div class="mobileDisplay btnContain clearfix">
+            <h3>John Jingle</h3>
+            <a class="account" href="#"><span>Account Settings</span></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+    <div id="contentWrapper">
+      <div class="innerWrap">
+
+        <div class="wideContainer accountSettings">
+
+            <div class="subheaderNav">
+
+              <div class="jumpToPage dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                  Jump to page...
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 1</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 2</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 3</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 4</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            
+            <h2>Account Settings</h2>
+            <p>Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet.</p>
+
+            <div class="userInfo">
+              <p class="username">USERNAME</p>
+              <p class="email">emailaddress@domain.com (Company Name)</p>
+              <p class="info">Do you have a new corporate email address? <a href="#">Click here</a> to update the email address for your account.</p>
+              <div class="changePassword">
+                <a class="grnBtn outlineBtn" href="#"><span>Change Password</span></a>
+              </div>
+            </div>
+
+            <h3 class="accntHdr">Account Information</h3>
+            <div class="accountInformation">
+              <p class="name">Scott Nelson</p>
+              <p class="address">1035 N Mcdowell Blvd.<br />Petaluma, CA 94954 <br />United States</p>
+              <p class="telelphone">(707) 766-3000 </p>
+              <div class="editAccountInfo">
+                <a class="grnBtn outlineBtn" href="#"><span>Edit</span></a>
+              </div>
+            </div>
+
+            <div class="accountInformationEdit col-md-8 col-sm-8 col-xs-12">
+              <div class="editName">
+                <div>
+                  <label>First Name<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="Scott">
+                </div>
+                <div class="editName">
+                  <label>Last Name<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="Nelson">
+                </div>
+              </div>
+
+              <div class="editAddress">
+                <div>
+                  <label>Address Line 1<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="1234 West Lane Street">
+                </div>
+                <div>
+                  <label>Address Line 2</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+              <div class="editCityStateZip">
+                <div class="city">
+                  <label>City<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="Petaluma">
+                </div>
+                <div class="state">
+                  <label>State<span class="required">*</span></label>
+                 <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      California
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 1</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 2</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 3</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Page 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="zip">
+                  <label>Zip<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="999999">
+                </div>
+              </div>
+
+              <div class="editPhoneExtCountry">
+                <div class="phone">
+                  <label>Phone<span class="required">*</span></label>
+                  <input type="text" class="form-control" value="555 555 5555">
+                </div>
+                <div class="ext">
+                  <label>Ext</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+                <div class="country">
+                  <label>Country<span class="required">*</span></label>
+                 <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      United States
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="fax">
+                  <label>Fax</label>
+                  <input type="text" class="form-control" value="">
+                </div>
+              </div>
+
+                <p class="required">* Required Fields</p>
+                
+                <div class="saveCancel">
+                  <a class="grnBtn saveBtn" href="#"><span>Save</span></a> <a class="grnBtn outlineBtn cancelBtn" href="#"><span>Cancel</span></a>
+                </div>
+            </div>
+
+            <div class="component">
+
+              <h3 class="accntHdr">Subscriptions <i class="envelopeIcon"></i></h3>
+
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Beacon Newsletter</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check1' value='valuable' id="check1"/>
+                  <label for="check1"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check2' value='valuable' id="check2" checked />
+                  <label for="check2"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line, or a third line, or a fourth line. This would be a super, super, super long line of text.</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check3' value='valuable' id="check3"/>
+                  <label for="check3"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check4' value='valuable' id="check4" checked />
+                  <label for="check4"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check5' value='valuable' id="check5"/>
+                  <label for="check5"></label>
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check6' value='valuable' id="check6"/>
+                  <label for="check6"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+
+            </div>
+
+            <div class="component">
+
+              <h3 class="accntHdr">Notifications <i class="flagIcon"></i></h3>
+
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check7' value='valuable' id="check7"/>
+                  <label for="check7"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check8' value='valuable' id="check8" checked />
+                  <label for="check8"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check9' value='valuable' id="check9"/>
+                  <label for="check9"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check10' value='valuable' id="check10" checked/>
+                  <label for="check10"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check11' value='valuable' id="check11"/>
+                  <label for="check11"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+              <div class="accntResults clearfix">
+                <div class="accntDescription">
+                  <span class="accntText">Lorem Ipsum Bulletin that is so long it goes onto a second line</span>
+                </div>
+                <div class="accntIconLinks">
+                  <input type='checkbox' name='check12' value='valuable' id="check12"/>
+                  <label for="check12"></label> 
+                </div>
+                <div class="saved">
+                  <span>Saved</span> 
+                </div>
+              </div>
+            </div>
+
+        </div><!-- wide container -->
+
+        <div class="footerWrapper">
+          <footer>
+
+            <!-- list row 1 -->
+            <div class="row list">
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Software</h5>
+                <ul>
+                  <li><a>
+                    Software Overview
+                  </a></li>
+                  <li><a>
+                    Compass</a>
+                    <ul>
+                      <li><a>Command Center</a></li>
+                      <li><a>Consumer Connect</a></li>
+                      <li><a>Flow Analyze</a></li>
+                      <li><a>Service Verify</a></li>
+                      <li><a>Open Cable Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    Calix Management Systems
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Systems</h5>
+                <ul>
+                  <li><a>
+                    Systems Overview
+                  </a></li>
+                  <li><a>
+                    E-Series Advanced Services/Ethernet</a>
+                    <ul>
+                      <li><a>Fiber</a></li>
+                      <li><a>Copper</a></li>
+                      <li><a>MEF/Business</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    B-Series Multiservice/Ethernet
+                  </a></li>
+                  <li><a>
+                    C-Series Multiservice/Multiprotocol
+                  </a></li>
+                  <li><a>
+                    BLM 1500
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Premises</h5>
+                <ul>
+                  <li><a>
+                    Premises Overview
+                  </a></li>
+                  <li><a>
+                    Residential
+                  </a></li>
+                  <li><a>
+                    MDU
+                  </a></li>
+                  <li><a>
+                    Small Business
+                  </a></li>
+                  <li><a>
+                    MEF Business
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a>
+                    Solutions Overview
+                  </a></li>
+                  <li><a>
+                    Service Providers
+                  </a></li>
+                  <li><a>
+                    Wireline Communications
+                  </a></li>
+                  <li><a>
+                    Wireless Communications
+                  </a></li>
+                  <li><a>
+                    Cable
+                  </a></li>
+                  <li><a>
+                    Municipalities
+                  </a></li>
+                  <li><a>
+                    Utilities
+                  </a></li>
+                  <li><a>
+                    Network Applications
+                  </a></li>
+                  <li><a>
+                    Residential Broadband
+                  </a></li>
+                  <li><a>
+                    Business Services
+                  </a></li>
+                  <li><a>
+                    Mobile Backhaul
+                  </a></li>
+                  <li><a>
+                    Transport and Aggregation
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Services</h5>
+                <ul>
+                  <li><a>
+                    Services Overview</a></li>
+                  <li><a>
+                    Training
+                  </a></li>
+                  <li><a>
+                    Certification
+                  </a></li>
+                  <li><a>
+                    Professional Services
+                  </a></li>
+                  <li><a>
+                    Consulting
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Support</h5>
+                <ul>
+                  <li><a>
+                    Calix Resource Center</a>
+                    <ul>
+                      <li><a>Service Station</a></li>
+                      <li><a>Software Center</a></li>
+                      <li><a>Documentation</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    The Calix Advantage
+                  </a></li>
+                  <li><a>
+                    My Calix
+                  </a></li>
+                  <li><a>
+                    Customer Support
+                  </a></li>
+                  <li><a>
+                    Channel Partner Support
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- list row 2 -->
+            <div class="row list">
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Communities</h5>
+                <ul>
+                  <li><a>Blog</a></li>
+                  <li><a>Calix Customer Community</a></li>
+                  <li><a>Channel Partners</a></li>
+                  <li><a>Calix Compatible Ecosystem</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Events</h5>
+                <ul>
+                  <li><a>Events Overview</a></li>
+                  <li><a>Calix User Group Conference</a></li>
+                  <li><a>Webinars</a></li>
+                  <li><a>Upcoming Trade Events</a></li>
+                  <li><a>Event Videos</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>About Calix</h5>
+                <ul>
+                  <li><a><About Calix Overview</a></li>
+                  <li><a>Careers</a></li>
+                  <li><a>Leadership</a></li>
+                  <li><a>Press & News</a></li>
+                  <li><a>Investor Information</a></li>
+                  <li><a>Global Offices</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Legal / Social Line -->
+            <div class="row legal-social">
+              <div class="col-md-3 col-sm-12 col-xs-12 text-center"><a>© Calix | All Rights Reserved</a></div>
+              <div class="col-md-4  col-sm-12 col-xs-12 text-center terms-privacy"><a><span style="display:inline">Terms of Use</span></a> <a><span style="display:inline; margin-left: 30px">Privacy Policy</span></a></div>
+              <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                <ul class="socialIcons">
+                  <li>
+                      <div class="">
+                        <a href="#" target="_blank"><i class="fa ml10 fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa ml10 fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa ml10 fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fa ml10 fa-linkedin"></i></a>
+                      </div>                                    
+
+                    </a></li>
+                  </ul>
+
+              </div>
+            </div>
+
+          </footer>
+        </div>
+
+      </div><!-- end innerWrap -->
+    </div><!-- end contentWrap -->
+
+    <script src="../etc/designs/calix/js/jquery.min.js"></script>
+    <script src="../etc/designs/calix/js/bootstrap.min.js"></script>
+    <script src="../etc/designs/calix/js/custom.js"></script>
+  </body>
+</html>

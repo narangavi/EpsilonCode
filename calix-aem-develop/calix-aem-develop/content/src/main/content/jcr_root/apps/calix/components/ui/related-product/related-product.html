@@ -1,0 +1,23 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit the related product here]</div>
+
+<div data-sly-use.models="com.calix.components.RelatedProductComp" data-sly-unwrap>
+
+    <div class= ${models.styleBackground} >
+        <div class="container">
+            <h2>${models.titleRelatedProduct}</h2>
+            <div class="relatedProductsList">
+                <div data-sly-list.product="${models.products}" data-sly-unwrap>
+                    <div class="relatedProduct">
+                        <a href=${product.productPath}>
+                            <img src= ${product.productImage} alt="" />
+                            <span class="productName">${product.productTitle} </span>
+                            <span class="productDescription"> ${product.productDescription} </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- "relatedProductsWrap" -->

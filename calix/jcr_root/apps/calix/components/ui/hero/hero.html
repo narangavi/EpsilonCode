@@ -1,0 +1,48 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+	[Edit the hero component here]
+</div>
+<div data-sly-use.hero="com.calix.components.MainHero" class="mainHeroSlide" data-sly-unwrap>
+    <div class="main-hero photoSlider">
+        <div class="slider-photos-loop">
+            <div data-sly-list.slide="${hero.slides}" data-sly-unwrap>
+                <div class="event">
+                    <div class="fullContainer">
+						<div class="${hero.containerStyle} ${hero.curveStyle}" style="background: url('${slide.pathImage @ context='styleToken'};') no-repeat;">
+                            <div class="heroContent" style="text-align: ${slide.alignType @ context='styleToken'};">
+                                <h3>${slide.leadin}</h3>
+                                <h2>${slide.headline}</h2>
+                                <h4>${slide.subhead}</h4>
+                                <div class="ctaWrapper">
+                                    <div data-sly-test="${slide.titleCTA}" data-sly-unwrap>
+                                        <div data-sly-test.displayCTA="${slide.isVideo}" data-sly-unwrap>
+                                            <a class="${slide.buttonType}" style="text-align:center;" href="#" data-toggle="modal" data-target="#${slide.modalId}Modal"><i class="fa fa-youtube-play"></i>
+                                                <span>${slide.titleCTA}</span>
+                                            </a>
+                                        </div>
+                                        <div data-sly-test="${!displayCTA}" data-sly-unwrap>
+                                            <a class="${slide.buttonType}" style="text-align:center;" href="${slide.linkCTA}" target="${slide.targetCTA}">
+                                                <span>${slide.titleCTA}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-sly-test="${slide.caption}" data-sly-unwrap>
+                                <div class="botContent ${hero.violetBG}">
+                                    <p>${slide.caption}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-sly-list.slide="${hero.slides}" data-sly-unwrap>
+		<div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${library.videolightbox @modalId=slide.modalId, videoGroups=slide.videoGroups}" data-sly-unwrap></div>
+    </div>
+</div>
+
+
+
+

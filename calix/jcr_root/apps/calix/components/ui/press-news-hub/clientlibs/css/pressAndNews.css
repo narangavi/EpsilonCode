@@ -1,0 +1,1065 @@
+/****************************************
+  events & speakers
+****************************************/
+.starting-month-dl, .starting-year-dl {
+  width: 75px;
+    height: 30px;
+}
+
+.iconLoadingTab {
+    background: url("/etc/designs/calix/clientlibs/img/ajax-loader-icon.gif");
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+    z-index: 1000;
+}
+
+.starting-year-dl {
+  padding-left:5px;
+}
+
+.pressAndNews .grid-item {
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+.pressAndNews li .datePickerView {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.pressAndNews li .datePickerView h3 {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.pressAndNews .myCalix {
+  top: 38px;
+} 
+
+.pressAndNews {
+  margin: 0px;
+  padding: 15px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.pressAndNews .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.pressAndNews h1 {
+  text-align: left;
+  font-size: 56px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.pressAndNews h2 {
+  padding: 0 15px;
+  font-size: 31px;
+  color: #333;
+  font-weight: 300;
+}
+.pressAndNews h3 {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  text-align: left;
+  margin: 70px 0 0 0;
+  padding: 0 15px;
+}
+
+.pressAndNews p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 18px;
+  padding: 0 15px 0 0;
+}
+
+.pressAndNews img {
+  padding: 0;
+  margin: 0;
+}
+
+.pressAndNews .container ul.displayFilters li span {
+  display: none
+}
+
+.pressAndNews .container ul.displayFilters li.grid {
+  border-right: 1px solid #bdbdbd;
+  background: url('/etc/designs/calix/clientlibs/img/gridIcon.png') 0 no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.pressAndNews .container ul.displayFilters li.list {
+  background: url('/etc/designs/calix/clientlibs/img/listIcon.png') 100% no-repeat;
+  margin: 0 0 0 -5px;
+  padding: 0;
+}
+
+.pressAndNews ul.displayFilters li.grid.active {
+  border-right: 1px solid #bdbdbd;
+  background: url('/etc/designs/calix/clientlibs/img/gridIconActive.png') 0 no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.pressAndNews ul.displayFilters li.list.active {
+  background: url('/etc/designs/calix/clientlibs/img/listIconActive.png') 100% no-repeat;
+  margin: 0 0 0 -5px;
+  padding: 0;
+}
+
+.pressAndNews .container ul.displayFilters li a {
+  display: block;
+  width: 40px;
+  height: 25px;
+}
+
+.pressAndNews .container .subNavMobile {
+  display: none;
+}
+
+.pressAndNews .subNav {
+  width: 1000px;
+}
+
+.pressAndNews .subNav ul {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.pressAndNews .subNav ul.categories {
+  display: inline;
+}
+
+.pressAndNews .subNav ul.categories li {
+
+  display: inline-block;
+}
+
+.pressAndNews .subNav ul.categories li a {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  background: #efefef;
+  color: #666;
+}
+
+.pressAndNews .subNav ul.categories li a.active {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  background: #1d9e74;
+  color: #fff;
+}
+
+.pressAndNews .subNav form {
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.pressAndNews .description h3 {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  margin: 0;
+}
+.pressAndNews .description p {
+  color: #333;
+  font-size: 21px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.pressAndNews .row {
+  padding: 0;
+  margin: 0;
+}
+
+/* Grid View Layout */
+
+.pressAndNews .gridView .location {
+  display: none;
+}
+
+.pressAndNews .gridView .description h2 {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.pressAndNews .gridView .videoModule img {
+  width: 100%;
+}
+
+.pressAndNews .gridView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+  background-color: #e7e7e7;
+}
+.pressAndNews .gridView a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .gridView .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 35% no-repeat;
+} 
+
+.pressAndNews .gridView .eventModule {
+  background: #e7e7e7;
+}
+
+.pressAndNews .gridView .eventModule p {
+  padding: 0 15px 0 15px;
+}
+
+.pressAndNews .gridView .eventTab {
+  letter-spacing: 1px;
+  position: absolute;
+  z-index:5;
+  top: 20px;
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  padding: 5px 5px 5px 13px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pressAndNews .gridView .speakerModule {
+  position: relative;
+}
+
+.pressAndNews .gridView .speakerModule .description {
+  position: relative;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  background-color: #e7e7e7;;
+}
+
+.pressAndNews .gridView .speakerModule .description img.bio {
+  position: absolute;
+  left: 15px;
+  bottom: 35%;
+  width: 99px;
+  height: 132px;
+}
+
+.pressAndNews .gridView .col-sm-6:nth-child(even) {
+  float: left;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 480px;
+}
+
+.pressAndNews .gridView .col-sm-6:nth-child(odd) {
+  float: left;
+  padding: 0;
+  margin: 0 10px 20px 0;
+  clear: both;
+  width: 480px;
+}
+
+.pressAndNews .gridView .col-sm-6:nth-child(even), 
+.pressAndNews .gridView .col-sm-6:nth-child(odd) { 
+  margin: 0 0 20px 0 
+} 
+
+/* List View Layout */
+
+.pressAndNews .listView .location {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.pressAndNews .listView .eventTab {
+  position: relative;
+  margin: 0;
+  padding: 5px 30px 0 0;
+  height: 80px;
+  z-index:5;
+  vertical-align: middle;
+  float: left;
+}
+
+.pressAndNews .listView .eventTab span {
+  letter-spacing: 1px;
+  position: relative; 
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pressAndNews .listView h2 {
+  color: #1d9e74;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.pressAndNews .listView .videoModule img {
+  width: 100%;
+}
+
+.pressAndNews .listView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  margin: 0;
+  background-color: transparent;
+
+}
+.pressAndNews .listView .eventModule .description {
+  text-align: left;
+
+}
+.pressAndNews .listView .videoModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .speakerModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .eventModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .videoPlayIcon {
+  display: none;
+} 
+
+.pressAndNews .listView .videoModule img {
+  display: none;
+} 
+
+.pressAndNews .listView .speakerModule img {
+  display: none;
+} 
+
+.pressAndNews .listView a {
+  display: block;
+}
+
+.pressAndNews .listView .videoModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.pressAndNews .listView .speakerModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.pressAndNews .listView .eventModule .description {
+  background: transparent;
+  padding: 0 0 15px 0;
+}
+
+.pressAndNews .listView .videoModule .description p {
+}
+
+.pressAndNews .listView .speakerModule .description p {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule {
+  background-color: transparent;
+}
+
+.pressAndNews .listView .eventModule p:nth-child(odd) {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule {
+  position: relative;
+}
+
+.pressAndNews .listView .speakerModule {
+  position: relative;
+}
+
+.pressAndNews .listView .speakerModule .description {
+  float: none;
+}
+
+.pressAndNews .listView .speakerModule img {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule img {
+  display: none;
+}
+
+.pressAndNews .listView .videoModule img {
+  display: none;
+}
+
+.pressAndNews .listView .col-sm-6:nth-child(even) {
+  float: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.pressAndNews .listView .col-sm-6:nth-child(odd) {
+  float: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.popover-content {
+  padding: 15px;
+}
+.popover-content .form-control {
+  border-radius: 0px;
+}
+
+.popover-content .form-group {
+  width: 160px;
+}
+.popover-content .form-group input[type="text"] {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #666;
+  padding: 5px 0 3px 15px;
+  border: none;
+  width: 100%;
+  background-color: #ececec;
+  transition: none;
+  margin-bottom: 18px;
+}
+.popover-content .form-group .grnBtn {
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 26px auto 18px auto;
+}
+.popover-content .form-group .autoLog {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  padding-left: 6px;
+}
+.popover-content .form-group a.grnBtn span {
+  text-align: center;
+}
+.popover-content .forgotPass {
+  text-align: center;
+}
+.popover-content .forgotPass a,
+.popover-content .forgotPass a:hover {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1d9e74;
+  text-decoration: none;
+}
+
+.pressAndNews .tab-content {
+      margin-bottom: 15px;
+	  clear: both;
+}
+
+.pressAndNews .container .subNavMobile .glyphicon {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #999;
+}
+
+@media all and (min-width: 320px) {
+
+  .pressAndNews .gridView img.bio {  
+    bottom: 135px; 
+  } 
+
+  .pressAndNews .myCalix {
+    display: none;
+  } 
+
+  .pressAndNews p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 18px;
+  }
+
+  .pressAndNews h1 {
+    text-align: left;
+    font-size: 46px;
+    color: #333;
+    font-weight: 300;
+    margin: 12px 0;
+  }
+
+  .pressAndNews .container {
+    position: relative;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pressAndNews .subNav {
+    width: 100%;
+  }
+
+  .pressAndNews .container .subNavMobile {
+    position: relative;
+    display: block;
+    padding: 0 0 20px 0;
+  }
+
+  .pressAndNews .container .showingMostRecentNav {
+   /* position: relative;
+    right: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    */
+  }
+
+  .pressAndNews .container .showingMostRecentNav .monthPicker,
+  .pressAndNews .container .showingMostRecentNav .dayPicker
+  {
+    display: inline-block;
+  }
+
+  .pressAndNews .container ul.displayFilters {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 10px 10px 0;
+
+  }
+
+  .pressAndNews ul.displayFilters li {
+    display: inline-block;
+    list-style: none;
+    background: #ded;
+  }
+
+  .pressAndNews  .gridView .speakerModule .description img.bio {
+    position: absolute;
+    left: 15px;
+    bottom: 93%;
+    width: 74px;
+    height: 99px;
+  }
+
+  .pressAndNews .gridView .videoPlayIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 30% no-repeat;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(even) {
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(odd) {
+    padding: 0;
+    margin: 0 0 15px 0;
+    width: 100%;
+  } 
+
+  .pressAndNews .gridView .description {
+    position: relative;
+    color: #333;
+    text-align: left;
+    bottom: 0;
+    padding: 20px;
+    margin: 0;
+    background-color: #e7e7e7;
+  }
+
+  .pressAndNews .gridView .eventModule .description {
+    padding: 70px 20px 20px 20px;
+  }
+
+  .pressAndNews .gridView .eventModule p {
+    padding: 10px 0 0 0;
+  }
+
+  .pressAndNews .gridView h2 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .pressAndNews .gridView p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .pressAndNews .gridView .location {
+    padding: 10px 0 0 0;
+  }
+
+  .pressAndNews .subNav {
+    display: none;
+  }
+
+  .pressAndNews .listView .eventTab {
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 5px 30px 0 0;
+    z-index:5;
+    vertical-align: middle;
+    float: none;
+    height: 45px;
+    text-align: left;
+  }
+
+  .pressAndNews .listView .eventTab span {
+    letter-spacing: 1px;
+    position: relative; 
+    background-color: #49a0db;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .pressAndNews .listView h2 {
+    font-size: 18px;
+  }
+
+  .pressAndNews .listView .col-sm-6:first-child {
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .pressAndNews .listView .col-sm-6:nth-child(even) {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .pressAndNews .listView .col-sm-6:nth-child(odd) {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .showingMostRecentNav a, 
+  .showingMostRecentNav a:hover {
+    color: #333;
+  }
+
+  .container .filters {
+    text-align: left;
+    margin-right:0px;
+  }
+
+}
+
+@media all and (max-width: 769px) {
+    .pressAndNews .showingMostRecentNav {
+        float: left;
+		margin: 10px 0px 5px 0px;
+    }
+
+    .pressAndNews .dropdown-menu {
+      top: 60%;
+      border-top: 1px solid #ccc;
+      width:100%;
+    }
+
+    .pressAndNews .container .subNavMobile .btn-default {
+      width:100%;
+        border-radius: 0px;
+        text-align: left;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .container .filters {
+        text-align: left;
+        margin-right:20px;
+    }
+
+  .pressAndNews .gridView img.bio {  
+    bottom: 120px; 
+  } 
+
+  .pressAndNews .myCalix {
+    display: block;
+  } 
+
+  .pressAndNews p {
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 769px;
+  }
+
+  .pressAndNews h1 {
+    text-align: left;
+    font-size: 56px;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  .pressAndNews .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+  }
+
+  .pressAndNews .subNav {
+    width: 70%;
+    display: block;
+  }
+
+  .pressAndNews .subNav a {
+    text-decoration: none;
+  }
+
+  .pressAndNews .subNav ul.categories li a:hover {
+      background: #1d9e74;
+      color: #fff;
+  }
+
+  .pressAndNews .container ul.displayFilters {
+    display: inline-block;
+    list-style: none;
+    right: 0;
+    padding: 10px 0 10px 10px;
+    text-align: right;
+    float: right;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(even):hover {
+    outline: 2px solid #b4deef;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(odd):hover {
+    outline: 2px solid #b4deef;
+  }
+
+  .pressAndNews .container ul.displayFilters li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .pressAndNews .gridView .speakerModule .description img.bio {
+    position: absolute;
+    left: 15px;
+    bottom: 120px;
+    width: 99px;
+    height: 132px;
+  }
+
+  .pressAndNews .gridView .videoPlayIcon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 35% no-repeat;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(even) {
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 480px;
+  }
+
+  .pressAndNews .gridView .col-sm-6:nth-child(odd) {
+    float: left;
+    padding: 0;
+    margin: 0 0 20px 0;
+    clear: both;
+    width: 480px;
+  }
+
+  .pressAndNews .gridView .description {
+    position: relative;
+    color: #333;
+    text-align: left;
+    bottom: 0;
+    padding: 20px;
+    margin: 0;
+    background-color: #e7e7e7;
+  }
+
+  .pressAndNews .gridView .eventModule .description {
+    padding: 70px 20px 20px 20px;
+  }
+
+  .pressAndNews .gridView .eventModule p {
+    padding: 10px 0 0 0;
+  }
+
+  /* List View Layout */
+
+.pressAndNews .listView .location {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  display: block;
+}
+
+.pressAndNews .listView .eventTab {
+  position: relative;
+  margin: 0;
+  padding: 5px 30px 0 0;
+  height: 80px;
+  z-index:5;
+  vertical-align: middle;
+  float: left;
+}
+
+.pressAndNews .listView .eventTab span {
+  letter-spacing: 1px;
+  position: relative; 
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pressAndNews .listView h2 {
+  color: #1d9e74;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.pressAndNews .listView .videoModule img {
+  width: 100%;
+}
+
+.pressAndNews .listView .videoModule .description {
+  position: relative;
+  text-align: left;
+  bottom: 0;
+  margin: 0;
+  background-color: transparent;
+
+}
+.pressAndNews .listView .eventModule .description {
+  text-align: left;
+
+}
+.pressAndNews .listView .videoModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .speakerModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .eventModule a:hover {
+  text-decoration: none;
+}
+
+.pressAndNews .listView .videoPlayIcon {
+  display: none;
+} 
+
+.pressAndNews .listView .videoModule img {
+  display: none;
+} 
+
+.pressAndNews .listView .speakerModule img {
+  display: none;
+} 
+
+.pressAndNews .listView a {
+  display: block;
+}
+
+.pressAndNews .listView .videoModule .description {
+  background: transparent;
+  
+}
+
+.pressAndNews .listView .speakerModule .description {
+  background: transparent;
+
+}
+
+.pressAndNews .listView .eventModule .description {
+  background: transparent;
+}
+
+.pressAndNews .listView .videoModule .description .location {
+  display: block;
+}
+
+.pressAndNews .listView .speakerModule .description p {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule {
+  background-color: transparent;
+}
+
+.pressAndNews .listView p:nth-child(odd) {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule {
+  position: relative;
+}
+
+.pressAndNews .listView .speakerModule {
+  position: relative;
+}
+
+.pressAndNews .listView .speakerModule .description {
+  float: none;
+}
+
+.pressAndNews .listView .speakerModule img {
+  display: none;
+}
+
+.pressAndNews .listView .eventModule img {
+  display: none;
+}
+
+.pressAndNews .listView .videoModule img {
+  display: none;
+}
+
+.pressAndNews .listView .col-sm-6:nth-child(even) {
+  float: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.pressAndNews .listView .col-sm-6:nth-child(odd) {
+  float: none;
+  margin: 20px 0 0 0;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+  .pressAndNews .listView .col-sm-6:first-child {
+    border-top: none;
+  }
+
+  .pressAndNews .listView .col-sm-6:last-child {
+    border-top: none;
+  }
+
+  .pressAndNews .listView .eventTab {
+    position: relative;
+    margin: 0;
+    padding: 5px 15 0 0;
+    width: 180px;
+    height: 80px;
+    z-index:5;
+    vertical-align: middle;
+    float: left;
+  }
+
+  .pressAndNews .listView .eventTab span {
+    letter-spacing: 1px;
+    position: relative; 
+    background-color: #49a0db;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .pressAndNews .listView h2 {
+    padding: 0;
+    font-size: 21px;
+  }
+
+  .pressAndNews .container .subNavMobile {
+    /*
+    position: absolute;
+    right: 115px;
+    display: inline-block;
+    padding: 5px 0 20px 0;
+    */
+    display: none;
+  }
+
+  .pressAndNews .container .showingMostRecentNav {
+    /*position: absolute;
+    right: 115px;
+    padding: 12px 0 0 0;
+    display: inline-block;
+    */
+    margin: 25px 10px 0px 0px;
+  }
+
+  .pressAndNews .showingMostRecentNav a, 
+  .pressAndNews .showingMostRecentNav a:hover {
+   color : #167858;
+   font-family: 'Lato', sans-serif;
+   font-weight: 600;
+   float: left;
+  }
+
+  .pressAndNews .arrow-down {
+   width: 0; 
+   height: 0; 
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 5px solid #167858;
+   float: right;
+   margin: 7px 0 0 5px;
+  }
+
+}
+
+

@@ -1,0 +1,48 @@
+<template data-sly-template.content="${@ generic, index}">
+	<div data-sly-test="${generic.type == 'image'}" class="cq-dd-images" data-sly-unwrap>
+		<div class="col-xs-12 col-sm-6 ${generic.bgStyle}">
+			<div data-sly-test="${generic.caption}" class="cq-dd-images" data-sly-unwrap>
+				<div class="captiontext"><p>${generic.caption}</p>
+				</div>
+			</div>
+			<img src="${generic.imagePath}" width="100%" alt="" class="generic-img-responsive"/>
+
+		</div>
+	</div>
+	<div data-sly-test="${generic.type == 'videos'}" class="cq-dd-images" data-sly-unwrap>
+		<div class="col-xs-12 col-sm-6 ${generic.bgStyle}">
+			<div data-sly-resource="${'videoLib' @ resourceType='/apps/calix/components/ui/video-library'}"></div>
+		</div>
+	</div>
+	<div data-sly-test="${generic.type == 'video'}" class="cq-dd-images" data-sly-unwrap>
+		<div class="col-xs-12 col-sm-6 ${generic.bgStyle}">
+				<div class="videoThumbnail">
+					<a href="#" data-toggle="modal" data-target="#${generic.modalId}Modal">
+						<div class="videoPlayIcon"></div>
+						<img src="${generic.mainVideo.imageLink}" width="100%" alt="${generic.mainVideo.title}" class="generic-img-responsive" />
+							<div class="description">
+								<p>${generic.mainVideo.description}</p>
+							</div>
+					</a>
+			   </div>
+			  <div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${library.videolightbox @modalId=generic.modalId, videoGroups=generic.videoGroups}" data-sly-unwrap></div>
+		</div>
+	</div>
+	<div data-sly-test="${generic.type == 'text'}" class="cq-dd-images" data-sly-unwrap>
+		<div class="col-xs-12 col-sm-6 ${generic.bgStyle}">
+			<h3>${generic.title}</h3>
+			<div data-sly-test="${index == 1}" class="cq-dd-images" data-sly-unwrap>
+				<div data-sly-resource="${'generic-content-item_1' @ resourceType='/apps/calix/components/ui/generic-content-item'}" style="align:left;"></div>
+			</div>
+			<div data-sly-test="${index == 2}" class="cq-dd-images" data-sly-unwrap>
+				<div data-sly-resource="${'generic-content-item_2' @ resourceType='/apps/calix/components/ui/generic-content-item'}" style="align:right;"></div>
+			</div>
+			<div data-sly-test="${generic.cta1.display}" class="cq-dd-images" data-sly-unwrap>
+				<a class="${generic.cta1.style}" style="margin-right: 30px;" href="${generic.cta1.link}" target="${generic.cta1.target}"><span>${generic.cta1.title}</span></a>
+			</div>
+			<div data-sly-test="${generic.cta2.display}" class="cq-dd-images" data-sly-unwrap>
+				<a class="${generic.cta2.style}" href="${generic.cta2.link}" target="${generic.cta2.target}"><span>${generic.cta2.title}</span></a>
+			</div>
+		</div>
+	</div>
+</template>

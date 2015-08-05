@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-18T22:36:53.108-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-17T10:18:38.645-04:00"
+        cq:lastReplicatedBy="vijay.kesavan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/navigation"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Systems"
+        jcr:uuid="cd8d7bbf-9d51-4cca-bc08-c148dd182b5a"
+        sling:resourceType="calix/components/page/navigation">
+        <flyout-nav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"
+            description="Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet"
+            headerImage="/content/dam/geometrixx-gov/resources.jpg"
+            heading="Systems">
+            <col-par1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:29:26.411-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:29:26.411-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Data Center"
+                    listItems="[{&quot;listItem&quot;:&quot;E7-20&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/e7-20&quot;},{&quot;listItem&quot;:&quot;BLM 1500&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/blm-1500&quot;},{&quot;listItem&quot;:&quot;C7&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/c7&quot;}]"/>
+            </col-par1>
+            <col-par2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:29:28.941-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:29:28.941-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Outside Plant"
+                    listItems="[{&quot;listItem&quot;:&quot;E7-2&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/e7-2&quot;},{&quot;listItem&quot;:&quot;E5&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/e5&quot;},{&quot;listItem&quot;:&quot;E3&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/enclosures&quot;},{&quot;listItem&quot;:&quot;B6&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/enclosures&quot;},{&quot;listItem&quot;:&quot;Enclosures&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/enclosures&quot;}]"/>
+            </col-par2>
+            <col-par3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:29:31.464-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:29:31.464-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Premises"
+                    listItems="[{&quot;listItem&quot;:&quot;GigaCenters&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/gigacenters&quot;},{&quot;listItem&quot;:&quot;P-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/p-series&quot;},{&quot;listItem&quot;:&quot;T-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/t-series&quot;}]"/>
+            </col-par3>
+            <col-par4
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:35:29.876-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:35:29.876-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Product Series"
+                    listItems="[{&quot;listItem&quot;:&quot;E-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/e-series&quot;},{&quot;listItem&quot;:&quot;P-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/p-series&quot;},{&quot;listItem&quot;:&quot;C-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/c-series&quot;},{&quot;listItem&quot;:&quot;B-Series&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/systems/b-series&quot;}]"/>
+            </col-par4>
+        </flyout-nav>
+    </jcr:content>
+</jcr:root>

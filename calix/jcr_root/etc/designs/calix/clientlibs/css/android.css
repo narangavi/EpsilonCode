@@ -1,0 +1,20 @@
+.navbar-header span.navbar-brand a.navbar-brand{
+    background-size: 105px !important;
+    position: absolute ;
+    top:10px !important;
+    left: 5px;
+}
+
+.heroFullShortCurvedContainer .heroContent {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.heroFullCurvedContainer .heroContent h2, .heroFullCurvedContainer .heroContent h3, .heroFullCurvedContainer .heroContent h4 {
+    word-wrap: break-word;
+}
+
+.dropdown-menu .menuSub .mobileBack a {
+    top: 14px;
+}
+

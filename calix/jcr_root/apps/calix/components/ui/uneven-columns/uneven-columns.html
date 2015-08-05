@@ -1,0 +1,58 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+	[Edit the Uneven Columns component here]
+</div>
+
+<div data-sly-use.uneven="com.calix.components.UnevenColumn" data-sly-unwrap>
+	<div class="unevenColumnWrap ${uneven.curveStyle}">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 ${uneven.imagePosition} imgWrap">
+					<div data-sly-test="${uneven.displayImage}" class="cq-dd-images" data-sly-unwrap>
+						<img class="${uneven.displayMobile ? 'showInMobileOptional' : ''}" src="${uneven.imagePath}" width="100%" height="100%" alt="" style="${uneven.mobileStyle @ context='styleToken'}">
+					</div>
+					<div data-sly-test="${uneven.displayVideo}" class="cq-dd-images" data-sly-unwrap>
+						<div class="videoThumbnail">
+							<a href="#" data-toggle="modal" data-target="#${uneven.modalId}Modal">
+								<div class="videoPlayIcon"></div>
+								<div data-sly-test="${uneven.videoItem.imageLink}" class="cq-dd-images" data-sly-unwrap>
+									<img src="${uneven.videoItem.imageLink}" width="100%" alt="${uneven.videoItem.title}" />
+								</div>
+								<div data-sly-test="${uneven.videoItem.description}" class="cq-dd-images" data-sly-unwrap>
+									<div class="description">
+										<p>${uneven.videoItem.description}</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div data-sly-use.video="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${video.videolightbox @modalId=uneven.modalId, videoGroups=uneven.video.videoGroups}" data-sly-unwrap></div>
+						<script>
+							$(document).ready(function() {
+								$("#${uneven.modalId @ context='scriptString'}Modal").detach().appendTo('#contentWrapper');
+							});
+						</script>
+					</div>
+					<div data-sly-test="${uneven.displayVideos}" class="cq-dd-images" data-sly-unwrap>
+						<div data-sly-resource="${'videoLib' @ resourceType='/apps/calix/components/ui/video-library'}"></div>
+					</div>
+				</div>
+
+				<div class="col-sm-8 col-xs-12">
+					<div data-sly-test.display="${uneven.headlineLink}" class="cq-dd-images" data-sly-unwrap>
+						<a href="${uneven.headlineLink}"><h3 class="link">${uneven.headline}</h3></a>
+					</div>
+					<div data-sly-test="${!display}" class="cq-dd-images" data-sly-unwrap>
+						<h3>${uneven.headline}</h3>
+					</div>
+					${uneven.bodyText  @ context='html'}
+					<div data-sly-test="${uneven.cta1.title}" class="cq-dd-images" data-sly-unwrap>
+						<a class="${uneven.cta1.style} mr30" target="${uneven.cta1.target}" href="${uneven.cta1.link}"><span>${uneven.cta1.title}</span></a>
+					</div>
+
+					<div data-sly-test="${uneven.cta2.title}" class="cq-dd-images" data-sly-unwrap>
+						<a class="${uneven.cta2.style} mr30" target="${uneven.cta2.target}" href="${uneven.cta2.link}"><span>${uneven.cta2.title}</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

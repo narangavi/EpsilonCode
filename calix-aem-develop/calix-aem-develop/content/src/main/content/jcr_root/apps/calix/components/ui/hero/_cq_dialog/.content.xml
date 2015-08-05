@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <fieldset
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Hero Generic"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <displayTopCurves
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./displayTopCurves"
+                                        text="Display Top Curves"
+                                        value="{Boolean}true"/>
+                                    <displaytopcurves-delete
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                        name="./displayTopCurves@Delete"
+                                        value="{Boolean}true"/>
+                                    <displayBottomCurves
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./displayBottomCurves"
+                                        text="Display Bottom Curves"
+                                        value="{Boolean}true"/>
+                                    <displaybottomcurves-delete
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                        name="./displayBottomCurves@Delete"
+                                        value="{Boolean}true"/>
+                                    <shortContainer
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        name="./shortContainer"
+                                        text="Short Container"
+                                        value="{Boolean}true"/>
+                                    <shortcontainer-delete
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                        name="./shortContainer@Delete"
+                                        value="{Boolean}true"/>
+                                    <listItems
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                        class="full-width"
+                                        fieldDescription="Click '+' to add a new hero slide"
+                                        fieldLabel="Hero Slides">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            eaem-nested=""
+                                            name="./listItems">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <imagePath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                            fieldDescription="Provide path for Hero Image"
+                                                            fieldLabel="Hero Image"
+                                                            name="./pathImage"
+                                                            rootPath="/content/dam"/>
+                                                        <leadin
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                            fieldLabel="Hero Lead in Text"
+                                                            height="45"
+                                                            name="./leadin"/>
+                                                        <headLine
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                            fieldLabel="Headline Text"
+                                                            name="./headline"
+                                                            isRequired="true"
+                                                            required="true"/>
+                                                        <subHeadLine
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                            fieldLabel="Subhead Text"
+                                                            name="./subhead"/>
+                                                        <titleCTA
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                            fieldDescription="A maximum of 20 character is allowed for the text"
+                                                            fieldLabel="CTA Button Text"
+                                                            maxlength="20"
+                                                            init="character-count"
+                                                            name="./titleCTA"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                                            fieldDescription="Can be internal link or external URL"
+                                                            fieldLabel="CTA Button URL"
+                                                            name="./linkCTA"
+                                                            rootPath="/content/calix"/>
+                                                        <alignType
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldDescription="Text alignment (for leadin, headline, subhead, and cta)"
+                                                            fieldLabel="Text Alignment "
+                                                            name="./alignType"
+                                                            value="center">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <center
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Center"
+                                                                    value="center"/>
+                                                                <left
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Left"
+                                                                    value="left"/>
+                                                                <right
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Right"
+                                                                    value="right"/>
+                                                            </items>
+                                                        </alignType>
+                                                        <btnType
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldLabel="CTA Button Type"
+                                                            name="./buttonType"
+                                                            value="green">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <green
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Primary Green"
+                                                                    value="green"/>
+                                                                <white
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Primary White"
+                                                                    value="white"/>
+                                                                <outline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Primary Outline"
+                                                                    value="outline"/>
+                                                                <textlink
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Text Link"
+                                                                    value="text"/>
+                                                            </items>
+                                                        </btnType>
+                                                        <caption
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                            fieldLabel="Caption Text"
+                                                            name="./caption"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </listItems>
+                                </items>
+                            </column>
+                        </items>
+                    </fieldset>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

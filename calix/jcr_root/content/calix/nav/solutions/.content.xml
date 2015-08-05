@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-18T23:04:43.833-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-17T10:18:38.546-04:00"
+        cq:lastReplicatedBy="vijay.kesavan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/navigation"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Solutions"
+        jcr:uuid="be855f5e-e6bc-4c11-8a65-d654ae44e3ed"
+        sling:resourceType="calix/components/page/navigation">
+        <flyout-nav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"
+            description="Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet"
+            headerImage="/content/dam/geometrixx-gov/resources.jpg"
+            heading="Solutions">
+            <col-par1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:37:24.911-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:37:24.911-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Service Providers"
+                    listItems="[{&quot;listItem&quot;:&quot;Wireline Communications&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/wireline-communications&quot;},{&quot;listItem&quot;:&quot;Wireless Communications&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/wireless-communications&quot;},{&quot;listItem&quot;:&quot;Cable&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/cable&quot;},{&quot;listItem&quot;:&quot;Utilities&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/utilities&quot;},{&quot;listItem&quot;:&quot;Municipalities&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/municipalities&quot;}]"/>
+            </col-par1>
+            <col-par2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:37:26.688-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:37:26.688-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Network Applications"
+                    listItems="[{&quot;listItem&quot;:&quot;Residential Broadband&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/residential-broadband&quot;},{&quot;listItem&quot;:&quot;Business Services&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/residential-broadband&quot;},{&quot;listItem&quot;:&quot;Mobile Backhaul&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/mobile-backhaul&quot;},{&quot;listItem&quot;:&quot;Transport and Aggregation&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/transport-and-aggregation&quot;},{&quot;listItem&quot;:&quot;Gigabit Services&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/gigabit-services&quot;}]"/>
+            </col-par2>
+            <col-par3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:37:28.500-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:37:28.500-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Physical Delivery"
+                    listItem="[Copper,Fiber,Wireless]"
+                    listItemLink="[/content/calix/en/site/home/solutions/copper,/content/calix/en/site/home/solutions/fiber,/content/calix/en/site/home/solutions/wireless]"
+                    listItems="[{&quot;listItem&quot;:&quot;Copper&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/copper&quot;},{&quot;listItem&quot;:&quot;Fiber&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/fiber&quot;},{&quot;listItem&quot;:&quot;Wireless&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/wireless&quot;}]"/>
+            </col-par3>
+            <col-par4
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:37:31.544-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:37:31.544-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Technologies"
+                    listItems="[{&quot;listItem&quot;:&quot;G-Fast&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/g-fast&quot;},{&quot;listItem&quot;:&quot;GPON&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/gpon&quot;},{&quot;listItem&quot;:&quot;Next Generation PON&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/next-generation-pon&quot;},{&quot;listItem&quot;:&quot;Point-to-Point/Active Ethernet&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/solutions/point-to-point---active-ethernet&quot;}]"/>
+            </col-par4>
+        </flyout-nav>
+    </jcr:content>
+</jcr:root>

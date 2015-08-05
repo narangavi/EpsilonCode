@@ -1,0 +1,107 @@
+/****************************************
+  text only header
+****************************************/
+
+.textOnlyHeader {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.textOnlyHeader h3{
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+}
+.textOnlyHeader h2 {
+  font-size: 36px;
+  color: #45367d;
+  font-weight: 300;
+}
+
+.textOnlyHeader p {
+  font-size: 16px;
+  color: #333;
+}
+.textOnlyHeader ul {
+  padding-left: 20px;
+}
+
+.textOnlyHeader .grnBtn {
+  margin: 15px 28px 5px 0;
+    width: 120px;
+}
+.textOnlyHeader a.grnLink:hover,
+.textOnlyHeader a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 769px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .container {
+    width: 1024px;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .textOnlyHeader .myCalix {
+    display: none;
+  }
+}
+.textOnlyHeader .container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.left-col .textOnlyHeader .container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+/*
+@media all and (max-width: 375px) {
+  .textOnlyHeader .grnBtn {
+    margin-top: 10px;
+    width: auto;
+  }
+  .textOnlyHeader h3 {
+    font-size: 18px;
+  }
+  .textOnlyHeader h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+  .textOnlyHeader .textOnlyArchedHeader .myCalix {
+    display: block;
+    top: auto;
+    bottom: -115px;
+  }
+}
+*/

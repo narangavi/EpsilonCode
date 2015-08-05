@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="News and social spotlight"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <displayTopCurves
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displayTopCurves"
+                                text="Display Top Curve"
+                                value="{Boolean}true"/>
+                            <displaytopcurves-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displayTopCurves@Delete"
+                                value="{Boolean}true"/>
+                            <displayBottomCurves
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./displayBottomCurves"
+                                text="Display Bottom Curve"
+                                value="{Boolean}true"/>
+                            <displaybottomcurves-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./displayBottomCurves@Delete"
+                                value="{Boolean}true"/>
+                            <limitCharacter
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                defaultValue="{Long}150"
+                                fieldDescription="Maximum number of character displayed in title's spotlight"
+                                fieldLabel="Limit Character"
+                                name="./limitCharacter"/>
+                            <limitImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                defaultValue="{Long}5"
+                                fieldDescription="Maximum number of images displayed in carousel"
+                                fieldLabel="Limit Image"
+                                name="./limitImage"/>
+                            <photoLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Photo Label"
+                                name="./photoLabel"/>
+                            <featuredVideoLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Featured Video Label"
+                                name="./featuredVideoLabel"/>
+                            <viewAll
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="View All Label"
+                                name="./viewAllLabel"/>
+                            <eventLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Event Label"
+                                name="./eventLabel"/>
+                            <newsLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="News Label"
+                                name="./newsLabel"/>
+                            <pRealseLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Press Realse Label"
+                                name="./pRealseLabel"/>
+                            <speakerLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Speaker Label"
+                                name="./speakerLabel"/>
+                            <twitterLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Twitter Label"
+                                name="./twitterLabel"/>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+            <feature1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Feature 1"
+                sling:resourceType="granite/ui/components/foundation/container"
+                id="feature1Tab">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./featureType1"
+                                value="image1">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <images1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Photos"
+                                        value="image1"/>
+                                    <video1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Video"
+                                        value="video1"/>
+                                    <videolibrary1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Video Library"
+                                        value="videolibrary1"/>
+                                    <events1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Events"
+                                        value="event1"/>
+                                    <news1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="News"
+                                        value="news1"/>
+                                    <pReleases1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Press Release"
+                                        value="pRelease1"/>
+                                    <speakers1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Speakers"
+                                        value="speaker1"/>
+                                </items>
+                            </listFrom>
+                            <image1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Photos"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="image1"
+                                title="Photos">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <images
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./images1"
+                                            rootPath="/content/dam"/>
+                                    </images>
+                                </items>
+                            </image1>
+                            <event1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="event1"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./events1"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </event1>
+                            <video1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Video"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="video1"
+                                title="Video">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Path"
+                                        name="./video1"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </video1>
+                            <videolibrary1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Please add video(s) in video libary component"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="videolibrary1"
+                                title="Please add video(s) in video libary component"/>
+                            <news1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="news1"
+                                title="News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./news1"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </news1>
+                            <pRelease1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="pRelease1"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./pReleases1"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </pRelease1>
+                            <speaker1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="speaker1"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./speakers1"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </speaker1>
+                        </items>
+                    </columns>
+                </items>
+            </feature1>
+            <feature2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Feature 2"
+                sling:resourceType="granite/ui/components/foundation/container"
+                id="feature2Tab">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./featureType2"
+                                value="image2">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <images2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Photos"
+                                        value="image2"/>
+                                    <video2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Video"
+                                        value="video2"/>
+                                    <videos2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Video Library"
+                                        value="videolibrary2"/>
+                                    <events2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Events"
+                                        value="event2"/>
+                                    <news2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="News"
+                                        value="news2"/>
+                                    <pReleases2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Press Release"
+                                        value="pRelease2"/>
+                                    <speakers2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Speakers"
+                                        value="speaker2"/>
+                                </items>
+                            </listFrom>
+                            <image2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Photos"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="image2"
+                                title="Photos">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <images
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./images2"
+                                            rootPath="/content/dam"/>
+                                    </images>
+                                </items>
+                            </image2>
+                            <event2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="event2"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./events2"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </event2>
+                            <video2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Video"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="video2"
+                                title="Video">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Path"
+                                        name="./video2"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </video2>
+                            <videolibrary2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Please add video(s) in video libary component"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="videolibrary2"
+                                title="Please add video(s) in video libary component"/>
+                            <news2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="news2"
+                                title="News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./news2"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </news2>
+                            <pRelease2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="pRelease2"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./pReleases2"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </pRelease2>
+                            <speaker2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="speaker2"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                            name="./speakers2"
+                                            rootPath="/content/calix"/>
+                                    </listPath>
+                                </items>
+                            </speaker2>
+                        </items>
+                    </columns>
+                </items>
+            </feature2>
+            <spotlight1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Spotlight 1"
+                sling:resourceType="granite/ui/components/foundation/container"
+                id="spotlight1Tab">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./spotlight1"
+                                value="eventS1">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <eventS1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Events"
+                                        value="eventS1"/>
+                                    <newsS1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="News"
+                                        value="newsS1"/>
+                                    <pReleaseS1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Press Release"
+                                        value="pReleaseS1"/>
+                                    <speakerS1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Speakers"
+                                        value="speakerS1"/>
+                                    <twitterS1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Twitter"
+                                        value="twitterS1"/>
+                                </items>
+                            </listFrom>
+                            <eventS1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="eventS1"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./eventS1"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </eventS1>
+                            <newsS1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="newsS1"
+                                title="News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./newsS1"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </newsS1>
+                            <pReleaseS1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="pReleaseS1"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./pReleaseS1"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </pReleaseS1>
+                            <speakerS1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="speakerS1"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./speakerS1"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </speakerS1>
+                            <twitterS1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Twitter"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="twitterS1"
+                                title="Twitter">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <userIDS1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="UserID"
+                                        name="./userIDS1"/>
+                                </items>
+                            </twitterS1>
+                        </items>
+                    </columns>
+                </items>
+            </spotlight1>
+            <spotlight2
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Spotlight 2"
+                sling:resourceType="granite/ui/components/foundation/container"
+                id="spotlight2Tab">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./spotlight2"
+                                value="eventS2">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <eventS2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Events"
+                                        value="eventS2"/>
+                                    <newsS2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="News"
+                                        value="newsS2"/>
+                                    <pReleaseS2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Press Release"
+                                        value="pReleaseS2"/>
+                                    <speakerS2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Speakers"
+                                        value="speakerS2"/>
+                                    <twitterS2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Twitter"
+                                        value="twitterS2"/>
+                                </items>
+                            </listFrom>
+                            <eventS2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="eventS2"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./eventS2"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </eventS2>
+                            <newsS2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="newsS2"
+                                title="News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./newsS2"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </newsS2>
+                            <pReleaseS2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="pReleaseS2"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./pReleaseS2"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </pReleaseS2>
+                            <speakerS2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="speakerS2"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./speakerS2"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </speakerS2>
+                            <twitterS2
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Twitter"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="twitterS2"
+                                title="Twitter">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <userIDS1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="UserID"
+                                        name="./userIDS2"/>
+                                </items>
+                            </twitterS2>
+                        </items>
+                    </columns>
+                </items>
+            </spotlight2>
+            <spotlight3
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Spotlight 3"
+                sling:resourceType="granite/ui/components/foundation/container"
+                id="spotlight3Tab">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <listFrom
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Type"
+                                name="./spotlight3"
+                                value="eventS3">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <eventS3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Events"
+                                        value="eventS3"/>
+                                    <newsS3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="News"
+                                        value="newsS3"/>
+                                    <pReleaseS3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Press Release"
+                                        value="pReleaseS3"/>
+                                    <speakerS3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Speakers"
+                                        value="speakerS3"/>
+                                    <twitterS3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Twitter"
+                                        value="twitterS3"/>
+                                </items>
+                            </listFrom>
+                            <eventS3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Events"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="eventS3"
+                                title="Events">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./eventS3"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </eventS3>
+                            <newsS3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="newsS3"
+                                title="News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./newsS3"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </newsS3>
+                            <pReleaseS3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="pReleaseS3"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./pReleaseS3"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </pReleaseS3>
+                            <speakerS3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Speakers"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="speakerS3"
+                                title="Speakers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Root Path"
+                                        name="./speakerS3"
+                                        rootPath="/content/calix"/>
+                                </items>
+                            </speakerS3>
+                            <twitterS3
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Twitter"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                id="twitterS3"
+                                title="Twitter">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <userIDS3
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="UserID"
+                                        name="./userIDS3"/>
+                                </items>
+                            </twitterS3>
+                        </items>
+                    </columns>
+                </items>
+            </spotlight3>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,419 @@
+/****************************************
+  leadership page
+****************************************/
+
+.leadershipPage {
+  margin: 0px;
+  padding: 15px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.leadershipPage .myCalix {
+  display: block;
+  top: 38px;
+} 
+
+.leadershipPage h1 {
+  text-align: left;
+  font-size: 56px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.leadershipPage h2 {
+  display: block;
+  padding: 0 130px 25px 130px ;
+  font-size: 21px;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+}
+
+.leadershipPage h3 {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  text-align: left;
+  margin: 70px 0 0 0;
+  padding: 0 15px;
+}
+
+.leadershipPage p {
+  font-size: 21px;
+  color: #333;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.leadershipPage p {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.leadershipPage .executiveHeader,
+.leadershipPage .directorsHeader {
+  cursor: pointer;
+  display: none;
+}
+
+.leadershipPage .directors {
+  display: none;
+}
+
+.leadershipPage .container {
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.leadershipPage .subNav {
+  width: 70%;
+  display: block;
+}
+
+.leadershipPage .subNav a {
+  text-decoration: none;
+}
+
+.leadershipPage .subNav {
+  width: 1000px;
+  margin: 50px 0 0 0;
+}
+
+.leadershipPage .subNav ul {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.leadershipPage .subNav ul.categories {
+  display: inline;
+}
+
+.leadershipPage .subNav ul.categories li {
+  display: inline-block;
+}
+
+.leadershipPage .subNav ul.categories li a {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  color: #666;
+  font-size: 16px;
+}
+
+.leadershipPage .subNav ul.categories li a.active {
+  text-align: center;
+  padding: 10px;
+  margin: 0 5px 0 0;
+  width: 150px;
+  display: block;
+  border-bottom: 3px solid #1d9e74;
+  font-weight: 600;
+  color: #333;
+}
+
+.leadershipPage .subNav ul.categories li a:hover {
+    background: #1d9e74;
+    color: #fff;
+}
+
+.leadershipPage .container .subNavMobile {
+  display: none;
+}
+
+.leadershipPage .row {
+  background: #e7e7e7;
+  margin: 92px 0 0 0;
+  padding: 0;
+}
+
+.leadershipPage .row .col-xs-12 {
+  padding: 0;
+}
+
+.leadershipPage .row .employees {
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.leadershipPage .employees img {
+  margin: 15px 0;
+  padding: 0;
+  width: 190px;
+  height: 189px;
+  float: none;
+}
+
+/*.leadershipPage .row h3 {*/
+.leadershipPage .employees h3 {
+  margin: 0;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+}
+
+/*.leadershipPage .row p {*/
+.leadershipPage .employees p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #333;
+  text-align: left;
+  line-height: 20px;
+  padding: 0 15px;
+}
+
+/* Gridder styles */
+
+.leadershipPage .gridder {
+  margin: 0;
+  padding: 0;
+  list-style-type:none
+}
+
+.leadershipPage .gridder-list {
+  display:inline-block;
+  vertical-align:top
+}
+
+.leadershipPage .gridder-show {
+  display:block;
+  float:left;
+  width:100%;
+  position:relative;
+  background: transparent url("/etc/designs/calix/clientlibs/img/leadership/loading-spin.svg") no-repeat center
+}
+
+.leadershipPage .gridder-show.loading {
+  background: transparent url("/etc/designs/calix/clientlibs/img/leadership/loading-spin.svg") no-repeat center
+}
+
+.leadershipPage .gridder-content {
+  display:none
+}
+
+.leadershipPage .gridder-list {
+  width: 24.5%;
+  padding: 0;
+  margin: 0;
+  background: #e7e7e7;
+}
+
+.leadershipPage .gridder-list:nth-child(n) {
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.leadershipPage .gridder-list:nth-of-type(6n) {
+  margin-right:0;
+  margin-bottom:0
+}
+
+.leadershipPage .gridder-show {
+  margin-bottom:4%;
+  padding: 0;
+  background: #45367d;
+}
+
+.leadershipPage .gridder-navigation .gridder-nav.disabled {
+  opacity:.5
+}
+
+.leadershipPage .gridder-list {
+  cursor:pointer
+}
+
+.leadershipPage .gridder-list:hover {
+  opacity:0.8
+}
+
+.leadershipPage .hasSelectedItem .gridder-list {
+  /* Setting this value to 1 breaks functionality */
+  /*opacity:0.5;*/
+  opacity:0.9;
+}
+
+.leadershipPage .hasSelectedItem .gridder-list.selectedItem {
+  opacity:1
+}
+
+.leadershipPage .gridder-show .expandArrow {
+  width: 47px;
+  height: 26px;
+  top: 0;
+  background: url('/etc/designs/calix/clientlibs/img/leadership/expandArrow.png') 100% no-repeat;
+  position: absolute;
+}
+
+.leadershipPage .gridder-show .gridder-padding {
+  padding: 50px 70px;
+}
+
+.leadershipPage .gridder-show h2 {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.leadershipPage .gridder-show p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.leadershipPage .gridder-show:nth-child(4n+2) .expandArrow {
+  left: 100px;
+}
+.leadershipPage .gridder-show:nth-child(4n+3) .expandArrow {
+  left: 350px;
+}
+.leadershipPage .gridder-show:nth-child(4n+4) .expandArrow {
+  left: 600px;
+}
+.leadershipPage .gridder-show:nth-child(4n+1) .expandArrow {
+  left: 850px;
+}
+
+.leadershipPage .executiveHeader, 
+.leadershipPage .directorsHeader {
+  background-color: #fff;
+  font-size: 21px;
+  color: #333;
+  font-weight: 500;
+  padding: 20px;
+  border-bottom: #e7e7e7 1px solid;
+}
+
+
+.leadershipPage .executiveHeader div, 
+.leadershipPage .directorsHeader div {
+  position: relative;
+}
+
+.leadershipPage .executiveHeader i, 
+.leadershipPage .directorsHeader i {
+  color: #999;
+  position: absolute;
+  bottom: 0px;
+  top: inherit;
+  right: 15px;
+}
+
+/* Style overrides for tablet breakpoint and below */
+
+/*@media all and (min-width: 320px) {*/
+@media all and (max-width: 768px) {
+
+  .leadershipPage .executiveTeam,
+  .leadershipPage .directors {
+    border-top: #1d9e74 5px solid;
+  }
+
+  .leadershipPage .executiveHeader,
+  .leadershipPage .directorsHeader {
+    display: block;
+  }
+
+  .leadershipPage .gridder-show:nth-child(4n+2) .expandArrow {
+    left: 45%;
+  }
+  .leadershipPage .gridder-show:nth-child(4n+3) .expandArrow {
+    left: 45%;
+  }
+  .leadershipPage .gridder-show:nth-child(4n+4) .expandArrow {
+    left: 45%;
+  }
+  .leadershipPage .gridder-show:nth-child(4n+1) .expandArrow {
+    left: 45%;
+  }
+
+  .leadershipPage .gridder-show h2 {
+    font-size: 18px;
+    padding: 20px 15px 0 10px;
+  }
+
+  .leadershipPage .employees h3 {
+    padding: 15px 15px 5px 15px;
+  }
+
+  .leadershipPage .employees img {
+    margin: 0 20px;
+    padding: 0;
+    width: 95px;
+    height: 95px;
+    float: left;
+  }
+
+  .leadershipPage .row {
+    margin: 0;
+  }
+
+  .leadershipPage .gridder-list {
+    text-align: center;
+  }
+
+  .leadershipPage .gridder-show .gridder-padding {
+    padding: 20px;
+  }
+
+  .leadershipPage .gridder-show p {
+    padding: 15px 10px;
+    margin: 0;
+  }
+  
+  .leadershipPage .row .gridder-list {
+    width:100%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  .leadershipPage .myCalix {
+    display: none;
+  } 
+
+  .leadershipPage h1 {
+    font-size: 46px;
+    margin: 12px 0;
+    padding: 0 15px;
+  }
+
+  .leadershipPage h2 {
+    padding: 0 15px 15px 15px ;
+  }
+
+  .leadershipPage p {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .leadershipPage .container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+
+  .leadershipPage .subNav {
+    display: none;
+  }
+
+}

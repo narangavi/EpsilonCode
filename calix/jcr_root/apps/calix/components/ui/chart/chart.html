@@ -1,0 +1,44 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit Chart component here]</div>
+<div class="tableWrap">
+    <div data-sly-use.chart="com.calix.components.Chart" data-sly-unwrap>
+        <h3>${chart.table.title}</h3>
+        <div class="mobileChartCaption">
+            ${chart.table.caption @ context='html'}
+        </div>
+
+        <div data-sly-test="${chart.table.rows}" data-sly-unwrap>
+            <table class="card-table table table-striped" border="0" cellspacing="0">
+                <div data-sly-test="${chart.table.columnHeaders}" data-sly-unwrap>
+                    <thead>
+                        <tr>
+                            <div data-sly-list.columnHeader="${chart.table.columnHeaders}" data-sly-unwrap>
+								<!--Begin column header-->
+                                <th>${columnHeader}</th>
+								<!--End column header-->
+                            </div>
+                        </tr>
+                    </thead>
+                </div>
+                <tbody>
+					
+                    <div data-sly-list.row="${chart.table.rows}" data-sly-unwrap>
+						<!--Begin new row -->
+                        <tr>
+                            <div data-sly-list.column="${row.columns}" data-sly-unwrap>
+								<!--Begin new column -->
+                                <td>${column.cellValue}</td>
+								<!--End new column -->
+                            </div>
+                        </tr>
+						<!--End new row -->
+                    </div>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chartCaption">
+            ${chart.table.caption @ context='html'}
+        </div>
+    </div>
+</div>

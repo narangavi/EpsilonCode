@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <displayTopCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Top Curves"
+                    name="./displayTopCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+                <displayBottomCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Bottom Curves"
+                    name="./displayBottomCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </general>
+        <tiles
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Tiles"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listTiles
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new tile"
+                    fieldLabel="List Tiles"
+                    name="./listTiles"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        limit="50"
+                        xtype="tilewidget"/>
+                </listTiles>
+            </items>
+        </tiles>
+    </items>
+</jcr:root>

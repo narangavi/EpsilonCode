@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <compTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Component Title"
+                    name="./compTitle"
+                    xtype="textfield"/>
+                <compDesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Component Description"
+                    name="./compDesc"
+                    xtype="textarea"/>
+            </items>
+        </general>
+        <tiles
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Link Tiles"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listTiles
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new tile"
+                    fieldLabel="List Tiles"
+                    name="./listTiles"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        limit="50"
+                        xtype="linktilewidget"/>
+                </listTiles>
+            </items>
+        </tiles>
+    </items>
+</jcr:root>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-25T08:14:24.955-04:00"
+        cq:lastModifiedBy="calix-qa"
+        cq:lastReplicated="{Date}2015-06-24T18:18:41.210-04:00"
+        cq:lastReplicatedBy="scott.r.nelson"
+        cq:lastReplicationAction="Deactivate"
+        cq:template="/apps/calix/templates/splitcolumn"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Split Columns"
+        sling:resourceType="calix/components/page/splitcolumn">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/logo"/>
+        <tagline
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/tagline"/>
+        <contact
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/contact"
+            contact="Contact"/>
+        <search
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/search"/>
+        <register
+            jcr:lastModified="{Date}2015-06-17T04:27:49.639-04:00"
+            jcr:lastModifiedBy="vijay.kesavan"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/login-register"
+            login="Login"
+            register="Register"/>
+        <megamenu
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/megamenu"/>
+        <breadcrumbs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/breadcrumbs"/>
+        <my-calix
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/my-calix"/>
+        <footer-links-1-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-2-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-3-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-4-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-5-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-6-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-7-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-8-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-9-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-10-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-11-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-12-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-legal-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal"/>
+        <largePar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <main_hero
+                jcr:created="{Date}2015-06-12T18:33:11.663-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-12T18:33:11.663-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/main-hero"
+                bottomLine="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                buttonLink="http://www.youtube.com"
+                buttonText="WATCH HERE"
+                byline="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                curvedBottom="true"
+                dateVenue="October 25 - 28 | Las Vegas"
+                heroImage="/content/dam/calix/images/Main Hero/mainHero.png"
+                mainLine="Join Us for the 2014 Calix User Group Conference  and Let's say there is an additional bit of copy. The most.">
+                <cq:annotations jcr:primaryType="nt:unstructured"/>
+            </main_hero>
+            <image_text_0
+                jcr:created="{Date}2015-06-16T12:02:26.051-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-16T12:02:26.051-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/image-text"
+                columnLayout="twoColumns"
+                numOfItems="3">
+                <image_text_item_2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/image-text-item"
+                    description="First image added by QA team"
+                    fileName="Defect-028.JPG"
+                    isButton="true"
+                    linkType="_self"
+                    title="First Image">
+                    <image
+                        jcr:lastModified="{Date}2015-06-25T04:58:42.876-04:00"
+                        jcr:lastModifiedBy="calix-qa"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        alt="By QA team">
+                        <file/>
+                    </image>
+                </image_text_item_2>
+                <image_text_item_3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/apps/calix/components/ui/image-text-item"/>
+                <image_text_item_1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/apps/calix/components/ui/image-text-item"/>
+            </image_text_0>
+            <text_only
+                jcr:created="{Date}2015-06-16T23:45:30.604-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-16T23:51:17.467-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/text-only"
+                buttonType="button"
+                headline="Join Us for the 2014 Calix User Group Conference and let's say there is an addtional bit of copy."
+                isNewWindow="true"
+                linkCTA="http://author-calix-dev.adobecqms.net/cf#/content/calix/en/site/demo/splitcolumns.html?wcmmode=edit"
+                showCurves="true"
+                text="&lt;p>Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet. Bis si ullande nobit aligenis vel idelibusda id est qui conem ulles ipis ut ditatint.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Accuscius aut labor as aut occuptatum siti coreper&lt;/li>&#xa;&lt;li>Iberumqui consectas eos sitet volent aliquat usapern atiumquidem volest&lt;/li>&#xa;&lt;li>Rem res quiae. Rit laute pra dolorer undiae voluptatiam rectem qui offic tor sercidus ea nobit, omni dolorer uptati nesequidebit et idebit autemped quunt.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Aquam re velis comnime es dis sitaerf ernatib erioreptur, core dignati utatenis es et volori conse nam qui con conet velicium quo torero iur.&lt;/p>&#xa;"
+                textIsRich="true"
+                titleCTA="Learn more"/>
+            <news_carousel
+                jcr:created="{Date}2015-06-12T18:51:08.251-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-15T06:30:35.269-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/news-carousel"
+                characterlimit="100"
+                eventlabel="Event"
+                eventpath="/content/calix/en/site/home/events"
+                newslabel="News"
+                newspath="/content/calix/en/site/home/news"
+                pressreleaselabel="Press Release"
+                screenname="thecalixnetwork"
+                totalitem="7"
+                twitterlabel="Twitter"
+                typeofcontent="event">
+                <cq:annotations jcr:primaryType="nt:unstructured">
+                    <_x0033_1_1434152585105
+                        jcr:created="{Date}2015-06-12T19:43:05.106-04:00"
+                        jcr:createdBy="vijay.kesavan"
+                        jcr:lastModified="{Date}2015-06-12T19:44:40.976-04:00"
+                        jcr:lastModifiedBy="vijay.kesavan"
+                        jcr:primaryType="nt:unstructured"
+                        text="@Huy:News carousel does not show up. Please mock some content based on the visual design"
+                        x="{Long}895"
+                        y="{Long}-24"/>
+                </cq:annotations>
+            </news_carousel>
+            <tab_container
+                jcr:created="{Date}2015-06-18T18:43:27.617-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-18T18:43:27.617-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/tab-container"
+                tabs="[Tab 1,Tab2]">
+                <section2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <image_text
+                        jcr:created="{Date}2015-06-18T18:48:44.010-04:00"
+                        jcr:createdBy="vijay.kesavan"
+                        jcr:lastModified="{Date}2015-06-18T18:48:44.010-04:00"
+                        jcr:lastModifiedBy="vijay.kesavan"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="calix/components/ui/image-text">
+                        <image_text_item_1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="calix/components/ui/image-text-item"
+                            description="Lorem ipsum dolor sit amet"
+                            title="Title copy">
+                            <image
+                                jcr:lastModified="{Date}2015-06-18T18:49:20.392-04:00"
+                                jcr:lastModifiedBy="vijay.kesavan"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/image"
+                                fileReference="/content/dam/calix/images/newsAndSocialSpotlight/imageGalleryFPO.png"/>
+                        </image_text_item_1>
+                    </image_text>
+                </section2>
+                <section1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys">
+                    <image_text
+                        jcr:created="{Date}2015-06-18T18:50:27.099-04:00"
+                        jcr:createdBy="vijay.kesavan"
+                        jcr:lastModified="{Date}2015-06-18T18:50:27.099-04:00"
+                        jcr:lastModifiedBy="vijay.kesavan"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="calix/components/ui/image-text"
+                        columnLayout="threeColumns"
+                        numOfItems="3">
+                        <image_text_item_1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="calix/components/ui/image-text-item"
+                            description="Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet&#xd;&#xa;"
+                            title="tab item 1">
+                            <image
+                                jcr:lastModified="{Date}2015-06-18T18:51:54.382-04:00"
+                                jcr:lastModifiedBy="vijay.kesavan"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/image"
+                                alt="alt text"
+                                fileReference="/content/dam/calix/images/Image Text Below/image3.png"/>
+                        </image_text_item_1>
+                        <image_text_item_2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="calix/components/ui/image-text-item">
+                            <image
+                                jcr:lastModified="{Date}2015-06-18T18:53:20.904-04:00"
+                                jcr:lastModifiedBy="vijay.kesavan"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/image"
+                                fileReference="/content/dam/calix/images/Image Text Below/image1.png"/>
+                        </image_text_item_2>
+                        <image_text_item_3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="calix/components/ui/image-text-item">
+                            <image
+                                jcr:lastModified="{Date}2015-06-18T18:54:19.819-04:00"
+                                jcr:lastModifiedBy="vijay.kesavan"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/image"
+                                fileReference="/content/dam/calix/images/videoPreview.png"/>
+                        </image_text_item_3>
+                    </image_text>
+                </section1>
+            </tab_container>
+        </largePar>
+        <smallPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <news_carousel
+                jcr:created="{Date}2015-06-16T23:51:30.236-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-16T23:51:45.525-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/news-carousel"
+                characterlimit="140"
+                eventlabel="Event"
+                newslabel="News"
+                pressreleaselabel="Press Release"
+                screenname="thecalixnetwork"
+                totalitem="10"
+                twitterlabel="Twitter"
+                typeofcontent="twitter"/>
+            <image_text
+                jcr:created="{Date}2015-06-18T18:38:08.769-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-18T18:38:08.769-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/image-text"
+                columnLayout="threeColumns"
+                numOfItems="1">
+                <image_text_item_1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/image-text-item"
+                    description="Second image added by QA team."
+                    isButton="true"
+                    linkType="_self"
+                    title="Second Image">
+                    <image
+                        jcr:lastModified="{Date}2015-06-25T06:01:23.749-04:00"
+                        jcr:lastModifiedBy="calix-qa"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        alt="By QA team"
+                        width="300">
+                        <file/>
+                    </image>
+                </image_text_item_1>
+            </image_text>
+        </smallPar>
+        <heroPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <main_hero
+                jcr:created="{Date}2015-06-24T15:25:49.529-04:00"
+                jcr:createdBy="calix-qa"
+                jcr:lastModified="{Date}2015-06-24T15:25:49.529-04:00"
+                jcr:lastModifiedBy="calix-qa"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/main-hero"
+                curvedTop="true"
+                slides="\{&quot;pathImage&quot;:&quot;/content/dam/calix/images/Main Hero/mainHero.png&quot;,&quot;date&quot;:&quot;&quot;,&quot;mainLine&quot;:&quot;main Line&quot;,&quot;byline&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Welcome&quot;,&quot;bottomLine&quot;:&quot;bottom line&quot;,&quot;titleCTA&quot;:&quot;&quot;,&quot;linkCTA&quot;:&quot;&quot;,&quot;buttonType&quot;:&quot;pri&quot;,&quot;linkType&quot;:&quot;int&quot;,&quot;alignType&quot;:&quot;default&quot;}"/>
+        </heroPar>
+        <footer-legal-social-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal-social"/>
+    </jcr:content>
+</jcr:root>

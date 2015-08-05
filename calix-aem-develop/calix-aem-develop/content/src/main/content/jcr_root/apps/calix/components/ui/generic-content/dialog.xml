@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html"
+    title="Generic Content"
+    width="540"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <general
+            jcr:primaryType="cq:Panel"
+            title="General">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Component Title"
+                    name="./compTitle"
+                    xtype="textfield"/>
+                <columns
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="one"
+                    fieldLabel="Number Of Columns"
+                    name="./columns"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <one
+                            jcr:primaryType="nt:unstructured"
+                            text="One column"
+                            value="one"/>
+                        <two
+                            jcr:primaryType="nt:unstructured"
+                            text="Two columns"
+                            value="two"/>
+                    </options>
+                </columns>
+                <displayTopCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Top Curves"
+                    name="./displayTopCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+                <displayBottomCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Bottom Curves"
+                    name="./displayBottomCurves"
+                    type="checkbox"
+                    xtype="selection"/>
+                <displayBG
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Background"
+                    name="./displayBG"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </general>
+        <col1
+            jcr:primaryType="cq:Panel"
+            title="Column 1">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <displayBG
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Background"
+                    name="./displayBG1"
+                    type="checkbox"
+                    xtype="selection"/>
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="text1"
+                    fieldLabel="Type"
+                    name="./type1"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <text1
+                            jcr:primaryType="nt:unstructured"
+                            text="Text"
+                            value="text1"/>
+                        <image1
+                            jcr:primaryType="nt:unstructured"
+                            text="Image"
+                            value="image1"/>
+                        <video1
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video1"/>
+                        <videos1
+                            jcr:primaryType="nt:unstructured"
+                            text="Video Library"
+                            value="videos1"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                </listFrom>
+                <text1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="text1"
+                    title="Text"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./title1"
+                            xtype="textfield"/>
+                        <titleCTA1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA1"
+                            name="./titleCTA11"
+                            xtype="textfield"/>
+                        <link1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA1"
+                            name="./linkCTA11"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType1
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type1"
+                            name="./btnType11"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType1>
+                        <titleCTA2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA2"
+                            name="./titleCTA12"
+                            xtype="textfield"/>
+                        <link2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA2"
+                            name="./linkCTA12"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType2
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type2"
+                            name="./btnType12"
+                            type="select"
+                            xtype="selection">
+                            <listeners
+                                jcr:primaryType="nt:unstructured"
+                                loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                                selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType2>
+                    </items>
+                </text1>
+                <image1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="image1"
+                    title="Image"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Path"
+                            name="./image1"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </items>
+                </image1>
+                <videos1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="videos1"
+                    title="Please add video(s) in video libary component"
+                    xtype="dialogfieldset"/>
+                <video1
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="video1"
+                    title="Video"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Path"
+                            name="./video1"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </video1>
+            </items>
+        </col1>
+        <col2
+            jcr:primaryType="cq:Panel"
+            title="Column 2">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <displayBG
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Display Background"
+                    name="./displayBG2"
+                    type="checkbox"
+                    xtype="selection"/>
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="text2"
+                    fieldLabel="Type"
+                    name="./type2"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <text2
+                            jcr:primaryType="nt:unstructured"
+                            text="Text"
+                            value="text2"/>
+                        <image2
+                            jcr:primaryType="nt:unstructured"
+                            text="Image"
+                            value="image2"/>
+                        <video2
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video2"/>
+                        <videos2
+                            jcr:primaryType="nt:unstructured"
+                            text="Video Library"
+                            value="videos2"/>
+                    </options>
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                        selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                </listFrom>
+                <text2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="text2"
+                    title="Text"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./title2"
+                            xtype="textfield"/>
+                        <titleCTA1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA1"
+                            name="./titleCTA21"
+                            xtype="textfield"/>
+                        <linkCTA1
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA1"
+                            name="./linkCTA21"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType1
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type1"
+                            name="./btnType21"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType1>
+                        <titleCTA2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title CTA2"
+                            name="./titleCTA22"
+                            xtype="textfield"/>
+                        <linkCTA2
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link CTA2"
+                            name="./linkCTA22"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                        <btnType2
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="green"
+                            fieldLabel="Button Type2"
+                            name="./btnType22"
+                            type="select"
+                            xtype="selection">
+                            <listeners
+                                jcr:primaryType="nt:unstructured"
+                                loadcontent="function(field, rec, path){Toogle.manageFields(field);}"
+                                selectionchanged="function(field, value){Toogle.manageFields(field);}"/>
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <green
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Green"
+                                    value="green"/>
+                                <white
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary White"
+                                    value="white"/>
+                                <outline
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Outline"
+                                    value="outline"/>
+                                <textlink
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Text Link"
+                                    value="text"/>
+                            </options>
+                        </btnType2>
+                    </items>
+                </text2>
+                <image2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="image2"
+                    title="Image"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Path"
+                            name="./image2"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </items>
+                </image2>
+                <videos2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="videos2"
+                    title="Please add video(s) in video libary component"
+                    xtype="dialogfieldset"/>
+                <video2
+                    jcr:primaryType="cq:Widget"
+                    hidden="{Boolean}true"
+                    itemId="video2"
+                    title="Video"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <path
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Path"
+                            name="./video2"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                    </items>
+                </video2>
+            </items>
+        </col2>
+    </items>
+</jcr:root>

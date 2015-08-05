@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Registration Form"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html"
+    width="500px">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="General"/>
+        <items jcr:primaryType="nt:unstructured">
+            <labelfields
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Registration Form"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Form Title"
+                                isRequired="true"
+                                name="./title"
+                                required="true"
+                                value="New User Registration"/>
+                            <imagedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="calix/foundation/form/imagedropfield"
+                                fieldLabel="Image for Description"
+                                name="./imagedesc"/>
+                            <fnamelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="First Name Label"
+                                isRequired="true"
+                                name="./fnamelbl"
+                                required="true"
+                                value="First Name"/>
+                            <lnamelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Last Name Label"
+                                isRequired="true"
+                                name="./lnamelbl"
+                                required="true"
+                                value="Last Name"/>
+                            <emailbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Email Label"
+                                isRequired="true"
+                                name="./emailbl"
+                                required="true"
+                                value="Email"/>
+                            <confirmemailbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Confirm Email Label"
+                                isRequired="true"
+                                name="./confirmemailbl"
+                                required="true"
+                                value="Confirm Email"/>
+                            <companylbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Company Label"
+                                isRequired="true"
+                                name="./companylbl"
+                                required="true"
+                                value="Company"/>
+                            <titlelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title Label"
+                                isRequired="true"
+                                name="./titlelbl"
+                                required="true"
+                                value="Title"/>
+                            <jobfunctionlbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Job Function Label"
+                                isRequired="true"
+                                name="./jobfunctionlbl"
+                                required="true"
+                                value="Job Function"/>
+                            <address1lbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Address 1 Label"
+                                isRequired="true"
+                                name="./address1lbl"
+                                required="true"
+                                value="Address 1"/>
+                            <address2lbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Address 2 Label"
+                                isRequired="true"
+                                name="./address2lbl"
+                                required="true"
+                                value="Address 2"/>
+                            <citylbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="City Label"
+                                isRequired="true"
+                                name="./citylbl"
+                                required="true"
+                                value="City"/>
+                            <statelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="State Label"
+                                isRequired="true"
+                                name="./statelbl"
+                                required="true"
+                                value="State"/>
+                            <postalcodelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Zip/Postal Code Label"
+                                isRequired="true"
+                                name="./postalcodelbl"
+                                required="true"
+                                value="Zip/Postal Code"/>
+                            <countrylbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Country Label"
+                                isRequired="true"
+                                name="./countrylbl"
+                                required="true"
+                                value="Country"/>
+                            <primaryphonelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Primary Phone Label"
+                                isRequired="true"
+                                name="./primaryphonelbl"
+                                required="true"
+                                value="Primary Phone"/>
+                            <secondaryphonelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Secondary Phone Label"
+                                isRequired="true"
+                                name="./secondaryphonelbl"
+                                required="true"
+                                value="Secondary Phone"/>
+                            <phonetypelbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Phone Type Label"
+                                isRequired="true"
+                                name="./phonetypelbl"
+                                required="true"
+                                value="Type"/>
+                            <phonenumberlbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Phone Number Label"
+                                isRequired="true"
+                                name="./phonenumberlbl"
+                                required="true"
+                                value="Number"/>
+                            <phoneextlbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Phone Ext Label"
+                                isRequired="true"
+                                name="./phoneextlbl"
+                                required="true"
+                                value="Ext"/>
+                            <textinboxlbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Text in Box at Right Label"
+                                isRequired="true"
+                                name="./textinboxlbl"
+                                required="true"
+                                value="Text in Box at Right"/>
+                            <referredbylbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Referred By Label"
+                                isRequired="true"
+                                name="./referredbylbl"
+                                required="true"
+                                value="Referred By"/>
+                            <buttonlbl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Button Label"
+                                isRequired="true"
+                                name="./buttonlbl"
+                                required="true"
+                                value="Go"/>
+                            <successmsg
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Success Message"
+                                isRequired="true"
+                                name="./successmsg"
+                                required="true"/>
+                        </items>
+                    </columns>
+                </items>
+            </labelfields>
+            <comments
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Comments"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fnamedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for First Name"
+                                name="./fnamedesc"/>
+                            <lnamedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Last Name"
+                                name="./lnamedesc"/>
+                            <emaildesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Email"
+                                name="./emaildesc"/>
+                            <confirmemaildesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Confirm Email"
+                                name="./confirmemaildesc"/>
+                            <companydesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Company"
+                                name="./companydesc"/>
+                            <titledesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Title"
+                                name="./titledesc"/>
+                            <jobfuncdesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Job Function"
+                                name="./jobfuncdesc"/>
+                            <addess1desc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Address 1"
+                                name="./addess1desc"/>
+                            <addess2desc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Address 2"
+                                name="./addess2desc"/>
+                            <citydesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for City"
+                                name="./citydesc"/>
+                            <statedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for State"
+                                name="./statedesc"/>
+                            <postalcodedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Zip/Postal Code"
+                                name="./postalcodedesc"/>
+                            <countrydesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Country"
+                                name="./countrydesc"/>
+                            <primaryphonedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Primary Phone"
+                                name="./primaryphonedesc"/>
+                            <secondaryphonedesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Secondary Phone"
+                                name="./secondaryphonedesc"/>
+                            <textinboxdesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Text in Box at Right"
+                                name="./textinboxdesc"/>
+                            <referredbydesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Comment for Referred By"
+                                name="./referredbydesc"/>
+                        </items>
+                    </columns>
+                </items>
+            </comments>
+        </items>
+    </content>
+</jcr:root>

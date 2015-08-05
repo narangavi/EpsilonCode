@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    cancelText="Cancel"
+    okText="Save"
+    title="FullWidth Feature"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                border="false"
+                height=""
+                title="General"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <displayCurveTop
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Curve Top"
+                        name="./displaycurvetop"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <displayCurveBottom
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Curve Bottom"
+                        name="./displaycurvebottom"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <displaySecondaryTextArea
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Secondary Text Area"
+                        name="./displaysecondary"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </general>
+            <primary
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                border="false"
+                height=""
+                title="Primary Text Area"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headline
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Headline"
+                        name="./headline"
+                        xtype="textfield"/>
+                    <image
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image"
+                        name="./image"
+                        rootPath="/content/dam"
+                        xtype="pathfield"/>
+                    <buttontype
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="left"
+                        fieldLabel="Image Position"
+                        name="./imageposition"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <left
+                                jcr:primaryType="nt:unstructured"
+                                text="Left"
+                                value="left"/>
+                            <right
+                                jcr:primaryType="nt:unstructured"
+                                text="Right"
+                                value="right"/>
+                        </options>
+                    </buttontype>
+                    <displayBackground
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Background Color"
+                        name="./displaybackground1"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <firstCTA
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="The First CTA"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title CTA"
+                                name="./titleCTA1"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link CTA"
+                                name="./linkCTA1"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <buttontype
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="green"
+                                fieldLabel="Button Type"
+                                name="./buttontype1"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Green"
+                                        value="green"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary White"
+                                        value="white"/>
+                                    <outline
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Outline"
+                                        value="outline"/>
+                                    <textlink
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text Link"
+                                        value="text"/>
+                                </options>
+                            </buttontype>
+                        </items>
+                    </firstCTA>
+                    <secondCTA
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="The second CTA"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title CTA"
+                                name="./titleCTA2"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link CTA"
+                                name="./linkCTA2"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <buttontype
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="green"
+                                fieldLabel="Button Type:"
+                                name="./buttontype2"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Green"
+                                        value="green"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary White"
+                                        value="white"/>
+                                    <outline
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Outline"
+                                        value="outline"/>
+                                    <textlink
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text Link"
+                                        value="text"/>
+                                </options>
+                            </buttontype>
+                        </items>
+                    </secondCTA>
+                </items>
+            </primary>
+            <secondary
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                border="false"
+                height=""
+                title="Secondary Text Area"
+                width=""
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <headline
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="true"
+                        fieldLabel="Headline"
+                        name="./primaryheadline"
+                        xtype="textfield"/>
+                    <displayBackground
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Background Color"
+                        name="./displaybackground2"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <firstCTA
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="The First CTA"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title CTA"
+                                name="./titleCTA3"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link CTA"
+                                name="./linkCTA3"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <buttontype
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="green"
+                                fieldLabel="Button Type"
+                                name="./buttontype3"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Green"
+                                        value="green"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary White"
+                                        value="white"/>
+                                    <outline
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Outline"
+                                        value="outline"/>
+                                    <textlink
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text Link"
+                                        value="text"/>
+                                </options>
+                            </buttontype>
+                        </items>
+                    </firstCTA>
+                    <secondCTA
+                        jcr:primaryType="cq:Widget"
+                        collapsed="false"
+                        collapsible="false"
+                        title="The second CTA"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <titleCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Title CTA"
+                                name="./titleCTA4"
+                                xtype="textfield"/>
+                            <linkCTA
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Link CTA"
+                                name="./linkCTA4"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <buttontype
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="green"
+                                fieldLabel="Button Type"
+                                name="./buttontype4"
+                                type="select"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Green"
+                                        value="green"/>
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary White"
+                                        value="white"/>
+                                    <outline
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary Outline"
+                                        value="outline"/>
+                                    <textlink
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Text link"
+                                        value="text"/>
+                                </options>
+                            </buttontype>
+                        </items>
+                    </secondCTA>
+                </items>
+            </secondary>
+        </items>
+    </items>
+</jcr:root>

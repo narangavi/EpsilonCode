@@ -1,0 +1,43 @@
+
+   	.newsAndSocialSpotlight .slick-slide img {
+		height: 100% !important;
+	}
+    .newsAndSocialSpotlight .videoPreview img
+	{
+		height: 100% !important;
+	}
+	.placeholder
+    {
+      color: #c9c9c9;
+    }
+
+    .navbar-search i {
+        top: 0px !important;
+        position: relative !important;
+    }
+
+    .navbar-search
+    {
+        top: 50%;
+    }
+
+    .imageWithTextBelowThreeItems .container .row div {
+		width: 340px;
+	}
+
+    .imageWithTextBelowTwoItems .container .row img.img-items-column {
+        height: 100% !important;
+    }
+
+    .imageWithTextBelowThreeItems .container .row img.img-items-column {
+        height: 100% !important;
+    }
+
+    @media all and (max-width: 768px) {
+		.imageWithTextBelowThreeItems .container .row div {
+			width: 100% !important;
+		}
+            }
+
+
+

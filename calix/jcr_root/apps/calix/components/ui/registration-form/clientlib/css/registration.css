@@ -1,0 +1,58 @@
+/****************************************
+  registration
+****************************************/
+.registration-form h2 {
+    font-size: 36px;
+    color: #45367d;
+    font-weight: 300;
+}
+
+.registration-form p {
+    margin-bottom: 0px;
+}
+
+.registration-form .input-md, .registration-form .dropdownlist-md {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+.registration-form .reg-primaryphone, .registration-form .reg-SecondaryPhone {
+    clear: both;
+    float: right;
+    margin-right: 9.5%;
+    margin-bottom: 0px;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    text-align: left;
+}
+
+.glyphicon-menu-down {
+    float: right;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.error {
+	color:red;
+	font-style: italic;
+}
+
+@media all and (max-width: 768px) {
+    .registration-form .reg-primaryphone, .registration-form .reg-SecondaryPhone {
+        float: left;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+}

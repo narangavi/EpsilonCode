@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Login/Register"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <login
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Login Text"
+                    name="./login"
+                    xtype="textfield"/>
+                <loginLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Login Link"
+                    name="./loginLink"
+                    xtype="pathfield">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <tab1
+                            jcr:primaryType="cq:Widget"
+                            anchor="100%"
+                            xtype="panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <contact
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Contact"
+                                    name="./contact"
+                                    xtype="textfield"/>
+                                <contactLink
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Contact Link"
+                                    name="./contactLink"
+                                    xtype="pathfield"/>
+                            </items>
+                        </tab1>
+                    </items>
+                </loginLink>
+                <register
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Register Text"
+                    name="./register"
+                    xtype="textfield"/>
+                <registerLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Register Link"
+                    name="./registerLink"
+                    xtype="pathfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

@@ -1,0 +1,114 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+	[Edit the Notification component here]
+</div>
+<div data-sly-include="/apps/calix/global.jsp" data-sly-unwrap></div>
+<div data-sly-use.notification="com.calix.components.Notification" data-sly-unwrap>
+	<span class="navbar-note mobileHide">
+		<a data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#" id="note">
+			<span class="notification">
+				<span class="messageCount">
+					<span>99</span>
+				</span>
+			</span>
+		</a>
+		<div id="popover-content" class="hide">
+			<div class="notificationsMenu">
+			  <div class="listHdr clearfix">
+			      <a class="markRead pull-left" href="#">${notification.markAsReadText}</a>
+			      <a class="noteSetting pull-right" href="#">${notification.notificationSettingsText}</a>
+			  </div>
+			  <div class="noteList">
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			        <i class="fa fa-circle"></i>
+			      </div>
+			      <div class="noteContent">
+			        <span><strong>John Johnson</strong> recommends that you view <strong>[Document Name]</strong>.</span>
+			        <span>6/23/15 at 3:30 PM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Document</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			        <i class="fa fa-circle"></i>
+			      </div>
+			      <div class="noteContent">
+			        <span>Service Station Alert: Notification text goes here Pero mint, ut volo conecerum commo temporla ut volo conecerum</span>
+			        <span>6/23/15 at 3:15 PM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Campaign</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			        <i class="fa fa-circle"></i>
+			      </div>
+			      <div class="noteContent">
+			        <span><strong>You have a new email from Calix:</strong> Subject line of email Notification text goes here Pero mint, ut volo conecerum com</span>
+			        <span>6/23/15 at 2:20 PM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Case Update</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			      </div>
+			      <div class="noteContent">
+			        <span><strong>[Document Name]</strong> has been Updated</span>
+			        <span>6/21/15 at 1:20 AM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Case Update</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			        <i class="fa fa-circle"></i>
+			      </div>
+			      <div class="noteContent">
+			        <span><strong>John Johnson</strong> recommends that you view <strong>[Document Name]</strong>.</span>
+			        <span>6/23/15 at 3:30 PM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Document</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			    <div class="listItem clearfix">
+			      <div class="icoNote">
+			        <i class="fa fa-circle"></i>
+			      </div>
+			      <div class="noteContent">
+			        <span>Service Station Alert: Notification text goes here Pero mint, ut volo conecerum commo temporla ut volo conecerum</span>
+			        <span>6/23/15 at 3:15 PM</span>
+			      </div>
+			      <div class="viewClose">
+			        <a class="btn txtBtn" href="#">View Campaign</a>
+			        <a class="closeNote" href="#"></a>
+			      </div>
+			    </div>
+			
+			  </div>
+			</div>
+		
+			<div class="loadMore">
+				<div data-sly-test="${notification.cta.title}" class="cq-dd-images" data-sly-unwrap>
+					<a class="${notification.cta.style}" target="${notification.cta.target}" href="${notification.cta.link}"><span>${notification.cta.title}</span></a>
+				</div>
+			</div>
+		</div>
+	</span>
+</div>

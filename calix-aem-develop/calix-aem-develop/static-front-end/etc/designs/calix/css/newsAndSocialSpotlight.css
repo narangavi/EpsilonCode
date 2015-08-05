@@ -1,0 +1,597 @@
+/****************************************
+  news and social spotlight
+****************************************/
+
+
+.slick-loading .slick-list {
+    background: #fff url('..img/ajax-loader.gif') center center no-repeat;
+}
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+/* Slick Slider Carousel
+http://kenwheeler.github.io/slick/
+*/
+
+.newsAndSocialSpotlight .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.newsAndSocialSpotlight .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.newsAndSocialSpotlight .slick-list:focus {
+  outline: none;
+}
+
+.newsAndSocialSpotlight .slick-loading .slick-list {
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+.newsAndSocialSpotlight .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.newsAndSocialSpotlight .slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.newsAndSocialSpotlight .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.newsAndSocialSpotlight .slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.newsAndSocialSpotlight .slick-track:after {
+  clear: both;
+}
+
+.newsAndSocialSpotlight .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.newsAndSocialSpotlight .slick-slide {
+  float: left;
+  height: auto;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .newsAndSocialSpotlight .slick-slide {
+  float: right;
+}
+
+.newsAndSocialSpotlight .slick-slide img {
+  display: block;
+}
+
+.newsAndSocialSpotlight .slick-slide.slick-loading img {
+  display: none;
+}
+
+.newsAndSocialSpotlight .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.newsAndSocialSpotlight .slick-initialized .slick-slide {
+  display: block;
+}
+
+.newsAndSocialSpotlight .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.newsAndSocialSpotlight .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Arrows */
+.newsAndSocialSpotlight .slick-prev,
+.newsAndSocialSpotlight .slick-next {
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Dots */
+
+.newsAndSocialSpotlight ul.slick-dots {
+  padding: 0;
+  margin: 0;
+}
+
+.newsAndSocialSpotlight .slick-slider {
+  margin-bottom: 15px;
+}
+
+.newsAndSocialSpotlight .slider-photos-loop {
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.newsAndSocialSpotlight .slider-photos-loop .event {
+  float: left;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.newsAndSocialSpotlight .slick-next {
+  background: url('../img/carouselWhiteNextArw.png') 80% no-repeat;
+  top: 40%;
+  right: 0;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+}
+
+.newsAndSocialSpotlight .slick-prev {
+  top: 40%;
+  left: 0;
+  background: url('../img/carouselWhitePrevArw.png') 20% no-repeat;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+}
+
+.newsAndSocialSpotlight .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: inline;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.newsAndSocialSpotlight .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.newsAndSocialSpotlight .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: inline;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.newsAndSocialSpotlight .slick-dots li button:hover,
+.newsAndSocialSpotlight .slick-dots li button:focus
+{
+    outline: none;
+}
+.newsAndSocialSpotlight .slick-dots li button:hover:before,
+.newsAndSocialSpotlight .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.newsAndSocialSpotlight .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #7c62c5;
+    border-radius: 10px;
+    background-color: #fff;
+    content: ' ';
+    text-align: center;
+    opacity: 1.0;
+    color: #fc0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.newsAndSocialSpotlight .slick-dots li.slick-active button:before {
+    opacity: 1.0;
+    color: #fc0;
+    border: 3px solid #e77400;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.newsAndSocialSpotlight {
+  margin: 0px;
+  padding: 65px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
+}
+
+.curve-top {
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-top: 2px solid #b5b2c2;
+}
+
+.curve-bottom {
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+}
+
+
+.newsAndSocialSpotlight .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.newsAndSocialSpotlight h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.newsAndSocialSpotlight h2 {
+  font-size: 36px;
+  color: #45367d;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.newsAndSocialSpotlight h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+  text-align: left;
+}
+.newsAndSocialSpotlight p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 18px;
+}
+.newsAndSocialSpotlight .slider-photos-loop ul {
+  text-decoration: none;
+  display: inline;
+}
+.newsAndSocialSpotlight .slider-photos-loop ul li {
+  text-decoration: none;
+  display: inline;
+}
+.newsAndSocialSpotlight img {
+  padding: 0;
+  margin: 0;
+}
+
+.newsAndSocialSpotlight .row {
+  padding: 0;
+  margin: 0;
+}
+.newsAndSocialSpotlight .photoSlider {
+  width: 495px;
+  padding: 0 5px 0 0;
+  margin: 0;
+}
+
+.newsAndSocialSpotlight .videoPreview {
+  width: 495px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+.newsAndSocialSpotlight .videoPreview .videoThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+.newsAndSocialSpotlight .videoPreview img {
+  width: 100%;
+}
+.newsAndSocialSpotlight .videoPlayIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url('../img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+.newsAndSocialSpotlight .videoPreview .relatedVideos {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  bottom: -75px;
+  transition: all 0.5s ease;
+}
+.newsAndSocialSpotlight .videoPreview:hover .relatedVideos {
+  bottom: 0px;
+}
+.newsAndSocialSpotlight .relatedVideos h3 {
+  display: inline;
+  float: right;
+  margin: 0px;
+  padding: 2px 8px;
+  height: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.newsAndSocialSpotlight .relatedVideos p {
+  clear: right;
+  color: #fff;
+  font-size: 13px;
+  padding:  10px 30px 0 15px;
+  line-height: 1.2;
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.newsAndSocialSpotlight .videoPreview .description {
+  position: absolute;
+  text-align: left;
+  width: 490px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.newsAndSocialSpotlight .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.newsAndSocialSpotlight .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+.newsAndSocialSpotlight .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+.newsAndSocialSpotlight .grnBtn {
+  margin: 15px 28px 5px 0;
+}
+.newsAndSocialSpotlight a.grnLink:hover,
+.newsAndSocialSpotlight a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsAndSocialSpotlight .featuredStories {
+  width: 100%;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+.newsAndSocialSpotlight .featuredStories h3 {
+  font-weight: 600;
+  text-align: center;
+}
+.newsAndSocialSpotlight .featuredStories .events {
+  float: left;
+  width: 333.33px;
+}
+.newsAndSocialSpotlight h3.fieldPhotos {
+  float: left;
+}
+.newsAndSocialSpotlight a.viewAll {
+  float: right;
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-transform: uppercase;
+}
+.newsAndSocialSpotlight a.viewAll:hover,
+.newsAndSocialSpotlight a.viewAll:focus {
+  outline: 0px;
+  text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+
+  .newsAndSocialSpotlight .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .newsAndSocialSpotlight .container {
+    width: 100%;
+  }
+  .newsAndSocialSpotlight .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .newsAndSocialSpotlight .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+
+  .newsAndSocialSpotlight button {
+    display: none;
+  }
+  .newsAndSocialSpotlight .videoPlayIcon {
+    background: url('../img/videoPlayIcon.png') 50% 40% no-repeat;
+  }
+  .newsAndSocialSpotlight .videoPreview .relatedVideos {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    bottom: auto;
+    transition: none;
+  }
+  .newsAndSocialSpotlight .relatedVideos h3 {
+    display: block;
+    float: none;
+    margin: 10px 0px 0 0;
+    padding: 2px 0px;
+    height: auto;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  .newsAndSocialSpotlight .relatedVideos p {
+    clear: none;
+    color: #000;
+    font-size: 13px;
+    padding:  10px 30px 0 0px;
+    line-height: 1.4;
+    min-height: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .newsAndSocialSpotlight .videoPlayIcon {
+    background: url('../img/videoPlayIcon.png') 50% 30% no-repeat;
+  }
+}
+@media all and (min-width: 320px) {
+
+  .newsAndSocialSpotlight .slick-dots {
+    bottom: -35px;
+    display: inline;
+    width: 100%;
+    padding: 0 0 10px 0;
+    list-style: none;
+    text-align: center;
+  }
+  .newsAndSocialSpotlight .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .newsAndSocialSpotlight .container {
+    width: 100%;
+  }
+  .newsAndSocialSpotlight .photoSlider {
+    width: 100%;
+    padding: 0 0 30px 0;
+    margin: 0;
+  }
+  .newsAndSocialSpotlight .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .newsAndSocialSpotlight .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+  .newsAndSocialSpotlight button {
+    display: none;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .newsAndSocialSpotlight .slick-dots
+  {
+    position: absolute;
+    bottom: 10px;
+
+    display: inline;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+  }
+  .newsAndSocialSpotlight .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .newsAndSocialSpotlight .photoSlider {
+    width: 495px;
+    padding: 0 5px 0 0;
+    margin: 0;
+  }
+
+  .newsAndSocialSpotlight .videoPreview {
+    width: 495px;
+    padding: 0 0 0 5px;
+    margin: 0;
+  }
+  .newsAndSocialSpotlight .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 490px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+}

@@ -1,0 +1,59 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit the Event or Speaker Detail component]<br />
+</div>
+<div class="speakerEventWrap" data-sly-use.detailpage="com.calix.components.EventSpeakersDetail">
+    <div class="speakerEventHeader">
+        <h2>${detailpage.title}</h2>
+        <span class="speakerDate">
+            <time>${detailpage.date}</time>
+            <!--span class="speakerName">${detailpage.name}</span-->
+            <div data-sly-test="${detailpage.name}"  data-sly-unwrap>
+                <span class="speakerName">${detailpage.name}</span>
+            </div>
+        </span>
+        <!--div  class="speakerName" data-sly-test="${article.speakerName}" data-sly-unwrap> | ${detailpage.name}</div-->
+        <!--span class="speakerName">${detailpage.name}</span-->
+        <p class="speakerEventDescription">${detailpage.description}</p>
+        <div data-sly-test="${detailpage.link}"  data-sly-unwrap>
+            <a class="grnLink" href="${detailpage.link}" target="_blank" >${detailpage.linkLabel}</a>
+        </div>
+    </div>
+    <div class="wideContainer">
+        <div class="clearfix">
+            <div class="twoThirds left-col" >
+                <img class="img-responsive" src="${detailpage.image}" width="628" alt="" />
+                <!-- important: if no speaker bio image add .noBioImage class to the following div -->
+                <div class=${detailpage.styleHeadShot}>
+                    <div class="speakerEventContent">
+
+                    <div class="speakerImgCol">
+                        <div data-sly-test="${detailpage.headshot}" data-sly-unwrap>
+                            <img class="img-responsive" src="${detailpage.headshot}" width="95" alt="" />
+                        </div>
+                    </div>
+                    <p> ${detailpage.content} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="eventlinkWrap">
+                    <div class="eventlinkContent" data-sly-list.models="${detailpage.articles}" >
+                        <div class="eventlinkItem">
+                            <span class="titleTag">${models.tabName}</span>
+                            <span class="speakerDate">
+                                <time>${models.date}</time>
+                                 <div data-sly-test="${models.speakerName}" data-sly-unwrap>
+                                    <span class="speakerName">${models.speakerName}</span>
+                                </div>
+                            </span>
+                            <a class="grnLink" href="${models.linkAction}">${models.headline}</a>
+                            <span class="eventLocation">${models.eventLocation}</span>
+                        </div>
+                    </div>
+                    <a class="${detailpage.sytleCTA}" href="${detailpage.linkCTA}"><i class="fa fa-chevron-left"></i> ${detailpage.titleCTA} </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

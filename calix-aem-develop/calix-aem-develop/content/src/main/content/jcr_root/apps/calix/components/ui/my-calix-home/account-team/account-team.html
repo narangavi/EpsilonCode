@@ -1,0 +1,40 @@
+<div data-sly-use.accountTeam="com.calix.components.AccountTeam" data-sly-unwrap>
+	<div data-sly-test="${!accountTeam.hasData}" data-sly-unwrap>
+		<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+			[Edit the Account Team component here] - There is no account team member
+		</div>
+	</div>
+	<div data-sly-test="${accountTeam.hasData}" data-sly-unwrap>
+		<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+			[Edit the Account Team component here]
+		</div>
+		<div class="linkContent accountTeam">
+	       <h3>${accountTeam.title}</h3>
+	       <ul class="expandable">
+	       	 <div data-sly-list.account="${accountTeam.accounts}" data-sly-unwrap>
+		         <li>
+		           <span class="fname">${account.name}</span>
+		           <span> | </span>
+		           <span>${account.role}</span>
+		           <span class="email"><a href="mailto:${account.email @ context='attribute'}">${account.email}</a></span>
+		           <span>${account.phone}</span>
+		         </li>
+	         </div>
+	       </ul>
+	     </div>
+		<script>
+		   // move into custom.js
+		   $(document).ready(function() {
+		     if ($('.accountTeam')[0]){
+		       $('ul.expandable').hideMaxListItems(
+		         {
+		           'max':${accountTeam.displayedAccountNumber @ context='scriptString'},
+		           'speed':300,
+		           'moreText':'[COUNT] More...',
+		           'lessText':'Less'
+		          });
+		       };
+		     });
+		 </script>
+	 </div>
+</div>

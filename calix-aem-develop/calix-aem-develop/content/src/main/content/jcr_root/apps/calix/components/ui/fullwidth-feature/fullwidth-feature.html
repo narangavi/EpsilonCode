@@ -1,0 +1,83 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit Full Width Feature component here]</div>
+
+ <div data-sly-use.fullwidthfeature="com.calix.components.FullWidthFeature" data-sly-unwrap>
+ 
+<!--  First Text Area -->
+
+
+	<div class="fullWidthFeature ${fullwidthfeature.featureItem.primaryTextArea.cssClassName}">
+		<div class="container">
+			<div class="row">
+           <div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.imagePosition=='right'}" data-sly-unwrap>
+				<div class="featureDesc col-xs-12">
+					<h3>${fullwidthfeature.featureItem.primaryTextArea.headLine}</h3>
+					<div data-sly-resource="${'fullwidth-item_1' @ resourceType='/apps/calix/components/ui/generic-content-item'}" style="align:left;"></div>
+
+
+					<div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.title}" data-sly-unwrap>
+						<a class="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.style}" target="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.target}" href="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.link}" style="margin-right: 10px;"><span>${fullwidthfeature.featureItem.primaryTextArea.primaryCta.title}</span></a>
+					</div>
+					<div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.title}" data-sly-unwrap>
+						<a class="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.style}" target="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.target}" href="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.link}"><span>${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.title}</span></a>
+					</div>
+				</div>
+				<div class="featureImg col-xs-12">
+					<img class="featured-image img-responsive" src="${fullwidthfeature.featureItem.primaryTextArea.imagePath}" />
+				</div>
+
+             </div>
+
+  <div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.imagePosition=='left'}" data-sly-unwrap>
+  <div class="featureImg col-xs-12">
+					<img class="featured-image img-responsive" src="${fullwidthfeature.featureItem.primaryTextArea.imagePath}" />
+				</div>
+
+				<div class="featureDesc col-xs-12">
+					<h3>${fullwidthfeature.featureItem.primaryTextArea.headLine}</h3>
+					<div data-sly-resource="${'fullwidth-item_1' @ resourceType='/apps/calix/components/ui/generic-content-item'}" style="align:left;"></div>
+
+					<div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.title}" data-sly-unwrap>
+						<a class="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.style}" target="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.target}"  href="${fullwidthfeature.featureItem.primaryTextArea.primaryCta.link}" style="margin-right: 10px;"><span>${fullwidthfeature.featureItem.primaryTextArea.primaryCta.title}</span></a>
+					</div>
+					<div data-sly-test="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.title}" data-sly-unwrap>
+						<a class="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.style}" target="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.target}" href="${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.link}"><span>${fullwidthfeature.featureItem.primaryTextArea.secondaryCta.title}</span></a>
+					</div>
+
+
+				</div>
+
+             </div>
+			
+
+			</div>
+		</div>
+	</div>
+
+
+	<!--  Second Text Area -->
+<div data-sly-test="${fullwidthfeature.featureItem.displaySecondaryTextArea}" data-sly-unwrap>
+
+	<div class="fullWidthFeature ${fullwidthfeature.featureItem.secondaryTextArea.cssClassName}">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<h3>${fullwidthfeature.featureItem.secondaryTextArea.headLine}</h3>
+					<div data-sly-resource="${'fullwidth-item_2' @ resourceType='/apps/calix/components/ui/generic-content-item'}" style="align:left;"></div>
+
+					<div data-sly-test="${fullwidthfeature.featureItem.secondaryTextArea.primaryCta.title}" data-sly-unwrap>
+						    <a class="${fullwidthfeature.featureItem.secondaryTextArea.primaryCta.style}" target="${fullwidthfeature.featureItem.secondaryTextArea.primaryCta.target}" href="${fullwidthfeature.featureItem.secondaryTextArea.primaryCta.link}" style="margin-right: 10px;"><span>${fullwidthfeature.featureItem.secondaryTextArea.primaryCta.title}</span></a>
+					</div>
+
+					<div data-sly-test="${fullwidthfeature.featureItem.secondaryTextArea.secondaryCta.title}" data-sly-unwrap>
+                            <a class="${fullwidthfeature.featureItem.secondaryTextArea.secondaryCta.style}" target="${fullwidthfeature.featureItem.secondaryTextArea.secondaryCta.target}" href="${fullwidthfeature.featureItem.secondaryTextArea.secondaryCta.link}"><span>${fullwidthfeature.featureItem.secondaryTextArea.secondaryCta.title}</span></a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>

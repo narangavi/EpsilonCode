@@ -1,0 +1,115 @@
+/****************************************
+  generic content 2/3 width column components
+****************************************/
+
+.genericContentTwoThirdsWidthColumn {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: auto;
+  padding: 0 0 15px 0;
+}
+
+.genericContentTwoThirdsWidthColumn h1 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+  padding: 25px 0 5px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #999;
+}
+.genericContentTwoThirdsWidthColumn h3,
+.genericContentTwoThirdsWidthColumn h2 {
+  margin: 0 0 10px 0;
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.genericContentTwoThirdsWidthColumn p {
+  font-size: 16px;
+  color: #333;
+}
+.genericContentTwoThirdsWidthColumn ul {
+  padding: 20px 20px 0 20px;
+  text-align: left;
+}
+.genericContentTwoThirdsWidthColumn .grnBtn {
+  margin: 15px;
+}
+.genericContentTwoThirdsWidthColumn .grnLink {
+  margin: 25px 0 5px 0;
+}
+.genericContentTwoThirdsWidthColumn a.grnLink:hover,
+.genericContentTwoThirdsWidthColumn a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 320px) {
+  .genericContentTwoThirdsWidthColumn .container {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .genericContentTwoThirdsWidthColumn .col-sm-4 {
+    padding: 15px 15px 0 15px;
+  }
+  .genericContentTwoThirdsWidthColumn h3,
+  .genericContentTwoThirdsWidthColumn p,
+  .genericContentTwoThirdsWidthColumn ul 
+  {
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumn a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentTwoThirdsWidthColumn .grnLink, .genericContentTwoThirdsWidthColumn .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 15px 20px 5px 0;
+  }
+  .genericContentTwoThirdsWidthColumn .grnLink {
+    margin: 20px auto 0 auto;
+  }
+
+}
+
+@media all and (min-width: 769px) {
+
+  .genericContentTwoThirdsWidthColumn .container {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+  }
+
+  .genericContentTwoThirdsWidthColumn div {
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumn p {
+    padding: 0;
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumn a {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentTwoThirdsWidthColumn .grnLink, .genericContentTwoThirdsWidthColumn .grnBtn {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,14 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+    [Edit the profile component here]
+</div>
+
+<!-- All content goes here -->
+<div data-sly-use.profile="com.calix.components.Profile" class="container">
+	<img src="${profile.item.image}" width="300px;" height="300px;" alt="" />
+    <h1>${profile.item.firstName}</h1>
+    <h1>${profile.item.lastName}</h1>
+    <h2>${profile.item.job}</h2>
+    <h2>${profile.item.department}</h2>
+    <h2>${profile.item.type}</h2>
+    <h3>${profile.item.description}</h3>
+</div>

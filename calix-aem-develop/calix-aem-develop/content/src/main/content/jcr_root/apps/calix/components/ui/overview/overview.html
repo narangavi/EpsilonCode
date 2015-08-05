@@ -1,0 +1,17 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+     [Edit Overview Component here]
+</div>
+<div data-sly-use.overview="com.calix.components.Overview">
+	<div class="overviewWrap ${overview.curve}">
+		<div class="overviewContent clearfix">
+			<div data-sly-list.tile="${overview.tiles}" data-sly-unwrap>
+				<a href="#${tile.anchor}" class="overviewItem">
+					<span class="overviewThumb">
+						<img src="${tile.image}" alt="" />
+					</span>
+					<span class="overviewDescription">${tile.title}</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

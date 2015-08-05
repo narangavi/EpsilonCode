@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Press and News Hub"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Press News Hub">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tab1
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Press News Hub"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <viewAll
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewAll"
+                                text="Display All tab"
+                                value="{Boolean}true"/>
+                            <viewall-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewAll@Delete"
+                                value="{Boolean}true"/>
+                            <viewPress
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewPress"
+                                text="Display Press Release tab"
+                                value="{Boolean}true"/>
+                            <viewpress-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewPress@Delete"
+                                value="{Boolean}true"/>
+                            <viewNews
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./viewNews"
+                                text="Display In the News tab"
+                                value="{Boolean}true"/>
+                            <viewnews-delete
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                name="./viewNews@Delete"
+                                value="{Boolean}true"/>
+                            <limitItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                defaultValue="{Long}20"
+                                fieldDescription="Maximum number of items displayed"
+                                fieldLabel="Limit Items"
+                                name="./limitItems"/>
+                            <loadmoreLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Load more button label"
+                                fieldLabel="Load more label"
+                                name="./loadmoreLabel"/>
+                            <pressPath
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Press Release"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="Press Release">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Press path"
+                                        rootPath="/content/calix"
+                                        name="./pressPath"/>
+                                    <pressTagName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Press tab name"
+                                        name="./pressTagName"/>
+                                </items>
+                            </pressPath>
+                            <newsPath
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="In the News"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="In the News">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="News path"
+                                        rootPath="/content/calix"
+                                        name="./newsPath"/>
+                                    <newsTagName
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="News tab name"
+                                        name="./newsTagName"/>
+                                </items>
+                            </newsPath>
+                        </items>
+                    </columns>
+                </items>
+            </tab1>
+        </items>
+    </content>
+</jcr:root>

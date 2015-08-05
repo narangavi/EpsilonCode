@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Events &amp; Speakers Markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- styles -->
+    
+    
+    <link href="../etc/designs/calix/css/bootstrap.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/global.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/eventsAndSpeakers.css" rel="stylesheet">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome/fontello-ie7.css">
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="contentWrapper">
+      <div class="innerWrap">
+
+      <!-- All content goes here -->
+
+      <div class="eventsAndSpeakers">
+
+        <div class="myCalix">
+          <a href="#">My Calix</a>
+        </div>
+
+        <div class="container">
+          <h1>Events &amp; Speakers</h1>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum.</p>
+
+          <div class="subNav">
+            <ul class="categories">
+              <li><a class="active" href="#" target="all">All</a></li>
+              <li><a href="#" target="Calix Events">Calix Events</a></li>
+              <li><a href="#" target="Calix Speakers">Calix Speakers</a></li>
+              <li><a href="#" target="Featured">Featured</a></li>
+            </ul>
+          </div><!-- end sub navigation -->
+
+          <div class="filters">
+          <ul class="displayFilters">
+              <li class="grid active"><a href="#" target="View Grid"><span>View Grid</span></a></li>
+              <li class="list"><a href="#" target="View List"><span>View List</span></a></li>
+            </ul>
+
+            <div class="subNavMobile dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                All Events &amp; Speakers
+                  <i class="glyphicon glyphicon-menu-down"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li><a role="menuitem" tabindex="-1" href="#">All Events &amp; Speakers</a></li>
+                <li><a role="menuitem" tabindex="-1" href="#">Calix Events</a></li>
+                <li><a role="menuitem" tabindex="-1" href="#">Calix Speakers</a></li>
+                <li><a role="menuitem" tabindex="-1" href="#">Featured</a></li>
+              </ul>
+            </div>
+
+            <span class="navbar-login mobileHide showingMostRecentNav">Showing From <a data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#" id="login" class="dateRange">Most Recent<span class="caret"></span></a></span>
+
+            <div>
+              <input class="monthYearPicker" type="month" value="2015-07" min="2014-01" max="2015-07" hidden />
+            </div>
+
+            <!-- <input type="month" value="2015-07" min="2015-01" max="2015-07">-->
+
+            <div id="popover-content" class="hide desktop">
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <div class="dropdown month">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      Select Month
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="#">January</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">February</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">March</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">April</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">May</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">June</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">July</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">August</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">September</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">October</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">November</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">December</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown year">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                      Select Year
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li><a role="menuitem" tabindex="-1" href="#">2015</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">2014</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">2013</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">2012</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">2011</a></li>
+                      <li><a role="menuitem" tabindex="-1" href="#">2010</a></li>
+                    </ul>
+                  </div>
+                  <a class="grnBtn center-block updateLink" href="#"><span>Update</span></a>
+                  <div class="forgotPass mostRecentLink"><a href="#">Most Recent</a></div>
+                  <!-- <button type="submit" class="btn btn-primary">Go To Login »</button> -->
+                </div>
+              </form>
+            </div>
+
+            <!--
+            <div class="btn-group showingMostRecentNav">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">
+                Showing Most Recent <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li role="datePicker">
+                  <div class="datePickerView">
+                    <h3>Starting from <b>May 2011</b></h3>
+                    <div class="monthPicker">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMonth1" data-toggle="dropdown" aria-expanded="true">
+                        May
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="monthPicker">
+                        <li role="month"><a role="menuitem" tabindex="-1" href="#">May</a></li>
+                        <li><a role="menuitem" tabindex="-1" href="#">June</a></li>
+                        <li><a role="menuitem" tabindex="-1" href="#">July</a></li>
+                        <li><a role="menuitem" tabindex="-1" href="#">August</a></li>
+                      </ul>
+                    </div>
+                    <div class="yearPicker">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownYear1" data-toggle="dropdown" aria-expanded="true">
+                        2011
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="monthPicker">
+                        <li role="year"><a role="menuitem" tabindex="-1" href="#">2011</a></li>
+                        <li role="year"><a role="menuitem" tabindex="-1" href="#">2012</a></li>
+                        <li role="year"><a role="menuitem" tabindex="-1" href="#">2013</a></li>
+                        <li role="year"><a role="menuitem" tabindex="-1" href="#">2014</a></li>
+                      </ul>
+                    </div>
+                    <p><a class="btn btn-sm" href="#" role="button">Most Recent</a></p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Update</a></p>
+                    <p><a class="btn btn-secondary btn-lg" href="#" role="button">Cancel</a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          -->
+
+          </div>
+
+          <div class="row gridView grid">
+
+            <div class="col-sm-6 col-xs-12 videoModule featured grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="videoPlayIcon"></div>
+                <img src="../images/eventsAndSpeakers/videoPreview.png" width="100%" height="auto" alt="" />
+                <div class="description">
+                  <h3>September 14, 2015 even</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 eventModule grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="description">
+                  <h3>September 14, 2015 odd</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div><!-- end of col-sm-6 -->
+
+            <div class="col-sm-6 col-xs-12 eventModule featured grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="description">
+                  <h3>September 14, 2015 even</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div><!-- end of col-sm-6 -->
+
+            <div class="col-sm-6 col-xs-12 speakerModule grid-item">
+              <div class="eventTab"><span>Calix Speaker</span></div>
+              <a href="#">
+                  <img src="../images/eventsAndSpeakers/videoPreview.png" width="100%" height="auto" alt="" />
+                <div class="description">
+                  <img class="bio" src="../etc/designs/calix/img/1x1.png" />
+                  <h3>September 14, 2015 odd</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 videoModule grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="videoPlayIcon"></div>
+                <img src="../images/eventsAndSpeakers/videoPreview.png" width="100%" height="auto" alt="" />
+                <div class="description">
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 eventModule featured grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="description">
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div><!-- end of col-sm-6 -->
+
+            <div class="col-sm-6 col-xs-12 eventModule grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="description">
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div><!-- end of col-sm-6 -->
+
+            <div class="col-sm-6 col-xs-12 videoModule grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="videoPlayIcon"></div>
+                <img src="../images/eventsAndSpeakers/videoPreview.png" width="100%" height="auto" alt="" />
+                <div class="description">
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 eventModule grid-item">
+              <div class="eventTab"><span>Calix Event</span></div>
+              <a href="#">
+                <div class="description">
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div><!-- end of col-sm-6 -->
+
+            <div class="col-sm-6 col-xs-12 speakerModule grid-item">
+              <div class="eventTab"><span>Calix Speaker</span></div>
+              <a href="#">
+                <img src="../images/eventsAndSpeakers/videoPreview.png" width="100%" height="auto" alt="" />
+                <div class="description">
+                  <img class="bio" src="../etc/designs/calix/img/1x1.png" />
+                  <h3>September 14, 2015</h3>
+                  <h2>Event title without image goes here lorem ipsum</h2>
+                  <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum.</p>
+                  <p class="location">Santa Monica, CA</p>
+                </div>
+              </a>
+            </div>
+
+          </div><!-- end row -->
+
+        </div><!-- end container -->
+
+      <!-- end innerWrap -->
+      </div>
+
+    </div>
+
+    <script src="../etc/designs/calix/js/jquery.min.js"></script>
+    <script src="../etc/designs/calix/js/masonry.pkgd.min.js"></script>
+    <script src="../etc/designs/calix/js/bootstrap.min.js"></script>
+    <script src="../etc/designs/calix/js/custom.js"></script>
+  </body>
+</html>

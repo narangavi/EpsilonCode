@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Legal Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <rightsReserved
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Rights Reserved text"
+                        fieldDescription="Eg: Calix | All Rights Reserved"
+                        name="./rightsReserved"
+                        required="{Boolean}true"/>
+                    <rightsReservedLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Rights Reserved Link (Optional)"
+                        name="./rightsReservedLink"
+                        rootPath="/content/calix"
+                        required="{Boolean}false"/>
+                    <termsOfUse
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Terms of Use text"
+                        fieldDescription="Eg: Terms of Use"
+                        name="./termsOfUse"
+                        required="{Boolean}true"/>
+                    <termsOfUseLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Terms of Use Link"
+                        name="./termsOfUseLink"
+                        rootPath="/content/calix"
+                        required="{Boolean}true"/>
+                    <privacyPolicy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Privacy Policy text"
+                        fieldDescription="Eg: Privacy Policy"
+                        name="./privacyPolicy"
+                        required="{Boolean}true"/>
+                    <privacyPolicyLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                        fieldLabel="Privacy Policy Link"
+                        name="./privacyPolicyLink"
+                        rootPath="/content/calix"
+                        required="{Boolean}true"/>
+                    <twitterLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Calix Twitter Page Link"
+                        fieldDescription="Eg: http://www.twitter.com/calix"
+                        name="./twitterLink"/>
+                    <facebookLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Calix Facebook Page Link"
+                        fieldDescription="Eg: http://www.facebook.com/calix"
+                        name="./facebookLink"/>
+                    <youtubeLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Calix YouTube Page Link"
+                        fieldDescription="Eg: http://www.youtube.com/calix"
+                        name="./youtubeLink"/>
+                    <linkedInLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldLabel="Calix LinkedIn Page Link"
+                        fieldDescription="Eg: http://www.linkedin.com/calix"
+                        name="./linkedInLink"/>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

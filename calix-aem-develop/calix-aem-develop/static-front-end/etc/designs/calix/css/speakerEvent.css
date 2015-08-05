@@ -1,0 +1,214 @@
+/****************************************
+    speaker event
+****************************************/
+
+.speakerEventWrap {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.speakerEventWrap p {
+  font-size: 16px;
+}
+.speakerEventWrap .speakerEventHeader {
+  padding-bottom: 40px;
+}
+.speakerEventWrap .speakerEventHeader h2 {
+  font-size: 56px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px;
+}
+.speakerEventWrap .speakerEventHeader p {
+  font-size: 21px;
+  font-weight: 300;
+  color: #333;
+  max-width: 765px;
+}
+.speakerEventWrap .speakerEventHeader p.speakerEventDescription {
+  margin-top: 40px;
+}
+.speakerEventWrap .speakerEventHeader span.speakerDate,
+.speakerEventWrap .speakerEventHeader span.speakerName {
+  font-size: 21px;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+}
+.speakerEventWrap .speakerEventHeader span.speakerName::before {
+    content: " | ";
+}
+.eventlinkWrap .eventlinkItem a.grnLink,
+.speakerEventWrap .speakerEventHeader a.grnLink {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d9e74;
+    text-transform: uppercase;
+}
+.eventlinkWrap .eventlinkItem a.grnLink:hover,
+.eventlinkWrap .eventlinkItem a.grnLink:active,
+.eventlinkWrap .eventlinkItem a.grnLink:focus,
+.speakerEventWrap .speakerEventHeader a.grnLink:hover,
+.speakerEventWrap .speakerEventHeader a.grnLink:active,
+.speakerEventWrap .speakerEventHeader a.grnLink:focus {
+    text-decoration: none;
+    color: #167858;
+}
+.speakerEventWrap .speakerContentWrap {
+  margin-top: 40px;
+}
+.speakerContentWrap .speakerImgCol {
+  float: left;
+  display: inline;
+  width: 125px;
+}
+.speakerContentWrap .speakerImgCol img {
+  width: 95px;
+  height: auto;
+}
+.speakerContentWrap .speakerEventContent {
+  float: left;
+  display: inline;
+  width: 503px;
+}
+.speakerContentWrap .speakerEventContent p {
+  max-width: 750px;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span {
+  display: block;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span.titleTag {
+  letter-spacing: 1px;
+  position: relative;
+  background-color: #49a0db;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: inline;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span.speakerName,
+.eventlinkWrap .eventlinkContent .eventlinkItem span.speakerDate {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  margin-top: 10px;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span.eventLocation {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span.external,
+.eventlinkWrap .eventlinkContent .eventlinkItem span.speakerName {
+  display: inline;
+}
+.eventlinkWrap .eventlinkContent .eventlinkItem span.speakerName::before {
+    content: " | ";
+}
+.eventlinkWrap .eventlinkItem a.grnLink {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1d9e74;
+    text-transform: uppercase;
+}
+.eventlinkWrap .eventlinkItem a.grnLink:hover,
+.eventlinkWrap .eventlinkItem a.grnLink:active,
+.eventlinkWrap .eventlinkItem a.grnLink:focus {
+    text-decoration: none;
+    color: #167858;
+}
+.speakerEventWrap .left-col {
+  width: 66.6%;
+  float: left;
+}
+.speakerEventWrap .right-col {
+  width: 33.3%;
+  float: left;
+}
+.speakerContentWrap.noBioImage .speakerImgCol {
+  display: none;
+}
+.speakerContentWrap.noBioImage .speakerEventContent {
+  width: 630px;
+}
+.speakerEventWrap .right-col .backEvent {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  .speakerEventWrap {
+    padding: 0 15px;
+  }
+  .speakerContentWrap .speakerImgCol {
+    display: none;
+  }
+  .speakerEventWrap .left-col {
+    width: 100%;
+    float: none;
+  }
+  .speakerEventWrap .right-col {
+    width: 100%;
+    float: none;
+  }
+  .speakerContentWrap .speakerEventContent {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .speakerContentWrap .speakerEventContent p {
+    max-width: 100%;
+    width: 100%;
+  }
+  .eventlinkWrap .eventlinkContent .eventlinkItem {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    border-top: 1px solid #e7e7e7;
+    padding-top: 25px;
+    margin-top: 20px;
+  }
+  .speakerEventWrap .speakerEventHeader h2 {
+    font-size: 46px;
+  }
+  .speakerEventWrap .speakerEventHeader span.speakerDate,
+  .speakerEventWrap .speakerEventHeader span.speakerName {
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    text-transform: uppercase;
+  }
+  .speakerEventWrap .speakerEventHeader p.speakerEventDescription {
+    margin-top: 25px;
+  }
+  .speakerEventWrap .speakerEventHeader p {
+    font-size: 18px;
+  }
+  .eventlinkWrap .eventlinkItem a.grnLink, .speakerEventWrap .speakerEventHeader a.grnLink,
+  .speakerEventWrap p {
+    font-size: 14px;
+  }
+  .speakerEventWrap .speakerEventHeader {
+    padding-bottom: 25px;
+  }
+  .speakerEventWrap .speakerContentWrap {
+    margin-top: 25px;
+  }
+  .speakerEventWrap .right-col .backEvent {
+    text-align: center;
+    max-width: 80%;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}

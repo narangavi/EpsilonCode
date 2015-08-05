@@ -1,0 +1,118 @@
+/****************************************
+  generic content full width with curve arch components
+****************************************/
+
+.genericContentFullWidthColumnWithCurveArch {
+  margin: 0px;
+  padding: 65px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+  border-top: 2px solid #b5b2c2;
+}
+.genericContentFullWidthColumnWithCurveArch h1 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+  padding: 25px 0 5px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #999;
+}
+.genericContentFullWidthColumnWithCurveArch h3,
+.genericContentFullWidthColumnWithCurveArch h2 {
+  margin: 10px 0;
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.genericContentFullWidthColumnWithCurveArch p {
+  font-size: 16px;
+  color: #333;
+}
+.genericContentFullWidthColumnWithCurveArch ul {
+  padding: 20px 20px 0 20px;
+  text-align: left;
+}
+.genericContentFullWidthColumnWithCurveArch .grnBtn {
+  margin: 15px 0 5px 0;
+}
+.genericContentFullWidthColumnWithCurveArch .grnLink {
+  margin: 25px 0 5px 0;
+}
+.genericContentFullWidthColumnWithCurveArch a.grnLink:hover,
+.genericContentFullWidthColumnWithCurveArch a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 320px) {
+  .genericContentFullWidthColumnWithCurveArch .container {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .genericContentFullWidthColumnWithCurveArch h3 {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch p {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch ul {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthColumnWithCurveArch .grnLink, 
+  .genericContentFullWidthColumnWithCurveArch .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 15px 20px 5px 0;
+  }
+  .genericContentFullWidthColumnWithCurveArch .grnLink {
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .genericContentFullWidthColumnWithCurveArch .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch div {
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch p {
+    width: 0 15px;
+    text-align: left;
+  }
+  .genericContentFullWidthColumnWithCurveArch a {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentFullWidthColumnWithCurveArch .grnLink, 
+  .genericContentFullWidthColumnWithCurveArch .grnBtn {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+  }
+}

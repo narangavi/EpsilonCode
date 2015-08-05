@@ -1,0 +1,59 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit the Press New Release component]<br />
+</div>
+<div id="pressReleaseNewsWrapContent" class="pressReleaseNewsWrap" data-sly-use.detailpage="com.calix.components.PressNewsRelease">
+
+    <div class="pressReleaseNewsHeader">
+        <h2>${detailpage.title}</h2>
+
+            <!-- name in Bundle set: Press: null, News has value not null -->
+        <div data-sly-test="${detailpage.name}"  data-sly-unwrap>
+            <span class="releaseNewsDate"><time>${detailpage.date}</time></span>
+            <span class="releaseNewsSource">${detailpage.name}</span>
+        </div>
+
+        <div class="clearfix">
+            <p class="pressReleaseNewsDescription">${detailpage.description}</p>
+            <!-- display button PDF if is Press Article   javascript:window.print(); -->
+            <div data-sly-test="${!detailpage.name}"  data-sly-unwrap>
+            <a class="grnBtn pull-left dLoad" href="" id="pressNewsPDF"><i class="fa fa-file-pdf-o"></i> Download as PDF</a>
+            </div>
+        </div>
+        <!-- name in Bundle set: Press: null, News has value not null -->
+        <div data-sly-test="${detailpage.name}"  data-sly-unwrap>
+            <a class="grnLink" href="${detailpage.link}" target="_blank" >${detailpage.linkLabel}</a>
+        </div>
+
+    </div>
+
+    <div class="wideContainer clearfix">
+        <div class="twoThirds left-col">
+            <img class="img-responsive" src="${detailpage.image}"  width="628" alt="" />
+            <div class="pressReleaseNewsContent">
+                ${detailpage.content}
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="pressNewslinkWrap" id="ignorePDF">
+
+                <div class="pressNewslinkContent" data-sly-list.models="${detailpage.articles}">
+                    <div class="pressNewslinkItem">
+                        <span class="titleTag">${models.tabName}</span>
+                        <span class="pressNewsDate">
+                        	<time>${models.date}</time>
+                        	<span class="sourceName" data-sly-test="${models.source}">${models.source}</span>
+                        </span>
+                        <a class="grnLink" href="${models.linkAction}">${models.subhead}</a>
+                        <span class="eventLocation">${models.eventLocation}</span>
+                    </div>
+
+                </div>
+
+                <a class="${detailpage.sytleCTA}" href="${detailpage.linkCTA}"><i class="fa fa-chevron-left"></i> ${detailpage.titleCTA}</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

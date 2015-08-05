@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-25T09:06:57.457-04:00"
+        cq:lastModifiedBy="calix-qa"
+        cq:template="/apps/calix/templates/splitcolumn"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Split Columns - Hero"
+        jcr:uuid="7f93bd0a-26d4-4145-93f0-1926b5755a6c"
+        sling:resourceType="calix/components/page/splitcolumn">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/logo"/>
+        <tagline
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/tagline"/>
+        <contact
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/contact"/>
+        <search
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/search"/>
+        <register
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/login-register"/>
+        <megamenu
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/megamenu"/>
+        <breadcrumbs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/breadcrumbs"/>
+        <my-calix
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/my-calix"/>
+        <footer-links-1-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-2-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-3-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-4-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-5-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-6-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-7-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-8-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-9-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-10-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-11-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-12-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-legal-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal"/>
+        <largePar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <main_hero
+                jcr:created="{Date}2015-06-12T18:33:11.663-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-12T18:33:11.663-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/main-hero"
+                bottomLine="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                buttonLink="http://www.youtube.com"
+                buttonText="WATCH HERE"
+                byline="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                curvedBottom="true"
+                dateVenue="October 25 - 28 | Las Vegas"
+                heroImage="/content/dam/calix/images/Main Hero/mainHero.png"
+                mainLine="Join Us for the 2014 Calix User Group Conference  and Let's say there is an additional bit of copy. The most.">
+                <cq:annotations jcr:primaryType="nt:unstructured"/>
+            </main_hero>
+        </largePar>
+        <smallPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+        <heroPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <main_hero
+                jcr:created="{Date}2015-06-12T18:33:11.663-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-25T09:06:57.454-04:00"
+                jcr:lastModifiedBy="calix-qa"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/main-hero"
+                bottomLine="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                buttonLink="http://www.youtube.com"
+                buttonText="WATCH HERE"
+                byline="Lorem ipsum dolor sit amet, consecutor adipiscing elit, sed do eiusmod tempor incidunt"
+                curvedBottom="true"
+                curvedTop="true"
+                dateVenue="October 25 - 28 | Las Vegas"
+                heroImage="/content/dam/calix/images/Main Hero/mainHero.png"
+                mainLine="Join Us for the 2014 Calix User Group Conference  and Let's say there is an additional bit of copy. The most."
+                shortContainer="true"
+                slides="[{&quot;pathImage&quot;:&quot;/content/dam/calix/images/image3.png&quot;\,&quot;date&quot;:&quot;&quot;\,&quot;mainLine&quot;:&quot;&quot;\,&quot;byline&quot;:&quot;&quot;\,&quot;caption&quot;:&quot;&quot;\,&quot;bottomLine&quot;:&quot;&quot;\,&quot;titleCTA&quot;:&quot;&quot;\,&quot;linkCTA&quot;:&quot;&quot;\,&quot;buttonType&quot;:&quot;pri&quot;\,&quot;linkType&quot;:&quot;int&quot;\,&quot;alignType&quot;:&quot;&quot;},{&quot;pathImage&quot;:&quot;/content/dam/calix/images/image1.png&quot;\,&quot;date&quot;:&quot;&quot;\,&quot;mainLine&quot;:&quot;&quot;\,&quot;byline&quot;:&quot;&quot;\,&quot;caption&quot;:&quot;&quot;\,&quot;bottomLine&quot;:&quot;&quot;\,&quot;titleCTA&quot;:&quot;&quot;\,&quot;linkCTA&quot;:&quot;&quot;\,&quot;buttonType&quot;:&quot;pri&quot;\,&quot;linkType&quot;:&quot;int&quot;\,&quot;alignType&quot;:&quot;&quot;}]">
+                <cq:annotations jcr:primaryType="nt:unstructured"/>
+            </main_hero>
+        </heroPar>
+        <footer-legal-social-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal-social"/>
+    </jcr:content>
+</jcr:root>

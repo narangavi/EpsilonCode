@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Notification"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Notification"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <markAsReadText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Mark As Read Text"
+                                isRequired="true"
+                                required="true"
+                                name="./markAsReadText"/>
+                            <notificationSettingsText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Notificatin Settings Text"
+                                isRequired="true"
+                                required="true"
+                                name="./notificationSettingsText"/>
+	                        <numberOfNotifications
+	                            jcr:primaryType="nt:unstructured"
+	                            sling:resourceType="granite/ui/components/foundation/form/numberfield"
+	                            fieldLabel="Number of notifications to display"
+	                            fieldDescription="Number of notifications displayed first (number > 0; 5 is default value)"
+	                            name="./numberOfNotifications"/>
+                            <cta
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="View all notification CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="View all notification CTA">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <titleCTA
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldLabel="Title"
+		                                isRequired="true"
+		                                required="true"
+                                        fieldDescription="Ex: View all {0} notifications"
+                                        name="./titleCTA"/>
+                                    <link
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        fieldLabel="Link"
+                                        name="./linkCTA"
+                                        rootPath="/content/calix"/>
+                                    <btnType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        fieldLabel="Button Type"
+                                        name="./btnType"
+                                        value="green">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <green
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Green"
+                                                value="green"/>
+                                            <white
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary White"
+                                                value="white"/>
+                                            <outline
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Primary Outline"
+                                                value="outline"/>
+                                            <textlink
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Text Link"
+                                                value="text"/>
+                                        </items>
+                                    </btnType>
+                                </items>
+                            </cta>
+                        </items>
+                    </columns>
+                </items>
+            </general>
+        </items>
+    </content>
+</jcr:root>

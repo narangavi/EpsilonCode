@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <clientlibs-one/>
+    <clientlibs-three/>
+    <clientlibs-two/>
+    <author/>
+    <widgets/>
+    <favicon.png/>
+    <static.css/>
+    <jcr:content
+        cq:lastModified="{Date}2015-07-03T19:35:34.577+07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Calix"
+        sling:resourceType="wcm/core/components/designer">
+        <fullwidth jcr:primaryType="nt:unstructured">
+            <heroPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Calix]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <tab-container jcr:primaryType="nt:unstructured">
+                    <section1
+                        jcr:lastModified="{Date}2015-07-21T09:57:35.193+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section1>
+                    <section2
+                        jcr:lastModified="{Date}2015-07-21T10:10:39.254+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section2>
+                    <section3
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section3>
+                    <section4
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section4>
+                    <section5
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section5>
+                </tab-container>
+            </heroPar>
+            <narrowContainer
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Calix]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <tab-container jcr:primaryType="nt:unstructured">
+                    <section1
+                        jcr:lastModified="{Date}2015-07-21T09:57:35.193+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section1>
+                    <section2
+                        jcr:lastModified="{Date}2015-07-21T10:10:39.254+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section2>
+                    <section3
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section3>
+                    <section4
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section4>
+                    <section5
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section5>
+                </tab-container>
+            </narrowContainer>
+            <contentPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Calix]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <tab-container jcr:primaryType="nt:unstructured">
+                    <section1
+                        jcr:lastModified="{Date}2015-07-21T09:57:35.193+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section1>
+                    <section2
+                        jcr:lastModified="{Date}2015-07-21T10:10:39.254+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section2>
+                    <section3
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section3>
+                    <section4
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section4>
+                    <section5
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section5>
+                </tab-container>
+            </contentPar>
+        </fullwidth>
+        <splitcolumn jcr:primaryType="nt:unstructured">
+            <heroPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/text-only,/apps/calix/components/ui/hero,/apps/calix/components/ui/overview]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </heroPar>
+            <largePar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/text-only,/apps/calix/components/ui/news-carousel,/apps/calix/components/ui/image-text,/apps/calix/components/ui/tab-container,/apps/calix/components/ui/hero,/apps/calix/components/ui/uneven-columns,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/links]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <tab-container jcr:primaryType="nt:unstructured">
+                    <section1
+                        jcr:lastModified="{Date}2015-07-21T09:57:35.193+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section1>
+                    <section2
+                        jcr:lastModified="{Date}2015-07-21T10:10:39.254+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section2>
+                    <section3
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section3>
+                    <section4
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section4>
+                    <section5
+                        jcr:lastModified="{Date}2015-07-21T10:15:15.160+07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/parsys"
+                        components="[/apps/calix/components/ui/detailed-systems,/apps/calix/components/ui/chart,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/image-text,/apps/calix/components/ui/uneven-columns]">
+                        <section jcr:primaryType="nt:unstructured"/>
+                    </section5>
+                </tab-container>
+            </largePar>
+            <smallPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/news-carousel,/apps/calix/components/ui/image-text,/apps/calix/components/ui/generic-content,/apps/calix/components/ui/links]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </smallPar>
+        </splitcolumn>
+        <blank jcr:primaryType="nt:unstructured">
+            <blankpar
+                jcr:lastModified="{Date}2015-07-03T19:35:34.573+07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Calix">
+                <section jcr:primaryType="nt:unstructured"/>
+            </blankpar>
+        </blank>
+        <mycalixhome jcr:primaryType="nt:unstructured">
+            <heroPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/hero]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </heroPar>
+            <largePar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/links,/apps/calix/components/ui/my-calix-home/jump-menu,/apps/calix/components/ui/my-calix-home/welcome]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </largePar>
+            <smallPar
+                jcr:lastModified="{Date}2015-02-06T12:26:31.203-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/apps/calix/components/ui/my-calix-home/quick-links,/apps/calix/components/ui/my-calix-home/account-team]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </smallPar>
+        </mycalixhome>
+    </jcr:content>
+    <clientlibs/>
+</jcr:root>

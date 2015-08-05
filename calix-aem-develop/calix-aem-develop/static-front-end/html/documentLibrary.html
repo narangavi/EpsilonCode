@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Document Library Markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- styles -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="../etc/designs/calix/css/font-awesome.min.css"> -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/bootstrap.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/global.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/tabs.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/css/bootstrap-select.min.css" rel="stylesheet"> -->
+    <link href="../etc/designs/calix/css/documentLibrary.css" rel="stylesheet">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome/fontello-ie7.css">
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="contentWrapper">
+      <div class="innerWrap">
+        <!-- my calix here for example
+        <div class="my-calix">
+          <div class="myCalix">
+            <a href="#">My Calix</a>
+          </div>
+        </div>
+        -->
+
+        <!-- Begin document library -->
+        <div class="docLibraryWrap">
+          <!-- document Library Modal -->
+          <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
+              <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="shareDoc">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Recommend [Document Name]</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>People</p>
+                            <div class="addPeople clearfix">
+                              <a href="#">Jill Johnson</a>
+                              <a href="#">Johnny Appleseed</a>
+                              <a href="#">John Smith</a>
+                              <a href="#">Jane Jones</a>
+                              <a href="#">Jake Jillhouse</a>
+                              <a href="#">Jen January</a>
+                              <a href="#">Jim Jenkins</a>
+                              <a class="addMore" href="#">Add more people...</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" type="button" class="grnBtn recFire">Recommend</a>
+                            <a href="#" type="button" class="grnBtn outlineBtn" data-dismiss="modal">Cancel</a>
+                        </div>
+                      </div>
+                      <div class="confirmShare">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <div class="shareCheck">
+                              <i class="fa fa-check-circle"></i>
+                            </div>
+                            <h4 class="modal-title recList">You have recommended [Document Name] to the following customers:</h4>
+                        </div>
+                        <div class="modal-body">
+                          <ul class="recCust">
+                            <li>Jill Johnson<span class="shareEmail">(Jill.Johnson@calix.com)</span></li>
+                            <li>Johnny Appleseed<span class="shareEmail">(Johnny.Appleseed@calix.com)</span></li>
+                            <li>John Smith<span class="shareEmail">(John.Smith@calix.com)</span></li>
+                            <li>Jane Jones<span class="shareEmail">(Jane.Jones@calix.com)</span></li>
+                            <li>Jake Jillhouse<span class="shareEmail">(Jake.Jillhouse@calix.com)</span></li>
+                            <li>Jen January<span class="shareEmail">(Jen.January@calix.com)</span></li>
+                            <li>Jim Jenkins<span class="shareEmail">(Jim.Jenkins@calix.com)</span></li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" type="button" class="grnBtn closeRec" data-dismiss="modal">close</a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+          <!-- end modal -->
+
+
+
+
+
+          <div class="docLibraryHeader">
+            <h2>Document Library</h2>
+              <p class="pressReleaseNewsDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <form>
+                 <input type="search" id="docSearch" placeholder="Search Document Library" />
+                 <a class="grnBtn searchDoc" type="submit" href="#">Search</a>
+              </form>
+          </div>
+
+          <div class="wideContainer clearfix">
+            <div class="left-col">
+              <div class="docNav">
+                <nav class="nav">
+                  <ul>
+                    <li><a href="#">Document Home</a></li>
+                    <li><a href="#">Favorites <i class="fa fa-heart"></i></a></li>
+                    <li class="current"><a href="#">Products</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Enclosures</a></li>
+                    <li><a href="#">Services &#38; Support</a></li>
+                    <li><a href="#">OEM Product Information</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="right-col">
+              <div class="fullTabWrap">
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#tab1" data-toggle="tab" class="hello">All</a></li>
+                  <li><a href="#tab2" data-toggle="tab">B-Series</a></li>
+                  <li><a href="#tab3" data-toggle="tab">BLM Series</a></li>
+                  <li><a href="#tab4" data-toggle="tab">C-Series</a></li>
+                  <li><a href="#tab5" data-toggle="tab">E-Series</a></li>
+                  <li><a href="#tab6" data-toggle="tab">F-Series</a></li>
+                  <li><a href="#tab6" data-toggle="tab">P-Series &#38; T-Series (ONTs)</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content docList">
+                    <div class="tab-pane fade in active clearfix" id="tab1">
+
+                      <div class="docFilter">
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option Lorem ipsum dolor sit</option>
+                        </select>
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                            <option>Option Lorem ipsum dolor sit</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                      </div>
+
+                      <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                    <h3 class="docHdr">Systems Operations</h3>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#">ZIP</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart blu"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+                    <div class="loadMore">
+                      <a class="grnBtn outlineBtn" href="#"><span>load more documents</span></a>
+                    </div>
+                  </div>
+
+                    <div class="tab-pane fade clearfix" id="tab2">
+                        <div class="docFilter">
+                          <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option Lorem ipsum dolor sit</option>
+                          </select>
+                          <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                              <option>Option Lorem ipsum dolor sit</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                          </select>
+                        </div>
+
+                        <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">XLS</a>
+                          </div>
+                        </div>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart blu"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">ZIP</a>
+
+                            <a href="#">DOC</a>
+                          </div>
+                        </div>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">XLS</a>
+                            <a href="#">ZIP</a>
+
+                            <a href="#">DOC</a>
+                          </div>
+                        </div>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart blu"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">ZIP</a>
+
+                            <a href="#">DOC</a>
+                          </div>
+                        </div>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">ZIP</a>
+
+                            <a href="#">DOC</a>
+                          </div>
+                        </div>
+
+                        <div class="docResults clearfix">
+                          <div class="docDescription">
+                            <span class="docName">Document Name (Sub Class)</span>
+                            <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                          </div>
+                          <div class="docIconLinks">
+                            <a href="#"><i class="fa fa-heart blu"></i></a>
+                            <a href="#"><i class="fa fa-share"></i></a>
+                            <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                            <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                            <a href="#">ZIP</a>
+                          </div>
+                        </div>
+
+                      <h3 class="docHdr">Systems Operations</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+                      <div class="loadMore">
+                        <a class="grnBtn outlineBtn" href="#"><span>load more documents</span></a>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade clearfix" id="tab3">
+                      <div class="docFilter">
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option Lorem ipsum dolor sit</option>
+                        </select>
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                            <option>Option Lorem ipsum dolor sit</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                      </div>
+
+                      <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                    <h3 class="docHdr">Systems Operations</h3>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#">ZIP</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart blu"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+                    <div class="loadMore">
+                      <a class="grnBtn outlineBtn" href="#"><span>load more documents</span></a>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade clearfix" id="tab4">
+                      <div class="docFilter">
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option Lorem ipsum dolor sit</option>
+                        </select>
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                            <option>Option Lorem ipsum dolor sit</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                      </div>
+
+                      <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                    <h3 class="docHdr">Systems Operations</h3>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#">ZIP</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart blu"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+                    <div class="loadMore">
+                      <a class="grnBtn outlineBtn" href="#"><span>load more documents</span></a>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade clearfix" id="tab5">
+                      <div class="docFilter">
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option Lorem ipsum dolor sit</option>
+                        </select>
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                            <option>Option Lorem ipsum dolor sit</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                      </div>
+
+                      <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                    <h3 class="docHdr">Systems Operations</h3>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#">ZIP</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart blu"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+                    <div class="loadMore">
+                      <a class="grnBtn outlineBtn" href="#"><span>load more documents</span></a>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade clearfix" id="tab6">
+                      <div class="docFilter">
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Types">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option Lorem ipsum dolor sit</option>
+                        </select>
+                        <select multiple class="selectpicker" data-width="240px" data-max-options="1" title="Information Sub-types">
+                            <option>Option Lorem ipsum dolor sit</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                      </div>
+
+                      <h3 class="docHdr">Planning &#38; Installation</h3>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">XLS</a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+
+                          <a href="#">DOC</a>
+                        </div>
+                      </div>
+
+                      <div class="docResults clearfix">
+                        <div class="docDescription">
+                          <span class="docName">Document Name (Sub Class)</span>
+                          <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                        </div>
+                        <div class="docIconLinks">
+                          <a href="#"><i class="fa fa-heart blu"></i></a>
+                          <a href="#"><i class="fa fa-share"></i></a>
+                          <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                          <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                          <a href="#">ZIP</a>
+                        </div>
+                      </div>
+
+                    <h3 class="docHdr">Systems Operations</h3>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#">ZIP</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart blu"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+
+                    <div class="docResults clearfix">
+                      <div class="docDescription">
+                        <span class="docName">Document Name (Sub Class)</span>
+                        <span class="postTime">Last Posted 7/1/15 at 3:30 PM</span>
+                      </div>
+                      <div class="docIconLinks">
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="#"><i class="fa fa-share"></i></a>
+                        <a href="#"><i class="fa fa-file-pdf-o grn"></i></a>
+                        <a href="#"><i class="fa fa-file-code-o grn"></i></a>
+                        <a href="#">ZIP</a>
+                        <a href="#">DOC</a>
+                      </div>
+                    </div>
+                    <div class="loadMore">
+                      <a class="grnBtn outlineBtn" href="#">load more documents</a>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div style="height: 100px;">
+          <!-- spacer delete me -->
+        </div>
+
+      </div><!-- end innerWrap -->
+    </div><!-- end contentWrap -->
+
+    <script src="../etc/designs/calix/js/jquery.min.js"></script>
+    <script src="../etc/designs/calix/js/bootstrap.min.js"></script>
+    <script src="../etc/designs/calix/js/bootstrap-tabcollapse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.5/js/bootstrap-select.min.js"></script>
+    <script src="../etc/designs/calix/js/custom.js"></script>
+    <script>
+      // show icons on mobile display -- move into custom.js
+      $(document).ready(function() {
+        if ($('.docResults')[0]){
+          $('.docDescription').on('click', function() {
+            $(this).next('.docIconLinks').toggleClass('showCtrl');
+          });
+        }
+
+      // sample show/hide for modal -- refactor and move into custom.js
+        $('.recFire').on('click', function(){
+          $('.shareDoc').hide();
+          $('.confirmShare').show();
+        });
+        $('.closeRec').on('click', function(){
+          $('.shareDoc').show();
+          $('.confirmShare').hide();
+        });
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <viewAll
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display All tab"
+                        name="./viewAll"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <viewEvents
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Events tab"
+                        name="./viewevents"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <viewSpeakers
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Speakers tab"
+                        name="./viewspeakers"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <viewFeatured
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="true"
+                        fieldLabel="Display Featured tab"
+                        name="./viewfeatured"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <limitItems
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Long}20"
+                        fieldDescription="Maximum number of items displayed"
+                        fieldLabel="Limit Items"
+                        name="./limitItems"
+                        xtype="numberfield"/>
+                    <loadmoreLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Load more button label"
+                        fieldLabel="Load more label"
+                        name="./loadmoreLabel"
+                        xtype="textfield"/>
+                    <pressPath
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Events"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Please choose root path of events"
+                                fieldLabel="Root path"
+                                name="./eventspath"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <pressTagName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Filter label"
+                                name="./eventstab"
+                                xtype="textfield"/>
+                        </items>
+                    </pressPath>
+                    <speakerPath
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Speakers"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <path
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Please choose root path of speakers"
+                                fieldLabel="Root path"
+                                name="./speakerspath"
+                                rootPath="/content/calix"
+                                xtype="pathfield"/>
+                            <speakerTagName
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Filter label"
+                                name="./speakerstab"
+                                xtype="textfield"/>
+                        </items>
+                    </speakerPath>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="Featured"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <featuredPaths
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click '+' to add a path"
+                        fieldLabel="Specific Paths"
+                        hideLabel="false"
+                        name="./featuredPaths"
+                        title="Featured Path"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            layout="form"
+                            limit="50"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </featuredPaths>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,208 @@
+/****************************************
+  news carousel
+****************************************/
+
+/* Slick Slider Carousel 
+http://kenwheeler.github.io/slick/
+*/
+
+.newsCarouselThreeVids .slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.newsCarouselThreeVids .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.newsCarouselThreeVids .slick-list:focus {
+  outline: none;
+}
+
+.newsCarouselThreeVids .slick-loading .slick-list {
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
+}
+
+.newsCarouselThreeVids .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.newsCarouselThreeVids .slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.newsCarouselThreeVids .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.newsCarouselThreeVids .slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.newsCarouselThreeVids .slick-track:after {
+  clear: both;
+}
+
+.newsCarouselThreeVids .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.newsCarouselThreeVids .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .newsCarouselThreeVids .slick-slide {
+  float: right;
+}
+
+.newsCarouselThreeVids .slick-slide img {
+  display: block;
+}
+
+.newsCarouselThreeVids .slick-slide.slick-loading img {
+  display: none;
+}
+
+.newsCarouselThreeVids .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.newsCarouselThreeVids .slick-initialized .slick-slide {
+  display: block;
+}
+
+.newsCarouselThreeVids .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.newsCarouselThreeVids .slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Arrows */
+.newsCarouselThreeVids .slick-prev,
+.newsCarouselThreeVids .slick-next {
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 40px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 25%;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* Dots */
+
+.newsCarouselThreeVids ul.slick-dots {
+  display: none;
+}
+
+.newsCarouselThreeVids .slick-slider {
+  margin-bottom: 15px;
+}
+
+.newsCarouselThreeVids .slider-news-loop {
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.newsCarouselThreeVids .slider-news-loop .event {
+  float: left;
+  width: 33.33%;
+  padding: 0 80px;
+  text-align: center;
+}
+
+.newsCarouselThreeVids .slick-next {
+  background: url('../img/carouselNextArw.png') no-repeat 100% 0;
+  right: 0;
+  width: 45px;
+  height: 50px;
+}
+
+.newsCarouselThreeVids .slick-prev {
+  left: 0;
+  background: url('../img/carouselPrevArw.png') no-repeat 0 0;
+  width: 45px;
+  height: 50px;
+}
+
+.newsCarouselThreeVids {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.newsCarouselThreeVids h3,
+.newsCarouselThreeVids h2 {
+  font-size: 20.84px;
+  color: #333;
+  font-weight: 400;
+}
+.newsCarouselThreeVids p {
+  font-size: 15.88px;
+  letter-spacing: 0;
+  color: #333;
+  padding: 0 80px;
+}
+
+@media all and (min-width: 320px) {
+  .newsCarouselThreeVids p {
+    padding: 0 40px;
+  }
+  .newsCarouselThreeVids .slider-news-loop .event {
+    padding: 0 40px;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .newsCarouselThreeVids p {
+    font-size: 15.88px;
+    padding: 0 20px;
+  }
+  .newsCarouselThreeVids .slider-news-loop .event {
+    padding: 0 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+    .newsCarouselThreeVids .slider-news-loop .event {
+      width: 33.33%;
+      padding: 0 80px;
+    }
+}

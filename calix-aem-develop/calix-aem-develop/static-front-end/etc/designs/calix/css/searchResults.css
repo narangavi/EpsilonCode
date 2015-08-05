@@ -1,0 +1,398 @@
+/****************************************
+    search
+****************************************/
+
+.searchResultsWrap {
+  margin: 0px auto;
+  max-width: 1000px;
+  padding: 35px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+.searchResultsWrap p {
+  font-size: 16px;
+}
+.searchResultsWrap .searchResultsHeader {
+  padding-bottom: 50px;
+}
+.searchResultsWrap .searchResultsHeader h2 {
+  font-size: 56px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 875px;
+}
+.searchResultsWrap .searchResultsHeader p {
+  font-size: 21px;
+  font-weight: 300;
+  color: #333;
+  max-width: 875px;
+}
+input#docSearch {
+  width: 54%;
+  height: 40px;
+  border: 1px solid #999;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  outline: 0px;
+  color: #333;
+  padding-left: 15px;
+  margin-right: 15px;
+  float: left;
+}
+.searchResultsWrap .searchResultsHeader a.grnBtn {
+    padding: 0 25px;
+}
+.searchResultsWrap .right-col {
+  width: 235px;
+  float: right;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #fff;
+}
+.searchResultsWrap .right-col .docNav {
+  padding: 0 0px 0 0;
+}
+.searchResultsWrap .right-col .docNav ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.searchResultsWrap .right-col .docNav ul li {
+  margin: 0 0px 8px 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.searchResultsWrap .right-col .docNav ul li a {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #efefef;
+  height: 40px;
+  text-align: center;
+  line-height: 2.3;
+  width: 235px;
+  text-align: center;
+  display: block;
+}
+.searchResultsWrap .right-col .docNav ul li.current a,
+.searchResultsWrap .right-col .docNav ul li a:hover {
+  background-color: #1d9e74;
+  color: #fff;
+}
+.searchResultsWrap .right-col .nav .current a,
+.searchResultsWrap .right-col .nav a:hover {
+  background-color: #1d9e74;
+  color: #fff;
+}
+.searchResultsWrap .left-col {
+  width: 660px;
+  padding: 0px;
+  float: left;
+}
+.searchResultsWrap .left-col h3 {
+  margin: 0px 0 20px 0;
+  color: #333;
+}
+.searchResultsWrap .left-col .featuredResults {
+  background-color: #f5f5f5;
+  padding: 20px 22px 5px 22px;
+}
+.searchResultsWrap .left-col .featuredResults h4 {
+  margin: 0px 0 20px 0;
+  padding-bottom: 5px;
+  color: #333;
+  border-bottom: 1px solid #999;
+}
+.searchResultsWrap .left-col .featuredResults p {
+  font-size: 14px;
+  color: #333;
+  max-width: 525px;
+}
+.searchResultsWrap .left-col .featuredResults ul,
+.searchResultsWrap .left-col .searchResultsList ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.searchResultsWrap .left-col .featuredResults ul li {
+  padding-bottom: 15px;
+}
+.searchResultsWrap .left-col .featuredResults ul li a,
+.searchResultsWrap .left-col .searchResultsList ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d9e74;
+}
+.searchResultsWrap .left-col .featuredResults ul li a i,
+.searchResultsWrap .left-col .searchResultsList ul li a i {
+  font-size: 24px;
+  padding-right: 7px;
+}
+.searchResultsWrap .left-col .featuredResults ul li a:hover,
+.searchResultsWrap .left-col .featuredResults ul li a:hover i,
+.searchResultsWrap .left-col .searchResultsList ul li a:hover,
+.searchResultsWrap .left-col .searchResultsList ul li a:hover i {
+  color: #167858;
+}
+.searchResultsWrap .left-col .searchResultsList ul {
+  margin-top: 30px;
+  padding-left: 3px;
+}
+.searchResultsWrap .left-col .searchResultsList ul li {
+  margin-bottom: 30px;
+}
+.searchResultsWrap .left-col .searchResultsList ul li a {
+  float: left;
+  display: block;
+  margin-bottom: 5px;
+  max-width: 500px;
+}
+.searchResultsWrap .left-col .searchResultsList a.viewDoc {
+  padding-right: 30px;
+  background: #fff url('../img/viewDoc.png') 97% 50% no-repeat;
+}
+.searchResultsWrap .left-col .searchResultsList ul li p {
+  clear: left;
+  max-width: 490px;
+}
+.searchResultsWrap .left-col .searchResultsList ul li span.resultDate {
+  float: right;
+}
+.searchResultsWrap .left-col .resultNav nav {
+  text-align: center;
+  font-weight: 400;
+}
+.searchResultsWrap .resultNav .pagination > li > a,
+.searchResultsWrap .resultNav .pagination > li > span {
+  border: none;
+}
+.searchResultsWrap .pagination > .active > a,
+.searchResultsWrap .searchResultsWrap .pagination > .active > span,
+.searchResultsWrap .pagination > .active > a:hover,
+.searchResultsWrap .pagination > .active > span:hover,
+.searchResultsWrap .pagination > .active > a:focus,
+.searchResultsWrap .pagination > .active > span:focus {
+  background-color: #999;
+  border-color: #999;
+  color: #fff;
+}
+.searchResultsWrap .pagination > li > a,
+.searchResultsWrap .pagination > li > span {
+  padding: 4px 8px;
+  color: #1d9e74;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #167858;
+  background-color: #fff;
+  border: none;
+}
+.searchResultsWrap .pagination > li:first-child > a,
+.searchResultsWrap .pagination > li:last-child > a {
+  color: #1d9e74;
+  background-color: #fff;
+  padding: 4px 15px;
+}
+.searchResultsWrap .pagination > li:first-child > a i,
+.searchResultsWrap .pagination > li:last-child > a i {
+  font-size: 40px;
+  margin-top: -10px;
+}
+.searchResultsWrap .pagination > li.disabled > a i {
+  color: #ccc;
+}
+.searchResultsWrap .pagination > li:first-child > a:hover,
+.searchResultsWrap .pagination > li:last-child > a:hover {
+  color: #167858;
+}
+.searchResultsWrap .right-col .checkList {
+  padding: 0;
+}
+.searchResultsWrap .right-col .checkList ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.searchResultsWrap .right-col .checkList ul li {
+  margin-bottom: 8px;
+}
+.searchResultsWrap .right-col .checkList ul li a {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #efefef;
+  height: 40px;
+  text-align: center;
+  line-height: 2.3;
+  width: 235px;
+}
+.searchResultsWrap .right-col .checkList {
+	position: relative;
+}
+.searchResultsWrap .right-col .checkList h3 {
+	display: none;
+}
+.searchResultsWrap .right-col .checkList  {
+	margin: 0;
+	padding: 0;
+}
+.searchResultsWrap .right-col .checkList {
+	padding: 3px 1px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+  color: #666;
+  font-size: 16px;
+  display: block;
+  width: 235px;
+}
+.searchResultsWrap .right-col .checkList h4 {
+  margin: 40px 0 18px 0;
+}
+.searchResultsWrap .right-col .checks label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+.searchResultsWrap .right-col .checks input[type=checkbox] {
+  display:none;
+}
+.searchResultsWrap .right-col .checks input[type=checkbox] + label {
+  background: url('../img/checkboxIcon.png') no-repeat;
+  background-size: 16px 16px;
+  height: 17px;
+  width: auto;
+  display:inline-block;
+  padding: 0 0 0 23px;
+}
+.searchResultsWrap .right-col .checks input[type=checkbox]:checked + label {
+  background: url('../img/checkboxCheckedIcon.png') no-repeat;
+  background-size: 16px 16px;
+  height: 17px;
+  width: auto;
+  display:inline-block;
+  padding: 0 0 0 23px;
+}
+.searchResultsWrap .right-col p.maxlist-more a {
+  font-weight: 400;
+  color: #1d9e74;
+}
+.searchResultsWrap .right-col p.maxlist-more a:hover,
+.searchResultsWrap .right-col p.maxlist-more a:active,
+.searchResultsWrap .right-col p.maxlist-more a:focus {
+  font-weight: 400;
+  color: #167858;
+}
+
+
+
+@media all and (max-width: 768px) {
+  .searchResultsWrap {
+    width: 100%;
+    padding: 0 25px;
+  }
+  .searchResultsWrap .right-col .checkWrap {
+    position: relative;
+  }
+  .searchResultsWrap .right-col .checkList {
+    position: absolute;
+    min-height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: solid 1px #aaa;
+    background: #fff url('../img/menuDown.png') 97% 20px no-repeat;
+  }
+  .searchResultsWrap .right-col .checkList h3 {
+  	display: block;
+    margin: 10px 5px;
+    font-size: 14px;
+  }
+  .searchResultsWrap .right-col .checkList .checks {
+    display: none; /* hide all checks */
+    margin: 0;
+  }
+  /* on hover display checks */
+  .searchResultsWrap .right-col .checkList h3:hover {
+    background-image: none;
+  }
+  .searchResultsWrap .right-col .checkList:hover .checks {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 15px;
+  }
+  .searchResultsWrap .left-col {
+    width: 100%;
+    float: none;
+  }
+  .searchResultsWrap .right-col {
+    width: 100%;
+    float: none;
+    padding-left: 0px;
+  }
+  .searchResultsWrap p {
+    max-width: 100%;
+    width: 100%;
+  }
+  .searchResultsWrap .searchResultsHeader h2 {
+    font-size: 46px;
+  }
+  .searchResultsWrap .searchResultsHeader a.grnLink,
+  .searchResultsWrap p {
+    font-size: 14px;
+  }
+  .searchResultsWrap .left-col .searchResultsList ul li span.resultDate {
+    float: none;
+    display: block;
+  }
+  .searchResultsWrap .left-col .searchResultsList ul li a {
+    float: none;
+    max-width: 100%;
+  }
+  .searchResultsWrap .left-col .searchResultsList a.viewDoc {
+    background: none;
+  }
+  .searchResultsWrap .left-col .searchResultsList ul li p {
+    clear: left;
+    width: 99%;
+  }
+  input#docSearch {
+    width: 98%;
+    float: none;
+  }
+  .searchResultsWrap .searchResultsHeader a.grnBtn {
+      display: block;
+      max-width: 120px;
+      text-align: center;
+      margin: 15px auto 17px auto;
+  }
+  .searchResultsWrap .searchResultsHeader {
+    padding-bottom: 10px;
+  }
+  .searchResultsWrap .right-col .docNav ul li a {
+    width: 100%;
+  }
+  .searchResultsWrap .right-col .docNav {
+    margin-bottom: 20px;
+  }
+  .searchResultsWrap .right-col .checkList {
+    width: 100%;
+  }
+  .searchResultsWrap .left-col .featuredResults {
+    margin-top: 50px;
+  }
+  .searchResultsWrap .right-col .checkList h4 {
+    margin: 20px 0 10px 0;
+  }
+  .searchResultsWrap .resultNav .pagination > li > a {
+    font-size: 22px;
+  }
+  .searchResultsWrap .pagination > li:first-child > a i,
+  .searchResultsWrap .pagination > li:last-child > a i {
+    margin-top: -5px;
+  }
+}

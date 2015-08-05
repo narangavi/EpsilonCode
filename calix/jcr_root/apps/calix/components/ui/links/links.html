@@ -1,0 +1,20 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+     [Edit My Calix - Links Component Here]
+</div>
+<div data-sly-use.links="com.calix.components.Links" data-sly-unwrap>
+	<div class="linkWrap">
+		<h3>${links.compTitle}</h3>
+		<p>${links.compDesc}</p>
+		<div class="linkContent clearfix">
+			<div data-sly-list.tile="${links.tiles}" data-sly-unwrap>
+				<a href="${tile.link}" class="linkItem" target="${tile.target}">
+					<span class="linkThumb">
+						<img class="img-responsive" src="${tile.image}" width="235" alt="" />
+					</span>
+					<span class="linkDescription">${tile.title} <div data-sly-test.display="${tile.linkStyle}" class="cq-dd-images" data-sly-unwrap><span class="externalIcon" aria-hidden="true"></span></div></span>
+					<p>${tile.desc}</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

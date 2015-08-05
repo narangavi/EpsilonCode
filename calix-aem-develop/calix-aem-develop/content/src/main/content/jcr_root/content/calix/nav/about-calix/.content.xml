@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-18T23:01:15.945-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-17T10:18:39.211-04:00"
+        cq:lastReplicatedBy="vijay.kesavan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/navigation"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="About Calix"
+        jcr:uuid="7471a87e-5624-45c0-bf49-c5eef9d780e2"
+        sling:resourceType="calix/components/page/navigation">
+        <flyout-nav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"
+            description="Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet"
+            headerImage="/content/dam/geometrixx-gov/resources.jpg"
+            heading="About Calix">
+            <col-par1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:59:28.048-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:59:28.048-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="About Calix Overview"
+                    listItems="[{&quot;listItem&quot;:&quot;Leadership&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/about-calix/leadership&quot;},{&quot;listItem&quot;:&quot;Success Stories&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/about-calix/success-stories&quot;},{&quot;listItem&quot;:&quot;Innovation Awards&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/about-calix/innovation-awards&quot;},{&quot;listItem&quot;:&quot;Contact Us&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/about-calix/contact-us&quot;},{&quot;listItem&quot;:&quot;Investor Information&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/about-calix&quot;}]"/>
+            </col-par1>
+            <col-par2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:59:29.810-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:59:29.810-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par2>
+            <col-par3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:59:36.251-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:59:36.251-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par3>
+            <col-par4
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:59:38.281-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:59:38.281-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par4>
+        </flyout-nav>
+    </jcr:content>
+</jcr:root>

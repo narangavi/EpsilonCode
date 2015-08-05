@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <typeofcontent
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="pressrelease"
+                        fieldLabel="Type of Content:"
+                        name="./typeofcontent"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <pressrelease
+                                jcr:primaryType="nt:unstructured"
+                                text="pressrelease"
+                                value="pRelease"/>
+                            <event
+                                jcr:primaryType="nt:unstructured"
+                                text="event"
+                                value="event"/>
+                            <twitter
+                                jcr:primaryType="nt:unstructured"
+                                text="twitter"
+                                value="twitter"/>
+                            <news
+                                jcr:primaryType="nt:unstructured"
+                                text="news"
+                                value="news"/>
+                        </options>
+                    </typeofcontent>
+                    <charaterlimit
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Character Limit:"
+                        allowBlank="false"
+  						defaultValue="140"
+                        name="./characterlimit"
+                        xtype="numberfield"/>
+                    <totalitem
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Total Item:"
+                        allowBlank="false"
+  						defaultValue="10"
+                        name="./totalitem"
+                        xtype="numberfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Press Realease">
+                <items jcr:primaryType="cq:WidgetCollection">
+                     <pressreleaselable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Press Release Label:"
+                        defaultValue="Press Release"
+                        name="./pressreleaselabel"
+                        xtype="textfield"/>
+                    <pressreleasepath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Press Release Path:"
+                        name="./pressreleasepath"
+                        rootPath="/content/calix"
+                        xtype="pathfield"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Event">
+                <items jcr:primaryType="cq:WidgetCollection">
+                		 <eventlable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Event Label:"
+                         defaultValue="Event"
+                        name="./eventlabel"
+                        xtype="textfield"/>
+                        <eventpath
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Event Path:"
+                            name="./eventpath"
+                            rootPath="/content/calix"
+                            xtype="pathfield"/>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="Twitter">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <twitterlable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Twitter Label:"
+                         defaultValue="Twitter"
+                        name="./twitterlabel"
+                        xtype="textfield"/>
+                    <username
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="UserID:"
+                        name="./screenname"
+                        xtype="textfield"/>
+                </items>
+            </tab4>
+            <tab5
+                jcr:primaryType="cq:Panel"
+                title="News">
+                <items jcr:primaryType="cq:WidgetCollection">
+                     <newslable
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Label:"
+                        defaultValue="News"
+                        name="./newslabel"
+                        xtype="textfield"/>
+                    <newspath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="News Path:"
+                        name="./newspath"
+                        rootPath="/content/calix"
+                        xtype="pathfield"/>
+                </items>
+            </tab5>
+        </items>
+    </items>
+</jcr:root>

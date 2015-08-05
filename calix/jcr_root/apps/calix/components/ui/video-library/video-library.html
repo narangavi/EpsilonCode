@@ -1,0 +1,48 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+    [Edit the Video Library component]
+</div>
+<div data-sly-include="/apps/calix/global.jsp" data-sly-unwrap></div>
+<div data-sly-use.videoLibrary="${'com.calix.components.VideoLibrary' @ groupPropertyName='groups'}" data-sly-unwrap>
+</div>
+<div data-sly-test.isNumberOfRelatedVideosGreaterThanOne="${videoLibrary.numberOfRelatedVideos > 1}" data-sly-unwrap>
+</div>
+<div data-sly-test.noVideo="${videoLibrary.numberOfRelatedVideos == 0}" data-sly-unwrap>
+	<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+		<div class="videoThumbnail">
+			<div class="noVideo">
+				<p>No Video Available</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div data-sly-test="${!noVideo}" data-sly-unwrap>
+	<div class="videoThumbnail">
+		<a href="#" data-toggle="modal" data-target="#${videoLibrary.modalId}Modal">
+			<div class="videoPlayIcon"></div>
+			<img src="${videoLibrary.mainVideo.imageLink}" width="100%" alt="${videoLibrary.mainVideo.title}" />
+			<div data-sly-test="${isNumberOfRelatedVideosGreaterThanOne}" class="cq-dd-images" data-sly-unwrap>
+				<div class="relatedVideos">
+					<h3>${videoLibrary.numberOfRelatedVideos} Related Videos</h3>
+					<p>${properties.caption}</p>
+				</div>
+			</div>
+			<div data-sly-test="${videoLibrary.numberOfRelatedVideos <= 1 && properties.caption}" data-sly-unwrap>
+				<div class="description">
+					<p>${properties.caption}</p>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<div data-sly-test="${isNumberOfRelatedVideosGreaterThanOne}" class="cq-dd-images" data-sly-unwrap>
+		<div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLibraryLightbox.html" data-sly-call="${library.videolightbox @modalId=videoLibrary.modalId, videoGroups=videoLibrary.videoGroups}" data-sly-unwrap></div>
+	</div>
+	<div data-sly-test="${!isNumberOfRelatedVideosGreaterThanOne}" class="cq-dd-images" data-sly-unwrap>
+		<div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${library.videolightbox @modalId=videoLibrary.modalId, videoGroups=videoLibrary.videoGroups}" data-sly-unwrap></div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$("#${videoLibrary.modalId @ context='scriptString'}Modal").detach().appendTo('#contentWrapper');
+		});
+	</script>
+</div>

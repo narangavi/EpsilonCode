@@ -1,0 +1,495 @@
+/****************************************
+  image with text below
+****************************************/
+
+.imageWithTextBelowTwoItems {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: auto;
+}
+.imageWithTextBelowTwoItems.topCurves{
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-top: 2px solid #b5b2c2;
+  padding-top: 50px;
+  margin: 0px -40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.imageWithTextBelowTwoItems.bottomCurves{
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0px -40px;
+}
+.imageWithTextBelowTwoItems h3,
+.imageWithTextBelowTwoItems h2 {
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.imageWithTextBelowTwoItems h3.headlineLink {
+  color: #1d9e74;
+  text-transform: none;
+}
+.imageWithTextBelowTwoItems h3.headlineLink:hover {
+  color: #1d9e74;
+  color: #167858;
+  text-decoration: none;
+}
+.imageWithTextBelowTwoItems a.headlineLink {
+	width: auto;
+}
+.imageWithTextBelowTwoItems p {
+  font-size: 16px;
+  color: #333;
+}
+.imageWithTextBelowTwoItems ul {
+  padding-left: 20px;
+}
+.imageWithTextBelowTwoItems .grnBtn {
+  margin: 15px 0 5px 0;
+}
+.imageWithTextBelowTwoItems .grnLink {
+  margin: 25px 0 5px 0;
+}
+.imageWithTextBelowTwoItems a.grnLink:hover,
+.imageWithTextBelowTwoItems a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.imageWithTextBelowTwoItems h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+  font-family: sans-serif;
+}
+@media all and (min-width: 320px) {
+	.imageWithTextBelowTwoItems .main-around-popup-video  {
+		padding: 0px !important;
+		margin-bottom: 20px !important;
+	}
+	.imageWithTextBelowTwoItems .main-around-popup-video .videoThumbnail {
+		padding: 0px !important;
+	}
+
+	.imageWithTextBelowTwoItems .main-around-popup-video .videoThumbnail .relatedVideos{
+		padding: 0px !important;
+	}
+	.imageWithTextBelowTwoItems .container .row .heading-below-video-3items {
+		margin-top: 5px;
+		text-align: left !important;
+	}
+	.imageWithTextBelowTwoItems .container .row .main-around-popup-video {
+		padding-bottom: 0px !important;
+		margin-bottom: 25px;
+	}
+	.imageWithTextBelowTwoItems .container .row .main-around-popup-video .description p {
+		height: 40px;
+		padding: 0px 0px 10px 10px;
+	}
+  .imageWithTextBelowTwoItems .container .row div {
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    text-align: center;
+  }
+
+  .imageWithTextBelowTwoItems .container .row h3 {
+    text-align: left;
+  }
+
+  .imageWithTextBelowTwoItems .container .row p {
+    text-align: left;
+  }
+
+  .imageWithTextBelowTwoItems a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+
+  /*.imageWithTextBelowTwoItems .grnLink, .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto;
+  }*/
+
+  .imageWithTextBelowTwoItems .grnLink {
+    padding: 25px auto 20px auto;
+  }
+  .imageWithTextBelowTwoItems .videoPreview {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imageWithTextBelowTwoItems .videoPreview .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .left-col .imageWithTextBelowTwoItems .container {
+            width: 100% !important;
+        }
+    }
+
+@media all and (min-width: 769px) {
+	.left-col .imageWithTextBelowTwoItems .container {
+		width: 100%;
+		margin: 0;
+	}
+	.left-col .imageWithTextBelowTwoItems .row .col-xs-12 {
+			width: 50% !important;
+	}
+	.left-col .imageWithTextBelowTwoItems .image-text-item {
+			width: 100% !important;
+	}
+	.left-col .imageWithTextBelowTwoItems .image-text-item img {
+			width: 100%;
+	}
+	.right-col .imageWithTextBelowTwoItems .container {
+			width: 100%;
+			margin: 0;
+	}
+	.right-col .imageWithTextBelowTwoItems .container .row div {
+		width: 100%;
+		margin: 0;
+	}
+	.fullTabWrap .imageWithTextBelowTwoItems .container {
+      width: 100%;
+      text-align: left;
+      margin: 0 auto;
+      padding: 0;
+    }
+	.imageWithTextBelowTwoItems  .container .row .img-items-column {
+		margin-bottom: 20px;
+	}
+	.imageWithTextBelowTwoItems .container .row .videoModal {
+		width: auto !important;
+	}
+
+	.imageWithTextBelowTwoItems .container .row .videoModal .modal-dialog {
+		width: 1000px;
+		padding: 0px;
+	}
+
+	.imageWithTextBelowTwoItems .container .row .videoModal .modal-dialog div {
+		padding: 0px;
+	}
+
+	.imageWithTextBelowTwoItems .container .row .videoModal .modal-dialog div {
+		width: auto !important;
+	}
+
+	.imageWithTextBelowTwoItems .container .row .videoModal .modal-dialog .videoGalleryWrap {
+		width: 996px;
+		padding: 35px 0 13px 44px;
+	}
+	
+    .imageWithTextBelowTwoItems .container {
+		width: 1000px;
+		text-align: left;
+		margin: 0 auto;
+		padding: 0;
+    }
+
+    .imageWithTextBelowTwoItems .container .row {
+		margin: 0;
+		padding: 0;
+    }
+    .imageWithTextBelowTwoItems .container .row > div:nth-child(odd) {
+		text-align: left;
+		width: 500px;
+		min-height: 485px;
+		height: auto;
+		padding: 0 10px 15px 0;
+    }
+    .imageWithTextBelowTwoItems .container .row > div:nth-child(even) {
+      text-align: left;
+      width: 500px;
+      min-height: 485px;
+      height: auto;
+      padding: 0 0 15px 10px;
+    }
+
+    .imageWithTextBelowTwoItems .container .row div:nth-child(odd) {
+      text-align: left;
+      width: 500px;
+      height: auto;
+      padding: 0 10px 15px 0;
+    }
+
+    .imageWithTextBelowTwoItems .container .row div:nth-child(even) {
+      text-align: left;
+      width: 500px;
+      height: auto;
+      padding: 0 0 15px 10px;
+    }
+
+    .imageWithTextBelowTwoItems p {
+      width: 100%;
+      text-align: left;
+    }
+
+    .imageWithTextBelowTwoItems a {
+      width: 120px;
+      height: 42px;
+      text-align: left;
+      margin: 10px auto 0 auto;
+    }
+    .imageWithTextBelowTwoItems .container .row div.description {
+      padding: 5px 5px 20px 5px;
+    }
+    .imageWithTextBelowTwoItems .grnBtn {
+      width: 120px;
+      height: 42px;
+      text-align: center;
+    }
+
+  .imageWithTextBelowTwoItems .grnBtnLg {
+    height: 42px;
+    text-align: center;
+  }
+	.left-col .imageWithTextBelowTwoItems .container {
+		width: 100%;
+		margin: 0;
+	}
+	.left-col .imageWithTextBelowTwoItems .container .row div:nth-child(odd) {
+      text-align: left;
+      width: 100%;
+      height: auto;
+      padding: 0 10px 15px 0;
+    }
+	.right-col .imageWithTextBelowTwoItems .container {
+		width: 100%;
+		margin: 0;
+	}
+	.right-col .imageWithTextBelowTwoItems .container .row div {
+		width: 100%;
+		margin: 0;
+    }
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row div {
+      width: 100%;
+    }
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row > div:nth-child(odd) {
+      text-align: left;
+      width: 50%;
+      height: auto;
+      padding: 0 10px 15px 0;
+    }
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row > div:nth-child(even) {
+      text-align: left;
+      width: 50%;
+      height: auto;
+      padding: 0 0 15px 10px;
+    }
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row div.image-text-item {
+      text-align: left;
+      width: 100%;
+      height: auto;
+      padding: 0 0 15px 10px;
+    }
+    .imageWithTextBelowTwoItems .videoPreview {
+		width: 495px;
+		padding: 0 0 0 5px;
+		margin: 0;
+	}
+	.imageWithTextBelowTwoItems .videoPreview .description {
+		position: absolute;
+		text-align: left;
+		width: 490px;
+		bottom: 0;
+		padding: 10px;
+		margin: 0;
+		background-color: rgba(73, 160, 219, 0.77);
+	}
+	.imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img  {
+		height: 290px;
+	}
+	.left-col .imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.left-col .imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img,
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img  {
+		height: 180px;
+	}
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 {
+		padding: 0;
+	}
+	.fullTabWrap .imageWithTextBelowTwoItems.bottomCurves{
+	  padding-bottom: 20px;
+	}
+  }
+}
+.imageWithTextBelowTwoItems .videoPreview .videoThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+.imageWithTextBelowTwoItems .videoPreview img {
+  width: 100%;
+}
+.imageWithTextBelowTwoItems .videoPlayIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+.imageWithTextBelowTwoItems .videoPreview .relatedVideos {
+  position: absolute;
+  text-align: left;
+  width: 490px;
+  height: 100px;
+  margin: 0;
+  bottom: -75px;
+  transition: all 0.5s ease;
+}
+.imageWithTextBelowTwoItems .videoPreview:hover .relatedVideos {
+  bottom: 0px;
+}
+.imageWithTextBelowTwoItems .relatedVideos h3 {
+  display: inline;
+  float: right;
+  margin: 0px;
+  padding: 2px 8px;
+  height: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.imageWithTextBelowTwoItems .relatedVideos p {
+  clear: right;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 0px 10px 10px;
+  line-height: 1.2;
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.imageWithTextBelowTwoItems .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.imageWithTextBelowTwoItems .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+.imageWithTextBelowTwoItems .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+.imageWithTextBelowTwoItems .grnBtn, .imageWithTextBelowTwoItems .grnBtnLg, .imageWithTextBelowTwoItems .link {
+  margin: 15px 28px 5px 4px;
+}
+.imageWithTextBelowTwoItems a.link {
+	width: auto;
+}
+.imageWithTextBelowTwoItems a.grnLink:hover,
+.imageWithTextBelowTwoItems a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media all and (max-width: 768px) {
+	.imageWithTextBelowTwoItems .container .row .heading-below-video-3items {
+		margin-top: 20px;
+		text-align: left !important;
+	}
+	.imageWithTextBelowTwoItems .main-around-popup-video div{
+		padding: 0px !important;
+	}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.imageWithTextBelowTwoItems .container .row div:nth-child(odd) {
+      text-align: left;
+      width: 500px;
+      height: auto;
+      padding: 0 10px 15px 0;
+    }
+    .imageWithTextBelowTwoItems .container .row > div {
+      min-height: 485px;
+    }
+	
+	.imageWithTextBelowTwoItems  .container .row .img-items-column {
+		margin-bottom: 20px;
+	}
+    .imageWithTextBelowTwoItems .container .row div:nth-child(even) {
+      text-align: left;
+      width: 500px;
+      height: auto;
+      padding: 0 0 15px 10px;
+    }
+	.imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img  {
+		height: 290px;
+	}
+	.left-col .imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.left-col .imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img,
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 > img, 
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 .videoThumbnail > a > img  {
+		height: 180px;
+	}
+	.left-col .imageWithTextBelowTwoItems .container .row div:nth-child(odd) {
+      text-align: left;
+      width: 100%;
+      height: auto;
+      padding: 0 10px 15px 0;
+    }
+	.left-col .imageWithTextBelowTwoItems .row .col-xs-12 {
+			width: 50% !important;
+	}
+	.left-col .imageWithTextBelowTwoItems .container {
+		width: 100%;
+		margin: 0;
+	}
+	.right-col .imageWithTextBelowTwoItems .container {
+		width: 100%;
+		margin: 0;
+	}
+	.right-col .imageWithTextBelowTwoItems .container .row div {
+		width: 100%;
+		margin: 0;
+    }
+	.right-col .imageWithTextBelowTwoItems .container .row .col-xs-12 {
+		padding: 0;
+	}
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row > div:nth-child(odd) {
+		text-align: left;
+		width: 50%;
+		height: auto;
+		padding: 0 10px 15px 0;
+	}
+	.fullTabWrap .imageWithTextBelowTwoItems .container .row > div:nth-child(even) {
+		text-align: left;
+		width: 50%;
+		height: auto;
+		padding: 0 0 15px 10px;
+	}
+}

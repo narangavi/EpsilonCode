@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Software Center Markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- styles -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="../etc/designs/calix/css/font-awesome.min.css"> -->
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/bootstrap.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/global.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/mainNav.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/softwareCenterTable.css" rel="stylesheet">
+    <link href="../etc/designs/calix/css/footer.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../etc/designs/calix/css/tablesaw.css"> -->
+    <!--<link href="../etc/designs/calix/css/jquery-ui.min.css" rel="stylesheet">-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome/fontello-ie7.css">
+    <![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+    <div id="contentWrapper">
+      <div class="innerWrap">
+
+        <div class="softwareCenter">
+
+          <div class="introSearch">
+            <h2>Software Center</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accum.</p>
+            <div class="searchInput">
+              <input type="text" placeholder="Platform, Access Node, or ONT/OLT Name" class="form-control" />
+            </div>
+            <div class="searchBtn">
+              <a class="grnBtn" href="#"><span>Search</span></a>
+            </div>
+          </div>
+
+          <!-- Begin Legend -->
+
+          <div class="legend col-xs-12 col-sm-12 col-md-12">
+            <h3>Legend</h3>
+            <ul>
+              <li class="bulletIcon purpleIcon">
+                <div>
+                  <h3>Current default SW version</h3>
+                  <p>Ships on new HW (with exceptions, such as when new HW is supported only in a later SW version at CA status).</p>
+                </div>
+              </li>
+              <li class="bulletIcon grayIcon">
+                <div>
+                  <h3>Old Versions</h3>
+                  <p>This Software is no longer supported. Install at your own risk</p>
+                </div>
+              </li>
+              <li class="bulletIcon orangeIcon">
+                <div>
+                  <h3>Controlled Availability</h3>
+                  <p>Controlled availability (CA) releases require submitting a request to Calix Technical Assistance Center (TAC) to access the release file.</p>
+                </div>
+              </li>
+              <li class="notesIcon">
+                <div>
+                  <h3>Notes Available</h3>
+                </div>
+              </li>
+            </ul>
+          </div><!-- end legend -->
+
+          <hr />
+
+
+
+          <div class="panel-group" id="accordion1">
+
+            <div class="panel panel-default">
+              <div class="panel-heading topLevel">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion1" href="#collapseOne"><h3>Browse by platform</h3></a>
+                </h4>
+              </div>
+
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion2">
+
+                    <div class="panel panel-default secondLevel">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" class="collapsed" data-parent="#accordion2" href="#collapseOneOne"><h3>E-Series</h3>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOneOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                          <div class="panel-group" id="accordion3">
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion3" href="#collapseOneOneOne"><h3>E7</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOneOneOne" class="panel-collapse collapse">
+
+                                  <div class="scOuter">
+                                    <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                    <div class="scTableWrap">
+                                      <div class="count">
+                                        <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                      </div>
+                                      <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                            <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.3</th>
+                                            <th scope="col">2.2</th>
+                                            <th scope="col">2.1</th>
+                                            <th scope="col" >2.0</th>
+                                            <th scope="col">1.9</th>
+                                            <th scope="col">1.8</th>
+                                            <th scope="col">1.7</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="title">E7</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr class="relProducts">
+                                            <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 800G</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 700GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GX</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 702GG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">T-Series T07xG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">CMS</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                  </div>
+
+                              </div>
+                            </div>
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion3" href="#collapseOneOneTwo"><h3>E5-48</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOneOneTwo" class="panel-collapse collapse">
+
+                                <div class="scOuter">
+                                  <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                  <div class="scTableWrap">
+                                    <div class="count">
+                                      <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                    </div>
+                                    <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                          <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.3</th>
+                                          <th scope="col">2.2</th>
+                                          <th scope="col">2.1</th>
+                                          <th scope="col" >2.0</th>
+                                          <th scope="col">1.9</th>
+                                          <th scope="col">1.8</th>
+                                          <th scope="col">1.7</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="title">E7</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr class="relProducts">
+                                          <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 800G</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 700GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GX</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 702GG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">T-Series T07xG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">CMS</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                </div>
+
+                              </div>
+                            </div><!-- panel -->
+
+                          </div><!-- panel-group -->
+
+                        </div><!-- panel-body -->
+                      </div><!-- panel Collapse -->
+                    </div> <!-- panel -->
+
+                    <div class="panel panel-default secondLevel">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" class="collapsed" data-parent="#accordion2" href="#collapseOneTwo"><h3>B-Series</h3>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOneTwo" class="panel-collapse collapse">
+
+                          <div class="panel-group" id="accordion4">
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion4" href="#collapseOneTwoOne"><h3>B54</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOneTwoOne" class="panel-collapse collapse">
+
+                                  <div class="scOuter">
+                                    <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                    <div class="scTableWrap">
+                                      <div class="count">
+                                        <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                      </div>
+                                      <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                            <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.3</th>
+                                            <th scope="col">2.2</th>
+                                            <th scope="col">2.1</th>
+                                            <th scope="col" >2.0</th>
+                                            <th scope="col">1.9</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="title">E7</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr class="relProducts">
+                                            <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 800G</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 700GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GX</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 702GG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">T-Series T07xG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">CMS</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                  </div>
+
+                              </div>
+                            </div><!-- panel -->
+
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion4" href="#collapseOneTwoTwo"><h3>B5-48</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseOneTwoTwo" class="panel-collapse collapse">
+
+                                <div class="scOuter">
+                                  <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                  <div class="scTableWrap">
+                                    <div class="count">
+                                      <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                    </div>
+                                    <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                          <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.3</th>
+                                          <th scope="col">2.2</th>
+                                          <th scope="col">2.1</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="title">E7</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr class="relProducts">
+                                          <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 800G</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 700GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GX</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 702GG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">T-Series T07xG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">CMS</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                </div>
+
+                              </div>
+                            </div><!-- panel -->
+
+
+                          </div><!-- panel-group -->
+
+                      </div>
+                    </div><!-- panel -->
+
+                  </div><!-- panel-group -->
+                </div><!-- panel-body -->
+              </div><!-- panelCollapse one -->
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading topLevel">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion1" href="#collapseTwo"><h3>Browse by access node</h3>
+                  </a>
+                </h4>
+              </div>
+
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion5">
+
+                    <div class="panel panel-default secondLevel">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" class="collapsed" data-parent="#accordion5" href="#collapseTwoOne"><h3>E-Series (E7, E5-48, E548C, E3-48C, E5-400)</h3>
+                          </a>
+                        </h4>
+                      </div>
+
+                      <div id="collapseTwoOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                          <div class="panel-group" id="accordionTwoOne">
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion5" href="#collapseTwoOneOne"><h3>E7</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseTwoOneOne" class="panel-collapse collapse">
+
+                                  <div class="scOuter">
+                                    <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                    <div class="scTableWrap">
+                                      <div class="count">
+                                        <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                      </div>
+                                      <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                            <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.3</th>
+                                            <th scope="col">2.2</th>
+                                            <th scope="col">2.1</th>
+                                            <th scope="col" >2.0</th>
+                                            <th scope="col">1.9</th>
+                                            <th scope="col">1.8</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="title">E7</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr class="relProducts">
+                                            <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 800G</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 700GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GX</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 702GG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">T-Series T07xG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">CMS</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                  </div>
+
+                              </div>
+                            </div>
+
+                          </div><!-- panel-group -->
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- panel -->
+
+                  </div><!-- panel-group -->
+                </div><!-- panel-body -->
+              </div><!-- panelCollapse two -->
+            </div><!-- panel-default -->
+
+            <div class="panel panel-default">
+              <div class="panel-heading topLevel">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion1" href="#collapseThree"><h3>Browse by premises endpoint</h3>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion6">
+
+                    <div class="panel panel-default secondLevel">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" class="collapsed" data-parent="#accordion6" href="#collapseThreeOne"><h3>Collapsible Group Item #3.1</h3>
+                          </a>
+                        </h4>
+                      </div>
+
+                      <div id="collapseThreeOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                          <div class="panel-group" id="accordionThree1">
+
+                            <div class="panel panel-default thirdLevel">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" class="collapsed" data-parent="#accordion6" href="#collapseThreeOneOne"><h3>C5-3.1</h3>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapseThreeOneOne" class="panel-collapse collapse">
+
+                                  <div class="scOuter">
+                                    <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                    <div class="scTableWrap">
+                                      <div class="count">
+                                        <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                      </div>
+                                      <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                            <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                            <th scope="col">2.3</th>
+                                            <th scope="col">2.2</th>
+                                            <th scope="col">2.1</th>
+                                            <th scope="col" >2.0</th>
+                                            <th scope="col">1.9</th>
+                                            <th scope="col">1.8</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="title">E7</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr class="relProducts">
+                                            <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 800G</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 700GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GX</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 701GE</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">P-Series 702GG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">T-Series T07xG</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="title">CMS</td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a></td>
+                                            <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                  </div>
+
+                              </div>
+                            </div>
+
+                          </div><!-- panel-group -->
+
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="panel panel-default secondLevel">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion6" href="#collapseThreeTwo"><h3>Collapsible Group Item #3.2</h3>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThreeTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+
+                        <div class="panel-group" id="accordionThree2">
+
+                          <div class="panel panel-default thirdLevel">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" class="collapsed" data-parent="#accordionThree2" href="#collapseThreeTwoOne"><h3>C5-3.2</h3>
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseThreeTwoOne" class="panel-collapse collapse">
+
+                                <div class="scOuter">
+                                  <div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+                                  <div class="scTableWrap">
+                                    <div class="count">
+                                      <span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+                                    </div>
+                                    <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+                                      <thead>
+                                        <tr>
+                                          <th scope="col" data-tablesaw-priority="persist">Releases</th>
+                                          <th scope="col">2.5 <a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.4<a tabindex="0" class="minorRelease" role="button" tooltip-title="Minor Releases" popover-title="Minor Releases" data-content="<a href='#'>2.5.5</a><a href='#'>2.5.4</a><a href='#'>2.5.3</a><a href='#'>2.5.2</a><a href='#'>2.5.1</a>"></a></th>
+                                          <th scope="col">2.3</th>
+                                          <th scope="col">2.2</th>
+                                          <th scope="col">2.1</th>
+                                          <th scope="col" >2.0</th>
+                                          <th scope="col">1.9</th>
+                                          <th scope="col">1.8</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td class="title">E7</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr class="relProducts">
+                                          <td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 800G</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 700GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="outdatedVersion" role="button" tooltip-title="Old Version"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GX</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 701GE</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="currentVersion" role="button" tooltip-title="Current default SW version"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">P-Series 702GG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">T-Series T07xG</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a tabindex="0" class="cntrlAvail" role="button" tooltip-title="Controlled Availability"></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="title">CMS</td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a></td>
+                                          <td class="width-fixed"><a href="#">X.XX</a><a class="noteLink" title="Notes Available" href="#"></a></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+                                </div>
+
+                            </div>
+                          </div>
+
+                        </div><!-- panel-group -->
+
+
+                      </div>
+                    </div>
+                  </div><!-- panel -->
+                  </div><!-- panel-group -->
+
+
+                </div><!-- panel-body -->
+              </div><!-- panelCollapse three -->
+            </div><!-- panel-default -->
+
+
+          </div><!-- accordion 1 -->
+
+        </div><!-- software center -->
+
+
+        <div class="footerWrapper">
+          <footer>
+
+            <!-- list row 1 -->
+            <div class="row list">
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Software</h5>
+                <ul>
+                  <li><a>
+                    Software Overview
+                  </a></li>
+                  <li><a>
+                    Compass</a>
+                    <ul>
+                      <li><a>Command Center</a></li>
+                      <li><a>Consumer Connect</a></li>
+                      <li><a>Flow Analyze</a></li>
+                      <li><a>Service Verify</a></li>
+                      <li><a>Open Cable Link</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    Calix Management Systems
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Systems</h5>
+                <ul>
+                  <li><a>
+                    Systems Overview
+                  </a></li>
+                  <li><a>
+                    E-Series Advanced Services/Ethernet</a>
+                    <ul>
+                      <li><a>Fiber</a></li>
+                      <li><a>Copper</a></li>
+                      <li><a>MEF/Business</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    B-Series Multiservice/Ethernet
+                  </a></li>
+                  <li><a>
+                    C-Series Multiservice/Multiprotocol
+                  </a></li>
+                  <li><a>
+                    BLM 1500
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Premises</h5>
+                <ul>
+                  <li><a>
+                    Premises Overview
+                  </a></li>
+                  <li><a>
+                    Residential
+                  </a></li>
+                  <li><a>
+                    MDU
+                  </a></li>
+                  <li><a>
+                    Small Business
+                  </a></li>
+                  <li><a>
+                    MEF Business
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Solutions</h5>
+                <ul>
+                  <li><a>
+                    Solutions Overview
+                  </a></li>
+                  <li><a>
+                    Service Providers
+                  </a></li>
+                  <li><a>
+                    Wireline Communications
+                  </a></li>
+                  <li><a>
+                    Wireless Communications
+                  </a></li>
+                  <li><a>
+                    Cable
+                  </a></li>
+                  <li><a>
+                    Municipalities
+                  </a></li>
+                  <li><a>
+                    Utilities
+                  </a></li>
+                  <li><a>
+                    Network Applications
+                  </a></li>
+                  <li><a>
+                    Residential Broadband
+                  </a></li>
+                  <li><a>
+                    Business Services
+                  </a></li>
+                  <li><a>
+                    Mobile Backhaul
+                  </a></li>
+                  <li><a>
+                    Transport and Aggregation
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Services</h5>
+                <ul>
+                  <li><a>
+                    Services Overview</a></li>
+                  <li><a>
+                    Training
+                  </a></li>
+                  <li><a>
+                    Certification
+                  </a></li>
+                  <li><a>
+                    Professional Services
+                  </a></li>
+                  <li><a>
+                    Consulting
+                  </a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Support</h5>
+                <ul>
+                  <li><a>
+                    Calix Resource Center</a>
+                    <ul>
+                      <li><a>Service Station</a></li>
+                      <li><a>Software Center</a></li>
+                      <li><a>Documentation</a></li>
+                    </ul>
+                  </li>
+                  <li><a>
+                    The Calix Advantage
+                  </a></li>
+                  <li><a>
+                    My Calix
+                  </a></li>
+                  <li><a>
+                    Customer Support
+                  </a></li>
+                  <li><a>
+                    Channel Partner Support
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- list row 2 -->
+            <div class="row list">
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Communities</h5>
+                <ul>
+                  <li><a>Blog</a></li>
+                  <li><a>Calix Customer Community</a></li>
+                  <li><a>Channel Partners</a></li>
+                  <li><a>Calix Compatible Ecosystem</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>Events</h5>
+                <ul>
+                  <li><a>Events Overview</a></li>
+                  <li><a>Calix User Group Conference</a></li>
+                  <li><a>Webinars</a></li>
+                  <li><a>Upcoming Trade Events</a></li>
+                  <li><a>Event Videos</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-12">
+                <h5>About Calix</h5>
+                <ul>
+                  <li><a><About Calix Overview</a></li>
+                  <li><a>Careers</a></li>
+                  <li><a>Leadership</a></li>
+                  <li><a>Press & News</a></li>
+                  <li><a>Investor Information</a></li>
+                  <li><a>Global Offices</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Legal / Social Line -->
+            <div class="row legal-social">
+              <div class="col-md-3 col-sm-12 col-xs-12 text-center"><a>© Calix | All Rights Reserved</a></div>
+              <div class="col-md-4  col-sm-12 col-xs-12 text-center terms-privacy">
+                <a><span style="display:inline">Terms of Use</span></a> <a><span style="display:inline; margin-left: 30px">Privacy Policy</span></a>
+              </div>
+              <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                <ul class="socialIcons">
+                  <li>
+                    <div class="">
+                      <a href="#" target="_blank"><i class="fa ml10 fa-twitter"></i></a>
+                      <a href="#" target="_blank"><i class="fa ml10 fa-facebook"></i></a>
+                      <a href="#" target="_blank"><i class="fa ml10 fa-youtube"></i></a>
+                      <a href="#" target="_blank"><i class="fa ml10 fa-linkedin"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </footer>
+        </div>
+
+      </div><!-- end innerWrap -->
+    </div><!-- end contentWrap -->
+
+    <script src="../etc/designs/calix/js/jquery.min.js"></script>
+    <script src="../etc/designs/calix/js/bootstrap.min.js"></script>
+    <script src="../etc/designs/calix/js/tablesaw.js"></script>
+    <script src="../etc/designs/calix/js/customDemo.js"></script>
+    <script src="../etc/designs/calix/js/custom.js"></script>
+
+    <script>
+
+$(document).ready(function() {
+
+    $('a.cntrlAvail').each(function() {
+      $(this).tooltip({
+        placement : 'top',
+        title : $(this).attr("tooltip-title")
+      })
+    });
+
+    $('a.currentVersion').each(function() {
+      $(this).tooltip({
+        placement : 'top',
+        title : $(this).attr("tooltip-title")
+      })
+    });
+
+    $('a.outdatedVersion').each(function() {
+      $(this).tooltip({
+        placement : 'top',
+        title : $(this).attr("tooltip-title")
+      })
+    });
+
+    //tooltips & popovers
+    $('a.minorRelease').each(function() {
+      $(this).popover({
+        content : $(this).attr("popover-content"),
+        title : $(this).attr("popover-title") + '<button type="button" class="close">&times;</button>',
+        placement : 'top',
+        html: true,
+        trigger: 'focus'
+      })
+      $(this).tooltip({
+        placement : 'top',
+        title : $(this).attr("tooltip-title")
+      })
+    });
+
+    $('a.minorRelease').popover().click(function(e) {
+        $(this).tooltip('hide');
+        $('.close').click(function(e){
+            $('a.minorRelease').popover('hide');
+        });
+        e.preventDefault();
+    });
+
+
+});
+
+
+
+
+
+    </script>
+
+
+
+
+  </body>
+</html>

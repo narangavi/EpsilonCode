@@ -1,0 +1,142 @@
+/****************************************
+  generic content 2/3 width column with background colors components
+****************************************/
+
+.genericContentTwoThirdsWidthColumnWithBGColors {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: auto;
+  padding: 0;
+  margin: 15px 0;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors img {
+  padding: 0;
+  margin: 0;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors h1 {
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+  padding: 25px 0 5px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #999;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors h3,
+.genericContentTwoThirdsWidthColumnWithBGColors h2 {
+  margin: 0 0 10px 0;
+  font-size: 21px;
+  color: #45367d;
+  font-weight: 600;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors p {
+  font-size: 16px;
+  color: #333;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors ul {
+  padding: 20px 20px 0 20px;
+  text-align: left;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors .grnBtn {
+  margin: 15px 20px 5px 0;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors .grnLink {
+  margin: 20px auto 0 auto;
+}
+.genericContentTwoThirdsWidthColumnWithBGColors a.grnLink:hover,
+.genericContentTwoThirdsWidthColumnWithBGColors a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+@media all and (min-width: 320px) {
+  .genericContentTwoThirdsWidthColumnWithBGColors .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors h3,
+  .genericContentTwoThirdsWidthColumnWithBGColors p,
+  .genericContentTwoThirdsWidthColumnWithBGColors ul 
+  {
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors h3 {
+    padding: 15px 0 0 0;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors a {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors .grnLink, .genericContentTwoThirdsWidthColumnWithBGColors .grnBtn {
+    width: 249px;
+    height: 42px;
+    text-align: center;
+    margin: 15px 20px 5px 0;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors .grnLink {
+    margin: 20px auto 0 auto;
+  }
+
+  .genericContentTwoThirdsWidthColumnWithBGColors .heroTwoThirdsCurvedContainer {
+    padding: 75px 0;
+    background: #efefef;
+    background-position: center;
+    border-top-left-radius: 50% 76px;
+    border-top-right-radius: 50% 76px;
+    border-bottom-left-radius: 50% 76px;
+    border-bottom-right-radius: 50% 76px;
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  .genericContentTwoThirdsWidthColumnWithBGColors .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors div {
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors p {
+    padding: 0;
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors a {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+    margin: 10px auto 0 auto;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors .grnLink, .genericContentTwoThirdsWidthColumnWithBGColors .grnBtn {
+    width: 120px;
+    height: 42px;
+    text-align: left;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors h3 {
+    padding: 0;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors .heroTwoThirdsCurvedContainer {
+    padding: 55px 0;
+    background: #efefef;
+    background-position: center;
+    border-top-left-radius: 50% 40px;
+    border-top-right-radius: 50% 40px;
+    border-bottom-left-radius: 50% 40px;
+    border-bottom-right-radius: 50% 40px;
+  }
+  .genericContentTwoThirdsWidthColumnWithBGColors .row {
+    width: 100%;
+    max-width: 660px;
+  }
+}

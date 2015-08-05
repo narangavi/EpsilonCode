@@ -1,0 +1,35 @@
+.navbar-brand {
+    position: initial;
+    margin-top: 0px !important;
+}
+
+.navbar-subBrand, .navbar-login, .navbar-subBrand.contact {
+    top: 42% !important;
+}
+
+.navbar-search {
+    top: 30% !important;
+}
+
+.navbar-search i {
+    margin-top: 10px !important;
+}
+
+ul.dropdown-menu a.closeMobileMenu {
+    top: -15px;
+}
+
+.dropdown-menu > li > a {
+    top: 12px;
+}
+
+.menuSub > li > a {
+    top: 12px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        position: initial;
+        margin-top: -5px !important;
+    }
+}

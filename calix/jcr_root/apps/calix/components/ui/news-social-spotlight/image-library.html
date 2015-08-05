@@ -1,0 +1,85 @@
+<template data-sly-template.images="${@ box}">
+    <div data-sly-test="${box.displayImage && box.viewAllLabel}" class="cq-dd-images" data-sly-unwrap>
+        <div class="modal fade imgGall" id="${box.idModal}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="modal-body">
+                        <div class="imageGalleryWrap clearfix">
+                            <div data-sly-test="${box.displayImage}" class="cq-dd-images" data-sly-unwrap>
+                                <h3>${box.photoLabel}</h3>
+                                <!-- main slider carousel -->
+                                <div class="featureImage">
+                                    <div id="slider">
+                                        <div class="" id="carousel-bounding-box">
+                                            <div id="${box.idCarousel}" class="carousel slide">
+                                                <!-- main slider carousel items -->
+                                                <div class="carousel-inner">
+                                                    <div data-sly-list.spotlight="${box.spotlightList}" data-sly-unwrap>
+                                                        <div class="${spotlightList.first ? 'active item' : ' item'}" data-slide-number="'${spotlightList.index}'">
+                                                            <div class="imageDescription"><p><span class="date">${spotlight.date}</span>${spotlight.description}</p>
+                                                            </div>
+                                                            <img src="${spotlight.image}" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control left" href="#${box.idCarousel}" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                                                <a class="carousel-control right" href="#${box.idCarousel}" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- thumb navigation carousel -->
+                                <div class="hidden-sm hidden-xs" id="slider-thumbs">
+                                    <!-- thumb navigation carousel items -->
+                                    <ul class="list-thumb clearfix">
+                                        <div data-sly-list.spotlight="${box.spotlightList}" data-sly-unwrap>
+                                            <li><a id="carousel-selector-${spotlightList.index}" class="selected">
+                                                <img src="${spotlight.image}" class="img-responsive">
+                                            </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+<script>
+    $(document).ready(function() {
+        $('#${box.idCarousel @ context='scriptString'}').carousel({
+        pause: true,
+        interval: false
+      });
+
+      // handles the carousel thumbnails
+      $('[id^=carousel-selector-]').click( function(){
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length -1);
+        id = parseInt(id);
+        $('#${box.idCarousel @ context='scriptString'}').carousel(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    
+      $('#${box.idCarousel @ context='scriptString'}').on('hidden.bs.modal', function () {
+        $('#${box.idCarousel @ context='scriptString'}').carousel(0);
+      })
+    
+      $('#${box.idCarousel @ context='scriptString'}').on('slid.bs.carousel', function () {
+        var id = $('.item.active').data('slide-number');
+        id = parseInt(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $('[id=carousel-selector-'+id+']').addClass('selected');
+      });
+    
+    });
+    
+</script>
+</template>
+

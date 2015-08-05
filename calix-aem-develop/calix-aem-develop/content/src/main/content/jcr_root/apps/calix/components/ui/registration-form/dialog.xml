@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <labelfields
+            jcr:primaryType="cq:Widget"
+            title="Registration"
+            anchor="100%"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Form Title"
+                    name="./title"
+                    defaultValue="New User Registration"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <imagedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Successful Message"
+                    name="./imagedesc"
+                    value="/content/dam"
+                    xtype="pathfield"/>
+                <fnamelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="First Name Label"
+                    name="./fnamelbl"
+                    defaultValue="First Name"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <lnamelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Last Name Label"
+                    name="./lnamelbl"
+                    defaultValue="Last Name"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <emailbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Email Label"
+                    name="./emailbl"
+                    defaultValue="Email"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <confirmemailbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Confirm Email Label"
+                    name="./confirmemailbl"
+                    defaultValue="Confirm Email"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <companylbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Company Label"
+                    name="./companylbl"
+                    defaultValue="Company"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <titlelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title Label"
+                    name="./titlelbl"
+                    defaultValue="Title"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <jobfunctionlbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Job Function Label"
+                    name="./jobfunctionlbl"
+                    defaultValue="Job Function"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <address1lbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address 1 Label"
+                    name="./address1lbl"
+                    defaultValue="Address 1"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <address2lbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Address 2 Label"
+                    name="./address2lbl"
+                    defaultValue="Address 2"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <citylbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="City Label"
+                    name="./citylbl"
+                    defaultValue="City"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <statelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="State Label"
+                    name="./statelbl"
+                    defaultValue="State"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <postalcodelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Zip/Postal Code Label"
+                    name="./postalcodelbl"
+                    defaultValue="Zip/Postal Code"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <countrylbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Country Label"
+                    name="./countrylbl"
+                    defaultValue="Country"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <primaryphonelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Primary Phone Label"
+                    name="./primaryphonelbl"
+                    defaultValue="Primary Phone"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <secondaryphonelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Secondary Phone Label"
+                    name="./secondaryphonelbl"
+                    defaultValue="Secondary Phone"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <phonetypelbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Phone Type Label"
+                    name="./phonetypelbl"
+                    defaultValue="Type"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <phonenumberlbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Phone Number Label"
+                    name="./phonenumberlbl"
+                    defaultValue="Number"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <phoneextlbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Phone Ext Label"
+                    name="./phoneextlbl"
+                    defaultValue="Ext"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <textinboxlbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Text in Box at Right Label"
+                    name="./textinboxlbl"
+                    defaultValue="Text in Box at Right"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <referredbylbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Referred By Label"
+                    name="./referredbylbl"
+                    defaultValue="Referred By"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <buttonlbl
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Button Label"
+                    name="./buttonlbl"
+                    defaultValue="Go"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <successmsg
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Success Message"
+                    name="./successmsg"
+                    allowBlank="{Boolean}false"
+                    xtype="textarea"/>
+            </items>
+        </labelfields>
+        <comments
+            jcr:primaryType="cq:Widget"
+            title="Comments"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<fnamedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for First Name"
+                    name="./fnamedesc"
+                    xtype="textarea"/>
+            	<lnamedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Last Name"
+                    name="./lnamedesc"
+                    xtype="textarea"/>
+            	<emaildesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Email"
+                    name="./emaildesc"
+                    xtype="textarea"/>
+            	<confirmemaildesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Confirm Email"
+                    name="./confirmemaildesc"
+                    xtype="textarea"/>
+            	<companydesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Company"
+                    name="./companydesc"
+                    xtype="textarea"/>
+            	<titledesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Title"
+                    name="./titledesc"
+                    xtype="textarea"/>
+                <jobfuncdesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Job Function"
+                    name="./jobfuncdesc"
+                    xtype="textarea"/>
+            	<addess1desc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Address 1"
+                    name="./addess1desc"
+                    xtype="textarea"/>
+            	<addess2desc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Address 2"
+                    name="./addess2desc"
+                    xtype="textarea"/>
+            	<citydesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for City"
+                    name="./citydesc"
+                    xtype="textarea"/>
+            	<statedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for State"
+                    name="./statedesc"
+                    xtype="textarea"/>
+            	<postalcodedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Zip/Postal Code"
+                    name="./postalcodedesc"
+                    xtype="textarea"/>
+                <countrydesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Country"
+                    name="./countrydesc"
+                    xtype="textarea"/>
+            	<primaryphonedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Primary Phone"
+                    name="./primaryphonedesc"
+                    xtype="textarea"/>
+            	<secondaryphonedesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Secondary Phone"
+                    name="./secondaryphonedesc"
+                    xtype="textarea"/>
+            	<textinboxdesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Text in Box at Right"
+                    name="./textinboxdesc"
+                    xtype="textarea"/>
+            	<referredbydesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Comment for Referred By"
+                    name="./referredbydesc"
+                    xtype="textarea"/>
+            </items>
+        </comments>
+     </items>
+</jcr:root>

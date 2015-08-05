@@ -1,0 +1,40 @@
+.navbar-header span.navbar-brand a.navbar-brand{
+    background-size: 105px !important;
+    position: absolute;
+    top:5px;
+}
+
+.heroFullCurvedContainer .heroContent h2, .heroFullCurvedContainer .heroContent h3, .heroFullCurvedContainer .heroContent h4 {
+
+    word-wrap: break-word;
+}
+
+.main-hero.photoSlider .grnBtn{
+    margin:0;
+    padding:0;
+}
+
+.main-hero.photoSlider .ctaWrapper
+{
+    margin:0;
+}
+
+.heroContent
+{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.speakerEventWrap .speakerEventHeader h2 {
+    font-size: 30px;
+}
+
+.speakerEventHeader .grnLink {
+    text-decoration: underline;
+}
+
+.speakerEventWrap .right-col .backEvent {
+    padding: 0px;
+}
+
+

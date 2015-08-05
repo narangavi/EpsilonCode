@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-18T23:04:17.337-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-17T10:18:39.020-04:00"
+        cq:lastReplicatedBy="vijay.kesavan"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/navigation"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Communities"
+        jcr:uuid="3dc2bfce-0c1b-44db-94f7-2049d662fe57"
+        sling:resourceType="calix/components/page/navigation">
+        <flyout-nav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/flyout-nav"
+            description="Communities Overview goes here.. "
+            headerImage="/content/dam/geometrixx-gov/resources.jpg"
+            heading="Communities">
+            <col-par1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:49:23.383-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:49:23.383-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Communities Overview"
+                    listItems="[{&quot;listItem&quot;:&quot;My Calix&quot;\,&quot;listItemLink&quot;:&quot;https://portal.calix.com&quot;},{&quot;listItem&quot;:&quot;My Calix Overview&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities/my-calix-overview&quot;},{&quot;listItem&quot;:&quot;Calix Advantage&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities/calix-advantage&quot;},{&quot;listItem&quot;:&quot;Channel Partners&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities/channel-partners&quot;},{&quot;listItem&quot;:&quot;Global Partners&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities/global-partners&quot;},{&quot;listItem&quot;:&quot;Calix Compatible&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities/calix-compatible&quot;}]"/>
+            </col-par1>
+            <col-par2
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:49:24.679-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:49:24.679-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par2>
+            <col-par3
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:49:26.463-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:49:26.463-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"/>
+            </col-par3>
+            <col-par4
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <flyout_nav_fragment
+                    jcr:created="{Date}2015-06-18T22:49:28.350-04:00"
+                    jcr:createdBy="vijay.kesavan"
+                    jcr:lastModified="{Date}2015-06-18T22:49:28.350-04:00"
+                    jcr:lastModifiedBy="vijay.kesavan"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="calix/components/ui/main-nav/flyout-nav-fragment"
+                    linksHeading="Support Resources"
+                    listItems="[{&quot;listItem&quot;:&quot;Software Center&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Documentation&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Service Station&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Calix Community&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Claix Academy&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Education Services&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;},{&quot;listItem&quot;:&quot;Gigabit Toolkit&quot;\,&quot;listItemLink&quot;:&quot;/content/calix/en/site/home/communities&quot;}]"/>
+            </col-par4>
+        </flyout-nav>
+    </jcr:content>
+</jcr:root>

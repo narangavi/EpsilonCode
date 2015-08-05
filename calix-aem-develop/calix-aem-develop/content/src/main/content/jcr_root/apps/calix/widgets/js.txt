@@ -1,0 +1,8 @@
+#base=source
+
+SlideWidget.js
+TileWidget.js
+multi-field.js
+LinkTileWidget.js
+QuickLinkWidget.js
+JumpPageWidget.js

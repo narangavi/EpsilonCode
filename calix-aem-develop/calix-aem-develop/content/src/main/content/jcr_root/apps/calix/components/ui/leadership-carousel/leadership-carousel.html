@@ -1,0 +1,27 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+	[Edit the leadership carousel component here]
+</div>
+<div data-sly-use.leadershipCarousel="${'com.calix.components.LeadershipCarousel'}" data-sly-unwrap>
+</div>
+<div class="about">
+	<div class="container">
+		<h1>${properties.title}</h1>
+		<!-- Begin Slick Slider -->
+ 		<div class="slider-news-loop col-xs-12 col-sm-12 col-md-12">
+			<div data-sly-list.profile="${leadershipCarousel.profileItems}" data-sly-unwrap>
+			   	<div class="employees col-xs-12 col-sm-12 col-md-12">
+			     	<a href="${properties.leadershipPage}.html?bio=${profile.firstName @ context='attribute'}%20${profile.lastName @ context='attribute'}">
+			       		<img src="${profile.image}" width="190" height="189" alt="${profile.firstName}" />
+			       		<h3>${profile.firstName} ${profile.lastName}</h3>
+			       		<p>${profile.job}</p>
+			       		<p>${profile.department}</p>
+			     	</a>
+			   	</div>
+			</div>
+		</div>
+	   	<p>${properties.description}</p>
+        <div data-sly-test="${leadershipCarousel.cta.display}" class="cq-dd-images" data-sly-unwrap>
+			<a class="${leadershipCarousel.cta.style}" target="${leadershipCarousel.cta.target}" href="${leadershipCarousel.cta.link}"><span>${leadershipCarousel.cta.title}</span></a>
+		</div>
+	</div>
+</div>

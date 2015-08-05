@@ -1,0 +1,20 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>[Edit the news carousel here]</div>
+
+<div class="newsCarousel">
+    <div class="container">
+        <div class="slider-news-loop">
+            <div data-sly-use.newscarousel="com.calix.components.NewsCarousel" data-sly-unwrap>
+                <div data-sly-list.carouselitem="${newscarousel.newsCarouselItems}" data-sly-unwrap>
+						<div class="event" style="cursor:pointer">
+							<a href="${carouselitem.linkAction}" target="${carouselitem.linkTarget}">
+								<h2>${carouselitem.type} &nbsp;|&nbsp; ${carouselitem.date}</h2>
+								<p>${carouselitem.description}</p>
+							</a>
+						</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TableSaw Sortable Table</title>
+
+	<link rel="stylesheet" href="../etc/designs/calix/css/tablesaw.css">
+	<!-- <link rel="stylesheet" href="../etc/designs/calix/css/demo.css"> -->
+	<!-- <link rel="stylesheet" href="//filamentgroup.github.io/demo-head/demohead.css"> -->
+
+	<!--[if lt IE 9]><script src="../dist/dependencies/respond.js"></script><![endif]
+	<script src="../dist/dependencies/jquery.js"></script>
+	<script src="../dist/tablesaw.js"></script>
+	<script src="../dist/custom.js"></script>
+	<script src="//filamentgroup.github.io/demo-head/loadfont.js"></script> -->
+
+	<style>
+	body {
+		background-color: #aaa;
+		font: 100%/1.2 sans-serif;
+	}
+	.scOuter {
+		width: 970px;
+		padding: 5px 15px;
+		border: 1px solid #f5f5f5;
+		background-color: #f5f5f5;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	.scOuter .scTableWrap {
+		width: 940px;
+		position: relative;
+		background-color: #f5f5f5;
+		box-sizing: border-box;
+	}
+	.scOuter .tablesaw-advance-dots {
+		display: none;
+	}
+	.scOuter table.tablesaw {
+		max-width: 940px;
+	}
+	.scOuter .tablesaw thead tr:first-child th,
+	.scOuter .tablesaw-swipe th.tablesaw-cell-persist:nth-child(1) {
+		width: 143px !important;
+		min-width: 143px !important;
+		max-width: 143px !important;
+		padding: 0px;
+		background-color: #469ad2;
+		height: 60px;
+		color: #fff;
+		text-shadow: none;
+		line-height: 1.5;
+		vertical-align: top;
+		padding: 15px 10px;
+	}
+	.scOuter .tablesaw-swipe .tablesaw-cell-persist:nth-child(1) {
+		width: 143px !important;
+		min-width: 143px !important;
+		max-width: 143px !important;
+		padding: 0px;
+		background-color: transparent;
+		line-height: 1.5;
+		vertical-align: top;
+		padding: 15px 10px;
+	}
+	.scOuter .tablesaw tr:nth-child(odd) {
+		background-color: #f5f5f5;
+	}
+	.scOuter .tablesaw tr:nth-child(even) {
+		background-color: #fff;
+	}
+	.scOuter .tablesaw tr:nth-child(1) {
+		background-color: #fff;
+	}
+	.scOuter .tablesaw-columntoggle td.title a, .tablesaw-swipe td.title a {
+	  display: block;
+	  white-space: wrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  width: auto;
+	}
+	.scOuter .tablesaw-swipe .tablesaw-cell-persist th,
+	.scOuter .tablesaw-swipe td,
+	.scOuter .tablesaw-swipe .tablesaw-cell-persist {
+		border-right: 1px solid #fff;
+	}
+	.scOuter .tablesaw tbody tr {
+		border-bottom: none;
+	}
+	.scOuter .tablesaw tr td,
+	.scOuter .tablesaw tr th,
+	.scOuter table.tablesaw thead th,
+	.scOuter table.tablesaw thead td {
+	  color: #333;
+	  font-size: 14px;
+		text-transform: none;
+	}
+	.scOuter .tablesaw tr td a {
+		color: #1d9e74;
+		text-decoration: none;
+	}
+	.scOuter .tablesaw tr td a:hover,
+	.scOuter .tablesaw tr td a:active,
+	.scOuter .tablesaw tr td a:focus {
+		color: #167858;
+	}
+	.scOuter .tablesaw tbody tr.relProducts td,
+	.scOuter .tablesaw-swipe tr.relProducts td.tablesaw-cell-persist {
+		border: none;
+		box-shadow: none;
+		padding: 0px !important;
+	}
+	.scOuter .tablesaw thead {
+		border: none;
+	}
+	.scOuter .tablesaw tr.relProducts {
+		background-color: #999;
+		height: 30px;
+	}
+	.scOuter .tablesaw tr.relatedProducts td.relP {
+		border-right: 0px;
+		position: relative;
+		vertical-align: top;
+		padding: 0px !important;
+		background-color: #999;
+	}
+	.scOuter .tablesaw tr td span.relTitle {
+		position: absolute;
+		width: 230px;
+		padding-top: 6px;
+		margin-left: 210%;
+		color: #fff;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	.scOuter .tablesaw-advance {
+		position: absolute;
+		right: 0px;
+	}
+	.scOuter .tablesaw-bar {
+		clear: none;
+	}
+	.scOuter .count {
+		display: block;
+		padding-top: 15px;
+		float: right;
+		margin-right: 100px;
+		height: 30px;
+		color: #666;
+		font-size: 13px;
+	}
+	.scOuter .tablesaw-swipe .tablesaw-cell-persist {
+		box-shadow: none;
+	}
+	.scOuter .count span,
+	.scOuter .prodFamily p,
+	.scOuter .reqSoftware p {
+		color: #666;
+		font-size: 13px;
+	}
+	.scOuter .reqSoftware {
+		padding-top: 5px;
+	}
+	.scOuter .reqSoftware a {
+		color: #1d9e74;
+		text-decoration: none;
+	}
+	.scOuter .reqSoftware a:hover,
+	.scOuter .reqSoftware a:active,
+	.scOuter .reqSoftware a:focus {
+		color: #167858;
+	}
+	</style>
+</head>
+<body>
+
+<div class="scOuter">
+	<div class="prodFamily"><p>The E5-48 Family includes the following models X.XX, X.XX, X.XX, X.XX</p></div>
+	<div class="scTableWrap">
+		<div class="count">
+			<span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+		</div>
+		<table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-priority="persist">Releases</th>
+					<th scope="col">2.5</th>
+					<th scope="col">2.4</th>
+					<th scope="col">2.3</th>
+					<th scope="col">2.2</th>
+					<th scope="col">2.1</th>
+					<th scope="col" >2.0</th>
+					<th scope="col">1.9</th>
+					<th scope="col">1.8</th>
+					<th scope="col">1.7</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="title">E7</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr class="relProducts">
+					<td class="relP" style="position: relative;"><span class="relTitle">Related Products</span></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series 800G</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series 700GE</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series 701GX</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series 701GE</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">P-Series 702GG</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">T-Series T07xG</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+				<tr>
+					<td class="title">CMS</td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+					<td class="width-fixed"><a href="#">X.XX</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="reqSoftware"><p>Can't find what you're looking for? <a href="#">Request Software</a></p></div>
+</div>
+
+
+
+
+
+	<!-- 	<h3>Swipe Table with Mini Map</h3>
+	<div class="count">
+		<span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+	</div>
+	<table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+		<thead>
+			<tr>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Movie Title</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Rank-1</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Year-2</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3"><abbr title="Rotten Tomato Rating">Rating-3</abbr></th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Gross-4</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Bleh-5</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Derp-6</th>
+				<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">Foo-7</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+				<td>$2.7B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+				<td>2</td>
+				<td>1997</td>
+				<td>88%</td>
+				<td>$2.1B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
+				<td>3</td>
+				<td>2012</td>
+				<td>92%</td>
+				<td>$1.5B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry Potter and the Deathly Hallows—Part 2</a></td>
+				<td>4</td>
+				<td>2011</td>
+				<td>96%</td>
+				<td>$1.3B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a></td>
+				<td>5</td>
+				<td>2013</td>
+				<td>89%</td>
+				<td>$1.2B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a></td>
+				<td>6</td>
+				<td>2013</td>
+				<td>78%</td>
+				<td>$1.2B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the Moon</a></td>
+				<td>7</td>
+				<td>2011</td>
+				<td>36%</td>
+				<td>$1.1B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of the Rings: The Return of the King</a></td>
+				<td>8</td>
+				<td>2003</td>
+				<td>95%</td>
+				<td>$1.1B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+				<td>9</td>
+				<td>2012</td>
+				<td>92%</td>
+				<td>$1.1B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of Extinction</a></td>
+				<td>10</td>
+				<td>2014</td>
+				<td>18%</td>
+				<td>$1.0B</td>
+				<td>1</td>
+				<td>2009</td>
+				<td>83%</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+	<h3>Swipe Table with Mini Map</h3>
+	<div class="count">
+		<span class="numFirst"></span> - <span class="numSecond"></span> of <span class="numTotal"></span></th>
+	</div>
+	<table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap>
+		<thead>
+			<tr>
+				<th scope="col" data-tablesaw-priority="persist">Movie Title</th>
+				<th scope="col">Rank-1</th>
+				<th scope="col">Year-2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></td>
+				<td>1</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+				<td>2</td>
+				<td>1997</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></td>
+				<td>3</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry Potter and the Deathly Hallows—Part 2</a></td>
+				<td>4</td>
+				<td>2011</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a></td>
+				<td>5</td>
+				<td>2013</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a></td>
+				<td>6</td>
+				<td>2013</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the Moon</a></td>
+				<td>7</td>
+				<td>2011</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of the Rings: The Return of the King</a></td>
+				<td>8</td>
+				<td>2003</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+				<td>9</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td class="title"><a href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of Extinction</a></td>
+				<td>10</td>
+				<td>2014</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	 -->
+	<script src="../etc/designs/calix/js/jquery.min.js"></script>
+	<script src="../etc/designs/calix/js/bootstrap.min.js"></script>
+	<script src="../etc/designs/calix/js/tablesaw.js"></script>
+	<script src="../etc/designs/calix/js/custom.js"></script>
+	<script src="../etc/designs/calix/js/customDemo.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Leadership Carousel"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+			<info
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General Info"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+							<leadershipPage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel="Leadership Page"
+                                fieldDescription="Select leadership page to link to detail information"
+                                rootPath="/content/calix"
+                                name="./leadershipPage"/>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Description"
+                                name="./description"/>
+							<cta1
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="The CTA"
+                                sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                title="The first CTA">
+								<items jcr:primaryType="nt:unstructured">
+									<titleCTA
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/foundation/form/textfield"
+										fieldLabel="Title CTA"
+										name="./titleCTA"/>
+									<link
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+										fieldLabel="Link"
+										name="./linkCTA"
+										rootPath="/content/calix"/>
+									<buttonType
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/foundation/form/select"
+										fieldLabel="Button Type"
+										name="./btnType"
+										value="green">
+										<items jcr:primaryType="nt:unstructured">
+											<green
+												jcr:primaryType="nt:unstructured"
+												text="Primary Green"
+												value="green"/>
+											<white
+												jcr:primaryType="nt:unstructured"
+												text="Primary White"
+												value="white"/>
+											<outline
+												jcr:primaryType="nt:unstructured"
+												text="Primary Outline"
+												value="outline"/>
+											<text
+												jcr:primaryType="nt:unstructured"
+												text="Text Link"
+												value="text"/>
+										</items>
+									</buttonType>
+								</items>
+							</cta1>
+                        </items>
+                    </column>
+                </items>
+            </info>
+			<item
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Leader Profiles"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <fieldset
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <groups
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/multifield"
+                                        class="full-width"
+                                        fieldDescription="Click '+' to add a new leader. More than 3 entries forms a carousel nature"
+                                        fieldLabel="Leader profiles to display in carousel.">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                            name="./leaders">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                                                method="absolute"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <path
+															jcr:primaryType="nt:unstructured"
+															sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+															fieldDescription="Select leader"
+															fieldLabel="Profile entry"
+															name="./leaders"
+															rootPath="/content/calix"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </groups>
+                                </items>
+                            </column>
+                        </items>
+                    </fieldset>
+                </items>
+            </item>
+        </items>
+    </content>
+</jcr:root>

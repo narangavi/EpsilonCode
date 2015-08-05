@@ -1,0 +1,126 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images">
+    [Edit the news and social spotlight component here]
+</div>
+<!-- All content goes here -->
+<div data-sly-use.spotlights="com.calix.components.NewsAndSocialSpotlight" data-sly-unwrap>
+    <div class="newsAndSocialSpotlight ${spotlights.displayCurve}">
+        <div class="container">
+            <h1>${spotlights.titleLabel}</h1>
+            <div class="row">
+                <!--left feature -->
+                <div data-sly-test="${spotlights.box1.displayImage || spotlights.box1.displaySpotlight}" class="cq-dd-images" data-sly-unwrap>
+                    <div class="col-sm-6 col-xs-12 photoSlider">
+                        <div class="clearfix">
+                            <h3 class="fieldPhotos">${spotlights.box1.photoLabel}</h3>
+                            <div data-sly-test="${spotlights.box1.viewAllLabel}" class="cq-dd-images" data-sly-unwrap>
+                                <a class="viewAll" href="#" data-toggle="modal" data-target="#${spotlights.box1.idModal}">${spotlights.box1.viewAllLabel}</a><!-- Button trigger modal -->
+                            </div>
+                        </div>
+                        <!-- Begin Slick Slider -->
+                        <div class="slider-photos-loop">
+                            <div data-sly-list.spotlight="${spotlights.box1.spotlightDisplay}" data-sly-unwrap>
+                                <div class="event">
+                                    <div data-sly-test="${spotlight.description}" class="cq-dd-images" data-sly-unwrap>
+                                        <div class="description"><p><span class="date">${spotlight.date}</span>${spotlight.description}</p>
+                                        </div>
+                                    </div>
+                                    <img src="${spotlight.image}" width="100%" height="auto" alt="" class="img-responsive2" />
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of col-sm-6 image-->
+                </div>
+                <div data-sly-test="${spotlights.box1.displayVideo}" class="cq-dd-images" data-sly-unwrap>
+					<div data-sly-use.library="video-image.html" data-sly-call="${library.videoImages  @box=spotlights.box1}"></div>
+                </div>
+
+                <div data-sly-test="${spotlights.box1.displayVideos}" class="cq-dd-images" data-sly-unwrap>
+                    <div class="col-sm-6 col-xs-12 videoPreview">
+                        <h3>${spotlights.box1.featuredVideoLabel}</h3>
+                        <div data-sly-resource="${'videoLibrary1' @ resourceType='/apps/calix/components/ui/video-library'}"></div>
+                    </div><!-- end of col-sm-6 video-->
+                </div>
+                <!--right feature -->
+                <div data-sly-test="${spotlights.box2.displayImage || spotlights.box2.displaySpotlight}" class="cq-dd-images" data-sly-unwrap>
+                    <div class="col-sm-6 col-xs-12 photoSlider">
+                        <div class="clearfix">
+                            <h3 class="fieldPhotos">${spotlights.box2.photoLabel}</h3>
+                            <div data-sly-test="${spotlights.box2.viewAllLabel}" class="cq-dd-images" data-sly-unwrap>
+                                <a class="viewAll" href="#" data-toggle="modal" data-target="#${spotlights.box2.idModal}">${spotlights.box2.viewAllLabel}</a><!-- Button trigger modal -->
+                            </div>
+                        </div>
+                        <!-- Begin Slick Slider -->
+                        <div class="slider-photos-loop">
+                            <div data-sly-list.spotlight="${spotlights.box2.spotlightDisplay}" data-sly-unwrap>
+                                <div class="event">
+									<div data-sly-test="${spotlight.description}" class="cq-dd-images" data-sly-unwrap>
+                                        <div class="description"><p><span class="date">${spotlight.date}</span>${spotlight.description}</p>
+                                        </div>
+                                    </div>
+                                    <img src="${spotlight.image}" width="100%" height="auto" alt="" class="img-responsive2"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end of col-sm-6 image-->
+                </div>
+                <div data-sly-test="${spotlights.box2.displayVideo}" class="cq-dd-images" data-sly-unwrap>
+					<div data-sly-use.library="video-image.html" data-sly-call="${library.videoImages  @box=spotlights.box2}"></div>
+                </div>
+                <div data-sly-test="${spotlights.box2.displayVideos}" class="cq-dd-images" data-sly-unwrap>
+                    <div class="col-sm-6 col-xs-12 videoPreview">
+                        <h3>${spotlights.box1.featuredVideoLabel}</h3>
+                        <div data-sly-resource="${'videoLibrary2' @ resourceType='/apps/calix/components/ui/video-library'}"></div>
+                    </div><!-- end of col-sm-6 video-->
+                </div>
+            </div><!-- end row -->
+            <!-- spotlight -->
+            <div class="row">
+                <div class="featuredStories">
+                    <div data-sly-list.spotlight="${spotlights.spotlight1}" data-sly-unwrap>
+                        <a href="${spotlight.linkAction}"  target="${spotlight.target}">
+                            <div class="event col-xs-12 col-sm-4">
+                                <h3>${spotlight.label} | ${spotlight.date}</h3>
+                                <p>${spotlight.title}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-sly-list.spotlight="${spotlights.spotlight2}" data-sly-unwrap>
+                        <a href="${spotlight.linkAction}" target="${spotlight.target}">
+                            <div class="event col-xs-12 col-sm-4">
+                                <h3>${spotlight.label} | ${spotlight.date}</h3>
+                                <p>${spotlight.title}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-sly-list.spotlight="${spotlights.spotlight3}" data-sly-unwrap>
+                        <a href="${spotlight.linkAction}" target="${spotlight.target}">
+                            <div class="event col-xs-12 col-sm-4">
+                                <h3>${spotlight.label}| ${spotlight.date}</h3>
+                                <p>${spotlight.title}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div><!-- end featured stories -->
+            </div><!-- end row -->
+        </div>
+    </div><!-- end container -->
+    <!-- Modal Display image for box 1 -->
+    <div data-sly-test="${spotlights.box1.displayImage || spotlights.box1.displaySpotlight}" class="cq-dd-images" data-sly-unwrap>
+        <div data-sly-use.library="image-library.html" data-sly-call="${library.images  @box=spotlights.box1}"></div>
+    </div>   
+    <!-- Modal Display image for box 2 -->
+    <div data-sly-test="${spotlights.box2.displayImage || spotlights.box2.displaySpotlight}" class="cq-dd-images" data-sly-unwrap>
+        <div data-sly-use.library="image-library.html" data-sly-call="${library.images  @box=spotlights.box2}"></div>
+    </div>
+    <!-- Modal Video for box 1-->
+    <div data-sly-test="${spotlights.box1.displayVideo}" class="cq-dd-images" data-sly-unwrap>
+        <div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${library.videolightbox @modalId=spotlights.box1.idModal, videoGroups=spotlights.box1.videoGroups}" data-sly-unwrap></div>
+    </div>
+     <!-- Modal Video for box 2-->
+     <div data-sly-test="${spotlights.box2.displayVideo}" class="cq-dd-images" data-sly-unwrap>
+        <div data-sly-use.library="/apps/calix/components/ui/video-lightbox/videoLightbox.html" data-sly-call="${library.videolightbox @modalId=spotlights.box2.idModal, videoGroups=spotlights.box2.videoGroups}" data-sly-unwrap></div>
+    </div>
+
+</div>
+
+

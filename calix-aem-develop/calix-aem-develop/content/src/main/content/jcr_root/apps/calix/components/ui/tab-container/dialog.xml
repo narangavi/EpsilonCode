@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    helpPath="en/cq/current/wcm/default_components.html#Text Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="Tab info"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<displayTopCurves
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="false"
+                    fieldLabel="Display Background"
+                    name="./displayBackground"
+                    type="checkbox"
+                    xtype="selection"/>
+                <tabs
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new tab"
+                    name="./tabs"
+                    xtype="multifield">
+                    <tab
+                        jcr:primaryType="cq:Widget"
+                        xtype="textfield"/>
+                </tabs>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

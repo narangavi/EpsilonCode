@@ -1,0 +1,201 @@
+body {
+  margin: 0px;
+}
+#contentWrapper .innerWrap {
+    height: auto !important;
+}
+#contentWrapper {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+#contentWrapper .innerWrap {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1440px;
+  height: auto;
+  margin: 0px auto;
+  background-color: #fff;
+  border-left: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+}
+.my-calix {
+  max-width: 1440px;
+  position: relative;
+}
+.myCalix {
+  background: url('../etc/designs/calix/img/myCalixBg.png') top right no-repeat;
+  position: absolute;
+  top: 50px;
+  min-width: 100px;
+  height: 115px;
+  z-index: 99;
+  right: 0;
+}
+.myCalix:hover {
+  background: url('/etc/designs/calix/img/myCalixBg-hover.png') top right no-repeat;
+}
+.myCalix a {
+  position: relative;
+  display: block;
+  padding: 20px 0px 20px 27px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: 49%;
+  -webkit-transform: translateY(-49%);
+  -ms-transform: translateY(-49%);
+  transform: translateY(-49%);
+}
+/* Green Button */
+.grnBtn {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #1d9e74;
+  height: 42px;
+  padding: 0 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 3.2;
+}
+.grnBtn:hover {
+  background-color: #167858;
+  color: #fff;
+  text-decoration: none;
+}
+.grnBtn span {
+  vertical-align:middle;
+  display: inline-block;
+}
+.grnBtn i {
+  font-size: 19px;
+  padding: 0px 5px;
+  vertical-align:middle;
+}
+.grnBtn::before{
+  content: "";
+  position: absolute;
+  height: 42px;
+  width: 5px;
+  left: -4px;
+  background: url('../img/btnGrnLftCap.png') top left no-repeat;
+}
+.grnBtn:hover::before {
+  background: url('../img/btnGrnLftCap-hover.png') top left no-repeat;
+}
+.grnBtn::after{
+  content: "";
+  position: absolute;
+  height: 42px;
+  width: 5px;
+  right: -4px;
+  background: url('../img/btnGrnRghtCap.png') top left no-repeat;
+}
+.grnBtn:hover::after {
+  background: url('../img/btnGrnRghtCap-hover.png') top left no-repeat;
+}
+
+/* White Button */
+.whiteBtn {
+  background-color: #fff;
+  color: #1d9e74;
+}
+.whiteBtn:hover {
+  background-color: #fff;
+  color: #167858;
+  text-decoration: none;
+}
+.whiteBtn::before {
+  background: url('../img/btnWhiteLftCap.png') top left no-repeat;
+}
+.whiteBtn::after {
+  background: url('../img/btnWhiteRghtCap.png') top left no-repeat;
+}
+.whiteBtn:hover::before {
+  background: url('../img/btnWhiteLftCap.png') top left no-repeat;
+}
+.whiteBtn:hover::after {
+  background: url('../img/btnWhiteRghtCap.png') top left no-repeat;
+}
+/* Outline Button */
+.outlineBtn {
+  background-color: transparent;
+  color: #1d9e74;
+  border-top: 1px solid #1d9e74;
+  border-bottom: 1px solid #1d9e74;
+  height: 43px;
+}
+.outlineBtn:hover {
+  color: #167858;
+  border-top: 1px solid #167858;
+  border-bottom: 1px solid #167858;
+  background-color: transparent;
+}
+.outlineBtn::before {
+  background: url('../img/btnOutlineLftCap.png') top left no-repeat;
+}
+.outlineBtn::after {
+  background: url('../img/btnOutlineRghtCap.png') top left no-repeat;
+}
+.outlineBtn:hover::before {
+  background: url('../img/btnOutlineLftCap-hover.png') top left no-repeat;
+}
+.outlineBtn:hover::after {
+  background: url('../img/btnOutlineRghtCap-hover.png') top left no-repeat;
+}
+.link {
+  color: #1d9e74;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 3;
+}
+.link:hover {
+  color: #167858;
+  text-decoration: none;
+}
+
+.breadCrumbs {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 40px 0 5px 15px;
+  font-family: 'Lato', sans-serif;
+  color: #136c4f;
+}
+.breadCrumbs i {
+  font-size: 18px;
+  color: #136c4f;
+}
+.breadCrumbs a,
+.breadCrumbs a:hover {
+  font-size: 14px;
+  color: #136c4f;
+  text-decoration: none;
+  margin-left: 3px;
+}
+@media all and (max-width: 768px) {
+  #contentWrapper .innerWrap {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    margin: 0px;
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+  }
+  .breadCrumbs {
+    width: 100%;
+    margin: 0;
+    padding: 25px 10px 15px 15px;
+  }
+  .myCalix {
+    display: none;
+  }
+}

@@ -1,0 +1,144 @@
+/****************************************
+  footer
+****************************************/
+
+.footerWrapper {
+    width: 100%;
+    background-color: #e97b00;
+    margin: 0 auto;
+}
+
+footer .fa {
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #e97b00;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    padding-bottom: 25px;
+    width: 1024px;
+}
+
+footer .list li {
+    margin: 6px 0;
+    line-height: 18px;
+    max-width: 150px
+}
+
+footer .row {
+    padding-top: 10px;
+}
+
+footer .col-md-2 {
+
+}
+
+footer h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer ul, footer li {
+    font-weight: 100;
+}
+
+footer ul>li {
+    list-style-type: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul>li>ul {
+    padding-left: 15px;
+}
+
+footer .legal-social {
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+footer .row.legal-social .col-md-3:first-of-type {
+
+}
+
+footer .row.legal-social .col-md-3:last-of-type {
+    float: right;
+}
+
+footer .row.legal-social .socialIcons li a img {
+    margin-left: 17px;
+}
+
+footer .social {
+    float: left;
+}
+.footer-desktop-left {
+ text-align: left;
+}
+
+.footer-desktop-right {
+ text-align: right;
+}
+@media all and (max-width: 1000px) and (min-width: 991px) {
+
+    footer .col-md-2 {
+        width: 33.33333333%;
+    }
+
+}
+
+@media all and (max-width: 1000px) {
+
+    footer .legal-social div.col-xs-12 {
+        margin-top: 10px;
+    }
+
+    footer .list .col-md-2:nth-child(4) {
+        clear: left;
+    }
+
+}
+
+@media all and (max-width: 768px) {
+	.footer-desktop-left {
+	 text-align: center;
+	}
+	
+	.footer-desktop-right {
+	 text-align: center;
+	}
+    footer .list {
+        display: none;
+    }
+    footer .legal-social div.col-xs-12 {
+        margin-top: 10px;
+    }
+    footer {
+        width: auto;
+    }
+
+    footer .fa {
+        font-size: 24px;
+        letter-spacing: 15px;
+    }
+}
+

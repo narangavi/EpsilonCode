@@ -1,0 +1,7 @@
+<div data-sly-include="/apps/calix/global.jsp"></div>
+<div data-sly-test="${wcmmode.edit}" class="cq-dd-images" data-sly-unwrap>
+    [Edit the description here, inline editing]
+</div>
+<div data-sly-use.item="com.calix.components.DetailedSystemsRichtext" data-sly-unwrap>
+    ${item.text @ context='html'}
+</div>

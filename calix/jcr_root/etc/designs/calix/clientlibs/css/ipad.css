@@ -1,0 +1,11 @@
+body {
+    min-width:100%;
+}
+
+.navbar-subBrand, .navbar-login, .navbar-subBrand.contact {
+    top: 45%;
+}
+
+.navbar-search {
+    top:30%;
+}

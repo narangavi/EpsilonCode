@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/calix"
+        cq:lastModified="{Date}2015-06-30T00:40:12.321-04:00"
+        cq:lastModifiedBy="vijay.kesavan"
+        cq:lastReplicated="{Date}2015-06-30T00:40:12.386-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/apps/calix/templates/fullwidth"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Full Width - Text Only Page Header"
+        jcr:uuid="6b92371e-9e0f-4ec8-9595-83b9a614da5b"
+        sling:resourceType="calix/components/page/fullwidth">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/logo"/>
+        <tagline
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/tagline"/>
+        <contact
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/contact"/>
+        <search
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/search"/>
+        <register
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/login-register"/>
+        <megamenu
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/main-nav/megamenu"/>
+        <breadcrumbs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/breadcrumbs"/>
+        <my-calix
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/my-calix"/>
+        <footer-links-1-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-2-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-3-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-4-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-5-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-6-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-7-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-8-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-9-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-10-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-11-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-links-12-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-links"/>
+        <footer-legal-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal"/>
+        <heroPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <text_only
+                jcr:created="{Date}2015-06-16T23:45:30.604-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-30T00:40:12.318-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/text-only"
+                buttonType="green"
+                headline="Join Us for the 2014 Calix User Group Conference and let's say there is an addtional bit of copy."
+                isNewWindow="true"
+                linkCTA="http://author-calix-dev.adobecqms.net/cf#/content/calix/en/site/demo/splitcolumns.html?wcmmode=edit"
+                showCurves="true"
+                text="&lt;p>Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet. Bis si ullande nobit aligenis vel idelibusda id est qui conem ulles ipis ut ditatint.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Accuscius aut labor as aut occuptatum siti coreper&lt;/li>&#xa;&lt;li>Iberumqui consectas eos sitet volent aliquat usapern atiumquidem volest&lt;/li>&#xa;&lt;li>Rem res quiae. Rit laute pra dolorer undiae voluptatiam rectem qui offic tor sercidus ea nobit, omni dolorer uptati nesequidebit et idebit autemped quunt.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Aquam re velis comnime es dis sitaerf ernatib erioreptur, core dignati utatenis es et volori conse nam qui con conet velicium quo torero iur.&lt;/p>&#xa;"
+                textIsRich="true"
+                titleCTA="Learn more"/>
+        </heroPar>
+        <narrowContainer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <text_only
+                jcr:created="{Date}2015-06-16T23:45:30.604-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-19T00:26:35.066-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/text-only"
+                buttonType="outline"
+                headline="Join Us for the 2014 Calix User Group Conference and let's say there is an addtional bit of copy."
+                isNewWindow="true"
+                linkCTA="http://author-calix-dev.adobecqms.net/cf#/content/calix/en/site/demo/splitcolumns.html?wcmmode=edit"
+                showCurves="true"
+                text="&lt;p>Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet. Bis si ullande nobit aligenis vel idelibusda id est qui conem ulles ipis ut ditatint.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Accuscius aut labor as aut occuptatum siti coreper&lt;/li>&#xa;&lt;li>Iberumqui consectas eos sitet volent aliquat usapern atiumquidem volest&lt;/li>&#xa;&lt;li>Rem res quiae. Rit laute pra dolorer undiae voluptatiam rectem qui offic tor sercidus ea nobit, omni dolorer uptati nesequidebit et idebit autemped quunt.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Aquam re velis comnime es dis sitaerf ernatib erioreptur, core dignati utatenis es et volori conse nam qui con conet velicium quo torero iur.&lt;/p>&#xa;"
+                textIsRich="true"
+                titleCTA="Learn more"/>
+        </narrowContainer>
+        <contentPar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <text_only
+                jcr:created="{Date}2015-06-16T23:45:30.604-04:00"
+                jcr:createdBy="vijay.kesavan"
+                jcr:lastModified="{Date}2015-06-16T23:51:17.467-04:00"
+                jcr:lastModifiedBy="vijay.kesavan"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="calix/components/ui/text-only"
+                buttonType="textlink"
+                headline="Join Us for the 2014 Calix User Group Conference and let's say there is an addtional bit of copy."
+                isNewWindow="true"
+                linkCTA="http://author-calix-dev.adobecqms.net/cf#/content/calix/en/site/demo/splitcolumns.html?wcmmode=edit"
+                showCurves="true"
+                text="&lt;p>Pero mint, ut volo conecerum commo temporia dolupta tumenducimus et ewerf wet quatio. Ipsae il ipsum aliciistrunt ut faccullacil etur aceratetum eatquaspis es maiorenda dipsandis molupie nduntis sim fugiatet. Bis si ullande nobit aligenis vel idelibusda id est qui conem ulles ipis ut ditatint.&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Accuscius aut labor as aut occuptatum siti coreper&lt;/li>&#xa;&lt;li>Iberumqui consectas eos sitet volent aliquat usapern atiumquidem volest&lt;/li>&#xa;&lt;li>Rem res quiae. Rit laute pra dolorer undiae voluptatiam rectem qui offic tor sercidus ea nobit, omni dolorer uptati nesequidebit et idebit autemped quunt.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Aquam re velis comnime es dis sitaerf ernatib erioreptur, core dignati utatenis es et volori conse nam qui con conet velicium quo torero iur.&lt;/p>&#xa;"
+                textIsRich="true"
+                titleCTA="Learn more"/>
+        </contentPar>
+        <footer-legal-social-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="calix/components/ui/footer-legal-social"/>
+    </jcr:content>
+</jcr:root>

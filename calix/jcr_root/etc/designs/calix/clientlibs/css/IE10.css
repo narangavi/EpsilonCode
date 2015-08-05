@@ -1,0 +1,70 @@
+
+.newsAndSocialSpotlight .slick-slide img {
+    height: 100% !important;
+}
+.newsAndSocialSpotlight .videoPreview img
+{
+    height: 100% !important;
+}
+.placeholder
+{
+    color: #c9c9c9;
+}
+
+.imageWithTextBelowTwoItems .container .row img.img-items-column {
+    height: 100% !important;
+}
+
+.imageWithTextBelowThreeItems .container .row img.img-items-column {
+    height: 100% !important;
+}
+
+.left-col .imageWithTextBelowTwoItems .container {
+    width: 100% !important;
+}
+
+.tabBlock .imageWithTextBelowThreeItems .container {
+    width: 100% !important;
+}
+
+.navbar-search i {
+    bottom: 5px !important;
+    position: relative !important;
+}
+
+.imageWithTextBelowTwoItems .grnBtn, .imageWithTextBelowThreeItems .grnBtn {
+    width: 120px !important;
+}
+
+.imageWithTextBelowThreeItems .container .row div {
+    width: 340px;
+}
+
+
+@media all and (max-width: 768px) {
+    .imageWithTextBelowThreeItems .container .row div {
+        width: 100% !important;
+    }
+}
+
+@media all and (min-width: 769px) {
+    .left-col .imageWithTextBelowTwoItems .container {
+        width: 100%;
+    }
+    .left-col .imageWithTextBelowTwoItems .container .col-xs-12 {
+        width: 50%;
+    }
+    .imageWithTextBelowThreeItems .container .row div {
+        text-align: left;
+        width: 340px;
+        height: auto;
+        padding: 0 20px 20px 0;
+    }
+    .imageWithTextBelowTwoItems .container .row div {
+        text-align: left;
+        width: 500px;
+        height: auto;
+        padding: 0 15px 15px 0;
+    }
+}
+

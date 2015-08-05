@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Text"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <main
+            jcr:primaryType="cq:Widget"
+            title="Account Team"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    allowBlank="{Boolean}false"
+                    name="./title"
+                    xtype="textfield"/>
+                <displayedAccountNumber
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Number of accounts to display"
+                    fieldDescription="Number of accounts displayed first (number > 0; 2 is default value)"
+                    name="./number"
+                    xtype="numberfield"/>
+            </items>
+        </main>
+    </items>
+</jcr:root>

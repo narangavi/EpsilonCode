@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Logo"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <logo
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Logo"
+                    name="./logo"
+                    rootPath="/content/dam"
+                    xtype="pathfield"/>
+                <logoLink
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Logo Link"
+                    name="./logoLink"
+                    rootPath="/content/dam"
+                    xtype="pathfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

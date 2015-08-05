@@ -1,0 +1,12 @@
+<div data-sly-test="${wcmmode.edit}" data-sly-unwrap>
+	[Edit the My Calix - Quick Links component]
+</div>
+
+<div class="team" data-sly-use.quicklinks="com.calix.components.QuickLinks">
+	<h3>${quicklinks.compTitle}</h3>
+	<div class="linkItem" data-sly-test="${quicklinks.links}">
+		<ul data-sly-list.qlink="${quicklinks.links}">
+			<li><a href="${qlink.link}" target="${qlink.target}" class="${qlink.linkStyle}">${qlink.title}</a></li>
+		</ul>
+	</div>
+</div>

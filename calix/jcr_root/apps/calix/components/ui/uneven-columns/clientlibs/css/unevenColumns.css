@@ -1,0 +1,372 @@
+/****************************************
+    uneven Column
+****************************************/
+.unevenColumnWrap.container.twoThirds {
+  padding: 0px;
+}
+.unevenColumnWrap {
+  margin: 0px;
+  padding: 65px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.unevenColumnWrap.fullBorder {
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+  border-top: 2px solid #b5b2c2;
+}
+.unevenColumnWrap.topBorder {
+  border-top-left-radius: 50% 76px;
+  border-top-right-radius: 50% 76px;
+  border-top: 2px solid #b5b2c2;
+  margin: 20px -40px 20px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.unevenColumnWrap.bottomBorder {
+  border-bottom-left-radius: 50% 76px;
+  border-bottom-right-radius: 50% 76px;
+  border-bottom: 2px solid #b5b2c2;
+  margin: 20px -40px 20px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.narrowContainer .unevenColumnWrap.topBorder {
+  border-top-left-radius: 50% 55px;
+  border-top-right-radius: 50% 55px;
+  border-top: 2px solid #b5b2c2;
+    margin: 20px -40px 20px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.narrowContainer .unevenColumnWrap.bottomBorder {
+  border-bottom-left-radius: 50% 55px;
+  border-bottom-right-radius: 50% 55px;
+  border-bottom: 2px solid #b5b2c2;
+    margin: 20px -40px 20px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.unevenColumnWrap .container {
+  padding: 0;
+  margin: 0 auto;
+}
+.unevenColumnWrap h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.unevenColumnWrap h2 {
+  font-size: 36px;
+  color: #45367d;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.unevenColumnWrap h3 {
+  font-size: 27px;
+  color: #45367d;
+  margin-top: 0px;
+  font-weight: 400;
+}
+.unevenColumnWrap h3.link {
+  color: #1d9e74;
+  line-height: 1.1;
+  text-transform: none;
+  width: 100%;
+}
+.unevenColumnWrap h3.link:hover {
+  color: #1d9e74;
+  line-height: 1.1;
+  color: #167858;
+  text-decoration: none;
+}
+.unevenColumnWrap p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 18px;
+}
+.unevenColumnWrap img {
+  padding: 0;
+  margin: 0;
+}
+.unevenColumnWrap .row {
+  padding: 0;
+  margin: 0;
+}
+.unevenColumnWrap .imgWrap {
+  padding: 4px 0 15px 0;
+  margin: 0;
+}
+.unevenColumnWrap img {
+  width: 100%;
+}
+.unevenColumnWrap .grnBtn {
+  margin: 15px 28px 5px 0;
+}
+.unevenColumnWrap a.grnLink:hover,
+.unevenColumnWrap a.grnLink {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d9e74;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.unevenColumnWrap a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.left-col .unevenColumnWrap .container {
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 95%;
+}
+
+.unevenColumnWrap .imgWrap .description {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  height: 70px;
+  bottom: 70px;
+  padding: 10px;
+  margin: 0px 0px -65px 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.unevenColumnWrap .description p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.unevenColumnWrap .imgWrap .videoThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+.unevenColumnWrap .imgWrap img {
+  width: 100%;
+}
+.unevenColumnWrap .videoPlayIcon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 50% no-repeat;
+}
+.unevenColumnWrap .imgWrap .relatedVideos {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  bottom: -75px;
+  transition: all 0.5s ease;
+}
+.unevenColumnWrap .imgWrap:hover .relatedVideos {
+  bottom: 0px;
+}
+.unevenColumnWrap .relatedVideos h3 {
+  display: inline;
+  float: right;
+  margin: 0px;
+  padding: 2px 8px;
+  height: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.unevenColumnWrap .relatedVideos p {
+  clear: right;
+  color: #fff;
+  font-size: 13px;
+  padding:  10px 30px 0 15px;
+  line-height: 1.2;
+  min-height: 75px;
+  margin-bottom: 0px;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.unevenColumnWrap .imgWrap .descriptionImage {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  bottom: 15px;
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(73, 160, 219, 0.77);
+}
+.unevenColumnWrap .description h3 {
+  color: #fff;
+  font-size: 19.95px;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+.unevenColumnWrap .descriptionImage p {
+  color: #fff;
+  font-size: 13.97px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.unevenColumnWrap .videoPlayIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 45% no-repeat;
+}
+@media all and (max-width: 768px) {
+  .unevenColumnWrap .container {
+    width: 100%;
+  }
+  .unevenColumnWrap .imgWrap {
+      padding: 4px 0 15px 0;
+  }
+  .showInMobileOptional {
+    display: block;
+  }
+  .unevenColumnWrap .imgWrap .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+  .unevenColumnWrap button {
+    display: none;
+  }
+  .unevenColumnWrap .videoPlayIcon {
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 40% no-repeat;
+  }
+  .unevenColumnWrap .imgWrap .relatedVideos {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    bottom: auto;
+    transition: none;
+  }
+  .unevenColumnWrap .relatedVideos h3 {
+    display: block;
+    float: none;
+    margin: 10px 0px 0 0;
+    padding: 2px 0px;
+    height: auto;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  .unevenColumnWrap .relatedVideos p {
+    clear: none;
+    color: #000;
+    font-size: 13px;
+    padding:  10px 30px 0 0px;
+    line-height: 1.4;
+    min-height: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+  }  
+  /*.fullTabWrap .unevenColumnWrap {
+    padding: 10px 0;
+  }
+  .fullTabWrap .unevenColumnWrap.topBorder {
+    padding: 65px 0;
+  }
+  .fullTabWrap .unevenColumnWrap.bottomBorder {
+    padding: 65px 50px;
+  }*/
+  .unevenColumnWrap.topBorder {
+    border-top-left-radius: 100% 76px;
+    border-top-right-radius: 100% 76px;
+    border-top: 2px solid #b5b2c2;
+      margin: 20px -40px 20px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .unevenColumnWrap.bottomBorder {
+    border-bottom-left-radius: 100% 76px;
+    border-bottom-right-radius: 100% 76px;
+    border-bottom: 2px solid #b5b2c2;
+      margin: 20px -40px 20px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media all and (max-width: 480px) {
+
+}
+@media all and (min-width: 769px) {
+  .unevenColumnWrap .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .unevenColumnWrap.container {
+    width: 1000px;
+  }
+  .showInMobileOptional {
+    display: block !important;
+  }
+  .fullTabWrap .unevenColumnWrap .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .unevenColumnWrap .videoPlayIcon {
+    background: url('/etc/designs/calix/clientlibs/img/videoPlayIcon.png') 50% 30% no-repeat;
+  }
+}
+
+@media all and (min-width: 320px) {
+  .unevenColumnWrap .imgWrap .description {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+
+  .newsAndSocialSpotlight button {
+    display: none;
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  .unevenColumnWrap .imgWrap .description {
+    position: absolute;
+    text-align: left;
+    width: 490px;
+    bottom: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(73, 160, 219, 0.77);
+  }
+  .fullTabWrap .unevenColumnWrap {
+    padding: 20px 0;
+  }
+  .fullTabWrap .unevenColumnWrap.topBorder {
+    padding: 65px 0;
+  }
+  .fullTabWrap .unevenColumnWrap.bottomBorder {
+    padding: 65px 0;
+  }
+}

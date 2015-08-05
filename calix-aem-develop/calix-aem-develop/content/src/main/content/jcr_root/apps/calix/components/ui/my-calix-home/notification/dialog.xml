@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Text"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <main
+            jcr:primaryType="cq:Widget"
+            title="Notification"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <markAsReadText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Mark As Read Text"
+                    allowBlank="{Boolean}false"
+                    name="./markAsReadText"
+                    xtype="textfield"/>
+                <notificationSettingsText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Notificatin Settings Text"
+                    allowBlank="{Boolean}false"
+                    name="./notificationSettingsText"
+                    xtype="textfield"/>
+                <numberOfNotifications
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Number of notifications to display"
+                    fieldDescription="Number of notifications displayed first (number > 0; 5 is default value)"
+                    name="./numberOfNotifications"
+                    xtype="numberfield"/>
+                <titleCTA
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="View all notification CTA"
+                    name="./titleCTA"
+                    allowBlank="{Boolean}false"
+                    xtype="textfield"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Link CTA"
+                    name="./linkCTA"
+                    rootPath="/content/calix"
+                    xtype="pathfield"/>
+                <btnType
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="green"
+                    fieldLabel="Button Type"
+                    name="./btnType"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <green
+                            jcr:primaryType="nt:unstructured"
+                            text="Primary Green"
+                            value="green"/>
+                        <white
+                            jcr:primaryType="nt:unstructured"
+                            text="Primary White"
+                            value="white"/>
+                        <outline
+                            jcr:primaryType="nt:unstructured"
+                            text="Primary Outline"
+                            value="outline"/>
+                        <textlink
+                            jcr:primaryType="nt:unstructured"
+                            text="Text Link"
+                            value="text"/>
+                    </options>
+                </btnType>
+            </items>
+        </main>
+    </items>
+</jcr:root>

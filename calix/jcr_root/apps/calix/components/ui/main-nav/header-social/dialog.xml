@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Tagline"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <twitter
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Share on Twitter"
+                    name="./twitter"
+                    type="checkbox"
+                    xtype="selection"/>
+                <facebook
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Share on Facebook"
+                    name="./facebook"
+                    type="checkbox"
+                    xtype="selection"/>
+                <linkedin
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Share on LinkedIn"
+                    name="./linkedIn"
+                    type="checkbox"
+                    xtype="selection"/>
+                <googleplus
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Share on Google+"
+                    name="./googleplus"
+                    type="checkbox"
+                    xtype="selection"/>
+                <tumblr
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Share on Tumblr"
+                    name="./tumblr"
+                    type="checkbox"
+                    xtype="selection"/>
+                <mail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    fieldLabel="Mail"
+                    name="./mail"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>
